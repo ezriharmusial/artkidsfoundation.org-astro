@@ -1,0 +1,96 @@
+<div class="app-loader dark:bg-black/75 light:bg-white/50 backdrop-saturate-50 backdrop-blur-sm w-screen h-screen flex flex-col justify-around items-center fixed top-0 left-0 z-40">
+    <div class="wrapper w-screen flex flex-row items-center justify-center scale-100 transition-transform duration-500 z-40">
+        <div class="progress-5 female"></div>
+        <figure class="image flex flex-row justify-around items-center">
+            <!-- <img class="loading-logo" src="/images/LMS_web-logo_small_dark.png" alt="Artkids Foundation Logo"/> -->
+            <figure class="image transition-all duration-500 m-0 p-0 w-20 xs:w-16 lg:w-24 xl:w-32 mr-4 md:mr-8">
+                <img loading="eager" width={128} height={136} class="drop-shadow-2xl" src="/images/red-black-purple-gold-with-sun.svg" alt="Artkids Foundation Home" format="avif"/>
+
+            </figure>
+            <h1 class="unstyled marker transition-colors duration-500 text-2xl font-bold leading-6 md:text-3xl md:leading-8 lg:text-4xl xl:text-5xl lg:leading-12 xl:leading-16 drop-shadow-xl text-black hover:text-yellow-400 focus-text-gray-900 dark:text-white dark:hover:text-yellow-400 dark:focus:text-gray-100">
+                <span class="block">Artkids</span><span>Foundation</span>
+            </h1>
+        </figure>
+        <div class="progress-5 male"></div>
+    </div>
+    <h2 class="uppercase text-2xl font-bold leading-6 md:text-3xl md:leading-8 lg:text-4xl xl:text-5xl lg:leading-12 xl:leading-16 text-black hover:text-yellow-400 focus-text-gray-900 dark:text-white dark:hover:text-yellow-400 dark:focus:text-gray-10">Loading...</h2>
+</div>
+
+
+<style is:global>
+    .app-loader {
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0s linear 0s, opacity 600ms;
+    }
+
+    .loaded .app-loader .wrapper {
+        transform: scale(0, 0);
+    }
+
+    .loaded .app-loader {
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0s linear 600ms, opacity 600ms;
+    }
+
+    .app-loader .image {
+        transform: translatey(0px);
+    }
+
+
+    img {
+        opacity: 0;
+        transition: opacity 600ms;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .progress-5 {
+        width: 12vw;
+        height: calc(12vw*0.866);
+        clip-path: polygon(50% 0,100% 100%,0 100%);
+        color: #f03355;
+        background:
+        linear-gradient(currentColor 0 0),
+        linear-gradient(currentColor 0 0),
+        linear-gradient(currentColor 0 0),
+        linear-gradient(currentColor 0 0),
+        linear-gradient(currentColor 0 0);
+        background-size: 100% calc(100%/5 + 1px);
+        background-repeat: no-repeat;
+        animation: p5 2s infinite;
+    }
+    @keyframes p5 {
+        0%  {background-position: 0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+        20% {background-position: 0 calc(4*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+        40% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+        60% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4)}
+        80% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(-2*100%/4)}
+        100%{background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(0*100%/4)}
+    }
+
+    .loaded .progress-5 {
+        animation: unset;
+        background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(0*100%/4)
+    }
+
+    .app-loader .female {
+        color: #1f1f1f;
+        transform: rotate(180deg)
+    }
+
+    .app-loader .male {
+        color: #f1f1f1;
+    }
+</style>

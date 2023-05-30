@@ -1,0 +1,50 @@
+---
+	import { getMixcloudID, getYouTubeID, getLinkcastType } from "@lib/embeds";
+	// import { Image } from '@astrojs/image/components';
+
+function getRatio(){
+
+	return linkcast.data?.imageRatio == 'aspect-square' ? '1:1'
+		: linkcast.data?.imageRatio == 'aspect-[9/16]' ? '9:16'
+		: linkcast.data?.imageRatio == 'aspect-[16/9]' ? '16:9'
+		: linkcast.data?.imageRatio == 'aspect-[9/21]' ? '9:21'
+		: linkcast.data?.imageRatio == 'aspect-[21/9]' ? '21:9'
+		: linkcast.data?.imageRatio == 'aspect-[3/4]' ? '3:4'
+		: '4:3'
+}
+	let linkcast = Astro.props.linkcast
+---
+
+<div class="relative">
+	<figure class="aspect-[4/3] dark:bg-black/50 light:bg-white/50 flex items-center justify-center overflow-hidden">
+	<img fit="contain" width={640} aspectRatio={getRatio()} loading="lazy" src={linkcast.data?.image} quality={85} format="webp" class={"bg-black/50 w-full object-cover "} alt="Post" />
+	</figure>
+{getLinkcastType(linkcast?.data?.url) == 'youtube' &&
+<div class="image-container absolute top-0 h-full w-full flex justify-center items-center">
+	<div class="yt-button z-[999]">
+		<div class="tri"></div>
+	</div>
+</div>
+}
+</div>
+
+<style>
+	.yt-button {
+		background: rgba(0,0,0,0.55);
+		width: 50px;
+		height: 33px;
+		border-radius: 5px;
+		padding-top: 10px;
+	}
+	.image-container:hover .yt-button {
+		background: #cd201f;
+	}
+	.tri {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 7px 0 7px 14px;
+		border-color: transparent transparent transparent #ffffff;
+		margin: 0 auto;
+	}
+</style>

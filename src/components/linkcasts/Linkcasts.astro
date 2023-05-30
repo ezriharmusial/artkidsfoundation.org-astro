@@ -1,0 +1,143 @@
+---
+import { getCollection, getEntryBySlug } from 'astro:content';
+import Artists from '~components/artists/Artists.astro';
+import {Avatar} from "@skeletonlabs/skeleton"
+
+import { getLinkcastType } from "@lib/embeds"
+
+import LinkcastHeader from "./LinkcastHeader.astro";
+
+async function getLinkcasts() {
+	return await getCollection('linkcasts')
+}
+
+export let length = -1
+export let start = 0
+
+let linkcasts = await getLinkcasts()
+
+linkcasts = linkcasts.sort((a, b) => {
+	let aOrder = a.data.date
+	let bOrder = b.data.date
+
+	if ( bOrder < aOrder )
+	return -1
+	if ( aOrder < bOrder )
+	return 1
+	return 0
+})
+
+const { slug } = await Astro.params
+const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
+---
+<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Video%20Production');">
+	<div class="bg-black/50 md:p-28 p-6 pt-24 text-left text-white">
+		<div class="container mx-8 flex items-center gap-8">
+			<div class="w-3/5">
+				<h2 class="unstyled my-6 title marker text-3xl">Latest News</h2>
+				<h3 class="unstyled text-5xl font-medium my-8">Starting our Artkids Foundation Videoclip Recordings</h3>
+				<p class="unstyled text-2xl mb-12">
+					A reunion-kind-of-production-meeting that is scheduled to hold on the 26th of May 2023; at Gina Hotel; No. 52 Uwalaka Street (behind ShopRite) in Umuahia. <br />
+
+					As a result of this joyous development, we now have 5 Artkids Foundation® $tars whose Video-clips are to be short from next week~~  <br />
+
+					These Artkids Foundation® $TARZ are: <br />
+
+					Artists and Songs <br />
+
+					* Maya Skyler- Falling 4U <br />
+
+					* Skillful Kennis (SK) - Anya'Anwu <br />
+
+					* Wizron - Ego <br />
+
+					* Chuzzykeys - Cradle <br />
+
+					* ZehkEzehk - LoveTonic (Raw) <br />
+
+					Congratulations and success to Chuzzykeys. <br />
+
+					Happy Artkids Foundation® <br />
+
+					Happy ArtKids® <br />
+
+					On behalf of the board of directors of ArtKids® Foundation Holland and ArtKids® Africa. <br />
+
+					Signed: <br />
+					ZehkEzehk <br />
+					MD: ArtKids Africa
+
+				</p>
+			</div>
+			<div class="w-2/5">
+				<div class="grid grid-cols-2 gap-4 mt-8">
+
+					<div style="background-image: url('https://source.unsplash.com/random?Video%20Production');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-800 bg-blend-multiply bg-center bg-repeat bg-contain">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="https://source.unsplash.com/random?Video%20Production" alt="Profile Picture of Chuzzykeys" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Chuzzykeys
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Kieran-oris Karl Chizuterem
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/chuzzykeys">
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="bg-gradient-to-br from-slate-700 to-slate-900 min-h-screen md:p-28 p-6 pt-24">
+
+	<h2 class="unstyled my-6 title marker text-3xl">Previous Newscasts</h2>
+	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-3 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">
+
+		{linkcasts.map((linkcast) => (
+			<a class="card card-hover variant-glass-primary flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/newscasts/" + linkcast.slug }>
+				<header>
+					<LinkcastHeader linkcast={linkcast} />
+				</header>
+				<section class="card-header space-y-4">
+					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-surface light:text-black/75 dark:text-white/75">{getLinkcastType(linkcast.data.url)}</span></h5>
+
+					<h3 class="font-black leading-3 text-xl line-clamp-2">{linkcast.data.title} <br /></h3>
+
+					<h4 class="font-medium text-xl">
+						{linkcast.data.subtitle &&
+							<span>{linkcast.data.subtitle}</span>
+						}
+
+					</h4>
+
+					<p class="unstyled text-2xl overflow-hidden">
+						<span class="line-clamp-4">{linkcast.body}</span> <br />
+						<b>Read more...</b>
+					</p>
+				</section>
+				<footer class="mt-auto">
+					<hr />
+					<div  class="p-4 flex justify-start items-center space-x-4">
+						<Avatar src={linkcast.data.authorImage || '/images/red-black-purple-gold-with-sun.svg'} />
+						<div class="flex-auto flex justify-between items-center">
+							<h6 class="font-bold">By {linkcast.data.author || 'LMS Parrot'}</h6>
+							<small>On {new Date(linkcast.data.date).toLocaleDateString()}</small>
+						</div>
+					</div>
+				</footer>
+			</a>
+			))}
+
+			{(length < linkcasts.length) &&
+				<a href="/newscasts" class="btn btn-filled-primary w-full">View all NewsCasts...</a>
+			}
+		</div>
+	</div>

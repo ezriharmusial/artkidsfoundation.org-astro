@@ -1,0 +1,423 @@
+---
+// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
+import '@styles/theme.postcss';
+import '@skeletonlabs/skeleton/styles/all.css'
+import '@styles/app.postcss';
+
+import Fonts from '../components/head/Fonts.astro';
+---
+
+<!DOCTYPE html>
+<html lang="nl" class="light admin">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="generator" content={Astro.generator} />
+	<Fonts />
+	<!-- Note the "type" and "rel" attribute values, which are required. -->
+	<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body data-theme="crimson" class="dark:text-white light:text-black bg-blue-100">
+	<div style="display: contents">
+
+		<!-- Include the script that builds the page and powers Netlify CMS -->
+		<script is:inline src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+		<script is:inline>
+			function getTextColor(color) {
+				let darkColor = getDarkColor(color)
+				return darkColor.replace('is-', 'has-text-')
+			}
+			function getHighlightTextColor(color) {
+				let textColor = (
+				color === 'is-light' ||
+				color === 'is-white') ? 'is-dark' : //if its light return dark
+				(color === 'is-warning') ? getDarkColor(color) : // if its warning return dark contrast
+				getLightColor(color)
+				return textColor.replace('is-', 'has-text-')
+			}
+			function getLightBackgroundColor(color) {
+				let lightColor = getLightColor(color)
+				// console.log('HIERO:', color, lightColor.replace('is-', 'has-background-'))
+				return lightColor.replace('is-', 'has-background-')
+			}
+			function getBackgroundColor(color) {
+				// console.log('HIERO:', color, lightColor.replace('is-', 'has-background-'))
+				return color.replace('is-', 'has-background-')
+			}
+			function getLightColor(color) {
+				return (!color ? 'is-light' :
+				color === 'is-light') ? 'is-light' :
+				(color === 'is-white') ? 'is-white' :
+				(color === 'is-dark') ? 'is-light' :
+				(color === "is-black") ? 'is-white' :
+				color + '-light' // else return light version
+			}
+			function getDarkColor(color) {
+				return (
+				color === 'is-light') ? 'is-dark' :
+				(color === 'is-white') ? 'is-black' :
+				(color === 'is-dark') ? 'is-dark' :
+				(color === "is-black") ? 'is-black' :
+				color + '-dark' // else return dark version
+			}
+			CMS.registerPreviewStyle("/admin/mobile.css");
+			CMS.registerPreviewStyle("/admin/adminstyles.css");
+			var PagesPreview = createClass({
+				render: function() {
+					var entry = this.props.entry;
+					var image = entry.getIn(['data', 'image']);
+					var bg = this.props.getAsset(image);
+					var color = entry.getIn(['data', 'color'])
+					var bold = entry.getIn(['data', 'bold'])
+					var size = entry.getIn(['data', 'size'])
+					let herostyles = ' ' +
+					bold ? 'is-bold ' : ' ' +
+					color ? color : 'is-primary ' +
+					size ? size : 'is-fullheight ' +
+					bg ? 'has-background ' : 'has-background '
+					return h('div', {
+						className: getLightBackgroundColor(color)
+					},
+					h('header', {
+						className: 'hero is-fullheight-with-navbar has-background ' + herostyles
+					},
+					h('img', {
+						className: 'hero-image',
+						src: bg.toString()
+					}),
+					h('div', {
+						className: 'hero-head'
+					},
+					h('div', {
+						className: 'navbar is-spaced ' + color
+					},
+					h('div', {
+						className: 'navbar-brand ml-3 in:fade ' + color
+					},
+					h('a', {
+						className: 'navbar-item is-hidden-mobile is-active ' + getLightBackgroundColor(color) + ' ' + getTextColor(color)
+					},
+					h('h1', {
+						className: 'title is-size-5 branding-font pl-3 ' + getTextColor(color)
+					}, 'EZ ICT'),
+					),
+					),
+					h('div', {
+						id: "navbarMenuHeroC",
+						className: 'navbar-menu'
+					},
+					h('div', {
+						className: "navbar-start is-transparent in:fly-y:-200duration:500 out:fade " + getLightBackgroundColor(color) + ' ' + getTextColor(color)
+					},
+					h('a', {
+						className: "is-size-5 navbar-item mx-1 py-5 has-text-dark " + getHighlightTextColor(color)
+					},
+					h('span', {
+						className: 'icon-text is-capitalized'
+					},
+					h('span', {
+						className: 'icon-text is-capitalized'
+					}, entry.getIn(['data', 'title'])),
+					),
+					),
+					),
+					),
+					),
+					),
+					h('div', {
+						className: 'hero-body'
+					},
+					h('div', {
+						className: 'container'
+					},
+					h('div', {
+						className: 'box notification is-transparent content ' + getLightBackgroundColor(color)
+					},
+					h('h1', {
+						className: 'title is-size-4 ' + getTextColor(color)
+					}, entry.getIn(['data', 'title'])),
+					h('h2', {
+						className: 'subtitle is-size-5 ' + getTextColor(color)
+					}, entry.getIn(['data', 'subtitle'])),
+					h('div', {
+						className: 'content ' + getTextColor(color)
+					},
+					h('p', {}, entry.getIn(['data', 'description'])),
+					),
+					),
+					),
+					),
+					),
+					h('main', {
+						className: 'section ' + getLightBackgroundColor(color)
+					},
+					h('div', {
+						className: "container raised"
+					}, this.props.widgetFor('body'))
+					),
+					);
+				}
+			});
+			CMS.registerPreviewTemplate("pages", PagesPreview);
+		</script>
+	</div>
+
+
+	<!-- Netlify Identiy widget -->
+	<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<style is:global>
+		/* Custom Menu */
+		aside a span {
+			display: inline-flex !important;
+			justify-content: center;
+			align-items: center
+		}
+
+		aside a span svg {
+			display: none !important;
+		}
+
+		aside a span::before {
+			font-family: "Font Awesome 5 Free";
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		aside a[href="#/collections/linkcasts"] span::before {
+			content: "\f1ea";
+		}
+
+		aside a[href="#/collections/pages"] span::before {
+			content: "\f15c";
+		}
+
+		aside a[href="#/collections/authors"] span::before {
+			content: "\f4ff";
+		}
+
+		aside a[href="#/collections/tracks"] span::before {
+			content: "\f001";
+		}
+
+		aside a[href="#/collections/albums"] span::before {
+			content: "\f8d9";
+		}
+
+		aside a[href="#/collections/artists"] span::before {
+			content: "\f2b9";
+		}
+
+		aside a[href="#/collections/settings"] span::before {
+			content: "\f1de";
+		}
+
+		[class*=GridCardLink]:before{
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.6;
+			background-image: url('https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg');
+			background-repeat: no-repeat;
+			background-position: 50% 10%;
+			background-size: cover;
+		}
+
+		a[class*=GridCardLink][href="#/collections/settings/entries/info"]:before{
+			background-image: url("https://img.freepik.com/premium-vector/vector-web-site-design-template-branding-digital-marketing-company-identity-brand-business-landing-page-concepts-website-mobile-development-modern-flat-illustration_88813-2058.jpg?w=2000");
+		}
+
+		a[class*=GridCardLink][href="#/collections/settings/entries/seo"]:before{
+			background-image: url("https://www.glitztechnology.com/_next/public/images/seo.2-58442dde0ae8e7df50d693b90c0a740e.png");
+		}
+
+		a[class*=GridCardLink][href="#/collections/settings/entries/social"]:before{
+			background-image: url("https://www.terawork.com/blog/wp-content/uploads/2022/10/16-reasons-why-social-media-is-important-to-your-company-616d3200e6dc6-sej-1.png");
+		}
+
+		a[class*=GridCardLink][href="#/collections/settings/entries/settings"]:before{
+			background-image: url("https://entrepreneurhandbook.co.uk/wp-content/uploads/2019/05/Website-image.jpg.webp");
+		}
+
+		/* Custom Card styles */
+		[class*=GridCardLink]{
+			position: relative;
+		}
+
+		[class*=CardBody]{
+			background-color: rgba(240, 240, 255, 0.419);
+			backdrop-filter: blur(4px) brightness(120%) contrast(50%);
+			z-index: 10;
+		}
+
+		[class*=CardBody]:after{
+			box-shadow: rgba(255, 255, 255, .2) 0px -15px 24px inset !important;
+		}
+
+		[class*=CardHeading]{
+			color: black !important;
+			font-size: 1.5rem !important;
+			line-height: 1.8rem !important;
+		}
+
+		a:hover [class*=CardImage] {
+			transform: scale(1.2);
+			background-position-y: 9%;
+		}
+
+		[class*=CardImage]{
+			position: absolute;
+			background-color: rgba(0, 0, 255, 0.071);
+			background-position-y: 6%;
+			transform: scale(1.1);
+			height: 100% !important;
+			width: 100%;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			transition: all ease-in-out 1s;
+		}
+
+		[class*=EditorContainer],
+		[class*=FieldLabel-fieldLabel]::after,
+		[class*=NoPreviewContainer-card-splitPane]{
+			background: transparent !important;
+		}
+
+		/* Forms */
+		[class*=FieldLabel-fieldLabel] {
+			background-color: rgba(240, 240, 255, 1);
+		}
+
+		input[type=text]{
+			border-radius: 0px 5px 5px !important;
+		}
+
+		/* Mobile Friendly Styles */
+		@media (orientation: portrait) {
+
+			[class*=BackArrow] {
+				margin-right: 0 !important;
+			}
+
+			[class*=BackStatus],
+			[class*=BackCollection] {
+				background-color: #fff;
+				position: fixed !important;
+				display: none !important;
+				top: 0rem;
+				height: 2rem;
+				left: 4rem;
+				font-size: .8rem;
+				z-index: 20;
+				padding: 0.3rem  0.5rem;
+				border: 1px solid #eef;
+				width: unset !important;
+			}
+
+			[class*=BackStatus]{
+				margin: 0 !important;
+			}
+
+			[class*=BackCollection] {
+				width: 8rem !important;
+				top: 2rem !important;
+			}
+
+			[class*=AppHeaderContent],
+			[class*=AppMainContainer] {
+				margin-right: 0 !important;
+				margin-left: 0 !important;
+				min-width: calc(100vw - 24px) !important;
+				max-width: 100vw !important;
+			}
+
+			[class*=AppHeaderContent] {
+				display: flex !important;
+				justify-content: space-between;
+			}
+
+			[class*=AppHeaderQuickNewButton] {
+				width: 100% !Important;
+			}
+
+			[class*=AppHeaderButton] {
+				padding-left: 4px !important;
+				padding-right: 4px !important;
+			}
+
+			[class*=EditorContainer],
+			[class*=ToolbarContainer] {
+				min-width: initial !important;
+			}
+
+			[class*=ControlPaneContainer]{
+				padding: 1rem !important;
+			}
+
+			[class*=ToolbarSubSectionFirst] {
+				display: flex !important;
+				flex-direction: row !important;
+			}
+			[class*=AppHeaderSiteLink],
+			[class*=DeleteButton],
+			[class*=PublishedToolbarButton] {
+				padding: 0 .3rem !important;
+			}
+
+			[class*=DeleteButton],
+			[class*=PublishedToolbarButton],
+			[class*=ToolbarDropdown-buttonMargin] {
+				margin: 0 0.3rem !important;
+			}
+
+			[class*=PublishedToolbarButton]::after {
+				display: none !important;
+			}
+
+			[class*=ViewControls] {
+				/* position: initial; */
+			}
+
+			[class*=PreviewPaneContainer-ControlPaneContainer] {
+				padding: 0 !important;
+			}
+
+			[class*=ControlPaneContainer] {
+				max-width: 100vw !important;
+			}
+
+			[class*=CollectionContainer],
+			[class*=EditorControlBar] [class*=ToolbarContainer] {
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			[class*=SidebarContainer] {
+				position: initial !important;
+				width: initial !important;
+			}
+
+			[class*=ToolbarSectionMain-toolbarSection] {
+				padding: 0 !important;
+			}
+
+			[class*=CollectionMain] {
+				padding-left: 0 !important;
+				margin-top: 20px !important;
+			}
+
+			.Pane.vertical.Pane2 {
+				position: fixed !important;
+				width: 100vw !important;
+			}
+		}
+	</style>
+</body>
+</html>

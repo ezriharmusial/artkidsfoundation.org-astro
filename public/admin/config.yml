@@ -1,0 +1,155 @@
+backend:
+  name: git-gateway
+  branch: main
+# Local testing
+local_backend: true
+collections:
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Author"
+    folder: "src/content/users/"
+    preview_path: "/profiles/{{username}}"
+    create: true
+    fields:
+      - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
+      - {label: sex, name: sex, widget: 'select', options: ['male', 'female']}
+      - {label: "Gebruikersnaam", name: "username", widget: "string"}
+      - {label: "Voornaam", name: "name", widget: "string"}
+      - {label: "Achternaam", name: "surname", widget: "string"}
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Shortbio", name: "body", widget: "markdown"}
+      - {label: "(SEO) Korte Pagina Samenvatting", name: "description", required: false }
+      - {label: "Twitter Handle", name: twitter, required: false}
+      - {label: "Instagram Handle", name: instagram, required: false}
+      - {label: "Tiktok Handle", name: tiktok, required: false}
+      - {label: "Bandcamp Address", name: bandcamp, required: false}
+      - {label: "Facebook Address", name: facebook, required: false}
+      - {label: "Youtube Channel Address", name: youtube, required: false}
+      - {label: "Audiomack Channel", name: audiomack, required: false}
+
+  - name: "pages"
+    label: "Paginas"
+    label_singular: "Pagina"
+    folder: "src/content/pages/"
+    preview_path: "{{title}}"
+    create: true
+    fields:
+      - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
+      - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
+      - {label: "Menu volgorde", name: "index", widget: "number"}
+      - {label: "Pagina Kop Grootte", name: "size", widget: "select", options: [ "is-small", "is-medium", "is-large", "is-halfheight", "is-fullheight" ], required: true, default: "is-fullheight"}
+      - {label: "Pagina Titel", name: "title", widget: "string"}
+      - {label: "Pagina SubTitle", name: "subtitle", widget: "string"}
+      - {label: "Pagina Kleur", name: "color", widget: "select", options: [ "is-primary", "is-success", "is-info", "is-link", "is-danger", "is-warning", "is-light", "is-dark"], default: "primary"}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Foto Bescrijfing (SEO)", name: "imageAlt", required: false }
+      - {label: "Pagina Text", name: "body", widget: "markdown"}
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
+      - {label: "Korte Pagina Samenvatting (SEO)", name: "description", required: false }
+
+  - label: "Social News"
+    name: "linkcasts"
+    folder: src/content/linkcasts
+    preview_path: "/newscasts/{{title}}"
+    sortable_fields: ['date', 'title', 'author', 'url']
+    create: true
+    fields:
+      - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Describing Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Post Category", name: "category", widget: "select", multiple: false, options: ["Launches & New Releases", "Artkids Foundation Events", "Social Media & Promotions", "News & Announcements", "Sponsering & Advertisement"], required: false}
+      - {label: "Featured: Image used in blogs/linkcasts", name: image ,widget: "image", required: false, media_folder: "/public/uploads/linkcasts", public_folder: "/uploads/linkcasts"}
+      - {label: "Featured: Image Ratio", name: imageRatio, widget: "select", multiple: false, options: ["aspect-square", "aspect-[16/9]", "aspect-[9/16]", "aspect-[21/9]", "aspect-[4/3]", "aspect-[3/4]"], default: "aspect-square", required: false}
+      - {label: "Linkcast URL", name: "url", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO: Excerpt 155 Characters", name: metadescription,  required: false}
+      - {label: "SEO: Image used in twitter", name: twitterImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/twitter", public_folder: "/uploads/linkcasts/twitter"}
+      - {label: "SEO: Image used in facebook open graph", name: ogImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/og", public_folder: "/uploads/linkcasts/og"}
+      - {label: "SEO: Squared Image used in facebook open graph", name: ogSquareImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/og-squared", public_folder: "/uploads/linkcasts/og-squared"}
+      - {label: "SEO: Description when image loads", name: featuredImageAlt,  required: false}
+
+  # - name: "blog"
+  #   label: "Posts"
+  #   label_singular: "Post"
+  #   folder: "src/content/blog/"
+  #   preview_path: "{{title}}"
+  #   create: true
+  #   fields:
+  #     - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
+  #     - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
+  #     - {label: "Menu volgorde", name: "index", widget: "number"}
+  #     - {label: "Pagina Kop Grootte", name: "size", widget: "select", options: [ "is-small", "is-medium", "is-large", "is-halfheight", "is-fullheight" ], required: true, default: "is-fullheight"}
+  #     - {label: "Pagina Titel", name: "title", widget: "string"}
+  #     - {label: "Pagina SubTitle", name: "subtitle", widget: "string"}
+  #     - {label: "Pagina Kleur", name: "color", widget: "select", options: [ "is-primary", "is-success", "is-info", "is-link", "is-danger", "is-warning", "is-light", "is-dark"], default: "primary"}
+  #     - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+  #     - {label: "Foto Bescrijfing (SEO)", name: "imageAlt", required: false }
+  #     - {label: "Pagina Text", name: "body", widget: "markdown"}
+  #     - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
+  #     - {label: "Korte Pagina Samenvatting (SEO)", name: "description", required: false }
+
+  - label: "Site Settings"
+    name: "settings"
+    files:
+      - label: "Site Info & Branding"
+        name: "info"
+        file: "src/content/settings/_info.yml"
+        fields:
+          - {label: "Site Title", name: title, widget: string}
+          - {label: "Company Name", name: name, widget: string}
+          - {label: "Site Description", name: description, widget: string}
+          - {label: "Email Address", name: email, widget: string}
+          - {label: Telephone, name: telephone, widget: string}
+          - {label: "Bank Account", name: bankaccount, widget: string}
+          - {label: "KVK Nummer", name: kvk, widget: string}
+
+      - label: "Site Settings"
+        name: "settings"
+        file: "src/content/settings/_settings.yml"
+        fields:
+          - {label: "Default Theme", name: theme, widget: 'select', options: ['dark', 'light'], default: 'dark'}
+
+      - label: "Social Links"
+        name: "social"
+        file: "src/content/settings/_social.yml"
+        fields:
+        - {label: "Facebook Address", name: facebook, required: false}
+        - {label: "Twitter Handle", name: twitter, required: false}
+        - {label: "Instagram Handle", name: instagram, required: false}
+        - {label: "Youtube Channel Address", name: youtube, required: false}
+        - {label: "Tiktok Handle", name: tiktok, required: false}
+        - {label: "VSKit Handle", name: vskit, required: false}
+        - {label: "Audiomack Channel", name: audiomack, required: false}
+
+      - label: "SEO Settings"
+        name: "seo"
+        file: "src/content/settings/_seo.yml"
+        fields:
+          - {label: "Facebook App ID", name: fbappid, widget: string}
+          - {label: "Default Share Image", name: image ,widget: "image", required: false, media_folder: "/public/uploads/seo/", public_folder: "/uploads/seo/"}
+
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    # meta: { path: { widget: string, label: "Path", index_file: "index" } }
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+search: true
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: ""
+show_preview_links: false
+publish_mode: editorial_workflow
+
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: artkids-foundation
+#     api_key: 263829663159721
+
+
+site_url: https://www.artkidsfoundation.org
+display_url: https://ArtKidsFoundation.org
+logo_url: /images/red-black-purple-gold-with-sun.svg

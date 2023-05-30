@@ -1,0 +1,63 @@
+/* Write your global styles here, in PostCSS syntax */
+html,
+body {
+  transition: margin 600ms;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+html:not(.admin), html:not(.admin) body{
+  @apply h-full overflow-hidden;
+  font-size: 16px;
+}
+
+.marker {
+  font-family: "Permanent Marker" !important;
+}
+
+.firebase-emulator-warning {
+  display: none;
+}
+
+body.off-canvas {
+  overflow:hidden;
+  margin-left: 16rem;
+}
+
+/* MarkDown Content */
+.md-content p{
+  margin-bottom: 1rem;
+}
+.md-content p img{
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0.1rem;
+}
+/* Lyrics */
+
+.md-content.lyrics {
+  height: 100vh;
+  height:calc(var(--vh, 1vh) * 100)
+}
+
+.lyrics>div,
+.lyrics>p {
+  margin-bottom: 5vh;
+  margin-right: 5vw;
+  line-height: auto;
+}
+
+.lyrics p:first-of-type {
+  margin-top:33vh;
+}
+
+/* Scrollbar
+/ Hide scroll on animation */
+.hide-scroll-on-animation {
+  animation: hide-scroll 1.2s backwards;
+}
+
+@keyframes hide-scroll {
+  from, to { overflow: hidden; }
+}

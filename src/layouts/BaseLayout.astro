@@ -1,0 +1,151 @@
+---
+// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
+import '@styles/theme.postcss';
+import '@skeletonlabs/skeleton/styles/all.css'
+import '@styles/app.postcss';
+
+import { AppShell, AppBar } from '@skeletonlabs/skeleton'
+import { useUserAgent } from "astro-useragent";
+// import { Image } from '@astrojs/image/components';
+
+import AppLoader from '~components/ui/AppLoader.astro';
+import Fonts from '../components/head/Fonts.astro';
+import Footer from '../components/Footer.astro';
+import SEO from '../components/head/SEO.astro';
+import seoSettings from '../content/settings/_seo.yml';
+import siteSettings from '../content/settings/_settings.yml';
+import PageNavList from '~components/ux/PageNavList.astro';
+
+import BrandFlag from '~components/ui/BrandFlag.astro';
+import SocialNav from '~components/ui/SocialNav.astro';
+import PageTitle from '~components/ui/PageTitle.astro';
+import NavSidebar from '~components/ui/NavSidebar.astro';
+
+export interface Props {
+    title: string;
+    seoTitle?: string;
+    description?: string;
+    image?: string;
+    imageAlt?: string;
+}
+
+// Conditional info
+const uaString = Astro.request.headers.get("user-agent");
+const { isMobile } = useUserAgent(uaString);
+
+const { theme } = siteSettings
+const { fbappid } = seoSettings
+const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
+---
+
+<!DOCTYPE html>
+<html class={theme} lang="en">
+<head>
+    <link rel="preload" as="image" href="/images/red-black-purple-gold-with-sun.svg">
+    <!-- Site Meta & SEO -->
+    <!-- <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} /> -->
+    <!-- Fonts -->
+    <Fonts />
+</head>
+<body data-theme="gold-nouveau" class="init light:bg-white light:text-black dark:text-white dark:bg-black">
+    <!-- Extended Head -->
+    <slot name="extendedHead" />
+
+    <!-- App Loader Screen -->
+    <AppLoader />
+
+    <!-- Page Transition -->
+    <!-- <PageTransition speed={500} color={"orange"} zIndex={99} /> -->
+    <div style="display: contents" class="h-full overflow-hidden">
+
+        <AppShell slotSidebarLeft="bg-surface-100-800-token opacity-95 h-full portrait:pb-24 portrait:fixed portrait:left-0 portrait:top-20 portrait:bottom-0 z-20">
+            <svelte:fragment slot="header">
+            <AppBar background="bg-surface-100-800-token dark:bg-surface-800-100-token z-30">
+                <svelte:fragment slot="lead">
+                <BrandFlag />
+            </svelte:fragment>
+            <PageTitle title={title}/>
+            <svelte:fragment slot="trail">
+            <!-- User Avatar Placeholder -->
+        </svelte:fragment>
+    </AppBar>
+</svelte:fragment>
+
+<!-- Sidebar -->
+<svelte:fragment slot="sidebarLeft">
+<NavSidebar />
+</svelte:fragment>
+
+<!-- Default Slot -->
+<slot />
+
+<!-- Page Footer -->
+<svelte:fragment slot="pageFooter">
+<footer class="m-8">
+    <slot name="pageList">
+        <h3 class="font-bold">Website Pages</h3>
+        <div class="card card-hover p-4 space-y-4 w-1/3">
+            <PageNavList direction="horizontal" />
+        </div>
+    </slot>
+    <Footer />
+</footer>
+</svelte:fragment>
+
+<!-- Site Footer -->
+<!-- <svelte:fragment slot="footer">
+<SocialNav />
+</svelte:fragment> -->
+</AppShell>
+</div>
+
+<!-- Player -->
+<script src=" https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js" is:inline></script>
+<!-- Loader -->
+<script is:inline>
+    var body = document.getElementsByTagName("BODY")[0];
+    body.classList.toggle('loaded');
+</script>
+</body>
+</html>
+
+<style is:global>
+    /* We don't need checkbox to be displayed in order for it to work */
+    .menuToggler {
+        display: none;
+    }
+
+    /*  Displays menu when menuToggler is checked only on mobile/tablet */
+    @media screen and (max-width: 1023px) {
+        .menuToggler:checked ~ .navbar-menu {
+            display: flex !important;
+        }
+
+        .menuToggler:checked ~ .navbar-menu .lightswitch{
+            margin-bottom: 5rem;
+        }
+
+        /* We don't want menu to be displayed on mobile by default */
+        .navbar-menu {
+            display: none;
+        }
+
+    }
+
+    .navbar-burger {
+        position: fixed;
+        top: unset !important;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .navbar-burger {
+            display: none !important;
+        }
+    }
+
+    [astro-icon] {
+        min-width: 1rem;
+    }
+
+
+</style>
