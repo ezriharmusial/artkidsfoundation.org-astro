@@ -1,0 +1,22 @@
+---
+index: 4765
+title: "Solar Africa"
+subtitle: ""
+author: 1
+date: "2018-08-14 11:14:41"
+date_gmt: "2018-08-14 09:14:41"
+excerpt: ""
+content: "<h2>\r\n  <span class=\"icon\">\r\n    <i class=\"fa fa fa-sun-o fa-fw\"> </i> \r\n  </span>\r\n  <span>\r\n    Solar Africa <span class=\"has-text-calm is-size-4\">Let the Sun Power Afra'ka.</span>\r\n  </span>\r\n</h2>\r\n\r\n<p class=\"subtitle\">no electric power=no production, business, entertainment, pleasure=no life</p>\r\n\r\n<p>ArtKids Foundation is calling on Igbo (Black) brothers and Sisters all over the World to invest in Sun Energy (Solar Technology) in Igboland and in Afra'ka.\r\nSince the Nigerian Electric Power Authority (NEPA) has failed our people; and since there is abundant Sun Energy is the lands of the rising Sun, common sense dictates that only Sun Energy (Solar=Eke) can and will provide Africans with the ever needed Electricity.</p>\r\n\r\n<div class=\"tile is-ancestor\">\r\n  <div class=\"tile is-parent is-6\">\r\n    <div class=\"tile is-child\">\r\n      <a href=\"https://www.artkidsfoundation.org/artkids-solar-africa/oolu_newbanners_9/\" rel=\"attachment wp-att-4774\"><img src=\"https://www.artkidsfoundation.org/app/uploads/2018/08/OOLU_newbanners_9.jpg\" alt=\"\" width=\"683\" height=\"341\" class=\"alignnone size-full wp-image-4774\" /></a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"tile is-parent is-6\">\r\n    <div class=\"tile is-child\">\r\n      <a href=\"https://www.artkidsfoundation.org/artkids-solar-africa/barefoot_college_2015_07-23_0722job_training_and_clean_energy_access_in_africa_and_peru/\" rel=\"attachment wp-att-4775\"><img src=\"https://www.artkidsfoundation.org/app/uploads/2018/08/barefoot_college_2015_07.23_0722job_training_and_clean_energy_access_in_africa_and_peru.jpg\" alt=\"\" width=\"683\" height=\"341\" class=\"alignnone size-full wp-image-4775\" /></a>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<p>From Solar Generators to Solar-Powered Electronics/Gadgets to Solar Plantations, ArtKids Foundation needs partnership and/or financial support to implement Sun Energy in Igboland and in Afra'ka.</p>\r\n\r\n<div class=\"tile is-ancestor\">\r\n  <div class=\"tile is-parent is-6\">\r\n    <div class=\"tile is-child\">\r\n      <a href=\"https://www.artkidsfoundation.org/artkids-solar-africa/zola-shop/\" rel=\"attachment wp-att-4776\"><img src=\"https://www.artkidsfoundation.org/app/uploads/2018/08/zola-shop.jpg\" alt=\"\" width=\"683\" height=\"341\" class=\"alignnone size-full wp-image-4776\" /></a>      \r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"tile is-parent is-6\">\r\n    <div class=\"tile is-child\">\r\n      <a href=\"https://www.artkidsfoundation.org/artkids-solar-africa/solar-research/\" rel=\"attachment wp-att-4777\"><img src=\"https://www.artkidsfoundation.org/app/uploads/2018/08/Solar-Research.jpg\" alt=\"\" width=\"683\" height=\"341\" class=\"alignnone size-full wp-image-4777\" /></a>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<p>We are to launch our own Sun Energy Research and Development center. Although we shall start with Assembly of Solar generators, the ultimate goal is to have our own Sun Energy Factory where we invent and produce all kinds of Solar Solutions to end the Epileptic Electricity Nightmare called NEPA/PHCN in Igboland.</p>\r\n\r\n<p>Lets make it work. Think business, become our investor on win-win bases.</p>\r\n\r\n<p>A Stakeholders meeting is now being planned for the Month of October 2018 @ Nkwerre in Imo ~ Igboland.</p>\r\n\r\n<p class=\"title\">\r\n  <span class=\"icon\">\r\n    <i class=\"fa fa-bolt fa-fw\"> </i>\r\n  </span>\r\n  <span>\r\n    Welcome Solar (Sun) Energy in Afra'Ka.\r\n  </span>\r\n</p>\r\n<p>Please indicate your interest to be a part of this meeting as an Investor, Researcher, Donor or in any other capacity. Makana agbakoo-agbakoo nyua Mamiri ogbaa ufufu.</p>\r\n\r\n<p>For Researches, Knowledge Transfer, Partnership, Corporate Representation, Funding or Advice for our ongoing SUN ENERGY INSTALLATIONS ACROSS IGBOLAND AND AFRA'KA, please contact us Below</p>\r\n\r\n[contact-form-7 id=\"4772\" title=\"ArtKids Solar contact form (english)\"]"
+status: "publish"
+comment_status: "closed"
+name: "solar-africa"
+modified: "2018-09-23 00:14:28"
+modified_gmt: "2018-09-22 22:14:28"
+content_filtered: ""
+parent: 0
+guid: "https://www.artkidsfoundation.org/?page_id=4765"
+type: "page"
+comment_count: 0
+categories: []
+tags: []
+---

@@ -23,18 +23,18 @@ With each member of the LastMessengerS donating 1 unity song by 13 members, 11 s
 As if that wasn't enough, the LastMessengerS then wrote, composed and sang a special song to their fellow Africans with serious messages as its lyrics, making it 12 tracks in total. The title of this collectively sang track is Africa4Africa - Rise 'n' Shine.
 
 Credits:
-Chuzzykeys (Producer) 
+Chuzzykeys (Producer)
 ZehkEzehk (Composer)
-ZehkEzehk (Writer) 
-Chuzzykeys (Vocals) 
-Ugochinyere (Vocals) 
-Uc Banton (Vocals) 
-Da Reggae Priest (Vocals) 
-Thinking Faculty TF (Rap) 
-Maya Skyler (Rap) 
-Skillful Kennis SK (Rap) 
-WhitneyZinny (Vocals) 
-ZehkEzehk (Vocals) 
+ZehkEzehk (Writer)
+Chuzzykeys (Vocals)
+Ugochinyere (Vocals)
+Uc Banton (Vocals)
+Da Reggae Priest (Vocals)
+Thinking Faculty TF (Rap)
+Maya Skyler (Rap)
+Skillful Kennis SK (Rap)
+WhitneyZinny (Vocals)
+ZehkEzehk (Vocals)
 Nneoma Ezelu (Vocals)
 V_Sax (Saxophone)
 
@@ -47,7 +47,7 @@ Do not sell your bro
 (Verse 2 by Ugochinyere)
 They come, as friend
 full of, ver~noms
-Never let them inside you 
+Never let them inside you
 fooling you for-ever
 
 (Chorus by All)
@@ -71,7 +71,7 @@ The future
 It's our time
 
 (Langwa Rap by Thinking Faculty TF)
-Yeah, 
+Yeah,
 Africa4Africa
 Arise and shine
 Most supernatural si- n'Ala Igbo
@@ -81,7 +81,7 @@ Zulu ma Zulu maka, Ebube Agu n'eche mba
 Lee Anya n'elu
 Lee Anya n'Ala
 Chi'Ukwu Okike alaghachigo
-Blessed is Mother Earth 
+Blessed is Mother Earth
 Resources depositor
 Mining Gold in Ghana
 Diamond Sierra Leone
@@ -91,7 +91,7 @@ Cobalt, Oil, Iron
 I left the West for good
 Back to Umu Eke
 Yahu si Ala nye'm
-Gateway Africa  
+Gateway Africa
 
 (Chorus by All)
 Yes, we love you
@@ -121,19 +121,19 @@ Cause we wanna be
 with you forever
 
 (Rap by Skillful Kennis SK)
-Uh 
+Uh
 Africa 4 Africa
 Holop we back here
 We now live in a better world
-no pain, 
-no sorrow, 
+no pain,
+no sorrow,
 no grief
 Jolly Jolly Jolly
-no looting, 
-no suffering, 
+no looting,
+no suffering,
 no lying
-No hunger 
-After all say F death 
+No hunger
+After all say F death
 happy happy happy
 Let's unite to path no more
 Africans, unite, unite, unite
@@ -150,7 +150,7 @@ with you forever
 (Verse 3 by WhitneyZinny)
 They lied, to us
 deceived our ancestors
-never gave a damn, no 
+never gave a damn, no
 killing us at will
 
 (Verse 4 by WhitneyZinny)
@@ -170,7 +170,7 @@ Many years, gone by
 We've been deceived
 We waking up again
 Do not let us down
- 
+
 (Chorus by All)
 Yes, we love you
 we need you

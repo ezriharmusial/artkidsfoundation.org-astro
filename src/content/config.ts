@@ -5,7 +5,7 @@ const pages = defineCollection({
         index: z.number(),
         title: z.string(),
         shortTitle: z.string().optional(),
-        subtitle: z.string(),
+        subtitle: z.string().optional(),
         seoTitle: z.string().optional(),
         icon: z.string().optional(),
         image: z.string().optional(),
