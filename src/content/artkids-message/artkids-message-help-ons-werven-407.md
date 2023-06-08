@@ -1,18 +1,13 @@
 ---
 id: 407
 title: "Help ons werven"
-author: 1
+author: "EzzyHarmless"
 date: "2016-10-13 17:02:07"
-date_gmt: "2016-10-13 15:02:07"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-name: "help-ons-werven"
-modified: "2016-10-13 17:02:07"
-modified_gmt: "2016-10-13 15:02:07"
-content_filtered: ""
+nav_label: "help-ons-werven"modified: "2016-10-13 17:02:07"
 parent: 0
-guid: "//www.artkidsfoundation.org/?type=artkids-message&#038;p=407"
 type: "artkids-message"
 comment_count: 0
 categories: []

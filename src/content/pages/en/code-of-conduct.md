@@ -2,32 +2,27 @@
 index: 4257
 title: "Code of Conduct"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2017-12-16 18:53:58"
-date_gmt: "2017-12-16 16:53:58"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-name: "code-of-conduct"
-modified: "2018-03-07 18:28:09"
-modified_gmt: "2018-03-07 16:28:09"
-content_filtered: ""
+nav_label: "code-of-conduct"modified: "2018-03-07 18:28:09"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4257"
 type: "page"
 comment_count: 0
 categories: []
 tags: []
 ------
 
-Charity selfless giving
------------------------
+## Charity
+### selfless giving
 
 There are three basic necessities to everyone:
 
-1.  Shelter
-2.  Food and Water
-3.  Clothing
+1. Shelter
+2. Food and Water
+3. Clothing
 
 While ArtKids Foundation runs projects on the above listed necessities eg. Food On Table Project, Advises on Pre-Fab Accommodations (EPS) as well as Igbo-Made Cloths and Shoes Promotion; ArtKids Foundation believes on the provision of a lasting solution based on the popular Chinese saying which says:
 
@@ -35,10 +30,8 @@ While ArtKids Foundation runs projects on the above listed necessities eg. Food 
 
 ArtKids method of charity is designed with lasting solution in Mind.
 
-* * *
-
-Fundraising how do we do it?
-----------------------------
+## Fundraising
+### How do we do it?
 
 On behalf of the realization of the [hereby](/en/vision/) mention goals ArtKids Foundation performs fund raising activities, whereby (groups of ) private persons as well as institutions and companies are offered the opportunity to either incidentally or periodically donate to ArtKids Foundation or to funds registered to ArtKids Foundation. Additionally fund raising exists of submitting project financing by means of or made possible by private person funds benefiting charitably projects and initiatives of ArtKids Foundations and the funds registered to ArtKids Foundation. Applying for subsidies and approaching sponsors for activities, initiatives, events and projects.
 
@@ -46,17 +39,13 @@ Al platforms, projects en activities are designed to carry the potential to be c
 
 Furthermore our creativity centers are available to be rent by third parties.
 
-* * *
-
-Compensation model what does it pay?
-------------------------------------
+## Compensation model
+### What does it pay?
 
 More information will follow... Do you want to know more? Please feel free to [contact](/en/contact/) us
 
-* * *
-
-Expenses where does it go to?
------------------------------
+## Expenses
+### where does it go to?
 
 The board is under supervision of the treasurer who checks the financial administration and supervises responsible spending and minimizes expenses. ArtKids minimizes expenses in the following manners:
 

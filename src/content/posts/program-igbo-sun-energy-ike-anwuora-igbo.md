@@ -2,18 +2,13 @@
 index: 7406
 title: "PROGRAM ~ IGBO SUN ENERGY (IKE ANWU'ORA-IGBO)"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2018-09-23 00:54:54"
-date_gmt: "2018-09-22 22:54:54"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-name: "program-igbo-sun-energy-ike-anwuora-igbo"
-modified: "2023-04-21 21:37:52"
-modified_gmt: "2023-04-21 19:37:52"
-content_filtered: ""
+nav_label: "program-igbo-sun-energy-ike-anwuora-igbo"modified: "2023-04-21 21:37:52"
 parent: 0
-guid: "https://www.artkidsfoundation.org/?p=7406"
 type: "post"
 comment_count: 0
 categories: "ArtKids,ArtKids Africa,Solar Africa"

@@ -2,18 +2,13 @@
 index: 4920
 title: "ArtKids Int. Corp."
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2018-09-24 00:25:51"
-date_gmt: "2018-09-23 22:25:51"
 excerpt: "Through Artkids International, fund is generated via various business transactions in collaboration with established corporate entities (Companies) on a win-win principle to effectively support the funding of ArtKids Foundation."
 status: "publish"
 comment_status: "closed"
-name: "artkids-int-corp"
-modified: "2023-04-19 20:06:55"
-modified_gmt: "2023-04-19 18:06:55"
-content_filtered: ""
+nav_label: "artkids-int-corp"modified: "2023-04-19 20:06:55"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4920"
 type: "page"
 comment_count: 0
 categories: []

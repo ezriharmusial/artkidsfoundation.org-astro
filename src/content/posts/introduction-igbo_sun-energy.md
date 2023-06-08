@@ -2,18 +2,13 @@
 index: 7393
 title: "INTRODUCTION ~ IGBO_SUN ENERGY"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2018-09-22 23:24:56"
-date_gmt: "2018-09-22 21:24:56"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-name: "introduction-igbo_sun-energy"
-modified: "2023-04-21 21:24:43"
-modified_gmt: "2023-04-21 19:24:43"
-content_filtered: ""
+nav_label: "introduction-igbo_sun-energy"modified: "2023-04-21 21:24:43"
 parent: 0
-guid: "https://www.artkidsfoundation.org/?p=7393"
 type: "post"
 comment_count: 0
 categories: "ArtKids,ArtKids Africa,Solar Africa"

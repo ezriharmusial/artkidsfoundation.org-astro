@@ -2,19 +2,14 @@
 index: 7537
 title: "alexpopov716253@gmail.com"
 subtitle: ""
-author: 0
+author: "ArtKids Parrot"
 date: "2023-05-06 16:29:30"
-date_gmt: "2023-05-06 14:29:30"
 excerpt: ""
 content: "alexpopov716253@gmail.com\nKathrynmam"
 status: "publish"
 comment_status: "closed"
-name: "alexpopov716253-gmail-com"
-modified: "2023-05-06 16:29:30"
-modified_gmt: "2023-05-06 14:29:30"
-content_filtered: ""
+nav_label: "alexpopov716253-gmail-com"modified: "2023-05-06 16:29:30"
 parent: 0
-guid: "https://www.artkidsfoundation.org/?type=flamingo_contact&p=7537"
 type: "flamingo_contact"
 comment_count: 0
 categories: []

@@ -2,18 +2,13 @@
 index: 4469
 title: "ArtKids Paintings"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2018-02-04 16:59:20"
-date_gmt: "2018-02-04 14:59:20"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-name: "artkids-paintings"
-modified: "2018-03-11 01:20:12"
-modified_gmt: "2018-03-10 23:20:12"
-content_filtered: ""
+nav_label: "artkids-paintings"modified: "2018-03-11 01:20:12"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4469"
 type: "page"
 comment_count: 0
 categories: []

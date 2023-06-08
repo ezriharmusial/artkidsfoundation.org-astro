@@ -2,18 +2,13 @@
 index: 7401
 title: "NOVEMBER 10th ~ IGBO SUN ENERGY"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2018-09-23 00:39:56"
-date_gmt: "2018-09-22 22:39:56"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-name: "november-10th-igbo-sun-energy"
-modified: "2023-04-21 21:33:38"
-modified_gmt: "2023-04-21 19:33:38"
-content_filtered: ""
+nav_label: "november-10th-igbo-sun-energy"modified: "2023-04-21 21:33:38"
 parent: 0
-guid: "https://www.artkidsfoundation.org/?p=7401"
 type: "post"
 comment_count: 0
 categories: "ArtKids,ArtKids Africa,Solar Africa"

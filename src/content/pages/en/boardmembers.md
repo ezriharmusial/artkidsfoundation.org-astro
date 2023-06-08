@@ -2,26 +2,20 @@
 index: 4169
 title: "Boardmembers"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2017-09-30 16:10:37"
-date_gmt: "2017-09-30 14:10:37"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-name: "boardmembers"
-modified: "2023-04-18 20:10:45"
-modified_gmt: "2023-04-18 18:10:45"
-content_filtered: ""
+nav_label: "boardmembers"modified: "2023-04-18 20:10:45"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4169"
 type: "page"
 comment_count: 0
 categories: []
 tags: []
-------
+---
 
-Allow us to Introduce ourselves? get to know us
------------------------------------------------
+## Allow us to Introduce ourselves? get to know us
 
 ArtKids Foundation is founded by a team of three highly committed individuals who have the development and enlightenment of Africa in Mind. We are the board members of ArtKids Foundation. We would therefore like to introduce ourselves, so you may know who you are [supporting](/donations/), with whom you are doing [business](/contact-us), or who you are [working for](/job-offerings/), if you visit our showroom, buying gifts from our shop, or from our door-2-door salesmen or one of the many other forms ArtKids uses to raise funds.
 
@@ -29,25 +23,22 @@ ArtKids Foundation is founded by a team of three highly committed individuals wh
 
 ![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)
 
-Chibundu Mmeri Obioha
-
-Director: ArtKids Foundation Africa
-
-![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)
-
-![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)
-
-Tamara Voorn
-
-Director of Creativity
+### Chibundu Mmeri Obioha
+#### Director: ArtKids Foundation Africa
 
 ![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)
 
 ![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)
 
-Bastiaan "Chukwuemeka" Bijleveld
+### Tamara Voorn
+#### Director of Creativity
 
-Chairman/Director of Media
+![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)
+
+![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)
+
+### Bastiaan "Chukwuemeka" Bijleveld
+#### Chairman/Director of Media
 
 [](https://www.facebook.com/Basbijleveld)[](https://nl.linkedin.com/in/basbijleveld)[](https://www.youtube.com/channel/UC6Kzb3a2xKltZCHdYtHsvcQ)
 
@@ -55,9 +46,8 @@ Chairman/Director of Media
 
 ![](data:image/gif;base64,R0lGODlhAQABAIABALS6qQAAACwAAAAAAQABAAACAkQBADs=)
 
-Eze Ezekwesiri EnyinnaYah Obioha
-
-Director of Technology/MD: ArtKids Africa
+### Eze Ezekwesiri EnyinnaYah Obioha
+#### Director of Technology/MD: ArtKids Africa
 
 [](https://www.facebook.com/profile.php?id=100015798102483)[](https://www.linkedin.com/pub/engr-obioha-ezekwesiri-ict/2b/ab6/421)[](https://twitter.com/ObiohaEzekwesir)
 
@@ -65,17 +55,13 @@ Director of Technology/MD: ArtKids Africa
 
 ![](data:image/gif;base64,R0lGODlhAQABAIABAKmWjQAAACwAAAAAAQABAAACAkQBADs=)
 
-Ezri "Zerubabel" Daniel Jakobs
-
-Secretary/Director of Internet Solutions
+### Ezri "Zerubabel" Daniel Jakobs
+#### Secretary/Director of Internet Solutions
 
 [](https://www.facebook.com/ezriharmusial)[](https://nl.linkedin.com/in/ezri-harmusial-b37bb028)[](https://twitter.com/ezriharmusial)
 
 Besides the core team, ArtKids Foundation works with the locals in our respective project locations-- especially in Africa.
 
-* * *
-
-Hello, who are you? ArtKids welcomes you
-----------------------------------------
+## Hello, who are you? ArtKids welcomes you
 
 Feel free to [contact us](/contact-us) for an appointment! We welcome you with a cup of tea and a warm conversation. We'll try and sell u some of our merchandise, because it supports us.

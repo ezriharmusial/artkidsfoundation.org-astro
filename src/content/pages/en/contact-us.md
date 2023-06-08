@@ -2,18 +2,13 @@
 index: 4194
 title: "Contact Us"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2017-10-01 19:11:52"
-date_gmt: "2017-10-01 17:11:52"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-name: "contact-us"
-modified: "2018-09-06 11:55:51"
-modified_gmt: "2018-09-06 09:55:51"
-content_filtered: ""
+nav_label: "contact-us"modified: "2018-09-06 11:55:51"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4194"
 type: "page"
 comment_count: 0
 categories: []

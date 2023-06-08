@@ -2,21 +2,119 @@
 index: 4183
 title: "Job Offerings"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2017-10-01 18:48:06"
-date_gmt: "2017-10-01 16:48:06"
 excerpt: ""
-content: "<p>At this moment we do not have any specific job offerings defined. However ArtKids Foundation runs solely on the hands of the board of directives, for now this has always been more work then we can finish. For this reason it is difficult for us to focus on our core work flow. However we look forward to expand our team of Stichting ArtKids Foundation with able and experienced hands in the near future. So Feel free to send us a letter of inquiry or contact us for more information concerning information on our site.</p>\r\n\r\n<p>You can contact us through our <a href=\"/en/contact/\">Contact Form</a>, our <a href=\"https://www.facebook.com/ArtKidsFoundation/?fref=ts\">Facebook Page</a>, by <a href=\"tel:+31 (0)6 843 405 90\">telephone</a> or by <a href=\"mailto:info@artkidsfoundation.org\">Email</a>. Take your time to read our website and get to know our organization workings and code of conduct. Try to describe as clear as possible where you think you can strengthen our team. If you are not that much of a hero in long-distance communication, then feel free to make a personal appointment for a more approachable conversation and a cup of thee or coffee.</p>\r\n\r\n<p>We look forward to hearing from you, even though we do not have any clear job offerings.</p>\r\n\r\n<p>Kind regards,</p>\r\n\r\n<p>The ArtKids Foundation board members</p>\r\n    <div class=\"columns\">\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#812d06;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-9-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4233 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2016/10/bas_profielfoto-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4041 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Bastiaan \"Yahemeka\" Bijleveld\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Chairman/Director of Media/Creativity</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/Basbijleveld\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://nl.linkedin.com/in/basbijleveld\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://www.youtube.com/channel/UC6Kzb3a2xKltZCHdYtHsvcQ\"><i class=\"fa fa-youtube\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#635c57;\"></div><a href=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-3.jpg\"><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAGNcVwAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-3-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4227 dcll-image dcll-placeholder\" /></a>\r\n\r\n            </figure>\r\n\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n                <img src=\"data:image/gif;base64,R0lGODlhAQABAIABALS6qQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2018/03/Ezehk-1-7090-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4634 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Eze Ezekwesiri EnyinnaYah Obioha\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Director of Technology/MD: ArtKids Africa</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/profile.php?id=100015798102483\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://www.linkedin.com/pub/engr-obioha-ezekwesiri-ict/2b/ab6/421\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://twitter.com/ObiohaEzekwesir\"><i class=\"fa fa-twitter\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#779aa8;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAHeaqAAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4225 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n\r\n                <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAKmWjQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2016/10/ezri_profielfoto-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4045 dcll-image dcll-placeholder\" />\r\n\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n              Ezri \"Zerubabel\" Daniel Jakobs\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Secretary/Director of Internet Solutions</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/ezriharmusial\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://nl.linkedin.com/in/ezri-harmusial-b37bb028\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://twitter.com/ezriharmusial\"><i class=\"fa fa-twitter\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n    </div>"
 status: "publish"
 comment_status: "closed"
-name: "job-offerings"
-modified: "2018-09-29 02:53:33"
-modified_gmt: "2018-09-29 00:53:33"
-content_filtered: ""
+nav_label: "job-offerings"modified: "2018-09-29 02:53:33"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=4183"
 type: "page"
 comment_count: 0
 categories: []
 tags: []
 ---
+
+At this moment we do not have any specific job offerings defined. However ArtKids Foundation runs solely on the hands of the board of directives, for now this has always been more work then we can finish. For this reason it is difficult for us to focus on our core work flow. However we look forward to expand our team of Stichting ArtKids Foundation with able and experienced hands in the near future. So Feel free to send us a letter of inquiry or contact us for more information concerning information on our site.
+
+You can contact us through our [Contact Form](/en/contact/), our [Facebook Page](https://www.facebook.com/ArtKidsFoundation/?fref=ts), by [telephone](tel:+31 (0)6 843 405 90) or by [Email](mailto:info@artkidsfoundation.org). Take your time to read our website and get to know our organization workings and code of conduct. Try to describe as clear as possible where you think you can strengthen our team. If you are not that much of a hero in long-distance communication, then feel free to make a personal appointment for a more approachable conversation and a cup of thee or coffee.
+
+We look forward to hearing from you, even though we do not have any clear job offerings.
+
+Kind regards,
+
+The ArtKids Foundation board members
+
+<div class="columns">
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Bastiaan "Yahemeka" Bijleveld
+
+Chairman/Director of Media/Creativity
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/Basbijleveld)[](https://nl.linkedin.com/in/basbijleveld)[](https://www.youtube.com/channel/UC6Kzb3a2xKltZCHdYtHsvcQ)</footer>
+
+</div>
+
+</div>
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">[![](data:image/gif;base64,R0lGODlhAQABAIABAGNcVwAAACwAAAAAAQABAAACAkQBADs=)](https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-3.jpg)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABALS6qQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Eze Ezekwesiri EnyinnaYah Obioha
+
+Director of Technology/MD: ArtKids Africa
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/profile.php?id=100015798102483)[](https://www.linkedin.com/pub/engr-obioha-ezekwesiri-ict/2b/ab6/421)[](https://twitter.com/ObiohaEzekwesir)</footer>
+
+</div>
+
+</div>
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAHeaqAAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAKmWjQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Ezri "Zerubabel" Daniel Jakobs
+
+Secretary/Director of Internet Solutions
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/ezriharmusial)[](https://nl.linkedin.com/in/ezri-harmusial-b37bb028)[](https://twitter.com/ezriharmusial)</footer>
+
+</div>
+
+</div>
+
+</div>

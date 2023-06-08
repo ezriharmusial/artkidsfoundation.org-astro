@@ -2,21 +2,179 @@
 index: 270
 title: "Bestuur"
 subtitle: ""
-author: 1
+author: "EzzyHarmless"
 date: "2016-06-16 13:57:13"
-date_gmt: "2016-06-16 11:57:13"
 excerpt: "Stichting ArtKids Foundation is gefundeerd op een team van 3 zeer toegewijde individuen, die de ontwikkeling en verlichting van Afrika in gedachten hebben. Wij zijn het bestuur van stichting ArtKids. Naast het kern-team, werkt Stichting ArtKids Foundation met de lokale gemeenschap in de respectievelijke project locaties-- zo ook in Africa."
-content: "<p>Stichting ArtKids Foundation is gefundeerd op een team van 3 zeer toegewijde individuen, die de ontwikkeling en verlichting van Afrika in gedachten hebben. Wij zijn het bestuur van stichting ArtKids. Wij willen ons daarom graag even kort voorstellen zodat u weet met wie u in zee gaat als u besluit om ons te <a href=\"/nl/donaties/\">steunen</a>, met ons <a href=\"/nl/contact\">samen te werken</a>, voor ons te <a href=\"/nl/vacatures/\">werken</a>, of als u een bezoek brengt of een aankoop doet in onze showroom, aan de deur of in een van onze vele andere fondswervingsprojecten.</p>\r\n\r\n    <div class=\"columns is-multiline\">\r\n\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#812d06;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-9-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4233 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2023/04/chibundu_mmeri_victory.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4041 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Chibundu Mmeri Obioha\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Director: ArtKids Foundation Africa</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#812d06;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-9-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4233 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2023/04/Tamara-Voorn.jpg\" alt=\"\" class=\"alignnone size-thumbnail wp-image-4041 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Tamara Voorn\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Director of Creativity</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#812d06;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-9-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4233 dcll-image dcll-placeholder\" />\r\n\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n              <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2016/10/bas_profielfoto-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4041 dcll-image dcll-placeholder\" />\r\n\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Bastiaan \"Yahemeka\" Bijleveld\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Chairman/Director of Media</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/Basbijleveld\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://nl.linkedin.com/in/basbijleveld\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://www.youtube.com/channel/UC6Kzb3a2xKltZCHdYtHsvcQ\"><i class=\"fa fa-youtube\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"columns is-multiline\">\r\n\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#e8c53b;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAOjFOwAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-3-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4227 dcll-image dcll-placeholder\" />\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n                <img src=\"data:image/gif;base64,R0lGODlhAQABAIABALS6qQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2018/03/Ezehk-1-7090-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4634 dcll-image dcll-placeholder\" />\r\n\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n            Eze Ezekwesiri EnyinnaYah Obioha\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Director of Technology/MD: ArtKids Africa</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/profile.php?id=100015798102483\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://www.linkedin.com/pub/engr-obioha-ezekwesiri-ict/2b/ab6/421\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://twitter.com/ObiohaEzekwesir\"><i class=\"fa fa-twitter\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n      <div class=\"column is-one-third\">\r\n        <div class=\"card is-profile\">\r\n          <div class=\"card-image\">\r\n            <figure class=\"image is-2by1\">\r\n                <div class=\"dcll-bgwrap\" style=\"background-color:#779aa8;\"></div><img src=\"data:image/gif;base64,R0lGODlhAQABAIABAHeaqAAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2017/12/Biblequotes-Facebook-Shared-Image-Rastered-343x180.jpg\" alt=\"\" width=\"343\" height=\"180\" class=\"lazyload alignnone size-medium wp-image-4225 dcll-image dcll-placeholder\" />\r\n\r\n            </figure>\r\n\r\n          </div>\r\n          <div class=\"card-profile-image\">\r\n            <figure class=\"image is-128x128\">\r\n\r\n                <img src=\"data:image/gif;base64,R0lGODlhAQABAIABAKmWjQAAACwAAAAAAQABAAACAkQBADs=\" data-src=\"https://www.artkidsfoundation.org/app/uploads/2016/10/ezri_profielfoto-150x150.jpg\" alt=\"\" width=\"150\" height=\"150\" class=\"alignnone size-thumbnail wp-image-4045 dcll-image dcll-placeholder\" />\r\n\r\n\r\n            </figure>\r\n          </div>\r\n          <div class=\"card-content text-center\">\r\n            <p class=\"title is-size-5\">\r\n              Ezri \"Zerubabel\" Daniel Jakobs\r\n            </p>\r\n            <p class=\"subtitle has-text-calm is-size-6\">Secretary/Director of Internet Solutions</p>\r\n          </div>\r\n          <footer class=\"card-footer\">\r\n            <a class=\"card-footer-item\" href=\"https://www.facebook.com/ezriharmusial\"><i class=\"fa fa-facebook\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://nl.linkedin.com/in/ezri-harmusial-b37bb028\"><i class=\"fa fa-linkedin\"> </i></a>\r\n            <a class=\"card-footer-item\" href=\"https://twitter.com/ezriharmusial\"><i class=\"fa fa-twitter\"> </i></a>\r\n          </footer>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n<p>Naast het kern-team, werkt Stichting ArtKids Foundation met de lokale gemeenschap in de respectievelijke project locaties-- zo ook in Africa.</p>\r\n\r\n<hr />\r\n<h2 class=\"subtitle has-text-grey\">Wilt u ons beter leren kennen? <small class=\"has-text-calm is-size-4\">dat kan</small></h2>\r\n<p>Neem dan even <a href=\"/nl/contact\">contact</a> met ons op voor een afspraak! Wij ontvangen u graag op voor een bakje koffie of een goed gesprek. Uiteraard zullen wij proberen om wat van onze merchandise aan u te verkopen, want het voorziet ook ons in een gedeelte van ons levensonderhoud.</p>\r\n"
 status: "publish"
 comment_status: "closed"
-name: "bestuur"
-modified: "2023-04-18 20:10:14"
-modified_gmt: "2023-04-18 18:10:14"
-content_filtered: ""
+nav_label: "bestuur"modified: "2023-04-18 20:10:14"
 parent: 0
-guid: "//www.artkidsfoundation.org/?page_id=270"
 type: "page"
 comment_count: 0
 categories: []
 tags: []
 ---
+
+Stichting ArtKids Foundation is gefundeerd op een team van 3 zeer toegewijde individuen, die de ontwikkeling en verlichting van Afrika in gedachten hebben. Wij zijn het bestuur van stichting ArtKids. Wij willen ons daarom graag even kort voorstellen zodat u weet met wie u in zee gaat als u besluit om ons te [steunen](/nl/donaties/), met ons [samen te werken](/nl/contact), voor ons te [werken](/nl/vacatures/), of als u een bezoek brengt of een aankoop doet in onze showroom, aan de deur of in een van onze vele andere fondswervingsprojecten.
+
+<div class="columns is-multiline">
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Chibundu Mmeri Obioha
+
+Director: ArtKids Foundation Africa
+
+</div>
+
+</div>
+
+</div>
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Tamara Voorn
+
+Director of Creativity
+
+</div>
+
+</div>
+
+</div>
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAIEtBgAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAIF5eQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Bastiaan "Yahemeka" Bijleveld
+
+Chairman/Director of Media
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/Basbijleveld)[](https://nl.linkedin.com/in/basbijleveld)[](https://www.youtube.com/channel/UC6Kzb3a2xKltZCHdYtHsvcQ)</footer>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="columns is-multiline">
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAOjFOwAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABALS6qQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Eze Ezekwesiri EnyinnaYah Obioha
+
+Director of Technology/MD: ArtKids Africa
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/profile.php?id=100015798102483)[](https://www.linkedin.com/pub/engr-obioha-ezekwesiri-ict/2b/ab6/421)[](https://twitter.com/ObiohaEzekwesir)</footer>
+
+</div>
+
+</div>
+
+<div class="column is-one-third">
+
+<div class="card is-profile">
+
+<div class="card-image">
+
+<figure class="image is-2by1">![](data:image/gif;base64,R0lGODlhAQABAIABAHeaqAAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-profile-image">
+
+<figure class="image is-128x128">![](data:image/gif;base64,R0lGODlhAQABAIABAKmWjQAAACwAAAAAAQABAAACAkQBADs=)</figure>
+
+</div>
+
+<div class="card-content text-center">
+
+Ezri "Zerubabel" Daniel Jakobs
+
+Secretary/Director of Internet Solutions
+
+</div>
+
+<footer class="card-footer">[](https://www.facebook.com/ezriharmusial)[](https://nl.linkedin.com/in/ezri-harmusial-b37bb028)[](https://twitter.com/ezriharmusial)</footer>
+
+</div>
+
+</div>
+
+</div>
+
+Naast het kern-team, werkt Stichting ArtKids Foundation met de lokale gemeenschap in de respectievelijke project locaties-- zo ook in Africa.
+
+* * *
+
+## Wilt u ons beter leren kennen? <small class="has-text-calm is-size-4">dat kan</small>
+
+Neem dan even [contact](/nl/contact) met ons op voor een afspraak! Wij ontvangen u graag op voor een bakje koffie of een goed gesprek. Uiteraard zullen wij proberen om wat van onze merchandise aan u te verkopen, want het voorziet ook ons in een gedeelte van ons levensonderhoud.
