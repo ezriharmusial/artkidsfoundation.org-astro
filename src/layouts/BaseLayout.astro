@@ -1,6 +1,6 @@
 ---
-// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
-import '@styles/theme.postcss';
+import '@skeletonlabs/skeleton/themes/theme-vintage.css';
+// import '@styles/theme.postcss';
 import '@skeletonlabs/skeleton/styles/all.css'
 import '@styles/app.postcss';
 
@@ -42,7 +42,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 ---
 
 <!DOCTYPE html>
-<html class={theme} lang={lang}>
+<html class={theme + " " + lang } lang={lang}>
 <head>
     <link rel="preload" as="image" href="/logo-512.png">
     <!-- Site Meta & SEO -->
@@ -50,7 +50,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
     <!-- Fonts -->
     <!-- <Fonts /> -->
 </head>
-<body data-theme="gold-nouveau" class="init light:bg-white light:text-black dark:text-white dark:bg-black">
+<body data-theme="vintage" class="init">
     <!-- Extended Head -->
     <slot name="extendedHead" />
 
@@ -61,9 +61,9 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
     <!-- <PageTransition speed={500} color={"orange"} zIndex={99} /> -->
     <div style="display: contents" class="h-full overflow-hidden">
 
-        <AppShell slotSidebarLeft="bg-surface-100-800-token opacity-95 h-full portrait:pb-24 portrait:fixed portrait:left-0 portrait:top-20 portrait:bottom-0 z-20">
+        <AppShell slotSidebarLeft="opacity-95 h-full portrait:pb-24 portrait:fixed portrait:left-0 portrait:top-20 portrait:bottom-0 z-20">
             <svelte:fragment slot="header">
-            <AppBar background="bg-surface-100-800-token dark:bg-surface-800-100-token z-30">
+            <AppBar background="z-30">
                 <svelte:fragment slot="lead">
                 <BrandFlag />
             </svelte:fragment>
@@ -150,6 +150,5 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
     [astro-icon] {
         min-width: 1rem;
     }
-
 
 </style>

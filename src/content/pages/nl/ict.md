@@ -1,15 +1,15 @@
 ---
 index: 159
+icon: "internet"
+iconFamily: "iconoir"
 title: "ArtKids ICT"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2015-08-19 17:47:10"
 excerpt: ""
-status: "publish"
+status: "archived"
 comment_status: "open"
-nav_label: "ict"
 modified: "2018-09-22 22:53:30"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

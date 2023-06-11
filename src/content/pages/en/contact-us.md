@@ -1,15 +1,15 @@
 ---
 index: 4194
+icon: "talk-bubbles-solid-badged"
+iconFamily: "clarity"
 title: "Contact Us"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2017-10-01 19:11:52"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "contact-us"
 modified: "2018-09-06 11:55:51"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

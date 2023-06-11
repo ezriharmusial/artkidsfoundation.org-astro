@@ -7,11 +7,9 @@ date: "2019-06-23 21:34:33"
 excerpt: ""
 content: "Ukwechinedu1@gmail.com
 Ukwe Chinedu"
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "ukwechinedu1-gmail-com"
 modified: "2019-06-23 21:34:33"
-parent: 0
 type: "flamingo_contact"
 comment_count: 0
 categories: []

@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2016-06-16 17:59:37"
 excerpt: ""
-status: "publish"
+status: "archived"
 comment_status: "closed"
-nav_label: "draw2paint"
 modified: "2016-11-14 06:15:38"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

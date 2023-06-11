@@ -4,11 +4,9 @@ title: "Help ons werven"
 author: "EzzyHarmless"
 date: "2016-10-13 17:02:07"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "help-ons-werven"
 modified: "2016-10-13 17:02:07"
-parent: 0
 type: "artkids-message"
 comment_count: 0
 categories: []

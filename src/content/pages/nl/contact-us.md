@@ -1,5 +1,7 @@
 ---
 size: is-fullheight
+icon: "talk-bubbles-solid-badged"
+iconFamily: "clarity"
 color: primary
 bold: false
 updatedDate: 2023-02-23T03:52:11.849Z
@@ -10,7 +12,6 @@ index: 8
 title: Contact us
 subtitle: Let's get in touch
 imageAlt: Contact Information Page
-icon: chats-circle-bold
 image: /images/manifest/pwa-192x192.png
 description: W﻿rite us a message in the form below, and we will answer you as
   soon as possible. We usually answer within a day. The Same goes for our Social

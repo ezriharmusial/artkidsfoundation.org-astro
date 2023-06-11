@@ -1,18 +1,19 @@
 ---
 index: 296
+icon: "charity-outline"
+iconFamily: "mdi"
 title: "Fondswerving Campagnes"
 subtitle: ""
+shortTitle: "Fondswerving"
 author: "EzzyHarmless"
 date: "2016-06-16 18:04:26"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "fondswerving-campagnes"
 modified: "2018-03-07 18:25:58"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["fondswerving"]
 tags: []
 ---
 

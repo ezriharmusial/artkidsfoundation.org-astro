@@ -2,17 +2,16 @@
 index: 4595
 title: "ArtKids Afrika"
 subtitle: ""
+icon: "globe-africa-solid"
 author: "EzzyHarmless"
 date: "2018-02-26 19:27:53"
 excerpt: "Als we denken aan 'Onderontwikkeling', schiet Afrika direct in onze gedachten. Voor jaren nu, heeft ArtKids foundation, door samenwerking, velen geholpen in Afrika zonder zelf in Afrika aanwezig te zijn. Sinds 2015 is ArtKids Foundation/International zijn adequaat gerepresenteerd in Afrika."
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "artkids-afrika"
 modified: "2018-09-24 23:14:07"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["Organisation"]
 tags: []
 ---
 

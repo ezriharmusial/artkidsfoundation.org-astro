@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2015-07-06 13:03:55"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "open"
-nav_label: "artkidsfarms"
 modified: "2015-09-04 19:52:17"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

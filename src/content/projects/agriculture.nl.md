@@ -1,7 +1,7 @@
 ---
 title: Landbouw
 subtitle: Boeren voor de toekomst
-nav_label: Landbouw
+shortTitle: Landbouw
 thumbnail: /uploads/saf-logo-large.png
 ---
 ### Introductie
@@ -16,8 +16,8 @@ Om de landbouwcultuur in onze kinderen te kunnen inprenten, moeten we onze kinde
 
 Dit is de reden waarom Stichting Artkids Foundation verschillende kinderlandbouwinitiatieven heeft gelanceerd om onze kennis van landbouw over te dragen aan onze volgende generatie. Zodat zij hun kennis ook zal overdragen aan hun volgende generatie. Eindeloos dus.
 
-Afgezien van het produceren van het voedsel dat we consumeren, is een ander voordeel van landbouw onze interactie met moeder natuur via de grond. 
+Afgezien van het produceren van het voedsel dat we consumeren, is een ander voordeel van landbouw onze interactie met moeder natuur via de grond.
 
-Bladeren en wortels terwijl we het land verbouwen en zaden planten. Het is ongelooflijk dat de wereld de landbouw verliet voor witteboordenbanen. Het is tijd om op onze stappen terug te keren. 
+Bladeren en wortels terwijl we het land verbouwen en zaden planten. Het is ongelooflijk dat de wereld de landbouw verliet voor witteboordenbanen. Het is tijd om op onze stappen terug te keren.
 
 Laten we gaan!!!!

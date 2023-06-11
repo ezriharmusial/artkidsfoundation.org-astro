@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-23 01:32:57"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "artkids-solar-contact-form-english_copy"
 modified: "2018-09-24 02:19:02"
-parent: 0
 type: "wpcf7_contact_form"
 comment_count: 0
 categories: []

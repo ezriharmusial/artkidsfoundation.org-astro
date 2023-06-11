@@ -34,9 +34,9 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 	<div class="bg-black/50 md:p-28 p-6 pt-24 text-left text-white">
 		<div class="container mx-8 flex items-center gap-8">
 			<div class="w-3/5">
-				<h2 class="unstyled my-6 title marker text-3xl">Latest News</h2>
-				<h3 class="unstyled text-5xl font-medium my-8">Starting our Artkids Foundation Videoclip Recordings</h3>
-				<p class="unstyled text-2xl mb-12">
+				<h2 class="my-6 title marker text-3xl">Latest News</h2>
+				<h3 class="text-5xl font-medium my-8">Starting our Artkids Foundation Videoclip Recordings</h3>
+				<p class="text-2xl mb-12">
 					A reunion-kind-of-production-meeting that is scheduled to hold on the 26th of May 2023; at Gina Hotel; No. 52 Uwalaka Street (behind ShopRite) in Umuahia. <br />
 
 					As a result of this joyous development, we now have 5 Artkids Foundation® $tars whose Video-clips are to be short from next week~~  <br />
@@ -96,18 +96,18 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 </section>
 
 
-<div class="bg-gradient-to-br from-slate-700 to-slate-900 min-h-screen md:p-28 p-6 pt-24">
+<div class=" min-h-screen md:p-28 p-6 pt-24">
 
-	<h2 class="unstyled my-6 title marker text-3xl">Previous Newscasts</h2>
+	<h2 class="h2">Previous Newscasts</h2>
 	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-3 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">
 
 		{linkcasts.map((linkcast) => (
-			<a class="card card-hover variant-glass-primary flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/newscasts/" + linkcast.slug }>
+			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/newscasts/" + linkcast.slug }>
 				<header>
 					<LinkcastHeader linkcast={linkcast} />
 				</header>
 				<section class="card-header space-y-4">
-					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-surface light:text-black/75 dark:text-white/75">{getLinkcastType(linkcast.data.url)}</span></h5>
+					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-primary">{getLinkcastType(linkcast.data.url)}</span></h5>
 
 					<h3 class="font-black leading-3 text-xl line-clamp-2">{linkcast.data.title} <br /></h3>
 
@@ -118,8 +118,8 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 
 					</h4>
 
-					<p class="unstyled text-2xl overflow-hidden">
-						<span class="line-clamp-4">{linkcast.body}</span> <br />
+					<p class="overflow-hidden">
+						<span class="line-clamp-5">{linkcast.body}</span> <br />
 						<b>Read more...</b>
 					</p>
 				</section>

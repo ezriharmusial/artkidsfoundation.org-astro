@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-29 01:00:32"
 excerpt: ""
-status: "publish"
+status: "archived"
 comment_status: "closed"
-nav_label: "offline"
 modified: "2018-09-29 01:00:32"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

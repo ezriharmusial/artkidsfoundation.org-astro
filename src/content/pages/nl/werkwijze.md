@@ -1,18 +1,18 @@
 ---
 index: 302
+icon: "code-of-conduct-16"
+iconFamily: "octicon"
 title: "Werkwijze"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2016-06-16 18:06:41"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "werkwijze"
 modified: "2018-02-26 19:02:59"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["over artkids"]
 tags: []
 ---
 

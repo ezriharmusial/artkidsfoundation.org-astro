@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-23 00:54:54"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "open"
-nav_label: "program-igbo-sun-energy-ike-anwuora-igbo"
 modified: "2023-04-21 21:37:52"
-parent: 0
 type: "post"
 comment_count: 0
 categories: "ArtKids,ArtKids Africa,Solar Africa"

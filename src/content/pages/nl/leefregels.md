@@ -5,14 +5,12 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2016-06-16 18:00:33"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "leefregels"
 modified: "2017-12-31 22:21:23"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["Over ArtKids"]
 tags: []
 ---
 

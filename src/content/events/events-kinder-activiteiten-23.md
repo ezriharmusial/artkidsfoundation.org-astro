@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2015-07-07 12:47:04"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "kinder-activiteiten"
 modified: "2015-07-07 15:48:21"
-parent: 0
 type: "events"
 comment_count: 0
 categories: []

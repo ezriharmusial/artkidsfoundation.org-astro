@@ -1,18 +1,18 @@
 ---
 index: 4169
+icon: "group"
+iconFamily: "iconoir"
 title: "Boardmembers"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2017-09-30 16:10:37"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "boardmembers"
 modified: "2023-04-18 20:10:45"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["organisation"]
 tags: []
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "ArtKids AudioVisual Studio #777"
-nav_label: AAVS777
+shortTitle: AAVS777
 ---
 Zodra een creatief muzikaal of theatraal talent is geïdentificeerd via 'DiscoverME TalentHunt', tekent ArtKids de opkomende artiesten en produceert hun werk in onze State of the Art Studio (ArtKids AudioVisual Studio 777).
 

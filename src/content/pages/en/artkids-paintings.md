@@ -1,20 +1,20 @@
 ---
 index: 4469
+icon: "art-gallery"
+iconFamily: "map"
 title: "ArtKids Paintings"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-02-04 16:59:20"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "artkids-paintings"
 modified: "2018-03-11 01:20:12"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []
 tags: []
-------
+---
 
 ArtKids Paintings Picturing Innocence
 -------------------------------------

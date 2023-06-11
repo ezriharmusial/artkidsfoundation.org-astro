@@ -5,11 +5,10 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-10-19 22:07:06"
 excerpt: ""
-status: "publish"
+status: "archived"
 comment_status: "closed"
-nav_label: "igbo_sun-2018-sponsor-letter"
 modified: "2018-10-26 18:00:08"
-parent: 0
+parent: 4756
 type: "page"
 comment_count: 0
 categories: []

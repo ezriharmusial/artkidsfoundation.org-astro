@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2015-07-07 12:01:35"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "sabbath-lezing"
 modified: "2015-08-04 13:34:07"
-parent: 0
 type: "events"
 comment_count: 0
 categories: []

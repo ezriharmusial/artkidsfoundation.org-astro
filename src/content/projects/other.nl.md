@@ -1,6 +1,6 @@
 ---
 title: Overige
-nav_label: Overige
+shortTitle: Overige
 ---
 Projecten
        Alternatieve energie

@@ -2,13 +2,13 @@
 color: light
 title: ArtKids Young-Inventors (AYI)
 subtitle: harness inventive talents
-nav_label: ArtKids Young-Inventors
+shortTitle: ArtKids Young-Inventors
 thumbnail: /uploads/younginventors.jpg
 changed: ""
 ---
-Technically speaking, our kids are gifted with various degrees of incentive and/or innovative processes. 
+Technically speaking, our kids are gifted with various degrees of incentive and/or innovative processes.
 
-To harness these inventive talents and practically empower these kids, two things are needed; 
+To harness these inventive talents and practically empower these kids, two things are needed;
 
 1. R&D TrustFund
 2. Research Collaboration Centre:

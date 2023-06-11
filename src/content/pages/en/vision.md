@@ -1,18 +1,18 @@
 ---
 index: 4399
+icon: "pyramid"
+iconFamily: "icon-park-outline"
 title: "Vision"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-01-06 16:32:45"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "vision"
 modified: "2018-03-07 18:18:12"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["About ArtKids"]
 tags: []
 ---
 

@@ -2,21 +2,21 @@
 color: light
 title: "ArtKids Capacity Building Initiatives (ACBi) "
 subtitle: Developing our natural gifts
-nav_label: ACBi
+shortTitle: ACBi
 thumbnail: /uploads/capacity.jpg
 changed: /uploads/capacity-2.jpg
 ---
 It is the rightful wish of every parent and/or guardian to raise intelligent, wise and productive kids. To have productive kids, efforts must be invested in teaching and directing our kids towards fruitful ventures as well as separating them from futile and disadvantageous goals at all times.
 
-Logically, as uninformed as kids are, guardian's directions are needed to better shape their focuses 247. ArtKids Capacity Building Initiative (ACBi) is the practical aspect of education. 
+Logically, as uninformed as kids are, guardian's directions are needed to better shape their focuses 247. ArtKids Capacity Building Initiative (ACBi) is the practical aspect of education.
 
-Since every kid is naturally gifted with talents (Art, Creativity or Technical), the best way to build the capacities of our kids is to observe their behaviors, identify their interests and natural gifts (talents) before directing and building their individual and collective capacities. 
+Since every kid is naturally gifted with talents (Art, Creativity or Technical), the best way to build the capacities of our kids is to observe their behaviors, identify their interests and natural gifts (talents) before directing and building their individual and collective capacities.
 
-This is the reason why ArtKids Capacity Building Initiative is unique. 
+This is the reason why ArtKids Capacity Building Initiative is unique.
 
 We develop our kids' natural gifts after observing and identifying their individual and collective talents.
 
-Enroll your kids in ACBi today. 
+Enroll your kids in ACBi today.
 
 To support us:
 Donate

@@ -1,7 +1,7 @@
 ---
 title: ArtKids WisGames
 subtitle: Interactive Edutainment
-nav_label: ArtKids WisGames
+shortTitle: ArtKids WisGames
 ---
 Laten we interactieve en edutainment-spellen gebruiken om de hersenen van onze kinderen te ontwikkelen en wijs te maken door ze opzettelijk bloot te stellen aan online, offline en netwerkspellen die zijn ontworpen om interactief nuttige informatie en kennis over te dragen die de hersenen van kinderen opladen.
 

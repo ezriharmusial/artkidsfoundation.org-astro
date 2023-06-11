@@ -4,11 +4,9 @@ title: "Draw2Paint Project"
 author: "EzzyHarmless"
 date: "2016-06-24 20:40:42"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "draw2paint"
 modified: "2016-07-17 22:34:31"
-parent: 0
 type: "artkids-message"
 comment_count: 0
 categories: []

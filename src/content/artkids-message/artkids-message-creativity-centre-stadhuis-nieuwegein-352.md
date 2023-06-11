@@ -4,11 +4,9 @@ title: "Creativity Centre Stadhuis Nieuwegein"
 author: "EzzyHarmless"
 date: "2016-06-24 20:43:43"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "creativity-centre-stadhuis-nieuwegein"
 modified: "2016-10-13 14:14:23"
-parent: 0
 type: "artkids-message"
 comment_count: 0
 categories: []

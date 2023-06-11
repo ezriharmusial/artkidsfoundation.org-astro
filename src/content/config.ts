@@ -2,18 +2,21 @@ import { defineCollection, z } from 'astro:content';
 
 const pages = defineCollection({
     schema: z.object({
-        index: z.number(),
-        title: z.string(),
-        shortTitle: z.string().optional(),
-        subtitle: z.string().optional(),
-        seoTitle: z.string().optional(),
-        icon: z.string().optional(),
-        image: z.string().optional(),
-        imageAlt: z.string().optional(),
-        description: z.string().optional(),
-        tags: z.array(z.string()).optional(),
         color: z.string().optional(),
         callToAction: z.string().optional(),
+        description: z.string().optional(),
+        title: z.string(),
+        icon: z.string().optional(),
+        iconFamily: z.string().optional(),
+        image: z.string().optional(),
+        imageAlt: z.string().optional(),
+        index: z.number(),
+        parent: z.number().optional(),
+        seoTitle: z.string().optional(),
+        status: z.string().optional(),
+        subtitle: z.string().optional(),
+        shortTitle: z.string().optional(),
+        tags: z.array(z.string()).optional(),
     })
 });
 

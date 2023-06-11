@@ -1,7 +1,7 @@
 ---
 title: Talent&Creativity
 subtitle: talents hold values
-nav_label: Talent&Creativity
+shortTitle: Talent&Creativity
 ---
 Invoering
 

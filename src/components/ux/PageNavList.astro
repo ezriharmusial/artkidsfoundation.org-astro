@@ -14,7 +14,7 @@ const t = useTranslations(lang);
 
 <div class={parentDirectionClass}>
 
-    <a href={"/" + lang + "/"} class="btn variant-soft-surface w-full rounded-none py-4">
+    <a href={"/" + lang + "/"} class="btn variant-filled-primary w-full rounded-none py-4">
         <span class={directionClass}>
             <Icon pack="ph" name="house-line-bold" class={size}/>
             <span>
@@ -23,7 +23,7 @@ const t = useTranslations(lang);
         </span>
     </a>
 
-    <a href={"/" + lang + "/newscasts"} class="btn variant-soft-surface w-full rounded-none py-4">
+    <a href={"/" + lang + "/newscasts"} class="btn variant-filled-primary w-full rounded-none py-4">
         <span class={directionClass}>
             <Icon pack="ph" name="newspaper-clipping-bold" class={size} />
             <span>
@@ -33,10 +33,10 @@ const t = useTranslations(lang);
     </a>
 
 
-{pageList && pageList.map(page => (
-    <a href={"/" + page.slug} class="btn variant-soft-surface w-full rounded-none py-4">
+{pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent).map(page => (
+    <a href={"/" + page.slug} class={"btn variant-filled-primary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
         <span class={directionClass}>
-            <Icon pack="ph" name={page.data.icon || "anchor-simple"} class={size} />
+            <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
             { page.data?.shortTitle ?
             <span>
                 {page.data.shortTitle}
@@ -50,3 +50,10 @@ const t = useTranslations(lang);
     </a>
 ))}
 </div>
+
+<style is:global>
+    html.nl a.en,
+    html.en a.nl {
+        display: none;
+    }
+</style>

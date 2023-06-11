@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-24 01:59:02"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "igbo-sun-energy-stakeholders-summit-2018-english_copy"
 modified: "2019-10-22 21:33:08"
-parent: 0
 type: "wpcf7_contact_form"
 comment_count: 0
 categories: []

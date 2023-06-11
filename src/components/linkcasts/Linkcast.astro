@@ -8,17 +8,17 @@
 	const type = getLinkcastType(linkcast.data?.url)
 ---
 
-<div class="card card-hover variant-glass-primary grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-4">
+<div class="card card-hover grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-4">
 	<header id="header" class="landscape:xs:col-span-1 landscape:sm:col-span-2 landscape:md:col-span-3 landscape:xl:col-span-3 landscape:max-h-screen landscape:overflow-hidden landscape:overflow-y-auto landscape:object-contain bg-black landscape:flex landscape:flex-col landscape:justify-center">
 		<LinkcastHeader linkcast={linkcast} client:load />
 	</header>
 	<main class="p-4 space-y-4 landscape:col-span-1 landscape:max-h-screen landscape:overflow-y-auto">
-		<h6 class="text-primary-500 font-semibold">{linkcast.data?.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-surface light:text-black/75 dark:text-white/75">{type}</span></h6>
+		<h6 class="text-primary-500 font-semibold">{linkcast.data?.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-primary">{type}</span></h6>
 		<h3 class="font-black text-2xl">{linkcast.data?.title}</h3>
 		{linkcast.data?.subtitle &&
 		<h4 class="font-medium">{linkcast.data?.subtitle && <span>{linkcast.data?.subtitle}</span> }</h4>
 		}
-		<article class="unstyled text-2xl">
+		<article class="text-xl">
 			{linkcast.body}
 			<p>
 			{linkcast.data?.url &&

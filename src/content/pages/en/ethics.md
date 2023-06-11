@@ -5,14 +5,12 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2017-10-01 18:29:56"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "ethics"
 modified: "2018-03-07 17:39:20"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["About ArtKids"]
 tags: []
 ---
 

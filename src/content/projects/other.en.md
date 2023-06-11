@@ -1,7 +1,7 @@
 ---
 color: light
 title: Other
-nav_label: Other
+shortTitle: Other
 ---
 
 Projects

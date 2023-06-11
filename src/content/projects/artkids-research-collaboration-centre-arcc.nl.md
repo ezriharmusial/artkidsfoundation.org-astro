@@ -1,7 +1,7 @@
 ---
 title: ArtKids Research Collaboration Centre (ARCC)
 subtitle: Van concept tot uitvinding
-nav_label: Research Collaboration Centre
+shortTitle: Research Collaboration Centre
 ---
 ArtKids~ICT heeft een gunstige omgeving gecreëerd voor onderzoekssamenwerkingen tussen onze jonge uitvinders en professionele technologen.
 

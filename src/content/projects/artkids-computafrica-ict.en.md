@@ -2,7 +2,7 @@
 color: light
 title: Artkids ComputAfrica (ICT)
 subtitle: Computer ABC's
-nav_label: Artkids ComputAfrica
+shortTitle: Artkids ComputAfrica
 thumbnail: /uploads/computeafrica.jpg
 changed: /uploads/computeafrica-2.jpg
 ---

@@ -7,11 +7,9 @@ date: "2019-11-05 11:45:56"
 excerpt: ""
 content: "eexcelemmanueldennis@gmail.com
 Excel Emmanuel Dennis"
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "eexcelemmanueldennis-gmail-com"
 modified: "2019-11-05 11:45:56"
-parent: 0
 type: "flamingo_contact"
 comment_count: 0
 categories: []

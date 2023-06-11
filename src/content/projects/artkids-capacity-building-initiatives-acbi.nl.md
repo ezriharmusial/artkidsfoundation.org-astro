@@ -1,6 +1,6 @@
 ---
 title: "ArtKids CapaciteitsBouw Initiatieven (ACBi) "
-nav_label: ACBi
+shortTitle: ACBi
 ---
 ### Inleiding
 

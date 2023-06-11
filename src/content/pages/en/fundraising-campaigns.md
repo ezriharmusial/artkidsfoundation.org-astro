@@ -1,18 +1,19 @@
 ---
 index: 4475
+icon: "charity-outline"
+iconFamily: "mdi"
 title: "Fundraising Campaigns"
 subtitle: ""
+shortTitle: "Fundraising"
 author: "EzzyHarmless"
 date: "2018-02-04 19:15:03"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "fundraising-campaigns"
 modified: "2018-03-07 18:26:34"
-parent: 0
 type: "page"
 comment_count: 0
-categories: []
+categories: ["Funding"]
 tags: []
 ---
 

@@ -7,8 +7,8 @@
 	/* =~= Theme Properties =~= */
 	--theme-font-family-base: system-ui, sans-serif;
 	--theme-font-family-heading: 'Quicksand', sans-serif;
-	--theme-font-color-base: var(--color-surface-900);
-	--theme-font-color-dark: var(--color-surface-50);
+	--theme-font-color-base: var(--color-primary-900);
+	--theme-font-color-dark: var(--color-primary-50);
 	--theme-rounded-base: 4px;
 	--theme-rounded-container: 4px;
 	--theme-border-base: 1px;
@@ -19,7 +19,7 @@
 	--on-success: 0 0 0;
 	--on-warning: 0 0 0;
 	--on-error: 255 255 255;
-	--on-surface: 255 255 255;
+	--on-primary: 255 255 255;
 	/* =~= Theme Colors  =~= */
 	/* primary | #744aa1 */
 	--color-primary-50: 250 248 252; /* ⬅ #faf8fc */
@@ -88,19 +88,19 @@
 	--color-error-800: 86 9 20; /* ⬅ #560914 */
 	--color-error-900: 70 7 17; /* ⬅ #460711 */
 	/* surface | #744aa1 */
-	--color-surface-50: 250 248 252; /* ⬅ #faf8fc */
-	--color-surface-100: 242 238 247; /* ⬅ #f2eef7 */
-	--color-surface-200: 229 220 239; /* ⬅ #e5dcef */
-	--color-surface-300: 209 192 226; /* ⬅ #d1c0e2 */
-	--color-surface-400: 162 129 197; /* ⬅ #a281c5 */
-	--color-surface-500: 116 74 161; /* ⬅ #744aa1 */
-	--color-surface-600: 83 53 115; /* ⬅ #533573 */
-	--color-surface-700: 60 39 84; /* ⬅ #3c2754 */
-	--color-surface-800: 35 22 49; /* ⬅ #231631 */
-	--color-surface-900: 18 11 24; /* ⬅ #120b18 */
+	--color-primary-50: 250 248 252; /* ⬅ #faf8fc */
+	--color-primary-100: 242 238 247; /* ⬅ #f2eef7 */
+	--color-primary-200: 229 220 239; /* ⬅ #e5dcef */
+	--color-primary-300: 209 192 226; /* ⬅ #d1c0e2 */
+	--color-primary-400: 162 129 197; /* ⬅ #a281c5 */
+	--color-primary-500: 116 74 161; /* ⬅ #744aa1 */
+	--color-primary-600: 83 53 115; /* ⬅ #533573 */
+	--color-primary-700: 60 39 84; /* ⬅ #3c2754 */
+	--color-primary-800: 35 22 49; /* ⬅ #231631 */
+	--color-primary-900: 18 11 24; /* ⬅ #120b18 */
 }
 /* =~= Gold Nouveau (dark mode overrides) =~= */
-.dark [data-theme='gold-nouveau'] {
+.dark [data-theme='vintage'] {
 	/* =~= Theme On-X Colors =~= */
 	--on-primary: 0 0 0;
 	/* =~= Theme Colors  =~= */
@@ -117,24 +117,24 @@
 	--color-primary-900: 113 98 25; /* ⬅ #716219 */
 }
 /* Headings */
-[data-theme='gold-nouveau'] h1,
-[data-theme='gold-nouveau'] h2,
-[data-theme='gold-nouveau'] h3,
-[data-theme='gold-nouveau'] h4,
-[data-theme='gold-nouveau'] h5,
-[data-theme='gold-nouveau'] h6 {
+[data-theme='vintage'] h1,
+[data-theme='vintage'] h2,
+[data-theme='vintage'] h3,
+[data-theme='vintage'] h4,
+[data-theme='vintage'] h5,
+[data-theme='vintage'] h6 {
 	font-weight: bold;
 }
-/* Applied to body with `<body data-theme="gold-nouveau">` */
+/* Applied to body with `<body data-theme="vintage">` */
 /* Created with: https://csshero.org/mesher/ */
-[data-theme='gold-nouveau'] {
+[data-theme='vintage'] {
 	background: #e5dcef;
 	/* prettier-ignore */
 	background-image:
 		radial-gradient(at 92% 96%, hsla(268,37%,46%,0.25) 0px, transparent 50%),
 		radial-gradient(at 7% 0%, hsla(268,37%,46%,0.20) 0px, transparent 50%);
 }
-.dark [data-theme='gold-nouveau'] {
+.dark [data-theme='vintage'] {
 	/* prettier-ignore */
 	background-image:
 		radial-gradient(at 77% 0%, hsla(37, 81%, 56%, 0.1) 0px, transparent 50%),

@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2017-10-01 19:01:43"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "artkids-contact-formulier_copy-2"
 modified: "2023-04-24 03:05:04"
-parent: 0
 type: "wpcf7_contact_form"
 comment_count: 0
 categories: []

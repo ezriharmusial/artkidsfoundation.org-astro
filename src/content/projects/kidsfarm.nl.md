@@ -1,7 +1,7 @@
 ---
 title: KidsFarm
 subtitle: basic principles of farming
-nav_label: KidsFarm
+shortTitle: KidsFarm
 ---
 In samenwerking met scholieren, ouders en leerkrachten heeft Stichting ArtKids KidsFarm gelanceerd in landelijke gebieden van land tot land. Stichting ArtKids stelt landbouwgrond veilig in de buurt van de partnerschool.
 

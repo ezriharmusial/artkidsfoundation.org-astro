@@ -1,7 +1,7 @@
 ---
 title: ArtKids TechWorld
 subtitle: hope to survive the digital systems
-nav_label: ArtKids TechWorld
+shortTitle: ArtKids TechWorld
 ---
 Onze 21e eeuw is agressief onvriendelijk jegens technologische analfabeten. Zozeer zelfs dat zulke mensen weinig of geen hoop hebben om de digitale systemen van de 21e eeuw te overleven.
 

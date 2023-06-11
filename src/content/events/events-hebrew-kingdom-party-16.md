@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2015-07-06 18:43:31"
 excerpt: "Hebrew Kindom Party viert het Hebreeuwse Koninkrijk van de Schepper van Hemel en Aarde. Een dag toegewijdt aan het loven en prijzen van de Almachtige Schepper, Ahaya Asher Ahaya (Ik ben Wie ik Ben). "
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "hebrew-kingdom-party"
 modified: "2015-07-07 15:46:33"
-parent: 0
 type: "events"
 comment_count: 0
 categories: []

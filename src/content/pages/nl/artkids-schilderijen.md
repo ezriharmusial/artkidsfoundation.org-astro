@@ -1,15 +1,15 @@
 ---
 index: 294
+icon: "art-gallery"
+iconFamily: "map"
 title: "ArtKids Schilderijen"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2016-06-16 18:02:36"
 excerpt: ""
-status: "publish"
+status: "published"
 comment_status: "closed"
-nav_label: "artkids-schilderijen"
 modified: "2018-03-11 01:18:31"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []

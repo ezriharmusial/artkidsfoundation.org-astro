@@ -26,7 +26,7 @@
     }
 </script>
 
-<button class="btn variant-soft-surface w-full flex flex-col items-center rounded-none py-4" on:click={drawerOpen}>
+<button class="btn variant-filled-primary w-full flex flex-col items-center rounded-none py-4" on:click={drawerOpen}>
     <svg class="w-8 h-8 p-1 svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" viewBox="0 0 512 512" data-fa-i2svg="">
         <path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z">
         </path>
@@ -39,7 +39,7 @@
     </i> Font Awesome fontawesome.com -->
 </button>
 
-<Drawer position="top" bgDrawer="bg-surface-100-800-token opacity-95" height="h-4/5 max-h-full overflow-y-auto">
+<Drawer position="top" bgDrawer="opacity-95" height="h-4/5 max-h-full overflow-y-auto">
     <div class="p-8">
         <form on:submit|preventDefault={() => onSearch()} >
             <label class="input-label max-w-4/5 my-4">

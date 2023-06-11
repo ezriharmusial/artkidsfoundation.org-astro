@@ -5,11 +5,9 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-02-26 18:35:14"
 excerpt: ""
-status: "publish"
+status: "archived"
 comment_status: "closed"
-nav_label: "dntara-creations"
 modified: "2018-02-26 18:35:14"
-parent: 0
 type: "page"
 comment_count: 0
 categories: []
