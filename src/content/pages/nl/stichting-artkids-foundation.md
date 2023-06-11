@@ -7,7 +7,8 @@ date: "2018-09-24 01:26:46"
 excerpt: "ArtKids Foundation is een Technologisch- en kennis georienteerde organisatie. Wij focussen ons op ontwikkeling van plattelands ontwikkeling middels Technologische interventie, Kennis Overdracht, Infrastructuur ontwikkeling alsmede de Empowerment van Vrouwen en Jeugd."
 status: "publish"
 comment_status: "closed"
-nav_label: "stichting-artkids-foundation"modified: "2018-09-24 21:49:53"
+nav_label: "stichting-artkids-foundation"
+modified: "2018-09-24 21:49:53"
 parent: 0
 type: "page"
 comment_count: 0

@@ -7,7 +7,8 @@ date: "2018-09-24 00:25:51"
 excerpt: "Through Artkids International, fund is generated via various business transactions in collaboration with established corporate entities (Companies) on a win-win principle to effectively support the funding of ArtKids Foundation."
 status: "publish"
 comment_status: "closed"
-nav_label: "artkids-int-corp"modified: "2023-04-19 20:06:55"
+nav_label: "artkids-int-corp"
+modified: "2023-04-19 20:06:55"
 parent: 0
 type: "page"
 comment_count: 0

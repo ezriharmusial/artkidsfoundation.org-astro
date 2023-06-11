@@ -7,7 +7,8 @@ date: "2016-06-16 18:06:41"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "werkwijze"modified: "2018-02-26 19:02:59"
+nav_label: "werkwijze"
+modified: "2018-02-26 19:02:59"
 parent: 0
 type: "page"
 comment_count: 0
@@ -15,7 +16,7 @@ categories: []
 tags: []
 ---
 
-## Goede doelen <span class="has-text-calm is-size-4">onzelfzuchtig gevenspan></span>
+## Goede doelen <span class="has-text-calm is-size-4">onzelfzuchtig geven</span>
 
 Er zijn 3 basis behoeften waar elke persoon op deze aarde in voorzien moet zijn:
 

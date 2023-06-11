@@ -7,6 +7,8 @@ import '@styles/app.postcss';
 import { AppShell, AppBar } from '@skeletonlabs/skeleton'
 import { useUserAgent } from "astro-useragent";
 // import { Image } from '@astrojs/image/components';
+import { getLangFromUrl } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 
 import AppLoader from '~components/ui/AppLoader.astro';
 import Fonts from '../components/head/Fonts.astro';
@@ -20,6 +22,7 @@ import BrandFlag from '~components/ui/BrandFlag.astro';
 import SocialNav from '~components/ui/SocialNav.astro';
 import PageTitle from '~components/ui/PageTitle.astro';
 import NavSidebar from '~components/ui/NavSidebar.astro';
+import LanguagePicker from '~components/ui/LanguagePicker.astro';
 
 export interface Props {
     title: string;
@@ -39,13 +42,13 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 ---
 
 <!DOCTYPE html>
-<html class={theme} lang="en">
+<html class={theme} lang={lang}>
 <head>
     <link rel="preload" as="image" href="/logo-512.png">
     <!-- Site Meta & SEO -->
     <!-- <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} /> -->
     <!-- Fonts -->
-    <Fonts />
+    <!-- <Fonts /> -->
 </head>
 <body data-theme="gold-nouveau" class="init light:bg-white light:text-black dark:text-white dark:bg-black">
     <!-- Extended Head -->
@@ -88,6 +91,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
             <PageNavList direction="horizontal" />
         </div>
     </slot>
+    <LanguagePicker />
     <Footer />
 </footer>
 </svelte:fragment>

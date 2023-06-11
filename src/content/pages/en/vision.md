@@ -7,7 +7,8 @@ date: "2018-01-06 16:32:45"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "vision"modified: "2018-03-07 18:18:12"
+nav_label: "vision"
+modified: "2018-03-07 18:18:12"
 parent: 0
 type: "page"
 comment_count: 0

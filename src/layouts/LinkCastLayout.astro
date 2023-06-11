@@ -6,6 +6,8 @@ import '@styles/app.postcss';
 
 import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton'
 import { useUserAgent } from "astro-useragent";
+import { getLangFromUrl } from '@i18n/utils';
+
 
 import Fonts from '../components/head/Fonts.astro';
 import Footer from '../components/Footer.astro';
@@ -19,6 +21,8 @@ import { Icon } from 'astro-icon';
 import BrandFlag from '~components/ui/BrandFlag.astro';
 import SocialNav from '~components/ui/SocialNav.astro';
 import PageTitle from '~components/ui/PageTitle.astro';
+
+const lang = getLangFromUrl(Astro.url);
 
 const response = await fetch(Astro.url.origin + '/api/v1/pages.json');
 const searchData = await response.json();
@@ -40,12 +44,12 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 ---
 
 <!DOCTYPE html>
-<html class={theme} lang="en">
+<html class={theme} lang={lang}>
 <head>
     <!-- Site Meta & SEO -->
     <!-- <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} /> -->
     <!-- Fonts -->
-    <Fonts />
+    <!-- <Fonts /> -->
 </head>
 <body data-theme="gold-nouveau" class="light:bg-white light:text-black dark:text-white dark:bg-black loaded ">
     <slot name="extendedHead" />

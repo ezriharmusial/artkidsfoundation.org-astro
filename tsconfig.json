@@ -7,10 +7,11 @@
 			"~*": ["src/*"],
 			"@components/*": ["src/components/*"],
 			"@content/*": ["src/content/*"],
+			"@i18n/*": ["src/i18n/*"],
 			"@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-			"@styles/*": ["src/styles/*"],
 			"@lib/*": ["src/lib/*"],
+      		"@pages/*": ["src/pages/*"],
+			"@styles/*": ["src/styles/*"],
 		}
   }
 }

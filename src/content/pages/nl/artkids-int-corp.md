@@ -7,7 +7,8 @@ date: "2018-09-24 01:28:55"
 excerpt: "Met behulp van Artkids International worden financiële middelen gegenereerd via verschillende bedrijfstransacties in samenwerking met gevestigde bedrijfsentiteiten (Handelsfirma’s) om ArtKids Foundation effectief te steunen op basis van een “Win-Win” principe."
 status: "publish"
 comment_status: "closed"
-nav_label: "artkids-int-corp"modified: "2023-04-19 20:09:08"
+nav_label: "artkids-int-corp"
+modified: "2023-04-19 20:09:08"
 parent: 0
 type: "page"
 comment_count: 0

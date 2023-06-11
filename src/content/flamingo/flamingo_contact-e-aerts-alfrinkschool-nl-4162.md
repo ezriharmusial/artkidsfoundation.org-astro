@@ -5,10 +5,12 @@ subtitle: ""
 author: "ArtKids Parrot"
 date: "2017-03-09 17:08:20"
 excerpt: ""
-content: "e.aerts@alfrinkschool.nl\nEline"
+content: "e.aerts@alfrinkschool.nl
+Eline"
 status: "publish"
 comment_status: "closed"
-nav_label: "e-aerts-alfrinkschool-nl"modified: "2017-03-09 17:08:20"
+nav_label: "e-aerts-alfrinkschool-nl"
+modified: "2017-03-09 17:08:20"
 parent: 0
 type: "flamingo_contact"
 comment_count: 0

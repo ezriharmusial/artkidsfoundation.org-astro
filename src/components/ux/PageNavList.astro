@@ -1,24 +1,29 @@
 ---
 import { getCollection } from 'astro:content'
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 import { Icon } from 'astro-icon'
+
 const pageList = await getCollection('pages');
 const {direction = "vertical", size = "h-8 w-8 p-1"} = Astro.props
 const directionClass = direction == "vertical" ? "flex flex-col items-center text-center" : "flex items-center"
 const parentDirectionClass = direction == "vertical" ? "flex flex-col items-center text-center" : "flex-flex-col items-center"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class={parentDirectionClass}>
 
-    <a href={"/"} class="btn variant-soft-surface w-full rounded-none py-4">
+    <a href={"/" + lang + "/"} class="btn variant-soft-surface w-full rounded-none py-4">
         <span class={directionClass}>
             <Icon pack="ph" name="house-line-bold" class={size}/>
             <span>
-                Home
+                {t('nav.home')}
             </span>
         </span>
     </a>
 
-    <a href="/newscasts" class="btn variant-soft-surface w-full rounded-none py-4">
+    <a href={"/" + lang + "/newscasts"} class="btn variant-soft-surface w-full rounded-none py-4">
         <span class={directionClass}>
             <Icon pack="ph" name="newspaper-clipping-bold" class={size} />
             <span>
@@ -26,6 +31,7 @@ const parentDirectionClass = direction == "vertical" ? "flex flex-col items-cent
             </span>
         </span>
     </a>
+
 
 {pageList && pageList.map(page => (
     <a href={"/" + page.slug} class="btn variant-soft-surface w-full rounded-none py-4">

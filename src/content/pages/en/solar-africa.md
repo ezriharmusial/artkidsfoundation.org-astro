@@ -7,7 +7,8 @@ date: "2018-08-14 11:14:41"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "solar-africa"modified: "2018-09-23 00:14:28"
+nav_label: "solar-africa"
+modified: "2018-09-23 00:14:28"
 parent: 0
 type: "page"
 comment_count: 0

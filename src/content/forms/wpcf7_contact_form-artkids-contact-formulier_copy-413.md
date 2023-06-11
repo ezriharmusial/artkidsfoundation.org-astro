@@ -5,13 +5,125 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2016-10-13 17:10:33"
 excerpt: ""
-content: "<div class=\"form-group\">\r\n    <label class=\"your-subject\"> Aanmelden voor </label>\r\n    [select your-subject class:form-control include_blank \"Knutselmiddag met Ytje en Thomas\" \r\n\"Draw2Paint Workshop 4-7 jaar\" \r\n\"Versterk ons Team\" \r\n\"Anders...\"]\r\n</div>\r\n\r\n<div class=\"form-row\">\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-name\"><i class=\"fa fa-id-card\" aria-hidden=\"true\"></i></span>\r\n      [text* your-name class:form-control class:required class:requiredField placeholder \"Uw voornaam*\"]\r\n    </div>\r\n  </div>\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      [text* your-sur-name class:form-control class:required class:requiredField placeholder \"Uw achternaam*\"]\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"columns\">\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-email\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></span>\r\n      [email* your-email class:form-control class:required class:requiredField placeholder \"Uw email*\"]\r\n    </div>\r\n  </div>\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-telephone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i></span>\r\n      [tel* your-telephone class:form-control placeholder \"Uw telefoonnummer\"]\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"columns\">\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-skype\"><i class=\"fa fa-skype\" aria-hidden=\"true\"></i></span>\r\n    [text your-skype class:form-control placeholder \"Uw Skype ID\"]\r\n    </div>\r\n  </div>\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-hometown\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i></span>\r\n    [text your-hometown class:form-control placeholder \"Uw woonplaats\"]\r\n    </div>\r\n  </div>\r\n</div>\r\n<small><sup>*)</sup> Velden zijn verplicht.</small>\r\n\r\n<div class=\"form-group\">\r\n    [textarea your-message class:form-control placeholder \"Uw boodschap\"]\r\n</div>\r\n\r\n<div class=\"columns\">\r\n  <div class=\"col\">\r\n    <div class=\"form-group\">\r\n      <span class=\"input-group-addon\" id=\"your-math-quiz\"><i class=\"fa fa-school\" aria-hidden=\"true\"></i></span>\r\n      [quiz math-quiz class:form-control class:required class:requiredField \"1+6=?|7\"\r\n                    \"2+5=?|7\" \r\n                    \"3+4=?|7\"]\r\n      <span class=\"input-group-btn\">\r\n      [submit class:button class:is-large class:is-primary class:is-pulled-right \"Versturen\"]\r\n      </span>\r\n    </div>\r\n  </div>\r\n</div>\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.\nThe date format is incorrect.\nThe date is before the earliest one allowed.\nThe date is after the latest one allowed.\nThere was an unknown error uploading the file.\nYou are not allowed to upload files of this type.\nThe file is too big.\nThere was an error uploading the file.\nThe number format is invalid.\nThe number is smaller than the minimum allowed.\nThe number is larger than the maximum allowed.\nThe answer to the quiz is incorrect.\nYour entered code is incorrect.\nThe e-mail address entered is invalid.\nThe URL is invalid.\nThe telephone number is invalid."
 status: "publish"
 comment_status: "closed"
-nav_label: "artkids-contact-formulier_copy"modified: "2017-12-24 21:39:38"
+nav_label: "artkids-contact-formulier_copy"
+modified: "2017-12-24 21:39:38"
 parent: 0
 type: "wpcf7_contact_form"
 comment_count: 0
 categories: []
 tags: []
 ---
+
+<div class="form-group">
+    <label class="your-subject"> Aanmelden voor </label>
+    [select your-subject class:form-control include_blank "Knutselmiddag met Ytje en Thomas"
+"Draw2Paint Workshop 4-7 jaar"
+"Versterk ons Team"
+"Anders..."]
+</div>
+
+<div class="form-row">
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-name"><i class="fa fa-id-card" aria-hidden="true"></i></span>
+      [text* your-name class:form-control class:required class:requiredField placeholder "Uw voornaam*"]
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      [text* your-sur-name class:form-control class:required class:requiredField placeholder "Uw achternaam*"]
+    </div>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+      [email* your-email class:form-control class:required class:requiredField placeholder "Uw email*"]
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-telephone"><i class="fa fa-phone" aria-hidden="true"></i></span>
+      [tel* your-telephone class:form-control placeholder "Uw telefoonnummer"]
+    </div>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-skype"><i class="fa fa-skype" aria-hidden="true"></i></span>
+    [text your-skype class:form-control placeholder "Uw Skype ID"]
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-hometown"><i class="fa fa-home" aria-hidden="true"></i></span>
+    [text your-hometown class:form-control placeholder "Uw woonplaats"]
+    </div>
+  </div>
+</div>
+<small><sup>*)</sup> Velden zijn verplicht.</small>
+
+<div class="form-group">
+    [textarea your-message class:form-control placeholder "Uw boodschap"]
+</div>
+
+<div class="columns">
+  <div class="col">
+    <div class="form-group">
+      <span class="input-group-addon" id="your-math-quiz"><i class="fa fa-school" aria-hidden="true"></i></span>
+      [quiz math-quiz class:form-control class:required class:requiredField "1+6=?|7"
+                    "2+5=?|7"
+                    "3+4=?|7"]
+      <span class="input-group-btn">
+      [submit class:button class:is-large class:is-primary class:is-pulled-right "Versturen"]
+      </span>
+    </div>
+  </div>
+</div>
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Thank you for your message. It has been sent.
+There was an error trying to send your message. Please try again later.
+One or more fields have an error. Please check and try again.
+There was an error trying to send your message. Please try again later.
+You must accept the terms and conditions before sending your message.
+The field is required.
+The field is too long.
+The field is too short.
+The date format is incorrect.
+The date is before the earliest one allowed.
+The date is after the latest one allowed.
+There was an unknown error uploading the file.
+You are not allowed to upload files of this type.
+The file is too big.
+There was an error uploading the file.
+The number format is invalid.
+The number is smaller than the minimum allowed.
+The number is larger than the maximum allowed.
+The answer to the quiz is incorrect.
+Your entered code is incorrect.
+The e-mail address entered is invalid.
+The URL is invalid.
+The telephone number is invalid.

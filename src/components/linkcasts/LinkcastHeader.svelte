@@ -74,7 +74,7 @@ alt="Post" />
 			: 'aspect-square'
 		}
 		alt="Post" />
-		<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{getYouTubeID(url)}?controls=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{getYouTubeID(youtubeUrl)}?controls=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 		{:else if type == 'spotify'}
 		<img loading="lazy" src={linkcast.data?.image} class={"bg-black/50 w-full object-cover " +
@@ -89,7 +89,7 @@ alt="Post" />
 		: 'aspect-square'
 	}
 	alt="Post" />
-	<iframe style="border-radius:12px" src={spotifyUrl} width="100%" height="380" frameBorder="0" allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify Player"></iframe>
+	<iframe style="border-radius:12px" src={linkcast.data?.url} width="100%" height="380" frameBorder="0" allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify Player"></iframe>
 
 
 {:else if type == 'mixcloud'}

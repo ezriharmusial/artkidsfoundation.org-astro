@@ -7,7 +7,8 @@ date: "2017-10-01 18:48:06"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "job-offerings"modified: "2018-09-29 02:53:33"
+nav_label: "job-offerings"
+modified: "2018-09-29 02:53:33"
 parent: 0
 type: "page"
 comment_count: 0

@@ -7,7 +7,8 @@ date: "2018-09-23 00:39:56"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-nav_label: "november-10th-igbo-sun-energy"modified: "2023-04-21 21:33:38"
+nav_label: "november-10th-igbo-sun-energy"
+modified: "2023-04-21 21:33:38"
 parent: 0
 type: "post"
 comment_count: 0

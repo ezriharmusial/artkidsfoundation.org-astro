@@ -7,7 +7,8 @@ date: "2018-02-04 16:59:20"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "artkids-paintings"modified: "2018-03-11 01:20:12"
+nav_label: "artkids-paintings"
+modified: "2018-03-11 01:20:12"
 parent: 0
 type: "page"
 comment_count: 0

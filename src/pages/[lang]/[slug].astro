@@ -1,0 +1,40 @@
+---
+import { getCollection, getEntryBySlug } from 'astro:content';
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const sitePages = await getCollection('pages');
+
+// 1. Get the slug from the incoming server request
+const { lang, slug } = Astro.params;
+// 2. Query for the page directly using the request slug
+const page =  await getEntryBySlug('pages', lang + "/" + slug);
+const { Content } = await page?.render() ;
+console.log('Slugit', "/" + lang + "/" + slug)
+console.log('Pageit', page)
+
+export async function getStaticPaths() {
+	return sitePages.map(page => {
+
+		return {
+			params: { slug: page.slug },
+			props: { page }
+		}
+	});
+}
+
+
+//console.log('Page entry', slug, page)
+
+---
+<BaseLayout description={page.data?.description} title={page.data?.title} image={page.data?.image} imageAlt={page.data?.imageAlt}>
+
+	<div slot="sidebarLeftNavList">
+		{sitePages && sitePages.map((page) => (
+			<li><a href={"/" + page.slug}>{page.data.title}</a></li>
+		))}
+	</div>
+
+	<Content />
+
+</BaseLayout>

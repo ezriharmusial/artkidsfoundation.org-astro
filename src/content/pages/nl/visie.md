@@ -7,7 +7,8 @@ date: "2016-06-16 18:06:14"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "visie"modified: "2018-02-04 16:22:23"
+nav_label: "visie"
+modified: "2018-02-04 16:22:23"
 parent: 0
 type: "page"
 comment_count: 0

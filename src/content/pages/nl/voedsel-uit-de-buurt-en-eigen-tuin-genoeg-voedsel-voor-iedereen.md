@@ -7,7 +7,8 @@ date: "2015-08-03 15:10:15"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-nav_label: "voedsel-uit-de-buurt-en-eigen-tuin-genoeg-voedsel-voor-iedereen"modified: "2015-08-29 20:54:55"
+nav_label: "voedsel-uit-de-buurt-en-eigen-tuin-genoeg-voedsel-voor-iedereen"
+modified: "2015-08-29 20:54:55"
 parent: 53
 type: "page"
 comment_count: 0

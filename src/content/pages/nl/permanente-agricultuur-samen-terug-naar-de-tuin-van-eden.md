@@ -7,7 +7,8 @@ date: "2015-08-03 15:05:41"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-nav_label: "permanente-agricultuur-samen-terug-naar-de-tuin-van-eden"modified: "2015-08-29 20:56:52"
+nav_label: "permanente-agricultuur-samen-terug-naar-de-tuin-van-eden"
+modified: "2015-08-29 20:56:52"
 parent: 5
 type: "page"
 comment_count: 0

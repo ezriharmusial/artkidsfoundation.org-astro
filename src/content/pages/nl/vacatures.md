@@ -7,7 +7,8 @@ date: "2016-06-16 18:05:41"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "vacatures"modified: "2018-09-29 02:53:08"
+nav_label: "vacatures"
+modified: "2018-09-29 02:53:08"
 parent: 0
 type: "page"
 comment_count: 0

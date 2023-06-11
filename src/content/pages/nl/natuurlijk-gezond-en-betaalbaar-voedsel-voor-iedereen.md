@@ -7,7 +7,8 @@ date: "2015-08-03 15:06:54"
 excerpt: ""
 status: "publish"
 comment_status: "open"
-nav_label: "natuurlijk-gezond-en-betaalbaar-voedsel-voor-iedereen"modified: "2015-08-29 20:55:53"
+nav_label: "natuurlijk-gezond-en-betaalbaar-voedsel-voor-iedereen"
+modified: "2015-08-29 20:55:53"
 parent: 53
 type: "page"
 comment_count: 0

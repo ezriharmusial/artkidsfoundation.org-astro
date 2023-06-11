@@ -5,10 +5,12 @@ subtitle: ""
 author: "ArtKids Parrot"
 date: "2018-08-02 11:40:59"
 excerpt: ""
-content: "ekpemanduebubechukwu@gmail.com\nEkpemandu Ebubechukwu Promise"
+content: "ekpemanduebubechukwu@gmail.com
+Ekpemandu Ebubechukwu Promise"
 status: "publish"
 comment_status: "closed"
-nav_label: "ekpemanduebubechukwu-gmail-com"modified: "2018-08-02 11:40:59"
+nav_label: "ekpemanduebubechukwu-gmail-com"
+modified: "2018-08-02 11:40:59"
 parent: 0
 type: "flamingo_contact"
 comment_count: 0

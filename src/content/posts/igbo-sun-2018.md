@@ -7,7 +7,8 @@ date: "2018-11-10 10:00:05"
 excerpt: " ArtKids International hereby invite Solar Energy Experts, Researchers, Manufacturers and African Solar Energy Consumers to the 1st IGBO_SUN ENERGY $TAKEHOLDERS SUMMIT 2018 to be held on the 10th of November 2018 @UmuEke Villa Hall UmuEke in Nkwerre, Imo, Igboland~West Africa."
 status: "publish"
 comment_status: "open"
-nav_label: "igbo-sun-2018"modified: "2018-10-26 17:57:01"
+nav_label: "igbo-sun-2018"
+modified: "2018-10-26 17:57:01"
 parent: 0
 type: "post"
 comment_count: 0

@@ -10,11 +10,17 @@ export interface Props {
 	fbappid?: string;
 }
 
-const { title, seoTitle, description, image = "/images/manifest/pwa-512x512.png", imageAlt, fbappid } = Astro.props
+const { title, seoTitle, description, image, imageAlt, fbappid } = Astro.props
 
 // Catch Image Url Inconsistencies
-function imageUrl(image) {
-	return new URL(image , Astro.url)
+function imageUrl() {
+	if (image) {
+		console.log('image', image)
+		return new URL(image , Astro.site)
+	}
+	else {
+		return new URL("/images/manifest/pwa-512x512" , Astro.site)
+	}
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -35,7 +41,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="og:description" content={description || SITE_DESCRIPTION}>
 <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)}>
 <meta property="og:type" content="website">
-<meta property="og:image" content={imageUrl(image)}>
+<meta property="og:image" content={imageUrl()}>
 <meta property="og:locale" content="en_EN">
 <meta property="og:site_name" content="ArtKidsFoundation.org">
 <link rel="canonical" href={canonicalURL}>
@@ -43,7 +49,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content={title || "Welkom to ArtKidsFoundation.org"}>
 <meta property="twitter:description" content={description || "Welkom to ArtKidsFoundation.org"}>
-<meta property="twitter:image" content={imageUrl(image)}>
+<meta property="twitter:image" content={imageUrl()}>
 
 <!-- Manifest Files -->
 <link rel="manifest" href="/manifest.webmanifest">
@@ -105,8 +111,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 <span slot="ExtendedHeader">
 	<!-- SEO section -->
-	<link itemprop="thumbnailUrl" href={imageUrl(image)}>
+	<link itemprop="thumbnailUrl" href={imageUrl()}>
 	<span class="hidden" itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-		<link itemprop="url" href={imageUrl(image)}>
+		<link itemprop="url" href={imageUrl()}>
 	</span>
 </span>

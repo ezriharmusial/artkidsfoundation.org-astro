@@ -7,7 +7,8 @@ date: "2017-12-16 18:53:58"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "code-of-conduct"modified: "2018-03-07 18:28:09"
+nav_label: "code-of-conduct"
+modified: "2018-03-07 18:28:09"
 parent: 0
 type: "page"
 comment_count: 0

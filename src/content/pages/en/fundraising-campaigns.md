@@ -7,7 +7,8 @@ date: "2018-02-04 19:15:03"
 excerpt: ""
 status: "publish"
 comment_status: "closed"
-nav_label: "fundraising-campaigns"modified: "2018-03-07 18:26:34"
+nav_label: "fundraising-campaigns"
+modified: "2018-03-07 18:26:34"
 parent: 0
 type: "page"
 comment_count: 0
