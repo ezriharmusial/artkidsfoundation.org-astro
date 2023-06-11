@@ -8,7 +8,7 @@ import yaml from '@rollup/plugin-yaml';
 import image from "@astrojs/image";
 
 // https://astro.build/config
-import netlify from "@astrojs/netlify/functions";
+// import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,6 +40,6 @@ export default defineConfig({
       }
     })]
   },
-  output: "server",
-  adapter: netlify()
+  // output: "server",
+  // adapter: netlify()
 });
