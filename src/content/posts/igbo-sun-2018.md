@@ -10,8 +10,8 @@ comment_status: "open"
 modified: "2018-10-26 17:57:01"
 type: "post"
 comment_count: 0
-categories: "Events"
-tags: []
+categories: []
+tags: ["events"]
 ---
 
 ArtKids Foundation is calling on Igbo (Black) brothers and Sisters all over the World to invest in Sun Energy (Solar Technology) in Igboland and in Afra’ka. Since the Nigerian Electric Power Authority (NEPA) has failed our people; and since there is abundant Sun Energy is the lands of the rising Sun, common sense dictates that only Sun Energy (Solar=Eke) can and will provide Africans with the ever needed Electricity.
