@@ -18,7 +18,7 @@ function getLangFromId(page) {
 
 ---
 
-<div class={parentDirectionClass + "bg-primary-600 w-full"}>
+<div class={parentDirectionClass + " bg-primary-600 w-full"}>
 
     <a href={"/" + lang + "/"} class="btn variant-filled-primary w-full rounded-none py-4">
         <span class={directionClass}>
@@ -39,7 +39,7 @@ function getLangFromId(page) {
     </a>
 
 
-    <div class={parentDirectionClass + "bg-primary-600 w-full"}>
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="organisation" class="helper-trigger hidden" />
         <div class="dropdown bg-primary-600 w-full">
 
@@ -73,7 +73,7 @@ function getLangFromId(page) {
         </div>
     </div>
 
-    <div class={parentDirectionClass + "bg-primary-600 w-full"}>
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="about-artkids" class="helper-trigger hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="about-artkids" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
@@ -85,7 +85,7 @@ function getLangFromId(page) {
                 </span>
             </label>
 
-            <div class={parentDirectionClass + "bg-primary-600 w-full helper-show" }>
+            <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
                     <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
@@ -106,7 +106,7 @@ function getLangFromId(page) {
         </div>
     </div>
 
-    <div class={parentDirectionClass + "bg-primary-600 w-full"}>
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="funding" class="helper-trigger hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="funding" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
@@ -117,7 +117,7 @@ function getLangFromId(page) {
                     </span>
                 </span>
             </label>
-            <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
+            <div class={parentDirectionClass + " bg-primary-600 w-full" + " helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "funding").map(page => (
                     <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
@@ -138,7 +138,7 @@ function getLangFromId(page) {
         </div>
     </div>
 
-    <div class={parentDirectionClass + "bg-primary-600 w-full"}>
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="projects" class="helper-trigger hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="projects" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
@@ -149,7 +149,7 @@ function getLangFromId(page) {
                     </span>
                 </span>
             </label>
-            <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
+            <div class={parentDirectionClass + " bg-primary-600 w-full" + " helper-show" }>
                 {projectList && projectList.filter(project => getLangFromId(project) == lang).map(project => (
                     <a href={"/" + project.slug.split('/')[0] + "/projects/" + project.slug.split('/')[1]} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + project.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
