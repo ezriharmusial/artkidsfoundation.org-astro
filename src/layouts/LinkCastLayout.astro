@@ -16,7 +16,7 @@ import seoSettings from '../content/settings/_seo.yml';
 import siteSettings from '../content/settings/_settings.yml';
 
 import PageNavList from '~components/ux/PageNavList.astro';
-import Search from '@components/ux/Search.svelte';
+// import Search from '@components/ux/Search.svelte';
 import { Icon } from 'astro-icon';
 import BrandFlag from '~components/ui/BrandFlag.astro';
 import SocialNav from '~components/ui/SocialNav.astro';
@@ -24,8 +24,8 @@ import PageTitle from '~components/ui/PageTitle.astro';
 
 const lang = getLangFromUrl(Astro.url);
 
-const response = await fetch(Astro.url.origin + '/api/v1/pages.json');
-const searchData = await response.json();
+// const response = await fetch(Astro.url.origin + '/api/v1/pages.json');
+// const searchData = await response.json();
 
 export interface Props {
     title: string;
@@ -80,7 +80,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 
                     <div class="flex flex-col">
                         <!-- Search Component -->
-                        <Search data={searchData} client:load />
+                        <!-- <Search data={searchData} client:load /> -->
 
                         <!-- Lightswitch -->
                         <div class="btn lightswitch variant-filled-primary w-full rounded-none flex flex-col">
