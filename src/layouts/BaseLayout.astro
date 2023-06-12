@@ -38,7 +38,7 @@ const { isMobile } = useUserAgent(uaString);
 
 const { theme, mode } = siteSettings
 const { fbappid } = seoSettings
-const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
+const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
 ---
 
 <!DOCTYPE html>
@@ -67,7 +67,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
                 <svelte:fragment slot="lead">
                 <BrandFlag />
             </svelte:fragment>
-            <PageTitle title={title}/>
+            <PageTitle title={title} pack={pack} icon={icon} />
             <svelte:fragment slot="trail">
             <!-- User Avatar Placeholder -->
         </svelte:fragment>
