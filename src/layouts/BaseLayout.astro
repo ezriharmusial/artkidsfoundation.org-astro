@@ -85,12 +85,11 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 <!-- Page Footer -->
 <svelte:fragment slot="pageFooter">
 <footer class="m-8">
-    <slot name="pageList">
+    <!-- <slot name="pageList">
         <h3 class="font-bold">Website Pages</h3>
-        <div class="card card-hover p-4 space-y-4 w-1/3">
-            <PageNavList direction="horizontal" />
+        <div class="card p-4 space-y-4 w-1/3">
         </div>
-    </slot>
+    </slot> -->
     <LanguagePicker />
     <Footer />
 </footer>

@@ -10,7 +10,6 @@ comment_status: "open"
 modified: "2023-04-21 21:42:39"
 type: "post"
 comment_count: 0
-categories: []
 tags: ["ArtKids","ArtKids Africa", "Solar Africa"]
 ---
 

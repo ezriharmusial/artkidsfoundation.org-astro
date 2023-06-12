@@ -10,6 +10,5 @@ comment_status: "closed"
 modified: "2018-02-07 02:46:05"
 type: "donation"
 comment_count: 0
-categories: []
 tags: []
 ---

@@ -9,7 +9,6 @@ comment_status: "closed"
 modified: "2016-10-13 14:14:23"
 type: "artkids-message"
 comment_count: 0
-categories: []
 tags: []
 ---
 

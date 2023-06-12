@@ -10,7 +10,6 @@ comment_status: "open"
 modified: "2023-04-21 21:24:43"
 type: "post"
 comment_count: 0
-categories: []
 tags: ["ArtKids", "ArtKids Africa" ,Solar Africa"]
 ---
 Disclaimer: Igbo is Africa~Africa is Igbo. By definition, Igbo people are the so-called Blacks, Africans, Black Americans, Haitians, Jamaicans, Yorubas, Hausas etc. The Black Race is Igbo Race.

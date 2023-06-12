@@ -1,6 +1,6 @@
 ---
 index: 5009
-title: "Evenementen"
+title: "Events"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-08-10 10:26:30"

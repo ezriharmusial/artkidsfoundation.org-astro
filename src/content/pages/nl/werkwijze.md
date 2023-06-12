@@ -12,7 +12,7 @@ comment_status: "closed"
 modified: "2018-02-26 19:02:59"
 type: "page"
 comment_count: 0
-categories: ["over artkids"]
+category: "over artkids"
 tags: []
 ---
 

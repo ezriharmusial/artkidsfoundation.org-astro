@@ -10,7 +10,6 @@ comment_status: "open"
 modified: "2023-04-21 21:37:52"
 type: "post"
 comment_count: 0
-categories: []
 tags: ["ArtKids","ArtKids Africa", "Solar Africa"]
 ---
 SUN (Solar) Energy For Igbo Rural Electrification & Life Improvement).

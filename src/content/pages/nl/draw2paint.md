@@ -10,7 +10,6 @@ comment_status: "closed"
 modified: "2016-11-14 06:15:38"
 type: "page"
 comment_count: 0
-categories: []
 tags: []
 ---
 

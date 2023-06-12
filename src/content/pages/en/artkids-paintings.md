@@ -7,12 +7,11 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-02-04 16:59:20"
 excerpt: ""
-status: "published"
+status: "archived"
 comment_status: "closed"
 modified: "2018-03-11 01:20:12"
 type: "page"
 comment_count: 0
-categories: []
 tags: []
 ---
 

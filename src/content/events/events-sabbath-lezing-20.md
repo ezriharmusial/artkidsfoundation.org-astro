@@ -10,7 +10,6 @@ comment_status: "closed"
 modified: "2015-08-04 13:34:07"
 type: "events"
 comment_count: 0
-categories: []
 tags: []
 ---
 

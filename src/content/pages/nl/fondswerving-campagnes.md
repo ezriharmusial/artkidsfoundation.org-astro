@@ -13,7 +13,7 @@ comment_status: "closed"
 modified: "2018-03-07 18:25:58"
 type: "page"
 comment_count: 0
-categories: ["fondswerving"]
+category: "fondswerving"
 tags: []
 ---
 

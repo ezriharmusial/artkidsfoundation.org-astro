@@ -12,6 +12,5 @@ comment_status: "closed"
 modified: "2017-03-09 17:08:20"
 type: "flamingo_contact"
 comment_count: 0
-categories: []
 tags: []
 ---

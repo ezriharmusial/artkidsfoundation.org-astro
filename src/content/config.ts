@@ -4,6 +4,7 @@ const pages = defineCollection({
     schema: z.object({
         color: z.string().optional(),
         callToAction: z.string().optional(),
+        category: z.string().optional(),
         description: z.string().optional(),
         title: z.string(),
         icon: z.string().optional(),
@@ -11,7 +12,6 @@ const pages = defineCollection({
         image: z.string().optional(),
         imageAlt: z.string().optional(),
         index: z.number(),
-        parent: z.number().optional(),
         seoTitle: z.string().optional(),
         status: z.string().optional(),
         subtitle: z.string().optional(),
@@ -19,6 +19,21 @@ const pages = defineCollection({
         tags: z.array(z.string()).optional(),
     })
 });
+
+const projects = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        icon: z.string().optional(),
+        iconFamily: z.string().optional(),
+        image: z.string().optional(),
+        imageAlt: z.string().optional(),
+        status: z.string().optional(),
+        subtitle: z.string().optional(),
+        shortTitle: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+    })
+});
+
 
 const linkcasts = defineCollection({
     schema: z.object({
@@ -34,4 +49,4 @@ const linkcasts = defineCollection({
     })
 });
 
-export const collections = { pages, linkcasts };
+export const collections = { pages, linkcasts, projects };

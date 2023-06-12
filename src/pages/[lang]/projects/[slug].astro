@@ -1,37 +1,30 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection } from 'astro:content';
 
-import BaseLayout from "../../layouts/BaseLayout.astro";
-
-const sitePages = await getCollection('pages');
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
-	const sitePages = await getCollection('pages');
-	return sitePages.map(page => {
-		const [lang, slug] = page.slug.split('/')
+	const siteProjects = await getCollection('projects');
+	return siteProjects.map(project => {
+		const [lang, slug] = project.slug.split('/')
 		return {
 			params: { lang, slug: slug || undefined },
-			props: { page }
+			props: { project }
 		}
 	});
 }
 
 // 1. Get the slug from the incoming server request
-const { page } = Astro.props;
+const { project } = Astro.props;
 // 2. Query for the page directly using the request slug
-const { Content } = await page?.render() ;
+const { Content } = await project?.render() ;
 
 
 //console.log('Page entry', slug, page)
 
 ---
-<BaseLayout description={page.data?.description} title={page.data?.title} image={page.data?.image} imageAlt={page.data?.imageAlt}>
+<BaseLayout description={project.data?.description} title={project.data?.title} image={project.data?.image} imageAlt={project.data?.imageAlt}>
 
-	<!-- <div slot="sidebarLeftNavList">
-		{sitePages && sitePages.map((page) => (
-			<li><a href={"/" + page.slug}>{page.data.title}</a></li>
-		))}
-	</div> -->
 		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
 			<div class="light:bg-white/75 dark:bg-black/75 md:p-28 p-6 pt-24 text-left">
 				<div class="container mx-auto flex items-center">

@@ -11,7 +11,6 @@ modified: "2015-08-29 20:55:19"
 poid:st_parent: 53
 type: "page"
 comment_count: 0
-categories: []
 tags: []
 ---
 

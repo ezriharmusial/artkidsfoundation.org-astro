@@ -10,7 +10,6 @@ comment_status: "closed"
 modified: "2018-11-01 09:55:54"
 type: "flamingo_contact"
 comment_count: 0
-categories: []
 tags: []
 ---
 

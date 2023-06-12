@@ -10,7 +10,6 @@ comment_status: "closed"
 modified: "2023-04-21 21:50:05"
 type: "page"
 comment_count: 0
-categories: []
 tags: []
 ---
 

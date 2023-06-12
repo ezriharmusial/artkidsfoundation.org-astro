@@ -10,7 +10,6 @@ comment_status: "open"
 modified: "2018-10-26 17:57:01"
 type: "post"
 comment_count: 0
-categories: []
 tags: ["events"]
 ---
 

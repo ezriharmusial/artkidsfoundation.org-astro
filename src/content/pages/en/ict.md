@@ -12,7 +12,6 @@ comment_status: "open"
 modified: "2018-09-22 22:53:17"
 type: "page"
 comment_count: 0
-categories: []
 tags: []
 ---
 
