@@ -11,7 +11,7 @@ export const ui = {
         'nav.about': 'About Us',
         'nav.twitter': 'Twitter',
     },
-    fr: {
+    nl: {
         'nav.about': 'Over ons',
     },
 } as const;

@@ -7,7 +7,7 @@ import '@styles/app.postcss';
 import { AppShell, AppBar } from '@skeletonlabs/skeleton'
 import { useUserAgent } from "astro-useragent";
 // import { Image } from '@astrojs/image/components';
-import { getLangFromUrl } from '@i18n/utils';
+import { getLangFromUrl } from '~content/i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 
 import AppLoader from '~components/ui/AppLoader.astro';
@@ -36,13 +36,13 @@ export interface Props {
 const uaString = Astro.request.headers.get("user-agent");
 const { isMobile } = useUserAgent(uaString);
 
-const { theme } = siteSettings
+const { theme, mode } = siteSettings
 const { fbappid } = seoSettings
 const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
 ---
 
 <!DOCTYPE html>
-<html class={theme + " " + lang } lang={lang}>
+<html class={mode + " " + lang } lang={lang}>
 <head>
     <link rel="preload" as="image" href="/logo-512.png">
     <!-- Site Meta & SEO -->
@@ -50,7 +50,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
     <!-- Fonts -->
     <!-- <Fonts /> -->
 </head>
-<body data-theme="vintage" class="init">
+<body data-theme={theme} class="init">
     <!-- Extended Head -->
     <slot name="extendedHead" />
 

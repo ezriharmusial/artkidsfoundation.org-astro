@@ -6,7 +6,7 @@ import '@styles/app.postcss';
 
 import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton'
 import { useUserAgent } from "astro-useragent";
-import { getLangFromUrl } from '@i18n/utils';
+import { getLangFromUrl } from '~content/i18n/utils';
 
 
 import Fonts from '../components/head/Fonts.astro';
@@ -38,20 +38,20 @@ export interface Props {
 // Conditional info
 const uaString = Astro.request.headers.get("user-agent");
 
-const { theme } = siteSettings
+const { theme, mode } = siteSettings
 const { fbappid } = seoSettings
 const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
 ---
 
 <!DOCTYPE html>
-<html class={theme + " " + lang } lang={lang}>
+<html class={mode + " " + lang } lang={lang}>
 <head>
     <!-- Site Meta & SEO -->
     <!-- <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} /> -->
     <!-- Fonts -->
     <!-- <Fonts /> -->
 </head>
-<body data-theme="vintage" class="loaded ">
+<body data-theme={theme} class="loaded ">
     <slot name="extendedHead" />
 
     <!-- Page Transition -->

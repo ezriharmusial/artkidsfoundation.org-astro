@@ -1,24 +1,31 @@
 ---
-	import { getCollection, getEntryBySlug } from 'astro:content';
-	import { getLinkcastType } from '@lib/embeds'
-	import { Avatar } from '@skeletonlabs/skeleton';
+import { getCollection } from 'astro:content';
+import { getLinkcastType } from '@lib/embeds'
+import { Avatar } from '@skeletonlabs/skeleton';
 
-    import Linkcasts from "@components/linkcasts/Linkcasts.astro"
-    import LinkCastLayout from "@layouts/LinkCastLayout.astro"
-	import LinkcastHeader from '@components/linkcasts/LinkcastHeader.svelte';
+import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+import LinkCastLayout from "@layouts/LinkCastLayout.astro"
+import LinkcastHeader from '@components/linkcasts/LinkcastHeader.svelte';
 
-	// 1. Generate a new path for every collection linkcast
-	export async function getStaticPaths() {
-		const linkCasts = await getCollection('linkcasts');
-		return linkCasts.map(linkcast => ({
-			params: { slug: linkcast.slug},
-			props: { linkcast },
-		}));
-	}
+// 1. Generate a new path for every collection linkcast
+export async function getStaticPaths() {
 
-	const { slug } = Astro.params;
-	const linkcast = await getEntryBySlug('linkcasts', slug);
-	// console.log("slug",slug, linkcast)
+	const linkCasts = await getCollection('linkcasts');
+
+	const paths = linkCasts.map(linkcast => {
+		return {
+			params: { lang: "en", slug: linkcast.slug || undefined },
+			props: linkcast
+		}
+	});
+
+	return paths
+}
+
+const { lang, slug } = Astro.params
+const linkcast = Astro.props;
+const formattedDate = linkcast.data.date.toLocaleString(lang);
+const { Content } = await linkcast.render();
 ---
 
 <LinkCastLayout description={linkcast.data?.description} title={linkcast.data?.title} image={linkcast.data?.image} imageAlt={linkcast.data?.imageAlt}>
@@ -46,7 +53,8 @@
 				</h4>
 
 				<article class="text-2xl ">
-					{linkcast?.body}
+					<Content/>
+					<!-- {linkcast?.body} -->
 				</article>
 				<div class="grid grid-rows-1 gap-4">
 					{linkcast.data?.url &&
@@ -61,11 +69,11 @@
 				<Avatar src={linkcast.data?.authorImage || '/logo-512.png'} />
 				<div class="flex-auto flex justify-between items-center">
 					<h6 class="font-bold">By {linkcast.data?.author || 'LMS Parrot'}</h6>
-					<small>On {new Date(linkcast.data?.date).toLocaleDateString()}</small>
+					<small>On {formattedDate}</small>
 				</div>
 			</footer>
 		</div>
 	</div>
 
-    <Linkcasts />
+	<Linkcasts />
 </LinkCastLayout>

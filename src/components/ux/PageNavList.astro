@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
 import { Icon } from 'astro-icon'
 
 const pageList = await getCollection('pages');
@@ -10,6 +10,11 @@ const parentDirectionClass = direction == "vertical" ? "flex flex-col items-cent
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+function getLangFromId(page) {
+    return page.slug.split('/')[0]
+}
+
 ---
 
 <div class={parentDirectionClass}>
@@ -33,7 +38,7 @@ const t = useTranslations(lang);
     </a>
 
 
-{pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent).map(page => (
+{pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang).map(page => (
     <a href={"/" + page.slug} class={"btn variant-filled-primary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
         <span class={directionClass}>
             <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />

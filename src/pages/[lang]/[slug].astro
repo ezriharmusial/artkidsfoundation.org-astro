@@ -2,28 +2,24 @@
 import { getCollection, getEntryBySlug } from 'astro:content';
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getLangFromUrl } from '~i18n/utils';
 
 const sitePages = await getCollection('pages');
 
-// 1. Get the slug from the incoming server request
-const { slug } = Astro.params;
-const lang = getLangFromUrl(Astro.url);
-// 2. Query for the page directly using the request slug
-const page =  await getEntryBySlug('pages', lang + "/" + slug);
-const content = await page?.render()
-// console.log('Slugit', "/" + lang + "/" + slug)
-// console.log('Pageit', page)
-
 export async function getStaticPaths() {
+	const sitePages = await getCollection('pages');
 	return sitePages.map(page => {
-
+		const [lang, slug] = page.slug.split('/')
 		return {
-			params: { slug: page.slug },
+			params: { lang, slug: slug || undefined },
 			props: { page }
 		}
 	});
 }
+
+// 1. Get the slug from the incoming server request
+const { page } = Astro.props;
+// 2. Query for the page directly using the request slug
+const { Content } = await page?.render() ;
 
 
 //console.log('Page entry', slug, page)
@@ -40,7 +36,7 @@ export async function getStaticPaths() {
 			<div class="light:bg-white/75 dark:bg-black/75 md:p-28 p-6 pt-24 text-left">
 				<div class="container mx-auto flex items-center">
 					<div class="w-2/3 text-lg">
-						{content}
+						<Content />
 					</div>
 					<div class="w-1/3 pl-16">
 						<img src="https://source.unsplash.com/random?african%20popstar" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">

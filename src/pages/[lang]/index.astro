@@ -3,6 +3,14 @@
 import BrandFlag from '~components/ui/BrandFlag.astro';
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+  ];
+}
+
 ---
 
 <BaseLayout title="Artkids Foundation - Cultivating Happiness" image="/images/manifest/apple-touch-startup-image-2048x1496.png" description="Truth Based Music Management. Connecting Truthspreading Artists, with lucrative tools and fair management.">

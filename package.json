@@ -22,7 +22,7 @@
     "@skeletonlabs/skeleton": "^1.6.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "astro": "^2.6.0",
+    "astro": "^2.6.3",
     "astro-critters": "^1.1.37",
     "astro-dead-links": "^0.0.1",
     "astro-icon": "^0.8.0",

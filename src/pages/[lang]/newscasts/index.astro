@@ -1,6 +1,13 @@
 ---
-    import Linkcasts from "@components/linkcasts/Linkcasts.astro"
-    import LinkCastLayout from "@layouts/LinkCastLayout.astro"
+import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+import LinkCastLayout from "@layouts/LinkCastLayout.astro"
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+  ];
+}
 ---
 
 <LinkCastLayout title="ArtKidsFoundation.org - Newscasts" description="Your latest news and links concerning Everything Artkids Foundation">

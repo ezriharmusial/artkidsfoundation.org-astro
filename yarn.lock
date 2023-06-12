@@ -2014,7 +2014,7 @@ astro-webmanifest@^0.6.0:
     valid-filename "^4.0.0"
     zod "^3.21.4"
 
-astro@^2.6.0:
+astro@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.6.3.tgz#6bb5737ab946a2c7c8f02fc7ce812b8abd01222a"
   integrity sha512-gJoBX+t11qAeYDjterGEaQZx7qqlGOigWhE0zkcEBv4zy7l4IpKx6nGGUNzD/l8x6WomZxkdZROsOsiEaWSJmQ==

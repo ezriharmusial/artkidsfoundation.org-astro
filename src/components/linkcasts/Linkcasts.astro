@@ -1,10 +1,8 @@
 ---
 import { getCollection, getEntryBySlug } from 'astro:content';
-import Artists from '~components/artists/Artists.astro';
 import {Avatar} from "@skeletonlabs/skeleton"
 
 import { getLinkcastType } from "@lib/embeds"
-
 import LinkcastHeader from "./LinkcastHeader.astro";
 
 async function getLinkcasts() {
@@ -13,6 +11,8 @@ async function getLinkcasts() {
 
 export let length = -1
 export let start = 0
+
+const { lang } = Astro.params;
 
 let linkcasts = await getLinkcasts()
 
@@ -102,7 +102,7 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-3 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">
 
 		{linkcasts.map((linkcast) => (
-			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/newscasts/" + linkcast.slug }>
+			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/" + lang + "/newscasts/" + linkcast.slug }>
 				<header>
 					<LinkcastHeader linkcast={linkcast} />
 				</header>
