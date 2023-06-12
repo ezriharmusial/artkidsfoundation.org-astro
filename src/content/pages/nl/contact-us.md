@@ -1,7 +1,7 @@
 ---
 size: is-fullheight
 icon: "talk-bubbles-outline-badged"
-iconFamily: "clarity"
+pack: "clarity"
 color: primary
 bold: false
 updatedDate: 2023-02-23T03:52:11.849Z

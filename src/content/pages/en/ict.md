@@ -2,7 +2,7 @@
 index: 4218
 title: "ArtKids ICT"
 icon: "internet"
-iconFamily: "iconoir"
+pack: "iconoir"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2017-12-16 13:39:19"

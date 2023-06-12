@@ -19,8 +19,7 @@ export async function getStaticPaths() {
 // 1. Get the slug from the incoming server request
 const { page } = Astro.props;
 // 2. Query for the page directly using the request slug
-const { Content } = await page?.render() ;
-
+const { Content, headings } = await page?.render() ;
 
 //console.log('Page entry', slug, page)
 
@@ -33,12 +32,21 @@ const { Content } = await page?.render() ;
 		))}
 	</div> -->
 		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
-			<div class="light:bg-white/75 dark:bg-black/75 md:p-28 p-6 pt-24 text-left">
+			<div class="bg-white/90 dark:bg-black/75 md:p-28 p-6 pt-24 text-left">
 				<div class="container mx-auto flex items-center">
-					<div class="w-2/3 text-lg">
+					<div class="w-1/4 pr-16 landscape:sticky landscape:top-24 landscape:self-start">
+						<h3>Page Content</h3>
+						<ul class="list">
+						{headings && headings.map(heading => (
+							<li><a href={"#" + heading.slug}>{heading.text}</a></li>
+						))}
+						</ul>
+					</div>
+
+					<div class="w-2/4 text-lg">
 						<Content />
 					</div>
-					<div class="w-1/3 pl-16">
+					<div class="w-1/4 pl-16 landscape:sticky landscape:top-24 landscape:self-start">
 						<img src="https://source.unsplash.com/random?african%20popstar" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">
 		  			</div>
 				</div>

@@ -1,7 +1,7 @@
 ---
 index: 323
 icon: "talk-bubbles-outline-badged"
-iconFamily: "clarity"
+pack: "clarity"
 title: "Contact"
 subtitle: ""
 author: "EzzyHarmless"

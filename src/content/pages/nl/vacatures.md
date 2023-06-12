@@ -1,7 +1,7 @@
 ---
 index: 298
 icon: "suitcase"
-iconFamily: "ph"
+pack: "ph"
 title: "Vacatures"
 subtitle: ""
 author: "EzzyHarmless"

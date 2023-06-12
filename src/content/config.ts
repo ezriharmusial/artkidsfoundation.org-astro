@@ -8,7 +8,7 @@ const pages = defineCollection({
         description: z.string().optional(),
         title: z.string(),
         icon: z.string().optional(),
-        iconFamily: z.string().optional(),
+        pack: z.string().optional(),
         image: z.string().optional(),
         imageAlt: z.string().optional(),
         index: z.number(),
@@ -24,7 +24,7 @@ const projects = defineCollection({
     schema: z.object({
         title: z.string(),
         icon: z.string().optional(),
-        iconFamily: z.string().optional(),
+        pack: z.string().optional(),
         image: z.string().optional(),
         imageAlt: z.string().optional(),
         status: z.string().optional(),

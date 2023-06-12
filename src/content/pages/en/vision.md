@@ -1,7 +1,7 @@
 ---
 index: 4399
 icon: "pyramid"
-iconFamily: "icon-park-outline"
+pack: "icon-park-outline"
 title: "Vision"
 subtitle: ""
 author: "EzzyHarmless"

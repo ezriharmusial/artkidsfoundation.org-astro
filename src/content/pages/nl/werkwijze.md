@@ -1,7 +1,7 @@
 ---
 index: 302
 icon: "code-of-conduct-16"
-iconFamily: "octicon"
+pack: "octicon"
 title: "Werkwijze"
 subtitle: ""
 author: "EzzyHarmless"

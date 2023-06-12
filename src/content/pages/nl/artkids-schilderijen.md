@@ -1,7 +1,7 @@
 ---
 index: 294
 icon: "art-gallery"
-iconFamily: "map"
+pack: "map"
 title: "ArtKids Schilderijen"
 subtitle: ""
 author: "EzzyHarmless"

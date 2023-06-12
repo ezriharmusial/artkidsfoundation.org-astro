@@ -1,7 +1,7 @@
 ---
 index: 4585
 icon: "globe-europe"
-iconFamily: "la"
+pack: "la"
 title: "ArtKids Europa"
 subtitle: ""
 author: "EzzyHarmless"

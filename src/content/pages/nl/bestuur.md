@@ -1,7 +1,7 @@
 ---
 index: 270
 icon: "group"
-iconFamily: "iconoir"
+pack: "iconoir"
 title: "Bestuur"
 subtitle: ""
 author: "EzzyHarmless"

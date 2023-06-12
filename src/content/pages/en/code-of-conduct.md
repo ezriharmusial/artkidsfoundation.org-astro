@@ -1,7 +1,7 @@
 ---
 index: 4257
 icon: "code-of-conduct-16"
-iconFamily: "octicon"
+pack: "octicon"
 title: "Code of Conduct"
 subtitle: ""
 author: "EzzyHarmless"

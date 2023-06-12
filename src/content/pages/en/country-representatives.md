@@ -1,7 +1,7 @@
 ---
 index: 4924
 icon: "globe-solid"
-iconFamily: "teenyicons"
+pack: "teenyicons"
 title: "Country Representatives"
 shortTitle: "Representatives"
 subtitle: ""

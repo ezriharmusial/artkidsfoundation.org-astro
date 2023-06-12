@@ -1,7 +1,7 @@
 ---
 index: 296
 icon: "charity-outline"
-iconFamily: "mdi"
+pack: "mdi"
 title: "Fondswerving Campagnes"
 subtitle: ""
 shortTitle: "Fondswerving"

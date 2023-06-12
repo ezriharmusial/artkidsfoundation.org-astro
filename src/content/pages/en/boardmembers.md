@@ -1,7 +1,7 @@
 ---
 index: 4169
 icon: "group"
-iconFamily: "iconoir"
+pack: "iconoir"
 title: "Boardmembers"
 subtitle: ""
 author: "EzzyHarmless"

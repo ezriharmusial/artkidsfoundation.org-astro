@@ -1,7 +1,7 @@
 ---
 index: 4935
 icon: "account-tie"
-iconFamily: "mdi"
+pack: "mdi"
 title: "ArtKids Int. Corp."
 subtitle: ""
 author: "EzzyHarmless"

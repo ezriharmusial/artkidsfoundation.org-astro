@@ -1,7 +1,7 @@
 ---
 index: 4942
 icon: "globe-solid"
-iconFamily: "teenyicons"
+pack: "teenyicons"
 title: "Vertegenwoordigers"
 subtitle: ""
 author: "EzzyHarmless"

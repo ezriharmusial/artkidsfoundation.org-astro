@@ -1,7 +1,7 @@
 ---
 index: 4475
 icon: "charity-outline"
-iconFamily: "mdi"
+pack: "mdi"
 title: "Fundraising Campaigns"
 subtitle: ""
 shortTitle: "Fundraising"

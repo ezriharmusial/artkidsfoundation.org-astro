@@ -1,7 +1,7 @@
 ---
 index: 4469
 icon: "art-gallery"
-iconFamily: "map"
+pack: "map"
 title: "ArtKids Paintings"
 subtitle: ""
 author: "EzzyHarmless"

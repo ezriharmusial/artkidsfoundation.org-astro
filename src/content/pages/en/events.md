@@ -1,7 +1,7 @@
 ---
 index: 5009
-icon: event-heart
-iconFamily: mdi
+icon: event
+pack: carbon
 title: "Events"
 subtitle: ""
 author: "EzzyHarmless"

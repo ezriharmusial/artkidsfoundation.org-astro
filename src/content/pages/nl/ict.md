@@ -1,7 +1,7 @@
 ---
 index: 159
 icon: "internet"
-iconFamily: "iconoir"
+pack: "iconoir"
 title: "ArtKids ICT"
 subtitle: ""
 author: "EzzyHarmless"

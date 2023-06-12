@@ -1,7 +1,7 @@
 ---
 index: 4765
 icon: "solar-power"
-iconFamily: "mdi"
+pack: "mdi"
 title: "Solar Africa"
 subtitle: ""
 author: "EzzyHarmless"

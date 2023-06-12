@@ -1,7 +1,7 @@
 ---
 index: 4183
 icon: "suitcase"
-iconFamily: "ph"
+pack: "ph"
 title: "Job Offerings"
 subtitle: ""
 author: "EzzyHarmless"

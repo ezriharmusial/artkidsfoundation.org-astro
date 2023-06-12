@@ -33,7 +33,7 @@ function getLangFromId(page) {
         <span class={directionClass}>
             <Icon pack="ph" name="newspaper-clipping-bold" class={size} />
             <span>
-                {t('nav.newscasts')}
+                {t('nav.linkcasts')}
             </span>
         </span>
     </a>
@@ -52,11 +52,11 @@ function getLangFromId(page) {
                 </span>
             </label>
 
-            <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
+            <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organisation").map(page => (
-                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
-                        <span class={directionClass}>
-                            <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + " mr-2"} />
                             { page.data?.shortTitle ?
                             <span>
                                 {page.data.shortTitle}
@@ -85,11 +85,11 @@ function getLangFromId(page) {
                 </span>
             </label>
 
-            <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
+            <div class={parentDirectionClass + "bg-primary-600 w-full helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
-                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
-                        <span class={directionClass}>
-                            <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
                             { page.data?.shortTitle ?
                             <span>
                                 {page.data.shortTitle}
@@ -119,9 +119,9 @@ function getLangFromId(page) {
             </label>
             <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "funding").map(page => (
-                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
-                        <span class={directionClass}>
-                            <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + " mr-2"} />
                             { page.data?.shortTitle ?
                             <span>
                                 {page.data.shortTitle}
@@ -151,9 +151,9 @@ function getLangFromId(page) {
             </label>
             <div class={parentDirectionClass + "bg-primary-600 w-full" + " helper-show" }>
                 {projectList && projectList.filter(project => getLangFromId(project) == lang).map(project => (
-                    <a href={"/" + project.slug} class={"btn variant-filled-secondary w-full rounded-none py-4 " + project.slug.split('/')[0]}>
-                        <span class={directionClass}>
-                            <Icon pack={project.data.iconFamily || "teenyicons"} name={project.data.icon || "anchor-solid"} class={size} />
+                    <a href={"/" + project.slug.split('/')[0] + "/projects/" + project.slug.split('/')[1]} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + project.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={project.data.pack || "teenyicons"} name={project.data.icon || "anchor-solid"} class={size + " mr-2"} />
                             { project.data?.shortTitle ?
                             <span>
                                 {project.data.shortTitle}
@@ -174,7 +174,7 @@ function getLangFromId(page) {
     {pageList && pageList.filter(page => page.data.status == "published" && !page.data.category && getLangFromId(page) == lang).map(page => (
         <a href={"/" + page.slug} class={"btn variant-filled-primary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
             <span class={directionClass}>
-                <Icon pack={page.data.iconFamily || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
                 { page.data?.shortTitle ?
                 <span>
                     {page.data.shortTitle}
@@ -204,8 +204,8 @@ function getLangFromId(page) {
             & .helper-show {
             display: flex !important;
             }
-            & + .helper-enable {
-            opacity: 0.5;
+            & .helper-enable {
+            filter: saturate(0.75);
             }
         }
     }
