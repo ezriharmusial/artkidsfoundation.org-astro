@@ -1,5 +1,7 @@
 ---
 index: 5009
+icon: event-heart
+iconFamily: mdi
 title: "Evenementen"
 subtitle: ""
 author: "EzzyHarmless"

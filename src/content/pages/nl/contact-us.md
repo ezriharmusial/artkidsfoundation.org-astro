@@ -1,6 +1,6 @@
 ---
 size: is-fullheight
-icon: "talk-bubbles-solid-badged"
+icon: "talk-bubbles-outline-badged"
 iconFamily: "clarity"
 color: primary
 bold: false

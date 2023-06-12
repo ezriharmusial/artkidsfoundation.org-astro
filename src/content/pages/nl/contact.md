@@ -1,6 +1,6 @@
 ---
 index: 323
-icon: "talk-bubbles-solid-badged"
+icon: "talk-bubbles-outline-badged"
 iconFamily: "clarity"
 title: "Contact"
 subtitle: ""
