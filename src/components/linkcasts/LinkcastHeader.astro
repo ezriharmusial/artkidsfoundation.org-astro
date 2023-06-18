@@ -16,8 +16,8 @@ function getRatio(){
 ---
 
 <div class="relative">
-	<figure class="aspect-[4/3] dark:bg-black/50 light:bg-white/50 flex items-center justify-center overflow-hidden">
-	<img fit="contain" width={640} aspectRatio={getRatio()} loading="lazy" src={linkcast.data?.image} quality={85} format="webp" class={"bg-black/50 w-full object-cover "} alt="Post" />
+	<figure class="transition-all duration-500 aspect-[4/3] flex items-center justify-center overflow-hidden" style="background: #000000CC center / 50% 50% no-repeat url('/images/svg/tail-spin.svg');"  >
+		<img fit="contain" width={640} aspectRatio={getRatio()} loading="lazy" src={linkcast.data?.image} quality={85} format="webp" class={"bg-black/50 w-full object-cover "} alt="Post" />
 	</figure>
 {getLinkcastType(linkcast?.data?.url) == 'youtube' &&
 <div class="image-container absolute top-0 h-full w-full flex justify-center items-center">

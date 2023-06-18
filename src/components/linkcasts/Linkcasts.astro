@@ -31,7 +31,7 @@ const { slug } = await Astro.params
 const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 ---
 
-<div class=" min-h-screen landscape:xl:p-28 p-2 pt-24">
+<div class=" min-h-screen landscape:xl:p-28 p-2 landscape:pt-24">
 
 	<h2 class="h2">Previous Newscasts</h2>
 	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-2 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">

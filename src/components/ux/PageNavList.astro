@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content'
 import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
 import { Icon } from 'astro-icon'
+import BrandFlag from '~components/ui/BrandFlag.astro';
 
 const pageList = await getCollection('pages');
 const projectList = await getCollection('projects');
@@ -19,15 +20,7 @@ function getLangFromId(page) {
 ---
 
 <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-
-    <a href={"/" + lang + "/"} class="btn variant-filled-primary w-full rounded-none py-4">
-        <span class={directionClass}>
-            <Icon pack="ph" name="house-line-bold" class={size}/>
-            <span>
-                {t('nav.home')}
-            </span>
-        </span>
-    </a>
+    <BrandFlag />
 
     <a href={"/" + lang + "/newscasts"} class="btn variant-filled-primary w-full rounded-none py-4">
         <span class={directionClass}>

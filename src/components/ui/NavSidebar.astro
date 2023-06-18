@@ -3,7 +3,6 @@ import PageNavList from '~components/ux/PageNavList.astro';
 // import Search from '@components/ux/Search.svelte';
 import { LightSwitch } from '@skeletonlabs/skeleton'
 import { Icon } from 'astro-icon';
-import BrandFlag from './BrandFlag.astro';
 
 // const response = await fetch(Astro.url.origin + '/api/v1/pages.json');
 // const searchData = await response.json();
@@ -13,7 +12,6 @@ import BrandFlag from './BrandFlag.astro';
 <!-- for toggling functionality. Should be at the same level as navbar-menu -->
 <input type="checkbox" id="menuToggler" class="menuToggler !hidden" />
 <div class="navbar-menu flex flex-col justify-between bg-primary-600">
-    <BrandFlag />
 
     <PageNavList />
 
