@@ -4,12 +4,12 @@ import { Image } from "@astrojs/image/components";
 const { classes } = Astro.props
 ---
 
-<a class=" flex flex-shrink h-full w-full italic font-sans items-center !no-underline drop-shadow hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4" href="/">
+<a class="marker flex flex-shrink h-full w-full italic font-sans items-center !no-underline drop-shadow hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4" href="/">
     <figure class={classes + " image transition-all duration-500 m-0 p-0 w-12 ml-4 mr-2"}>
         <img loading="lazy" width={64} height={68} src="/logo-512.png" alt="Artkids Foundation Home"/>
     </figure>
     <h1 class="unstyled transition-colors duration-500 text-left font-extrabold text-2xl leading-6 hover:text-yellow-400 dark:focus:text-gray-100">
-        <span class="uppercase">
+        <span>
             <span class="block text-yellow-400">Artkids</span><span class=" text-orange-600">Foundation</span>
         </span>
     </h1>
