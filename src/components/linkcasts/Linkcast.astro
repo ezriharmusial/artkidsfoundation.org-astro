@@ -14,11 +14,11 @@
 	</header>
 	<main class="p-4 space-y-4 landscape:col-span-1 landscape:max-h-screen landscape:overflow-y-auto">
 		<h6 class="text-primary-500 font-semibold">{linkcast.data?.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-primary">{type}</span></h6>
-		<h3 class="font-black text-2xl">{linkcast.data?.title}</h3>
+		<h3 class="font-black text-xl">{linkcast.data?.title}</h3>
 		{linkcast.data?.subtitle &&
 		<h4 class="font-medium">{linkcast.data?.subtitle && <span>{linkcast.data?.subtitle}</span> }</h4>
 		}
-		<article class="text-xl">
+		<article class=" text-lg space-y-6">
 			{linkcast.body}
 			<p>
 			{linkcast.data?.url &&

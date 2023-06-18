@@ -52,7 +52,7 @@ const { Content } = await linkcast.render();
 					</span>
 				</h4>
 
-				<article class="text-2xl ">
+				<article class=" text-lg space-y-6">
 					<Content/>
 					<!-- {linkcast?.body} -->
 				</article>
@@ -60,7 +60,6 @@ const { Content } = await linkcast.render();
 					{linkcast.data?.url &&
 						<a class="btn btn-filled-primary" href={linkcast.data?.url} target="_blank" rel="noreferrer">{linkcast.data?.url}</a>
 					}
-					<div class="btn btn-filled-secondary">Read more...</div>
 				</div>
 			</main>
 			<hr />

@@ -21,6 +21,7 @@ import { Icon } from 'astro-icon';
 import BrandFlag from '~components/ui/BrandFlag.astro';
 import SocialNav from '~components/ui/SocialNav.astro';
 import PageTitle from '~components/ui/PageTitle.astro';
+import NavSidebar from '~components/ui/NavSidebar.astro';
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -47,7 +48,7 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 <html class={mode + " " + lang } lang={lang}>
 <head>
     <!-- Site Meta & SEO -->
-    <!-- <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} /> -->
+    <SEO description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle} fbappid={fbappid} />
     <!-- Fonts -->
     <Fonts />
 </head>
@@ -58,12 +59,11 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
     <!-- <PageTransition speed={500} color={"orange"} zIndex={99} /> -->
     <div style="display: contents" class="h-full overflow-hidden">
 
-        <AppShell slotSidebarLeft="opacity-95 h-full portrait:pb-24 portrait:fixed portrait:left-0 portrait:top-20 portrait:bottom-0 z-20">
-            <svelte:fragment slot="header">
+        <AppShell slotSidebarLeft="bg-primary-400 h-screen portrait:pb-24 portrait:absolute portrait:left-0 portrait:top-0 portrait:bottom-0 z-20">
+            <svelte:fragment slot="pageHeader">
                 <AppBar background="z-30">
 
                     <svelte:fragment slot="lead">
-                    <BrandFlag />
                     </svelte:fragment>
                     <PageTitle title={title} icon="newspaper-clipping-bold" pack="ph" />
                     <svelte:fragment slot="trail">
@@ -73,30 +73,9 @@ const { title, seoTitle, description, image, imageAlt } = (Astro.props?.data || 
 
             <!-- Sidebar -->
             <svelte:fragment slot="sidebarLeft">
-                <!-- for toggling functionality. Should be at the same level as navbar-menu -->
-                <input type="checkbox" id="menuToggler" class="menuToggler !hidden" />
-                <div class="navbar-menu flex flex-col justify-between h-full">
-                    <PageNavList />
-
-                    <div class="flex flex-col">
-                        <!-- Search Component -->
-                        <!-- <Search data={searchData} client:load /> -->
-
-                        <!-- Lightswitch -->
-                        <div class="btn lightswitch variant-filled-primary w-full rounded-none flex flex-col">
-                            <div class="w-10 h-10">
-                                <LightSwitch client:load />
-                            </div>
-                            <span>
-                                Mode
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <label for="menuToggler" class={"navbar-burger fixed btn w-12 h-12 left-6 bottom-4 btn-icon flex flex-col items-center z-20"} data-target="navbarMenuHeroC">
-                    <Icon pack="ph" name="list-bold" class="w-10 h-10 p-1"/>
-                </label>
+            <NavSidebar />
             </svelte:fragment>
+
 
             <!-- Default Slot -->
             <slot />
