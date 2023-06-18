@@ -16,10 +16,7 @@ import Footer from '../components/Footer.astro';
 import SEO from '../components/head/SEO.astro';
 import seoSettings from '../content/settings/_seo.yml';
 import siteSettings from '../content/settings/_settings.yml';
-import PageNavList from '~components/ux/PageNavList.astro';
 
-import BrandFlag from '~components/ui/BrandFlag.astro';
-import SocialNav from '~components/ui/SocialNav.astro';
 import PageTitle from '~components/ui/PageTitle.astro';
 import NavSidebar from '~components/ui/NavSidebar.astro';
 import LanguagePicker from '~components/ui/LanguagePicker.astro';
@@ -51,15 +48,15 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
     <Fonts />
 </head>
 <body data-theme={theme} class="init">
+
     <!-- Extended Head -->
     <slot name="extendedHead" />
 
     <!-- App Loader Screen -->
     <AppLoader />
 
-    <!-- Page Transition -->
-    <!-- <PageTransition speed={500} color={"orange"} zIndex={99} /> -->
-    <div style="display: contents" class="h-full overflow-hidden">
+    <!-- Application HTML -->
+    <div style="display: contents" class="h-full overflow-hidden relative">
 
     <AppShell slotSidebarLeft="bg-primary-400 h-screen portrait:pb-24 portrait:absolute portrait:left-0 portrait:top-0 portrait:bottom-0 z-20">
         <svelte:fragment slot="pageHeader">
@@ -99,6 +96,7 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
         <SocialNav />
         </svelte:fragment> -->
     </AppShell>
+
 </div>
 
 <!-- Player -->
