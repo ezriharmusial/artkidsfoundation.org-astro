@@ -113,39 +113,6 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
 </html>
 
 <style is:global>
-    /* We don't need checkbox to be displayed in order for it to work */
-    .menuToggler {
-        display: none;
-    }
-
-    /*  Displays menu when menuToggler is checked only on mobile/tablet */
-    @media screen and (max-width: 1023px) {
-        .menuToggler:checked ~ .navbar-menu {
-            display: flex !important;
-        }
-
-        .menuToggler:checked ~ .navbar-menu .lightswitch{
-            margin-bottom: 5rem;
-        }
-
-        /* We don't want menu to be displayed on mobile by default */
-        .navbar-menu {
-            display: none;
-        }
-
-    }
-
-    .navbar-burger {
-        position: fixed;
-        top: unset !important;
-    }
-
-    @media screen and (min-width: 1024px) {
-        .navbar-burger {
-            display: none !important;
-        }
-    }
-
     [astro-icon] {
         min-width: 1rem;
     }

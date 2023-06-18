@@ -40,7 +40,7 @@ function getLangFromId(page) {
 
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="organisation" class="helper-trigger hidden" />
+        <input type="radio" name="menu" id="organisation" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
 
             <label for="organisation" class={" btn variant-filled-primary w-full rounded-none py-4 helper-enable"}>
@@ -74,7 +74,7 @@ function getLangFromId(page) {
     </div>
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="about-artkids" class="helper-trigger hidden" />
+        <input type="radio" name="menu" id="about-artkids" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="about-artkids" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
                 <span class={directionClass}>
@@ -107,7 +107,7 @@ function getLangFromId(page) {
     </div>
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="funding" class="helper-trigger hidden" />
+        <input type="radio" name="menu" id="funding" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="funding" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
                 <span class={directionClass}>
@@ -139,7 +139,7 @@ function getLangFromId(page) {
     </div>
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="projects" class="helper-trigger hidden" />
+        <input type="radio" name="menu" id="projects" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="projects" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
                 <span class={directionClass}>
@@ -197,15 +197,28 @@ function getLangFromId(page) {
 
     .helper-trigger,
     .helper-show {
-        display: none !important;
+        transition: all 0.25s ease-in-out;
+        height: 0 !important;
+        display: flex;
+        overflow: hidden !important;
+
+        & > a {
+            transition: all 0.25s ease-in-out;
+            transform: translateX(-100%) !important;
+        }
     }
     .helper-trigger[type="radio"]:checked {
         & + .dropdown {
             & .helper-show {
-            display: flex !important;
+                height: auto !important;
+
+                & > a {
+                    transform: translateX(0) !important;
+                }
             }
             & .helper-enable {
-            filter: saturate(0.75);
+                filter: saturate(1.25);
+                filter: brightness(1.5);
             }
         }
     }
