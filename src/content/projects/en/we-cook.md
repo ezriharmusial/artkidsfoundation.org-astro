@@ -3,11 +3,11 @@ color: light
 title: We-Cook
 subtitle: From soil to Plate
 shortTitle: We-Cook
-thumbnail: /uploads/food-meal-cuisine-brunch-service-restaurant-1541363-pxhere.com.jpg
-changed: /uploads/we-cook-3.jpg
+image: /uploads/projects/food-meal-cuisine-brunch-service-restaurant-1541363-pxhere.com.jpg
+changed: /uploads/projects/we-cook-3.jpg
 ---
 "All works and no food makes kids weak".
-\
+
 One who learns to cultivate, plant, irrigate, nurture and harvest the food should do marvelously well in also knowing how to cook the food he or she produced.
 
 We-Cook is an ArtKids program through which kids are taught how to cook the food they produced.

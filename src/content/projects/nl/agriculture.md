@@ -2,7 +2,8 @@
 title: Landbouw
 subtitle: Boeren voor de toekomst
 shortTitle: Landbouw
-thumbnail: /uploads/saf-logo-large.png
+image: /uploads/projects/agric.jpg
+changed: /uploads/projects/agric-2.jpg
 ---
 ### Introductie
 

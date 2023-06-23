@@ -3,8 +3,8 @@ color: light
 title: ArtKids TechWorld
 subtitle: hope to survive the digital systems
 shortTitle: ArtKids TechWorld
-thumbnail: /uploads/techworld-africa.jpg
-changed: /uploads/techword-2.jpg
+image: /uploads/projects/techworld-africa.jpg
+changed: /uploads/projects/techword-2.jpg
 ---
 Our 21st century is aggressively unfriendly towards technology illiterates. So much so that such people have little or no hope to survive the digital systems of the 21st century.
 

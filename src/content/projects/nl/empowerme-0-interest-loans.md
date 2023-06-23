@@ -1,7 +1,10 @@
 ---
+color: dark
 title: EmpowerME (0%-interest Loans)
 subtitle: thrive the business
 shortTitle: EmpowerME
+image: /uploads/projects/empowerme.jpg
+changed: /uploads/projects/empowerme-2.jpg
 ---
 Slightly similar to microfinance loan scheme but unique in it's joint-venture-styled  implementation, EmpowerMe is the initiative of ArtKids Intl. Corp. through which existing and new businesses are financially supported and boosted. Strategically, ArtKids Intl. Corp. signs a 20/80 (20% for ArtKids~80% for Partner) agreement with existing or new businesses and provides the funding required to effectively carry out the day-day operations of the business in question.
 

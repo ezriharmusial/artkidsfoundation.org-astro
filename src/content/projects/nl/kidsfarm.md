@@ -1,7 +1,10 @@
 ---
+color: light
 title: KidsFarm
 subtitle: basic principles of farming
 shortTitle: KidsFarm
+image: /uploads/projects/kidsfarm.jpg
+changed: /uploads/projects/kidsfarm-2.jpg
 ---
 In samenwerking met scholieren, ouders en leerkrachten heeft Stichting ArtKids KidsFarm gelanceerd in landelijke gebieden van land tot land. Stichting ArtKids stelt landbouwgrond veilig in de buurt van de partnerschool.
 

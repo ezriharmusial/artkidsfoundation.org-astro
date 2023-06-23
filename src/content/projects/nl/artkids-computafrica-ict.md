@@ -2,6 +2,8 @@
 title: Artkids ComputAfrica (ICT)
 subtitle: Computer ABC's
 shortTitle: Artkids ComputAfrica
+image: /uploads/projects/computeafrica.jpg
+changed: /uploads/projects/computeafrica-2.jpg
 ---
 Door de toegewijde diensten van jeugdige computertechnologietrainers, draagt ArtKids de kennis van computers (ICT) over aan onze jongeren en betrekt ze hen tegelijkertijd bij bedrijven die ICT als drijfveer gebruiken. Op deze manier zouden onze kinderen de opgedane kennis van ICT praktisch gebruiken om zaken te doen en inkomsten te genereren, terwijl ze nog steeds het praktische gebruik van ICT leren.
 

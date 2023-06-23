@@ -19,23 +19,88 @@ const { project } = Astro.props;
 // 2. Query for the page directly using the request slug
 const { Content } = await project?.render() ;
 
+let elements = {
+	title: {
+		el: undefined,
+		intersecting: false
+	},
+	thumbnail: {
+		el: undefined,
+		intersecting: false
+	},
+	description: {
+		el: undefined,
+		intersecting: false
+	},
+	changed: {
+		el: undefined,
+		intersecting: false
+	},
+	nextProject: {
+		el: undefined,
+		intersecting: false
+	}
+}
 
 //console.log('Page entry', slug, page)
 
 ---
 <BaseLayout description={project.data?.description} title={project.data?.title} image={project.data?.image} imageAlt={project.data?.imageAlt}>
+	<!-- Section Started Heading -->
+	<div class="section section-inner started-heading">
+		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  project.data?.image + "');"}>
+			<!-- titles -->
+			<div class="portrait:hidden h-titles card rounded-xl p-4 landscape:w-1/3 landscape:max-w-1/3 mix-blend-differnce backdrop-blur bg-white/50 dark:bg-black/50 ">
+				{project?.data.subtitle &&
+					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+				}
+				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
+				<p>Support our Cause and donate to this Project.</p>
+				<a href="" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
+			</div>
+		</div>
+	</div>
 
-		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
-			<div class="bg-white/90 dark:bg-black/75 landscape:md:p-28 p-4 landscape:pt-24">
-				<div class="container mx-auto flex portrait:flex-col items-center">
-					<div class="landscape:w-2/3  text-lg space-y-6">
-						<Content />
+	<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
+		<div class="bg-white/90 dark:bg-black/75 landscape:md:p-28 p-4 landscape:pt-24">
+			<div class="container mx-auto flex portrait:flex-col">
+				<div class="landscape:w-2/3 text-lg mb-8">
+					{project?.data.subtitle &&
+						<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+					}
+					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{project?.data.title}</h2>
+					<div class=" space-y-6">
+					<Content />
 					</div>
-					<div class="landscape:w-1/3 pl-16">
-						<img src="https://source.unsplash.com/random?african%20popstar" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">
-		  			</div>
+				</div>
+				<div class="landscape:w-1/3 aspect-square landscape:ml-8">
+					<img src="https://source.unsplash.com/random?african%20popstar" class="object-cover rounded-xl" alt="Layout Image">
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
+	<!-- Section Started Heading -->
+	<div class="section section-inner started-heading">
+		<div class="aspect-video bg-cover bg-center w-full transition-all duration-100 flex flex-col justify-end" style={"background-image: url('" +  project.data?.changed + "');"}>
+			<!-- titles -->
+			<div class="card portrait:hidden rounded-xl h-titles flex flex-col justify-end p-8 portrait:p-4 m-auto landscape:w-1/3 landscape:max-w-1/3 backdrop-blur bg-white/50 dark:bg-black/50">
+				{project?.data.subtitle &&
+					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+				}
+				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
+				<p>Support our Cause and donate to this Project.</p>
+				<a href="" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
+			</div>
+		</div>
+		<!-- titles -->
+		<div class="landscape:hidden card rounded-xl h-titles flex flex-col justify-end p-8 portrait:p-4 m-auto landscape:w-1/3 landscape:max-w-1/3 backdrop-blur bg-white/50 dark:bg-black/50">
+			{project?.data.subtitle &&
+				<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+			}
+			<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
+			<p>Support our Cause and donate to this Project.</p>
+			<a href="" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
+		</div>
+	</div>
 </BaseLayout>

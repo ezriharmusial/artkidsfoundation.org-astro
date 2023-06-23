@@ -1,10 +1,9 @@
 ---
-color: light
 title: Agriculture
 subtitle: Farming for the future
 shortTitle: Agriculture
-thumbnail: /uploads/agric.jpg
-changed: /uploads/agric-2.jpg
+image: /uploads/projects/agric.jpg
+changed: /uploads/projects/agric-2.jpg
 ---
 Undoubtedly, good food is the most essential when it concerns life and healthy-living. To live our lives, we require the nutrients contained in the foods we eat. The food we eat can either save us, weaken us or kill us.
 

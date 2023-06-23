@@ -1,6 +1,9 @@
 ---
 title: "ArtKids CapaciteitsBouw Initiatieven (ACBi) "
+subtitle: Developing our natural gifts
 shortTitle: ACBi
+image: /uploads/projects/capacity.jpg
+changed: /uploads/projects/capacity-2.jpg
 ---
 ### Inleiding
 

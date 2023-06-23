@@ -3,8 +3,8 @@ color: light
 title: ArtKids Research Collaboration Centre (ARCC)
 subtitle: turn concepts into inventions
 shortTitle: Research Collaboration Centre
-thumbnail: /uploads/research.jpg
-changed: /uploads/research-2.jpg
+image: /uploads/projects/research.jpg
+changed: /uploads/projects/research-2.jpg
 ---
 ArtKids~ICT has provided conducive environments for research collaborations between our young inventors and professional technologists.
 

@@ -3,8 +3,8 @@ color: light
 title: "ArtKids AudioVisual Studio #777"
 subtitle: Producing Creativity
 shortTitle: AAVS777
-thumbnail: /uploads/audiovisualstudio.jpg
-changed: /uploads/audiovisualstudio-2.jpg
+image: /uploads/projects/audiovisualstudio.jpg
+changed: /uploads/projects/audiovisualstudio-2.jpg
 ---
 Once a creative musical or theatrical talent is identified through DiscoverME TalentHunt, ArtKids signs the upcoming artists and comfortably produces the artists in our State of the Art  Studio (ArtKids AudioVisual Studio 777).
 

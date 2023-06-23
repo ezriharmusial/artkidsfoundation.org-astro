@@ -3,7 +3,7 @@ color: light
 title: ArtKids Young-Inventors (AYI)
 subtitle: harness inventive talents
 shortTitle: ArtKids Young-Inventors
-thumbnail: /uploads/younginventors.jpg
+image: /uploads/projects/younginventors.jpg
 changed: ""
 ---
 Technically speaking, our kids are gifted with various degrees of incentive and/or innovative processes.

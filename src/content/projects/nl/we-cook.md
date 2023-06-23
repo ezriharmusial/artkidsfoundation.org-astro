@@ -1,7 +1,10 @@
 ---
+color: light
 title: We-Cook
 subtitle: From soil to Plate
 shortTitle: We-Cook
+image: /uploads/projects/food-meal-cuisine-brunch-service-restaurant-1541363-pxhere.com.jpg
+changed: /uploads/projects/we-cook-3.jpg
 ---
 "Alle werken en geen eten maakt kinderen zwak en zwakke kinderen". Iemand die het voedsel leert verbouwen, planten, irrigeren, verzorgen en oogsten, zou wonderbaarlijk goed moeten weten hoe het voedsel dat hij of zij heeft geproduceerd, moet worden gekookt.
 

@@ -1,10 +1,10 @@
 ---
 color: light
-title: Talent&Creativity
+title: Talent & Creativity
 subtitle: talents hold values
-shortTitle: Talent&Creativity
-thumbnail: /uploads/talent-and-creativity.jpg
-changed: /uploads/talent-and-creativity-2.jpg
+shortTitle: Talent & Creativity
+image: /uploads/projects/talent-and-creativity.jpg
+changed: /uploads/projects/talent-and-creativity-2.jpg
 ---
 Every human being on Earth is naturally endowed with talents and creativity.
 

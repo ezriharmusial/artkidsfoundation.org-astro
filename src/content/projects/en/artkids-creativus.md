@@ -3,8 +3,8 @@ color: light
 title: ArtKids CreativUs
 subtitle: Mutually Beneficial Ventures
 shortTitle: ArtKids CreativUs
-thumbnail: /uploads/creativus.jpg
-changed: /uploads/creativus-2.jpg
+image: /uploads/projects/creativus.jpg
+changed: /uploads/projects/creativus-2.jpg
 ---
 'Us' and 'We' are magical words when it comes to Mutually Beneficial Ventures (MBVs). 'Us' and 'We' gave birth to 'Company'.
 

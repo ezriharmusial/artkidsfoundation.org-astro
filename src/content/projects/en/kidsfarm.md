@@ -3,8 +3,8 @@ color: light
 title: KidsFarm
 subtitle: basic principles of farming
 shortTitle: KidsFarm
-thumbnail: /uploads/kidsfarm.jpg
-changed: /uploads/kidsfarm-2.jpg
+image: /uploads/projects/kidsfarm.jpg
+changed: /uploads/projects/kidsfarm-2.jpg
 ---
 In cooperation with school pupils, parents and teachers, ArtKids Foundation has launched KidsFarm in rural areas from country to country. ArtKids Foundation secures farmland preferably near the partner-school.
 

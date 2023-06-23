@@ -2,6 +2,8 @@
 title: ArtKids CreativUs
 subtitle: Mutually Beneficial Ventures
 shortTitle: ArtKids CreativUs
+image: /uploads/projects/creativus.jpg
+changed: /uploads/projects/creativus-2.jpg
 ---
 'Ons' en 'Wij' zijn magische woorden als het gaat om Mutually Benefitial Ventures (MBV's). 'Ons' en 'Wij' brachten 'Company' ter wereld.
 

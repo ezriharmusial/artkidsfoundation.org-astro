@@ -26,6 +26,7 @@ const projects = defineCollection({
         icon: z.string().optional(),
         pack: z.string().optional(),
         image: z.string().optional(),
+        changed: z.string().optional(),
         imageAlt: z.string().optional(),
         status: z.string().optional(),
         subtitle: z.string().optional(),
