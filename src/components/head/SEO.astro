@@ -24,7 +24,7 @@ function imageUrl(image) {
 	return true;
 }
 
-const canonicalURL = Astro.site;
+const canonicalURL = Astro.url.origin + Astro.url.pathname;
 
 ---
 <link rel="preload" as="image" href={imageUrl(image)}>
