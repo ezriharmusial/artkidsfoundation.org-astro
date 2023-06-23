@@ -13,19 +13,21 @@ export interface Props {
 const { title, seoTitle, description, image, imageAlt, fbappid } = Astro.props
 
 // Catch Image Url Inconsistencies
-// function imageUrl() {
-	// if (image) {
-	// 	console.log('image', image)
-	// 	return new URL(image , Astro.site)
-	// }
-	// else {
-	// 	return new URL("/images/manifest/pwa-512x512" , Astro.site)
-	// }
-	// return true;
-// }
+function imageUrl(image) {
+	if (image) {
+		console.log('image', image)
+		return "https://artkidsfoundation.org" + image
+	}
+	else {
+		return "https://artkidsfoundation.org" + "/images/manifest/pwa-512x512.png"
+	}
+	return true;
+}
 
-const canonicalURL = "test" //new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = Astro.site;
+
 ---
+<link rel="preload" as="image" href={imageUrl(image)}>
 
 <!-- Global Metadata -->
 <meta charset="UTF-8">
@@ -42,7 +44,7 @@ const canonicalURL = "test" //new URL(Astro.url.pathname, Astro.site);
 <meta property="og:description" content={description || SITE_DESCRIPTION}>
 <meta property="og:url" content={canonicalURL}>
 <meta property="og:type" content="website">
-<meta property="og:image" content={""}>
+<meta property="og:image" content={imageUrl(image)}>
 <meta property="og:locale" content="en_EN">
 <meta property="og:site_name" content="ArtKidsFoundation.org">
 <link rel="canonical" href={canonicalURL}>
@@ -50,7 +52,7 @@ const canonicalURL = "test" //new URL(Astro.url.pathname, Astro.site);
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content={title || "Welkom to ArtKidsFoundation.org"}>
 <meta property="twitter:description" content={description || "Welkom to ArtKidsFoundation.org"}>
-<meta property="twitter:image" content={""}>
+<meta property="twitter:image" content={imageUrl(image)}>
 
 <!-- Manifest Files -->
 <link rel="shortcut icon" type="image/png" href="/images/manifest/favicon-32x32.png" sizes="32x32" />
@@ -111,8 +113,8 @@ const canonicalURL = "test" //new URL(Astro.url.pathname, Astro.site);
 
 <span slot="ExtendedHeader">
 	<!-- SEO section -->
-	<link itemprop="thumbnailUrl" href={}>
+	<link itemprop="thumbnailUrl" href={imageUrl(image)}>
 	<span class="hidden" itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-		<link itemprop="url" href={}>
+		<link itemprop="url" href={imageUrl(image)}>
 	</span>
 </span>
