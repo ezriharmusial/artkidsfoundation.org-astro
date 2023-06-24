@@ -1,5 +1,6 @@
 ---
 index: 4194
+layout: ../../../layouts/ContactLayout.astro
 icon: "talk-bubbles-outline-badged"
 pack: "clarity"
 title: "Contact Us"

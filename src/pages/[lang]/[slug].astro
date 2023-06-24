@@ -31,11 +31,12 @@ const { Content, headings } = await page?.render() ;
 			<li><a href={"/" + page.slug}>{page.data.title}</a></li>
 		))}
 	</div> -->
-		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
+		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?galaxies');">
 			<div class="bg-white/90 dark:bg-black/75 landscape:xl:p-28 p-4 landscape:pt-24">
 				<div class="container mx-auto flex portrait:flex-col items-center">
 					{headings.length > 2 &&
-					<div class="landscape:w-1/4 pr-16 landscape:sticky landscape:top-24 landscape:self-start">
+					<div class="landscape:w-1/2 landscape:xl:w-1/4 pr-16 landscape:sticky landscape:top-4 landscape:self-start space-y-6">
+						<img src="https://source.unsplash.com/random?african%20children" class="h-72 aspect-square object-cover rounded-xl" alt="Layout Image">
 						<h3>Page Content</h3>
 						<ul class="list">
 						{headings && headings.map(heading => (
@@ -45,12 +46,9 @@ const { Content, headings } = await page?.render() ;
 					</div>
 					}
 
-					<div class="landscape:w-2/4 text-lg space-y-6">
+					<div class="landscape:w-1/2 landscape:xl:w-3/4 text-lg space-y-6">
 						<Content />
 					</div>
-					<div class="landscape:w-1/2 landscape:xl:w-1/4 pl-16 landscape:sticky landscape:top-24 landscape:self-start">
-						<img src="https://source.unsplash.com/random?african%20popstar" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">
-		  			</div>
 				</div>
 			</div>
 		</section>

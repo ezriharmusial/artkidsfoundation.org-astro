@@ -1,11 +1,11 @@
 ---
 size: is-fullheight
+layout: ../../../layouts/ContactLayout.astro
 icon: "talk-bubbles-outline-badged"
 pack: "clarity"
 color: primary
 bold: false
 updatedDate: 2023-02-23T03:52:11.849Z
-layout: ../../../layouts/ContactLayout.astro
 author: EzzyHarmless
 date: 2023-05-26T17:02:43.379Z
 index: 8

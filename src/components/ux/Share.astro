@@ -41,12 +41,15 @@ const url = Astro.site + data?.slug
   }
 </script>
 
-<section id="share-linkcast" class="section my-8">
-  <div class="container mx-auto">
-    <h3 class="title uppercase">{ locale[lang].share_this }</h3>
+<section id="share-linkcast" class="aspect-video bg-cover bg-center w-full flex justify-center items-center" style="background-image: url('https://source.unsplash.com/random?innocent%20children');">
+  <div class="card rounded-lg landscape:w-1/2 p-8 mx-auto">
+    <h4 class="unstyled">Sharing is Caring and helps to get our Stories out.</h4>
+    <h3 class="title unstyled uppercase text-3xl pb-6">{ locale[lang].share_this } page</h3>
+
+    <p class="text-xl portrait:p-4 pb-8">If you Like what we do, please Share our stories online on your Favorite Digital Networks. We Greatly Appreciate!</p>
     {!isMobile ?
 
-      <div class="btn-group !text-white variant-ringed">
+      <div class="btn-group !text-white variant-ringed rounded-lg h-12">
         <!-- Facebook -->
         <a href={"https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(data?.url)} target="_blank" title={"Share " + data?.title + " on Facebook"} area-label={"Share " + data?.title + " on Facebook"} type="button" class="btn-lg" style="background-color: #1877f2;">
           <svg viewBox="0 0 320 512" class="w-4 h-4">
