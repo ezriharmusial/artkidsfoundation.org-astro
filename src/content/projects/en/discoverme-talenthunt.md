@@ -3,6 +3,8 @@ color: light
 title: "DiscoverME (TalentHunt)"
 subtitle: identify, showcase, sponsor and promote upcoming artists
 shortTitle: "DiscoverMe"
+icon: "hashtag-solid"
+pack: "clarity"
 image: /uploads/projects/discover-me-2.jpg
 changed: /uploads/projects/discover-me.jpg
 ---

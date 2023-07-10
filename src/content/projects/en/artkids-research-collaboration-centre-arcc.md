@@ -3,6 +3,8 @@ color: light
 title: ArtKids Research Collaboration Centre (ARCC)
 subtitle: turn concepts into inventions
 shortTitle: Research Collaboration Centre
+icon: "data-scientist"
+pack: "eos-icons"
 image: /uploads/projects/research.jpg
 changed: /uploads/projects/research-2.jpg
 ---

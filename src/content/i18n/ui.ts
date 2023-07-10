@@ -8,6 +8,7 @@ export const defaultLang = 'en';
 export const ui = {
     en: {
         'nav.about': 'About Us',
+        'nav.anbi': 'ANBI',
         'nav.funding': 'Funding',
         'nav.home': 'Home',
         'nav.linkcasts': 'News',

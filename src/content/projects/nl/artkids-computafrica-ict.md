@@ -2,6 +2,8 @@
 title: Artkids ComputAfrica (ICT)
 subtitle: Computer ABC's
 shortTitle: Artkids ComputAfrica
+icon: "file-earmark-binary-fill"
+pack: "bi"
 image: /uploads/projects/computeafrica.jpg
 changed: /uploads/projects/computeafrica-2.jpg
 ---

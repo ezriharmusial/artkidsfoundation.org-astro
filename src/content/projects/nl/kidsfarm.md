@@ -3,6 +3,8 @@ color: light
 title: KidsFarm
 subtitle: basic principles of farming
 shortTitle: KidsFarm
+icon: "fruit-pineapple"
+pack: "mdi"
 image: /uploads/projects/kidsfarm.jpg
 changed: /uploads/projects/kidsfarm-2.jpg
 ---

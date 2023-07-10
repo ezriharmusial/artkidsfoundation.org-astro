@@ -3,6 +3,8 @@ color: light
 title: ArtKids CreativUs
 subtitle: Mutually Beneficial Ventures
 shortTitle: ArtKids CreativUs
+icon: "outline-group-work"
+pack: "ic"
 image: /uploads/projects/creativus.jpg
 changed: /uploads/projects/creativus-2.jpg
 ---

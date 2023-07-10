@@ -1,7 +1,9 @@
 ---
-title: Landbouw
+title: Regeneratieve Landbouw
 subtitle: Boeren voor de toekomst
 shortTitle: Landbouw
+icon: seedling
+pack: la
 image: /uploads/projects/agric.jpg
 changed: /uploads/projects/agric-2.jpg
 ---

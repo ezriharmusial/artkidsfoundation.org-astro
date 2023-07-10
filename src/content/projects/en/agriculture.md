@@ -1,7 +1,9 @@
 ---
-title: Agriculture
+title: Regenerative Agriculture
 subtitle: Farming for the future
 shortTitle: Agriculture
+icon: seedling
+pack: la
 image: /uploads/projects/agric.jpg
 changed: /uploads/projects/agric-2.jpg
 ---

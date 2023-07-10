@@ -2,6 +2,8 @@
 title: Talent & Creativity
 subtitle: talents hold values
 shortTitle: Talent & Creativity
+icon: "bulb-outline"
+pack: "ion"
 image: /uploads/projects/talent-and-creativity.jpg
 changed: /uploads/projects/talent-and-creativity-2.jpg
 ---

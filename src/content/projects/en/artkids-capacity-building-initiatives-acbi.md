@@ -3,6 +3,8 @@ color: light
 title: "ArtKids Capacity Building Initiatives (ACBi) "
 subtitle: Developing our natural gifts
 shortTitle: ACBi
+icon: "machine-learning-model"
+pack: "carbon"
 image: /uploads/projects/capacity.jpg
 changed: /uploads/projects/capacity-2.jpg
 ---

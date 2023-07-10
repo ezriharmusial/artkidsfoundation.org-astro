@@ -2,6 +2,8 @@
 title: "ArtKids AudioVisual Studio #777"
 subtitle: Producing Creativity
 shortTitle: AAVS777
+icon: "video"
+pack: "file-icons"
 image: /uploads/projects/audiovisualstudio.jpg
 changed: /uploads/projects/audiovisualstudio-2.jpg
 ---

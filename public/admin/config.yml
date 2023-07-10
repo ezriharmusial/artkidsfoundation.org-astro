@@ -3,6 +3,19 @@ backend:
   branch: main
 # Local testing
 local_backend: true
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, nl]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: en
 collections:
   - name: "authors"
     label: "Authors"
@@ -133,7 +146,7 @@ collections:
     # moving an existing entry will move the entire sub tree of the entry to the new location
     # meta: { path: { widget: string, label: "Path", index_file: "index" } }
 
-media_folder: "public/uploads"
+media_folder: "/public/uploads"
 public_folder: "/uploads"
 search: true
 slug:

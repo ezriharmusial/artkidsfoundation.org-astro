@@ -3,6 +3,8 @@ color: light
 title: We-Cook
 subtitle: From soil to Plate
 shortTitle: We-Cook
+icon: "cook"
+pack: "mdi"
 image: /uploads/projects/food-meal-cuisine-brunch-service-restaurant-1541363-pxhere.com.jpg
 changed: /uploads/projects/we-cook-3.jpg
 ---

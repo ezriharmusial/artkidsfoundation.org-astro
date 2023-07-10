@@ -2,6 +2,8 @@
 title: ArtKids WisGames
 subtitle: Interactive Edutainment
 shortTitle: ArtKids WisGames
+icon: "game-controller"
+pack: "simple-line-icons"
 image: /uploads/projects/wisgames.jpg
 changed: /uploads/projects/wisgames-2.jpg
 ---

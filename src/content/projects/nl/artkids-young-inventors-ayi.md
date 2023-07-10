@@ -3,6 +3,8 @@ color: light
 title: ArtKids Young-Inventors (AYI)
 subtitle: harness inventive talents
 shortTitle: ArtKids Jonge Uitvinders
+icon: "child-cognition"
+pack: "healthicons"
 image: /uploads/projects/younginventors.jpg
 changed: ""
 ---

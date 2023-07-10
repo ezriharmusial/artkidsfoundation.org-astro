@@ -3,6 +3,8 @@ color: light
 title: ArtKids TechWorld
 subtitle: hope to survive the digital systems
 shortTitle: ArtKids TechWorld
+icon: "network"
+pack: "eos-icons"
 image: /uploads/projects/techworld-africa.jpg
 changed: /uploads/projects/techword-2.jpg
 ---

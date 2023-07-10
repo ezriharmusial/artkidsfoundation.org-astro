@@ -3,6 +3,8 @@ color: dark
 title: EmpowerME (0%-interest Loans)
 subtitle: thrive the business
 shortTitle: EmpowerME
+icon: "people-money-20-filled"
+pack: "fluent"
 image: /uploads/projects/empowerme.jpg
 changed: /uploads/projects/empowerme-2.jpg
 ---

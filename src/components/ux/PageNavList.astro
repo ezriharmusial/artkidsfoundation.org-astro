@@ -31,7 +31,6 @@ function getLangFromId(page) {
         </span>
     </a>
 
-
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="organisation" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
@@ -47,6 +46,42 @@ function getLangFromId(page) {
 
             <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
                 {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organisation").map(page => (
+                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + " mr-2"} />
+                            { page.data?.shortTitle ?
+                            <span>
+                                {page.data.shortTitle}
+                            </span>
+                            :
+                            <span>
+                                {page.data.title}
+                            </span>
+                            }
+                        </span>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
+        <input type="radio" name="menu" id="organisation" class="helper-trigger !hidden" />
+        <div class="dropdown bg-primary-600 w-full">
+
+            <label for="organisation" class={" btn variant-filled-primary w-full rounded-none py-4 helper-enable"}>
+                <span class={directionClass}>
+                    <Icon pack="fluent" name="building-retail-money-20-regular" class={size} />
+                    <span>
+                        {t('nav.anbi')}
+                    </span>
+                </span>
+            </label>
+
+            <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
+                {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "anbi").map(page => (
                     <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
                             <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + " mr-2"} />

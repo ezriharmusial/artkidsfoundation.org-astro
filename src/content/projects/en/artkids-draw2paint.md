@@ -3,6 +3,8 @@ color: light
 title: ArtKids Draw2Paint
 subtitle: ArtKids professional painters
 shortTitle: ArtKids Draw2Paint
+icon: "brush"
+pack: "la"
 image: /uploads/projects/draw2paint.jpg
 changed: /uploads/projects/draw2paint-2.jpg
 ---
