@@ -2,9 +2,9 @@
 index: 5010
 icon: report-line
 pack: mdi
-title: "Financieel Jaarverslag 2023"
-subtitle: ""
-shorttitle: "Jaarverslag 2023"
+title: "Financieel Jaarverslag 2022"
+subtitle: "Verantwoording voor onze Acties in 2022"
+shorttitle: "Jaarverslag 2022"
 author: "EzzyHarmless"
 date: "2018-08-10 10:26:30"
 excerpt: ""
