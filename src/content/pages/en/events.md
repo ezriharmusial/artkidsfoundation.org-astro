@@ -18,22 +18,23 @@ tags: []
 # Events
 
 Artkids Foundation has taken the time Preparing to be able to Realize a Comprehensive Activities Calendar in Igbo-land Africa.
-We have spent almost 9 years diligently working with the locals behind to Realize solid Foundations needed to succesfully run projects in Africa.
+We have spent almost 9 years diligently working with the locals to Realize solid Foundations needed to succesfully run projects in Africa.
 ArtKids Foundation has incorporated various village leaderships in implementing meaningful projects following ArtKids Activity calendar 2023.
 Artkids projects focuses on  African Women and the youths as benefactors under our retrieved ArtKids ANBI status.
 
-Artkids Foundation richt zich op drie belangrijke terreinen van ontwikkelingssamenwerking, namelijk;
+Artkids Foundation aims to conquer 3 terrains development cooperation
+, namely;
 
-1. DiscoverMe: Talentontwikkeling voor jongeren.
-2. ArtKids ICT: Technologies voor empowerment van het platteland, gericht op de noodzakelijke digitalisering van vrouwen.
-3. ArtKids Farms: Agricultural project (Food On Table) is ontworpen om genoeg eten te produceren om schoolgaande kinderen dagelijks te voorzien.
+1. DiscoverMe: Talentdevelopment for Youths.
+2. ArtKids ICT: Technologies for empowerment of rural areas, targeting the neccesary digitization of women.
+3. ArtKids Farms: Agricultural project (Food On Table) is designed to produce abundance of food to support schoolgoing children in their daily needs.
 
-## Calender 2023
+## Calendar 2023
 
-2023 staat in het teken van getalenteerde ArtKids LastMessengerS muziek artiesten en het lanceren van hun carrière en ons ArtKids Farms project.
+2023 is the year of our Talented ArtKids LastMessengerS music artists and launching Their carreer and the expansion of our ArtKids Farms project.
 
 ArtKids LastMessengerS:
- verbindt Muzikale Talenten, Managers, Promoters, Marketeers en ICT/Media professionals met elkaar om de wereld te bereiken met vitale boodschappen.
+ Connect Musical Talents, Managers, Promoters, Marketeers and ICT/Media professionals to reach the world with vital messages.
 
  ArtKids Farms (Food On Table project):
  Landaankoop, struiken kappen, boerderij, werkgelegenheid, planten, wieden, oogsten, keuken opzetten met voedseldistributie van school naar school.
@@ -42,11 +43,13 @@ ArtKids LastMessengerS:
 | --- | --- | --- |
 | 20 & 21 Juli 2023 | ArtKids ICT | Tweedaagse ArtKids ICT Workshop; Owerri, Imo State Nigeria. |
 | Juli & Augustus 2023 | ArtKids LastMessengerS | Videoclip Seizoen; Pre-Productie, Productie, Post-Productie, Promotie & Zendtijd op Televisie. |
+| Juli & Augustus 2023 | ArtKids ICT | Lancering Leerdamse MineCraft Servers |
 | 1 September 2023 | ArtKids Farms | Gewassen Oogstfeest met schoolgaande kinderen. |
+| 1 September 2023 | ArtKids ICT | Lancering Minecraft Digital Leerdam Project. |
 | September & Oktober 2023 | ArtKids LastMessengerS | Promotie van ArtKids LastMessengerS Artiesten. |
 | November & December 2023 | ArtKids LastMessengerS | Africa4Africa Unity Album Tour; Promotie, Interviews, Live Shows, Roadshows en Boekingen. |
 
-## Calender 2024
+## Kalender 2024
 
 2024 staat in het teken van onze projecten ArtKids DiscoverMe Talent-Hunt TV-Show en ArtKids ComPutAfrica ICT TV-Show. ArtKids ComPutAfrica ICT TV-Show omvat onder andere Exclusieve Interviews, Hands-On Workshops, Master Classes, Technologie Updates en MatchMaker Sessies.
 
@@ -59,6 +62,8 @@ ArtKids LastMessengerS:
 | Augustus & September 2024 | Artkids Rural ICT Sensitisation Conference | ICT Sensitisatie & Training van jongeren in dorpen, met name vrouwen. |
 | Oktober & November 2024 | ArtKids ComPutAfrica ICT TV-Show | Pre-Productie, Productie, Post-Productie. |
 | December 2024 | ArtKids ComPutAfrica ICT TV-Show | Premiere met zendtijd op Televisie |
+
+Met trots kondigen wij hiermee onze activiteiten aan zien wij reeds uit naar de vruchten van ons arbeid!
 
 Ondertekend,
 

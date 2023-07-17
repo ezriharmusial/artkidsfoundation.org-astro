@@ -17,12 +17,12 @@ tags: []
 
 # Events
 
-Artkids Foundation has taken the time Preparing to be able to Realize a Comprehensive Activities Calendar in Igbo-land Africa.
-We have spent almost 9 years diligently working with the locals behind to Realize solid Foundations needed to succesfully run projects in Africa.
-ArtKids Foundation has incorporated various village leaderships in implementing meaningful projects following ArtKids Activity calendar 2023.
-Artkids projects focuses on  African Women and the youths as benefactors under our retrieved ArtKids ANBI status.
+Artkids Foundation heeft de nodige tijd genomen om een goede basis te kunnen leggen voor het realiseren van een Uitgebreide aanbod aan Activitieten in Igbo-land Africa.
+We werken al bijna 9 jaar lang nauw samen met de lokale bevolking om samen de noodzakelijk  Fundamenten te plaatsen, voor het Succelvol draaien van onze projecten in Africa.
+ArtKids Foundation heeft verscheidene dorpsleiders betrokken in de implementatie van onze projecten volgens de vermelding in onze Activiteitenkalender van 2023.
+Artkids projecten leggen de focus op Afrikaanse Vrouwen en de Jeugd als weldoeners onder onze herstelde ArtKids ANBI status.
 
-Artkids Foundation richt zich op drie belangrijke terreinen van ontwikkelingssamenwerking, namelijk;
+Artkids Foundation richt zich hierbij op drie belangrijke terreinen van ontwikkelingssamenwerking, namelijk;
 
 1. DiscoverMe: Talentontwikkeling voor jongeren.
 2. ArtKids ICT: Technologies voor empowerment van het platteland, gericht op de noodzakelijke digitalisering van vrouwen.
@@ -59,6 +59,8 @@ ArtKids LastMessengerS:
 | Augustus & September 2024 | Artkids Rural ICT Sensitisation Conference | ICT Sensitisatie & Training van jongeren in dorpen, met name vrouwen. |
 | Oktober & November 2024 | ArtKids ComPutAfrica ICT TV-Show | Pre-Productie, Productie, Post-Productie. |
 | December 2024 | ArtKids ComPutAfrica ICT TV-Show | Premiere met zendtijd op Televisie |
+
+Met trots kondigen wij hiermee onze activiteiten aan zien wij reeds uit naar de vruchten van ons arbeid!
 
 Ondertekend,
 
