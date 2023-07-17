@@ -39,5 +39,8 @@
     "vite-plugin-browser-sync": "^1.0.3",
     "vite-plugin-pwa": "^0.15.1",
     "workbox-window": "^6.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9"
   }
 }

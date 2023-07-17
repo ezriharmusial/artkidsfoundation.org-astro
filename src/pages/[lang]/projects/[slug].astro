@@ -45,7 +45,7 @@ let elements = {
 //console.log('Page entry', slug, page)
 
 ---
-<BaseLayout description={project.data?.description} title={project.data?.title} image={project.data?.image} imageAlt={project.data?.imageAlt}>
+<BaseLayout icon={project.data?.icon} pack={project.data?.pack} description={project.data?.description} title={project.data?.title} image={project.data?.image} imageAlt={project.data?.imageAlt}>
 	<!-- Section Started Heading -->
 	<div class="section section-inner started-heading">
 		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  project.data?.image + "');"}>
@@ -69,7 +69,7 @@ let elements = {
 						<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
 					}
 					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{project?.data.title}</h2>
-					<div class=" space-y-6">
+					<div class="prose prose-stone landscape:w-1/2 landscape:xl:w-3/4 space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-token space-y-6">
 					<Content />
 					</div>
 				</div>
