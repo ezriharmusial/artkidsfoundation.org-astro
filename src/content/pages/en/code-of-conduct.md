@@ -17,7 +17,7 @@ tags: []
 ---
 
 ## Charity
-### selfless giving
+### Selfless giving
 
 There are three basic necessities to everyone:
 
@@ -46,7 +46,7 @@ Furthermore our creativity centers are available to be rent by third parties.
 More information will follow... Do you want to know more? Please feel free to [contact](/en/contact/) us
 
 ## Expenses
-### where does it go to?
+### Where does it go to?
 
 The board is under supervision of the treasurer who checks the financial administration and supervises responsible spending and minimizes expenses. ArtKids minimizes expenses in the following manners:
 

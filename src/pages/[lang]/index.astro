@@ -16,31 +16,30 @@ export async function getStaticPaths() {
 <BaseLayout icon="house-line-bold" pack="ph" title="Cultivating Happiness" image="/images/manifest/apple-touch-startup-image-2048x1496.png" description="Truth Based Music Management. Connecting Truthspreading Artists, with lucrative tools and fair management.">
 		<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?african%20children');">
 			<div class="bg-black/75 text-white landscape:md:p-28 p-4 landscape:pt-24">
-				<div class="container mx-8 flex items-center">
-					<div class="w-2/3">
-						<h1 class="text-5xl font-medium my-8">Welcome to <BrandFlag /> </h1>
-						<p class="text-2xl mb-12">
-							Kids are kids all over the world. ArtKids care for all kids. Here in Europe, the needs of the Kids differ from those in Africa. Whether rich or poor, every kid needs entertainment. For this reason, ArtKids works hand in hand with Schools when carrying out activities designed to entertain or further educate European Kids.
+				<div class="mx-8 flex portrait:flex-col portrait:content-around gap-16 items-center">
+					<div class="landscape:w-2/3 space-y-6">
+						<h1 class="text-2xl font-medium text-orange-500">Welcome to <BrandFlag /> </h1>
+						<p class="unstyled">
+							Kids are kids all over the world. ArtKids cares for all kids. Here in Europe, the needs of the Kids differ from those in Africa. Whether rich or poor, every kid needs entertainment. For this reason, ArtKids works hand in hand with Schools when carrying out activities designed to entertain or further educate European Kids.
 						</p>
 
-						<p class="text-2xl mb-12">
+						<p>
 							From Amusement to excursions, entertainment to edutainment, ArtKids ensures kids” happiness.
 						</p>
 
-						<p class="text-2xl mb-12">
+						<p>
 							Let your school collaborate with ArtKids to keep the kids ever happy.
 						</p>
 
 						<a href="#" class="btn variant-filled-primary rounded-full">Collaborate Now</a>
 					</div>
-					<div class="w-1/3 pl-16">
-						<img src="https://source.unsplash.com/random?school%20children" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">
+					<div class="landscape:w-1/3">
+						<img src="https://source.unsplash.com/random?school%20children" class="aspect-auto portrait:aspect-video rounded-xl" alt="Layout Image">
 		  			</div>
 				</div>
 			</div>
 		</section>
 
 	<Linkcasts />
-
 
 </BaseLayout>

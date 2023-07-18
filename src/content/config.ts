@@ -7,6 +7,8 @@ const pages = defineCollection({
         category: z.string().optional(),
         description: z.string().optional(),
         title: z.string(),
+        subtitle: z.string().optional(),
+        shortTitle: z.string().optional(),
         icon: z.string().optional(),
         pack: z.string().optional(),
         image: z.string().optional(),
@@ -14,8 +16,6 @@ const pages = defineCollection({
         index: z.number(),
         seoTitle: z.string().optional(),
         status: z.string().optional(),
-        subtitle: z.string().optional(),
-        shortTitle: z.string().optional(),
         tags: z.array(z.string()).optional(),
     })
 });
