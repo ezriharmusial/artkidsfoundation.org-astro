@@ -51,3 +51,9 @@ const { pack, icon, title, subtitle } = Astro.props.page?.data || Astro.props.fr
 		</div>
 	</div>
 </section>
+
+<style is:global>
+	#toc-target a.permalink {
+		display:none;
+	}
+</style>
