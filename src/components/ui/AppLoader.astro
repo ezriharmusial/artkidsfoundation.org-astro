@@ -1,13 +1,8 @@
----
-import BrandFlag from "./BrandFlag.astro";
-
----
-
 <div class="app-loader backdrop-saturate-50 backdrop-blur-sm w-screen h-screen flex flex-col justify-around items-center fixed top-0 left-0 z-40">
     <div class="wrapper w-screen flex flex-row items-center justify-center scale-100 transition-transform duration-500 z-40">
         <div class="image flex flex-row justify-around items-center">
-            <div class="marker h-full w-full italic font-sans items-center !no-underline drop-shadow hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4">
-                <h1 class="unstyled flex items-center gap-1 transition-colors duration-500 text-left font-extrabold text-7xl leading-6 hover:text-yellow-400 dark:focus:text-gray-100">
+            <div class="marker h-full w-full italic font-sans items-center !no-underline drop-shadow-xl hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4">
+                <h1 class="unstyled flex items-center gap-1 transition-colors duration-500 text-left font-extrabold text-7xl hover:text-yellow-400 dark:focus:text-gray-100">
                     <figure class="image transition-all duration-500 m-0 p-0 w-20 xs:w-16 lg:w-24 xl:w-32 mr-4 md:mr-8">
                         <img loading="eager" width={128} height={136} class="drop-shadow-2xl" src="/logo-512.png" alt="Artkids Foundation Home" format="avif"/>
                     </figure>
@@ -18,7 +13,7 @@ import BrandFlag from "./BrandFlag.astro";
             </div>
         </div>
     </div>
-    <h2 class="uppercase text-xl font-bold leading-6 md:text-2xl md:leading-8 lg:text-4xl xl:text-5xl lg:leading-12 xl:leading-16 hover:text-yellow-400 dark:focus:text-gray-10">Loading...</h2>
+    <h2 class="uppercase text-white text-xl font-bold drop-shadow-2xl leading-6 md:text-2xl md:leading-8 lg:text-4xl xl:text-5xl lg:leading-12 xl:leading-16 hover:text-yellow-400 dark:focus:text-gray-10">Loading...</h2>
 </div>
 
 
@@ -44,13 +39,13 @@ import BrandFlag from "./BrandFlag.astro";
         transform: translatey(0px);
     }
 
-    img {
+    /* img {
         opacity: 0;
         transition: opacity 600ms;
-        animation: fadeInAnimation ease-in-out 3s;
+        animation: fadeInAnimation ease-in-out 600ms;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-    }
+    } */
 
     @keyframes fadeInAnimation {
         0% {
