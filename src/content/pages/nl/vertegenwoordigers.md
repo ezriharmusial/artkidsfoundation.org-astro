@@ -1,5 +1,6 @@
 ---
 index: 4942
+layout: ../../../layouts/PageLayout.astro
 icon: "globe-solid"
 pack: "teenyicons"
 title: "Vertegenwoordigers"

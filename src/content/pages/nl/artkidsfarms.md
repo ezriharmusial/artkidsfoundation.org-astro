@@ -1,5 +1,6 @@
 ---
 index: 5
+layout: ../../../layouts/PageLayout.astro
 title: "Welkom op ArtKids Farms"
 subtitle: ""
 author: "EzzyHarmless"

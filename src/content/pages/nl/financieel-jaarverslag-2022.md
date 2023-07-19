@@ -1,5 +1,6 @@
 ---
 index: 5010
+layout: ../../../layouts/PageLayout.astro
 icon: report-line
 pack: mdi
 title: "Financieel Jaarverslag 2022"
@@ -16,8 +17,6 @@ category: "anbi"
 comment_count: 0
 tags: []
 ---
-
-# Financieel Jaarverslag 2022
 
 ## Bericht van de Stichters
 

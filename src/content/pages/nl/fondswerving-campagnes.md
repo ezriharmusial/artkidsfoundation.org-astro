@@ -1,5 +1,6 @@
 ---
 index: 296
+layout: ../../../layouts/PageLayout.astro
 icon: "charity-outline"
 pack: "mdi"
 title: "Fondswerving Campagnes"

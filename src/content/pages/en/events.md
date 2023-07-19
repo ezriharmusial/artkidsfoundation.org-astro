@@ -1,5 +1,6 @@
 ---
 index: 5009
+layout: ../../../layouts/AttachmentLayout.astro
 icon: event
 pack: carbon
 title: "Events"
@@ -14,8 +15,6 @@ type: "page"
 comment_count: 0
 tags: []
 ---
-
-# Events
 
 Artkids Foundation has taken the time Preparing to be able to Realize a Comprehensive Activities Calendar in Igbo-land Africa.
 We have spent almost 9 years diligently working with the locals to Realize solid Foundations needed to succesfully run projects in Africa.

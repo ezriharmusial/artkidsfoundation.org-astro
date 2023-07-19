@@ -1,5 +1,6 @@
 ---
 index: 282
+layout: ../../../layouts/PageLayout.astro
 title: "Draw2Paint"
 subtitle: ""
 author: "EzzyHarmless"

@@ -1,5 +1,6 @@
 ---
 index: 4935
+layout: ../../../layouts/PageLayout.astro
 icon: "account-tie"
 pack: "mdi"
 title: "ArtKids Int. Corp."

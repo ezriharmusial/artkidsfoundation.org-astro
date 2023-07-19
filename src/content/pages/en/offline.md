@@ -1,5 +1,6 @@
 ---
 index: 5032
+layout: ../../../layouts/PageLayout.astro
 title: "Offline"
 subtitle: ""
 author: "EzzyHarmless"

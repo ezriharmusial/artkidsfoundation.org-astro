@@ -32,6 +32,39 @@ function getLangFromId(page) {
     </a>
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
+        <input type="radio" name="menu" id="about-artkids" class="helper-trigger !hidden" />
+        <div class="dropdown bg-primary-600 w-full">
+            <label for="about-artkids" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
+                <span class={directionClass}>
+                    <Icon pack="codicon" name="organization" class={size} />
+                    <span>
+                        {t('nav.about')}
+                    </span>
+                </span>
+            </label>
+
+            <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
+                {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
+                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                            { page.data?.shortTitle ?
+                            <span>
+                                {page.data.shortTitle}
+                            </span>
+                            :
+                            <span>
+                                {page.data.title}
+                            </span>
+                            }
+                        </span>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="organisation" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
 
@@ -64,8 +97,6 @@ function getLangFromId(page) {
             </div>
         </div>
     </div>
-
-
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="anbi" class="helper-trigger !hidden" />
@@ -101,40 +132,7 @@ function getLangFromId(page) {
         </div>
     </div>
 
-    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="about-artkids" class="helper-trigger !hidden" />
-        <div class="dropdown bg-primary-600 w-full">
-            <label for="about-artkids" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
-                <span class={directionClass}>
-                    <Icon pack="codicon" name="organization" class={size} />
-                    <span>
-                        {t('nav.about')}
-                    </span>
-                </span>
-            </label>
-
-            <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
-                {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
-                    <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
-                        <span class="flex flex-row justify-start items-center text-md">
-                            <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
-                            { page.data?.shortTitle ?
-                            <span>
-                                {page.data.shortTitle}
-                            </span>
-                            :
-                            <span>
-                                {page.data.title}
-                            </span>
-                            }
-                        </span>
-                    </a>
-                ))}
-            </div>
-        </div>
-    </div>
-
-    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
+    <!-- <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="funding" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
             <label for="funding" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
@@ -164,7 +162,7 @@ function getLangFromId(page) {
                 ))}
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <input type="radio" name="menu" id="projects" class="helper-trigger !hidden" />

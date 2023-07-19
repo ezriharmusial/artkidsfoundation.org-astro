@@ -1,5 +1,6 @@
 ---
 index: 4399
+layout: ../../../layouts/PageLayout.astro
 icon: "pyramid"
 pack: "icon-park-outline"
 title: "Vision"

@@ -1,5 +1,6 @@
 ---
 index: 302
+layout: ../../../layouts/PageLayout.astro
 icon: "code-of-conduct-16"
 pack: "octicon"
 title: "Werkwijze"
@@ -12,7 +13,7 @@ comment_status: "closed"
 modified: "2018-02-26 19:02:59"
 type: "page"
 comment_count: 0
-category: "over artkids"
+category: "about artkids"
 tags: []
 ---
 

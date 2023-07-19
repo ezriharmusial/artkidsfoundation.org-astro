@@ -1,5 +1,6 @@
 ---
 index: 5009
+layout: ../../../layouts/PageLayout.astro
 icon: event
 pack: carbon
 title: "Evenementen"
@@ -15,8 +16,6 @@ comment_count: 0
 tags: []
 ---
 
-# Events
-
 Artkids Foundation heeft de nodige tijd genomen om een goede basis te kunnen leggen voor het realiseren van een Uitgebreide aanbod aan Activitieten in Igbo-land Africa.
 We werken al bijna 9 jaar lang nauw samen met de lokale bevolking om samen de noodzakelijk  Fundamenten te plaatsen, voor het Succelvol draaien van onze projecten in Africa.
 ArtKids Foundation heeft verscheidene dorpsleiders betrokken in de implementatie van onze projecten volgens de vermelding in onze Activiteitenkalender van 2023.
@@ -28,7 +27,7 @@ Artkids Foundation richt zich hierbij op drie belangrijke terreinen van ontwikke
 2. ArtKids ICT: Technologies voor empowerment van het platteland, gericht op de noodzakelijke digitalisering van vrouwen.
 3. ArtKids Farms: Agricultural project (Food On Table) is ontworpen om genoeg eten te produceren om schoolgaande kinderen dagelijks te voorzien.
 
-## Calender 2023
+## Kalender 2023
 
 2023 staat in het teken van getalenteerde ArtKids LastMessengerS muziek artiesten en het lanceren van hun carrière en ons ArtKids Farms project.
 
@@ -46,7 +45,7 @@ ArtKids LastMessengerS:
 | September & Oktober 2023 | ArtKids LastMessengerS | Promotie van ArtKids LastMessengerS Artiesten. |
 | November & December 2023 | ArtKids LastMessengerS | Africa4Africa Unity Album Tour; Promotie, Interviews, Live Shows, Roadshows en Boekingen. |
 
-## Calender 2024
+## Kalender 2024
 
 2024 staat in het teken van onze projecten ArtKids DiscoverMe Talent-Hunt TV-Show en ArtKids ComPutAfrica ICT TV-Show. ArtKids ComPutAfrica ICT TV-Show omvat onder andere Exclusieve Interviews, Hands-On Workshops, Master Classes, Technologie Updates en MatchMaker Sessies.
 

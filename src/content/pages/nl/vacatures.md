@@ -1,5 +1,6 @@
 ---
 index: 298
+layout: ../../../layouts/PageLayout.astro
 icon: "suitcase"
 pack: "ph"
 title: "Vacatures"

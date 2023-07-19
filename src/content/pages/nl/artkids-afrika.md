@@ -1,5 +1,6 @@
 ---
 index: 4595
+layout: ../../../layouts/PageLayout.astro
 title: "ArtKids Afrika"
 subtitle: ""
 icon: "globe-africa-solid"

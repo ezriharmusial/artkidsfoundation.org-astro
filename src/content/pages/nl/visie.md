@@ -1,5 +1,6 @@
 ---
 index: 300
+layout: ../../../layouts/PageLayout.astro
 title: "Visie"
 subtitle: ""
 author: "EzzyHarmless"
@@ -10,7 +11,7 @@ comment_status: "closed"
 modified: "2018-02-04 16:22:23"
 type: "page"
 comment_count: 0
-category: "over artkids"
+category: "about artkids"
 tags: []
 ---
 

@@ -1,5 +1,6 @@
 ---
 index: 4585
+layout: ../../../layouts/PageLayout.astro
 icon: "globe-europe"
 pack: "la"
 title: "ArtKids Europa"

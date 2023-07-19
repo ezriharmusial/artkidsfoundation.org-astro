@@ -1,5 +1,6 @@
 ---
 index: 4916
+layout: ../../../layouts/PageLayout.astro
 title: "ArtKids Foundation"
 subtitle: ""
 author: "EzzyHarmless"

@@ -1,5 +1,6 @@
 ---
 index: 7232
+layout: ../../../layouts/PageLayout.astro
 title: "Permanente Landbouw"
 subtitle: ""
 author: "EzzyHarmless"

@@ -1,5 +1,6 @@
 ---
 index: 4183
+layout: ../../../layouts/PageLayout.astro
 icon: "suitcase"
 pack: "ph"
 title: "Job Offerings"

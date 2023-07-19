@@ -1,5 +1,6 @@
 ---
 index: 4475
+layout: ../../../layouts/PageLayout.astro
 icon: "charity-outline"
 pack: "mdi"
 title: "Fundraising Campaigns"

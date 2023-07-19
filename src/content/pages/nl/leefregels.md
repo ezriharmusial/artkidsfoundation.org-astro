@@ -1,5 +1,6 @@
 ---
 index: 288
+layout: ../../../layouts/PageLayout.astro
 title: "Leefregels"
 subtitle: ""
 author: "EzzyHarmless"
@@ -10,7 +11,7 @@ comment_status: "closed"
 modified: "2017-12-31 22:21:23"
 type: "page"
 comment_count: 0
-category: "over artkids"
+category: "about artkids"
 tags: []
 ---
 

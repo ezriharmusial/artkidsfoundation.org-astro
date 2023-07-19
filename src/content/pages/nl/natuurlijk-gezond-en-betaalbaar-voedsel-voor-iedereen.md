@@ -1,5 +1,6 @@
 ---
 index: 56
+layout: ../../../layouts/PageLayout.astro
 title: "Natuurlijk, Gezond en Betaalbaar voedsel voor iedereen."
 subtitle: ""
 author: "EzzyHarmless"

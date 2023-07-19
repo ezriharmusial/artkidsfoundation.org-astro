@@ -1,5 +1,6 @@
 ---
 index: 7011
+layout: ../../../layouts/PageLayout.astro
 title: "Hartelijk dank"
 subtitle: ""
 author: "EzzyHarmless"

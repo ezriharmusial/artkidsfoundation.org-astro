@@ -1,5 +1,6 @@
 ---
 index: 294
+layout: ../../../layouts/PageLayout.astro
 icon: "art-gallery"
 pack: "map"
 title: "ArtKids Schilderijen"

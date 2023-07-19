@@ -1,5 +1,6 @@
 ---
 index: 51
+layout: ../../../layouts/PageLayout.astro
 title: "BuurTuin-West, Leerdam"
 subtitle: ""
 author: "EzzyHarmless"

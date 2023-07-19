@@ -1,5 +1,6 @@
 ---
 index: 239
+layout: ../../../layouts/PageLayout.astro
 title: "Welkom bij Stichting ArtKids"
 subtitle: ""
 author: "EzzyHarmless"

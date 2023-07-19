@@ -1,5 +1,6 @@
 ---
 index: 270
+layout: ../../../layouts/PageLayout.astro
 icon: "group"
 pack: "iconoir"
 title: "Bestuur"

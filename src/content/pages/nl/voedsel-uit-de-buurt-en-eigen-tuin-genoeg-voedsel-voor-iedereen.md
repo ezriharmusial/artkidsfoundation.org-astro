@@ -1,5 +1,6 @@
 ---
 index: 58
+layout: ../../../layouts/PageLayout.astro
 title: "Voedsel uit de buurt en eigen tuin = Genoeg voedsel voor Iedereen!"
 subtitle: ""
 author: "EzzyHarmless"
