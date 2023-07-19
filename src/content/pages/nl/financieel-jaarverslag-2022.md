@@ -1,6 +1,6 @@
 ---
 index: 5010
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/AttachmentLayout.astro
 icon: report-line
 pack: mdi
 title: "Financieel Jaarverslag 2022"

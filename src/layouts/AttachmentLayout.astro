@@ -22,15 +22,15 @@ const { frontmatter, headings } = Astro.props;
 				<img src="https://source.unsplash.com/random?african%20children" class="portrait:aspect-video landscape:aspect-auto object-cover rounded-xl !mt-0" alt="Layout Image">
 				<Accordion autocollapse="true" client:only>
 					<AccordionItem open="true" client:only>
-						<svelte:fragment slot="lead"><div class="p-4"><Icon name="mdi:table-of-contents"></Icon></div></svelte:fragment>
+						<svelte:fragment slot="lead"><div class="p-4 font-black"><Icon name="mdi:table-of-contents"></Icon></div></svelte:fragment>
 						<svelte:fragment slot="summary"><div class="p-4 font-black">Page Content</div></svelte:fragment>
 						<svelte:fragment slot="content">
 							<TableOfContents target="#toc-target" label="" width="w-full" client:only />
 						</svelte:fragment>
 					</AccordionItem>
 					<AccordionItem client:only>
-						<svelte:fragment slot="lead"><div class="p-4"><Icon name="teenyicons:attachment-outline"></Icon></div></svelte:fragment>
-						<svelte:fragment slot="summary"><div class="p-4">Downloadable Documents</div></svelte:fragment>
+						<svelte:fragment slot="lead"><div class="p-4 font-black"><Icon name="teenyicons:attachment-outline"></Icon></div></svelte:fragment>
+						<svelte:fragment slot="summary"><div class="p-4 font-black">Downloadable Documents</div></svelte:fragment>
 						<svelte:fragment slot="content">
 							<nav class="list-nav">
 
