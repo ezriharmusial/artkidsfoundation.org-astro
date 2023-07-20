@@ -34,7 +34,7 @@ import { Icon } from 'astro-icon';
     <Icon pack="ph" name="list-bold" class="w-10 h-10 p-1"/>
 </label>
 
-<style>
+<style is:global>
 /* We don't need checkbox to be displayed in order for it to work */
     .menuToggler {
         display: none;
@@ -45,16 +45,16 @@ import { Icon } from 'astro-icon';
     }
 
     /*  Displays menu when menuToggler is checked only on mobile/tablet */
-    @media screen and (max-width: 1023px) {
+    @media screen and (orientation: portrait) {
         /* We don't want menu to be displayed on mobile by default */
         .navbar-menu {
-            display: none !important;
             transform: translateX(-100%);
-            transition: all 0.25s linear;
+            width: 0;
+            transition: all 0.25s ease-in-out;
         }
 
         .menuToggler:checked ~ .navbar-menu {
-            display: flex !important;
+            width: auto;
             transform: translateX(0);
         }
 
@@ -65,7 +65,7 @@ import { Icon } from 'astro-icon';
         top: unset !important;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (orientation: landscape) {
         .navbar-burger {
             display: none !important;
         }
