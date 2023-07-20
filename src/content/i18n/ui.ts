@@ -11,6 +11,7 @@ export const ui = {
         'nav.anbi': 'ANBI',
         'nav.funding': 'Funding',
         'nav.home': 'Home',
+        'nav.language': 'Language',
         'nav.linkcasts': 'News',
         'nav.organisation': 'Organisation',
         'nav.projects': 'Fundraising Projects',
@@ -19,6 +20,7 @@ export const ui = {
     nl: {
         'nav.about': 'Over ons',
         'nav.funding': 'Fondswerving',
+        'nav.language': 'Taal',
         'nav.linkcasts': 'News',
         'nav.organisation': 'Organisatie',
         'nav.projects': 'Goede Doelen Projecten',

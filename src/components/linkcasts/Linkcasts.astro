@@ -31,10 +31,10 @@ const { slug } = await Astro.params
 const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 ---
 
-<div class=" min-h-screen landscape:xl:p-28 p-2 landscape:pt-24">
+<div class="container mx-auto min-h-screen landscape:xl:p-28 p-2 landscape:pt-24">
 
 	<h2 class="marker text-primary-600 mb-8">Latest news</h2>
-	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-2 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">
+	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-1 landscape:md:grid-cols-2 landscape:lg:grid-cols-2 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:xs:grid-cols-1 portrait:sm:grid-cols-2  portrait:md:grid-cols-2 portrait:lg:grid-cols-3 portrait:xl-grid-cols-4 gap-8">
 
 		{linkcasts.map((linkcast) => (
 			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/" + lang + "/newscasts/" + linkcast.slug }>

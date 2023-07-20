@@ -3,10 +3,11 @@
         <div class="image flex flex-row justify-around items-center">
             <div class="marker h-full w-full italic font-sans items-center !no-underline drop-shadow-xl hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4">
                 <h1 class="unstyled flex items-center gap-1 transition-colors duration-500 text-left font-extrabold text-7xl hover:text-yellow-400 dark:focus:text-gray-100">
-                    <figure class="image transition-all duration-500 m-0 p-0 w-20 xs:w-16 lg:w-24 xl:w-32 mr-4 md:mr-8">
-                        <img loading="eager" width={128} height={136} class="drop-shadow-2xl" src="/logo-512.png" alt="Artkids Foundation Home" format="avif"/>
-                    </figure>
-                    <span>
+
+                    <div class="hexagon hexagon-large"><div class="hexagon-in1"><div class="hexagon-in2">
+                    </div></div></div>
+
+                    <span class="text-outline-white-3">
                         <span class="block text-red-500">Artkids</span><span class=" text-yellow-400">Foundation</span><span class="text-green-500">.org</span>
                     </span>
                 </h1>
@@ -24,6 +25,13 @@
         transition: visibility 0s linear 0s, opacity 600ms;
         background: linear-gradient(141deg,#cd2907 0%,#eb621c 71%,#f3912e 100%);
     }
+
+
+    .text-outline-white-3 {
+        -webkit-text-stroke-width: 0.25rem;
+        -webkit-text-stroke-color: white;
+    }
+
 
     .loaded .app-loader .wrapper {
         transform: scale(0, 0);
@@ -60,4 +68,52 @@
         animation: unset;
         background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(0*100%/4)
     }
+
+.hexagon {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+       -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+         -o-transform: rotate(120deg);
+            transform: rotate(120deg);
+    cursor: pointer;
+    }
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    }
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url('/logo-512.png');
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    }
+
+
+.hexagon-large {
+    width: 150px;
+    height: 300px;
+    margin-right: 2rem;
+}
+
+.hexagon-small {
+    width: 50px;
+    height: 100px;
+    margin-right: .25rem;
+}
 </style>

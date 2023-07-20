@@ -1,10 +1,63 @@
 ---
+import Icon from 'astro-icon';
 import { languages } from '~content/i18n/ui';
+import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang);
 ---
-<ul>
+
+<div class="dropdown">
+  <button class="btn btn-icon-lg flex-col justify-center items-center mx-4 my-2">
+    <Icon pack="clarity" name="language-line" class="mx-auto w-8 h-8"/>
+    <span>
+        {t('nav.language')}
+    </span>
+  </button>
+  <div class="dropdown-content">
   {Object.entries(languages).map(([lang, label]) => (
-    <li>
       <a href={`/${lang}/`}>{label}</a>
-    </li>
   ))}
-</ul>
+  </div>
+</div>
+
+<style>
+  /* Dropdown Button */
+.dropbtn {
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left:0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
