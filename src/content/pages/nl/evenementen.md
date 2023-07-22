@@ -1,6 +1,6 @@
 ---
 index: 5009
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/AttachmentLayout.astro
 icon: event
 pack: carbon
 title: "Evenementen"
@@ -13,7 +13,7 @@ comment_status: "closed"
 modified: "2018-09-27 15:44:31"
 type: "page"
 comment_count: 0
-tags: []
+category: "anbi"
 ---
 
 Artkids Foundation heeft de nodige tijd genomen om een goede basis te kunnen leggen voor het realiseren van een Uitgebreide aanbod aan Activitieten in Igbo-land Africa.

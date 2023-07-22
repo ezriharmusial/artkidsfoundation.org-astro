@@ -13,7 +13,7 @@ comment_status: "closed"
 modified: "2023-04-19 20:06:55"
 type: "page"
 comment_count: 0
-category: "organisation"
+category: "organization"
 tags: []
 ---
 

@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content'
 import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
 import { Icon } from 'astro-icon'
-import BrandFlag from '~components/ui/BrandFlag.astro';
 import LanguagePicker from '~components/ui/LanguagePicker.astro';
 
 const pageList = await getCollection('pages');
@@ -21,7 +20,11 @@ function getLangFromId(page) {
 ---
 
 <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-    <BrandFlag />
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
+        <div class="drop-shadow-lg hexagon hexagon-small"><div class="hexagon-in1"><div class="hexagon-in2">
+                    </div></div></div>
+    </div>
+
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
         <LanguagePicker />
@@ -70,20 +73,20 @@ function getLangFromId(page) {
     </div>
 
     <div class={parentDirectionClass + " bg-primary-600 w-full"}>
-        <input type="radio" name="menu" id="organisation" class="helper-trigger !hidden" />
+        <input type="radio" name="menu" id="organization" class="helper-trigger !hidden" />
         <div class="dropdown bg-primary-600 w-full">
 
-            <label for="organisation" class={" btn variant-filled-primary w-full rounded-none py-4 helper-enable"}>
+            <label for="organization" class={" btn variant-filled-primary w-full rounded-none py-4 helper-enable"}>
                 <span class={directionClass}>
                     <Icon pack="octicon" name="organization-16" class={size} />
                     <span>
-                        {t('nav.organisation')}
+                        {t('nav.organization')}
                     </span>
                 </span>
             </label>
 
             <div class={parentDirectionClass + " bg-primary-600 w-full helper-show" }>
-                {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organisation").map(page => (
+                {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organization").map(page => (
                     <a href={"/" + page.slug} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + page.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
                             <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + " mr-2"} />

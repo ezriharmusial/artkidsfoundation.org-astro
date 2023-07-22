@@ -3,9 +3,9 @@ index: 5010
 layout: ../../../layouts/AttachmentLayout.astro
 icon: report-line
 pack: mdi
-title: "Financieel Jaarverslag 2022"
-subtitle: "Verantwoording voor onze Acties in 2022"
-shorttitle: "Jaarverslag 2022"
+title: "Annual Report 2022"
+subtitle: "Taking Ownership of our Actions in 2022"
+shorttitle: "Annual Report 2022"
 author: "EzzyHarmless"
 date: "2018-08-10 10:26:30"
 excerpt: ""
@@ -18,32 +18,32 @@ comment_count: 0
 tags: []
 ---
 
-## Bericht van de Stichters
+## Message from the Founders
 
-Het gezegde luidt:
-_"Wie de jeugd heeft, heeft de toekomst."_
+The Saying goes:
+_"He Who has the Youth, has the Future."_
 
-ArtKids Foundation bewijst dit middels de positieve uitkomsten van onze verschillende empowerment- en ontwikkelingsprogramma's en projecten voor jongeren.
+ArtKids Foundation proves this through the Positive outcomes of our Various empowerment- and development projects for Youths.
 
-ArtKids Foundation herstelt de hoop en het vertrouwen van onze jeugd in de toekomst door de verschillende talenten van onze jongeren te herkennen, te ontwikkelen, te promoten en te vermarkten tot het punt van zelfredzaamheid.
+ArtKids Foundation restores hope and trust in Future of our Youths trough recognizing the various talents of our Youths, stimulate and develop them, promote them and then market them untill the point of self-sustainabillity.
 
-## Missie verklaring
+## Mission
 
 Door de ontwikkeling van talenten van jongeren (DiscoverMe/LastMessengerS) en onze Women Empowerment Projecten, heeft ArtKids Foundation geholpen om veel jongeren van de straat te halen. Zich realiserend dat niet elke jongere de mogelijkheid heeft om handel te drijven of uitgebreid te studeren, nam ArtKids zijn toevlucht tot de ontwikkeling van talenten van jongeren en empowerment van vrouwen en is erin geslaagd muzikale talenten, filmmakers, cabaretiers en technici onder Afrikaanse jongeren sterker te maken.
 
-### Visie
+### Vision
 
 Hier bij ArtKids Foundation zien we een toekomst waarin Afrikaanse jongeren massaal hun talenten omarmen als een middel om zichzelf en hun gezin te onderhouden. Het is dan ook onze visie om de talenten van onze jongeren te ontdekken, te stimuleren en te promoten.
 
-### Wie wij zijn en waar wij voor werken
+### Who we are and Who we work for
 
 Artkids Foundation is een in Nederland geregistreerde, internationaal opererende non-profit organisatie of NGO, met speciale focus op het ontdekken en ontwikkelen van talenten. Stichting Artkids is actief in Igboland in Zuid-Oost Nigeria, waar jong talent overal aanwezig is op straten. Deze regio staat ook wel bekend als Igboland, of het land van de Igbo's.
 
-### Waarom Igboland?
+### Why Igboland
 
 Zoals eerder gesuggereerd, is Igboland een smeltkroes van talenten en menselijke capaciteit. Van straat tot straat zien we jongeren hun muzikale, filmische-, komische of technische talenten demonstreren zonder dat iemand interesse toont om hen te sponsoren. Dit is de reden waarom ArtKids Foundation zich concentreert op Igboland om deze jeugdige talenten te ontdekken, koesteren, ontwikkelen en promoten voordat ze opgeven.
 
-## Projecten
+## Projects
 
 Artkids was in het jaar 2022 actief met de volgende projecten:
 

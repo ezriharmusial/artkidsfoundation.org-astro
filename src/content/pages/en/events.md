@@ -13,7 +13,7 @@ comment_status: "closed"
 modified: "2018-09-27 15:44:31"
 type: "page"
 comment_count: 0
-tags: []
+category: "anbi"
 ---
 
 Artkids Foundation has taken the time Preparing to be able to Realize a Comprehensive Activities Calendar in Igbo-land Africa.

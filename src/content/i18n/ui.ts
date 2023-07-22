@@ -13,7 +13,7 @@ export const ui = {
         'nav.home': 'Home',
         'nav.language': 'Language',
         'nav.linkcasts': 'News',
-        'nav.organisation': 'Organisation',
+        'nav.organization': 'Organisation',
         'nav.projects': 'Fundraising Projects',
         'nav.twitter': 'Twitter',
     },
@@ -22,7 +22,7 @@ export const ui = {
         'nav.funding': 'Fondswerving',
         'nav.language': 'Taal',
         'nav.linkcasts': 'News',
-        'nav.organisation': 'Organisatie',
-        'nav.projects': 'Goede Doelen Projecten',
+        'nav.organization': 'Organisatie',
+        'nav.projects': 'Projecten',
     },
 } as const;

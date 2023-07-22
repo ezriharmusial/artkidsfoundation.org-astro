@@ -11,7 +11,7 @@ comment_status: "closed"
 modified: "2018-09-24 21:49:53"
 type: "page"
 comment_count: 0
-category: "organisatie"
+category: "organization"
 tags: []
 ---
 

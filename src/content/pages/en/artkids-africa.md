@@ -12,7 +12,7 @@ comment_status: "closed"
 modified: "2018-09-24 23:15:40"
 type: "page"
 comment_count: 0
-category: "organisation"
+category: "organization"
 tags: []
 ---
 

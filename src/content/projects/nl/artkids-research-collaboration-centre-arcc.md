@@ -1,7 +1,7 @@
 ---
 title: ArtKids Research Collaboration Centre (ARCC)
 subtitle: Van concept tot uitvinding
-shortTitle: Research Collaboration Centre
+shortTitle: Research/Collab-Centre
 icon: "data-scientist"
 pack: "eos-icons"
 image: /uploads/projects/research.jpg
