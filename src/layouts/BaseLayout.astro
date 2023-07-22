@@ -57,7 +57,7 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
     <AppLoader />
 
     <!-- Application HTML -->
-    <div style="display: contents" class="h-full overflow-hidden relative pt-16">
+    <div style="display: contents" class="h-full overflow-hidden relative">
 
     <AppShell slotSidebarLeft="bg-primary-400 h-screen portrait:pb-24 portrait:absolute portrait:left-0 portrait:top-0 portrait:bottom-0 z-20">
         <svelte:fragment slot="pageHeader">
@@ -77,7 +77,9 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
         </svelte:fragment>
 
         <!-- Default Slot -->
-        <slot />
+        <main class="portrait:mt-20">
+            <slot />
+        </main>
 
         <Share />
 

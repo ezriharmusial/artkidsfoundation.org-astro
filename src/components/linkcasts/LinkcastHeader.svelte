@@ -27,7 +27,7 @@
 </figure>
 {#if getLinkcastType(linkcast?.data?.url) == 'youtube' }
 <div class="image-container absolute top-0 h-full w-full flex justify-center items-center">
-	<div class="yt-button z-[999]">
+	<div class="yt-button">
 		<div class="tri"></div>
 	</div>
 </div>
