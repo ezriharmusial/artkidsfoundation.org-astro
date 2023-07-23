@@ -48,7 +48,7 @@ ArtKids LastMessengerS:
 | September & Oktober 2023 | ArtKids LastMessengerS | Promotie van ArtKids LastMessengerS Artiesten. |
 | November & December 2023 | ArtKids LastMessengerS | Africa4Africa Unity Album Tour; Promotie, Interviews, Live Shows, Roadshows en Boekingen. |
 
-## Kalender 2024
+## Calender 2024
 
 2024 staat in het teken van onze projecten ArtKids DiscoverMe Talent-Hunt TV-Show en ArtKids ComPutAfrica ICT TV-Show. ArtKids ComPutAfrica ICT TV-Show omvat onder andere Exclusieve Interviews, Hands-On Workshops, Master Classes, Technologie Updates en MatchMaker Sessies.
 
