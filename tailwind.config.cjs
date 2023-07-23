@@ -13,6 +13,7 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/line-clamp'),
+    	require('autoprefixer'),
 		// Keep any existing plugins present and append the following:
 		...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
 	],
