@@ -93,13 +93,13 @@ Het jaar stond hoofdzakelijk in het teken van het ondersteunen en opzetten van o
 | November 2022 | Africa4Africa - Unity Album 2022 Release & Promotie |
 | December 2022 | Africa4Africa - Muziekfestival 2022 |
 
-## FINANCIEEL JAARVERSLAG 2022
+## Jaarverslag 2022
 
-### INKOMEN
+### Inkomen
 
 Tot nu toe wordt de financiering van ArtKids-projecten gedaan door de bijdragen van Artkids bestuursleden. Er waren geen inkomsten uit donaties, fondswerving, sponsoring of anderzijds.
 
-### UITGAVEN
+### Uitgaven
 
 In 2022 is er geïnvesteerd in 2 projecten van ArtKids Farms. Een stedelijke daktuin in het Centrum van Leerdam als Permacultuur Laboratorium Tuin, en 2 voorbeeldtuinen in de Molukse wijk van Leerdam als beach-heads voor het her-introduceren van Agricultuur als Norm in de "Siertuin".
 
