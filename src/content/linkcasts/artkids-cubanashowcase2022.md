@@ -78,4 +78,4 @@ https://youtu.be/esWgldLXXZI
 
 To contact us,
 click here:
-https://ArtKidsFoundation.org/contact
+https://ArtKidsFoundation.org/en/contact-us

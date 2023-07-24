@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
+import { getLangFromUrl, useTranslations, getLangFromId } from '~content/i18n/utils';
 import { Icon } from 'astro-icon'
 import LanguagePicker from '~components/ui/LanguagePicker.astro';
 
@@ -12,10 +12,6 @@ const parentDirectionClass = direction == "vertical" ? "flex flex-col items-cent
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-function getLangFromId(page) {
-    return page.slug.split('/')[0]
-}
 
 ---
 

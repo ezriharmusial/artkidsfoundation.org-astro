@@ -1,9 +1,9 @@
 ---
 index: 4475
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/ProjectsLayout.astro
 icon: "charity-outline"
 pack: "mdi"
-title: "Fundraising Campaigns"
+title: "Fundraising Projects"
 subtitle: ""
 shortTitle: "Fundraising"
 author: "EzzyHarmless"
@@ -14,14 +14,14 @@ comment_status: "closed"
 modified: "2018-03-07 18:26:34"
 type: "page"
 comment_count: 0
-category: "funding"
+category: "anbi"
 tags: []
 ---
 
-## Past & Current Projects <span class="has-text-calm is-size-4">what we are doing</span>
+## Past & Current Projects
+### what we are doing
 
 ArtKids Foundation has successfully designed and implemented various poverty alleviation projects, programs and activities few of which are:
-
 *   Food On Table
 *   EPS Shelters
 *   Igbo made Products Promotion
@@ -32,7 +32,7 @@ ArtKids Foundation has successfully designed and implemented various poverty all
 *   SME Advising
 *   Agro Africa (Grow Africa)
 *   Flying Professionals
-*   Company4Company
+*   Company4Company-
 
 While we are trying our very best, funding remains a challenge to implement most of these solution-oriented initiatives.
 

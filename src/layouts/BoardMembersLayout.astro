@@ -1,0 +1,44 @@
+---
+import Icon from "astro-icon";
+import { getCollection } from 'astro:content'
+import Contacts from "~components/contact/Contacts.astro";
+import { getLangFromId, getLangFromUrl, useTranslations } from '~content/i18n/utils';
+
+// 1. Get the slug from the incoming server request
+const { frontmatter, headings } = Astro.props;
+const { pack, icon, title, subtitle } = Astro.props.page?.data || frontmatter;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+---
+
+<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?galaxies');">
+	<div class="bg-white/90 dark:bg-black/75 p-8 pt-16">
+		<div class="container mx-auto flex portrait:flex-col gap-8 mb-8">
+			<div class="landscape:md:w-3/5 landscape:sm:3/5 landscape:xl:w-1/2 landscape:sticky landscape:top-4 landscape:self-start space-y-6 portrait:w-full portrait:pb-8 portrait:border-b portrait:border-primary-600-300-token">
+				<h2 class="marker text-red-500 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold">
+					<span class="flex items-center justify-start">
+						<Icon pack={pack || "teenyicons"} name={icon || "anchor-solid"} class={"h-10 w-10 lg:h-12 lg:w-12 portrait:h-10 portrait:w-10 mr-2"} />
+						<span>
+							{title}
+						</span>
+					</span>
+				</h2>
+
+				<div id="toc-target" class="prose max-w-none prose-stone space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-token">
+					<slot />
+				</div>
+			</div>
+			<div class="landscape:sm:w-2/5 landscape:md:w-2/5 landscape:xl:w-1/2 ">
+				<Contacts />
+			</div>
+		</div>
+	</div>
+</section>
+
+<style is:global>
+	#toc-target a.permalink {
+		display:none;
+	}
+</style>

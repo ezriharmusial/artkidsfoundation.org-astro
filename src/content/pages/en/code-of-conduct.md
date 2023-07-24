@@ -44,7 +44,7 @@ Furthermore our creativity centers are available to be rent by third parties.
 ## Compensation model
 ### What does it pay?
 
-More information will follow... Do you want to know more? Please feel free to [contact](/en/contact/) us
+More information will follow... Do you want to know more? Please feel free to [contact](/en/contact-us/) us
 
 ## Expenses
 ### Where does it go to?

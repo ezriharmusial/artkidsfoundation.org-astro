@@ -1,9 +1,9 @@
 ---
 index: 296
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/ProjectsLayout.astro
 icon: "charity-outline"
 pack: "mdi"
-title: "Fondswerving Campagnes"
+title: "Fondswervings Projecten"
 subtitle: ""
 shortTitle: "Fondswerving"
 author: "EzzyHarmless"
@@ -14,7 +14,7 @@ comment_status: "closed"
 modified: "2018-03-07 18:25:58"
 type: "page"
 comment_count: 0
-category: "fondswerving"
+category: "anbi"
 tags: []
 ---
 

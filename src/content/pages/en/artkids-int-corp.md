@@ -21,6 +21,6 @@ Since, as a not-for-profit organization, ArtKids Foundation is not allowed to en
 
 Functioning like every other corporate business entity, ArtKids Intl. Corp. is unlimited in carrying out businesses while generating the needed incomes to adequately fund ArtKids Foundation's projects and programs.
 
-Through Artkids International, fund is generated via various business transactions in collaboration with established corporate entities (Companies). Take a closer look at our [Campaigns](/fundraising-campaigns/) to determine what business your Company could conduct with ArtKids International on a win-win principle to effectively support the funding of ArtKids Foundation.
+Through Artkids International, fund is generated via various business transactions in collaboration with established corporate entities (Companies). Take a closer look at our [Fundraising projects](/en/fundraising-projects/) to determine what business your Company could conduct with ArtKids International on a win-win principle to effectively support the funding of ArtKids Foundation.
 
 Welcome ArtKids International~Welcome ArtKids Business Ventures.

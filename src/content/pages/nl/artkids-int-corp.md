@@ -21,6 +21,6 @@ Aangezien Stichting ArtKids als non-profit organisatie geen winstgevende zakelij
 
 Functionerend zoals elke andere zakelijke entiteit, ArtKids Intl. Corp. is onbeperkt in het uitvoeren van zaken en het genereren van de benodigde inkomsten om de projecten en programma's van ArtKids Foundation adequaat te financieren.
 
-Met behulp van Artkids International worden financiële middelen gegenereerd via verschillende bedrijfstransacties in samenwerking met gevestigde bedrijfsentiteiten (Handelsfirma’s). Neem een kijkje in onze [Fondswerving Campagnes](/nl/fondswerving-campagnes/) om te bepalen welke zaken uw Bedrijf kan verrichten met ArtKids International om ArtKids Foundation effectief te steunen op basis van een “Win-Win” principe.
+Met behulp van Artkids International worden financiële middelen gegenereerd via verschillende bedrijfstransacties in samenwerking met gevestigde bedrijfsentiteiten (Handelsfirma’s). Neem een kijkje in onze [Fondswervings Projecten](/nl/fondswervings-projects/) om te bepalen welke zaken uw Bedrijf kan verrichten met ArtKids International om ArtKids Foundation effectief te steunen op basis van een “Win-Win” principe.
 
 Welkom bij ArtKids International ~ Welkom bij ArtKids Business Ventures.

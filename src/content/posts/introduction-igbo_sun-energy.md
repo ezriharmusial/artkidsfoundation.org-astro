@@ -33,5 +33,5 @@ We look forward to warm, fruitful, result-oriented and memorable Sunny Dialogue.
 Signed:
 Engr Ezekwesiri Enyinnaya Obioha
 Managing Director: ArtKids Africa
-[+2349034650087](tel:+2349034650087 "Call ArtKids Africa")
+<a href="tel:+2349034650087":>Tel:+2349034650087 "Call ArtKids Africa"
 [info@artkidsfoundation.org](mailto:Info@artkidsfoundation.org "Email ArtKids Africa")

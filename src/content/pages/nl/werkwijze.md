@@ -43,7 +43,7 @@ Verder worden onze creativiteitscentrums voor derden beschikbaar gesteld voor ve
 
 ## Vergoedingsmodel <small class="has-text-calm is-size-4">wat schuift het?</small>
 
-Meer informatie volgt... Wil je meer weten neem dan [contact](/contact/) met ons op
+Meer informatie volgt... Wil je meer weten neem dan [contact](/nl/contact/) met ons op
 
 * * *
 
