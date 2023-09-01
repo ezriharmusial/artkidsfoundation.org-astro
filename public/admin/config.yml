@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: ezriharmusial/artkidsfoundation.org-astro
   branch: main
 # Local testing
 local_backend: true
