@@ -61,7 +61,7 @@ let elements = {
 		</div>
 	</div>
 
-	<section class="bg-cover bg-center w-full" style={"background-image: url('https://source.unsplash.com/random?" + ( initiative?.data.tags.join("%20") || "Stage%20performance") + "');"}>
+	<section class="bg-cover bg-center w-full" style={"background-image: url('https://source.unsplash.com/random?" + ( initiative?.data.tags ? initiative.data.tags.join('%20') : "Stage%20performance") + "');"}>
 		<div class="bg-white/90 dark:bg-black/75 p-8 landscape:pt-16">
 			<div class="mx-auto flex portrait:flex-col">
 				<div class="landscape:w-2/3 text-lg mb-8">
@@ -74,7 +74,7 @@ let elements = {
 					</div>
 				</div>
 				<div class="landscape:w-1/3 aspect-square landscape:ml-8">
-					<img src={"https://source.unsplash.com/random?" + ( initiative?.data.tags.join("%20") || "Stage%20performance")} class="object-cover rounded-xl" alt="Layout Image">
+					<img src={"https://source.unsplash.com/random?" + ( initiative?.data.tags ? initiative.data.tags.join("%20") : "Stage%20performance")} class="object-cover rounded-xl" alt="Layout Image">
 				</div>
 			</div>
 		</div>
