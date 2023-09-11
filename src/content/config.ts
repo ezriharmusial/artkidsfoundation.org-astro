@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content';
 
 const pages = defineCollection({
     schema: z.object({
@@ -50,4 +50,20 @@ const linkcasts = defineCollection({
     })
 });
 
-export const collections = { pages, linkcasts, projects };
+const initiatives = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        icon: z.string().optional(),
+        pack: z.string().optional(),
+        image: z.string().optional(),
+        changed: z.string().optional(),
+        imageAlt: z.string().optional(),
+        status: z.string().optional(),
+        subtitle: z.string().optional(),
+        shortTitle: z.string().optional(),
+        projects: z.array(reference('projects')).optional(),
+        tags: z.array(z.string()).optional(),
+    })
+});
+
+export const collections = { pages, linkcasts, projects, initiatives };

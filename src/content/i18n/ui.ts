@@ -15,6 +15,7 @@ export const ui = {
         'nav.linkcasts': 'News',
         'nav.organization': 'Organisation',
         'nav.projects': 'Fundraising Projects',
+        'nav.initiatives': 'Initiatives',
         'nav.twitter': 'Twitter',
     },
     nl: {
@@ -24,5 +25,6 @@ export const ui = {
         'nav.linkcasts': 'News',
         'nav.organization': 'Organisatie',
         'nav.projects': 'Projecten',
+        'nav.initiatives': 'Initiatieven',
     },
 } as const;

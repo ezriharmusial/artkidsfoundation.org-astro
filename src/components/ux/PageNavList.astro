@@ -6,6 +6,7 @@ import LanguagePicker from '~components/ui/LanguagePicker.astro';
 
 const pageList = await getCollection('pages');
 const projectList = await getCollection('projects');
+const initiativesList = await getCollection('initiatives');
 const {direction = "vertical", size = "h-8 w-8 p-1"} = Astro.props
 const directionClass = direction == "vertical" ? "flex flex-col items-center text-center" : "flex items-center"
 const parentDirectionClass = direction == "vertical" ? "flex flex-col items-center text-center" : "flex-flex-col items-center"
@@ -197,6 +198,37 @@ const t = useTranslations(lang);
         </div>
     </div>
 
+    <div class={parentDirectionClass + " bg-primary-600 w-full"}>
+        <input type="radio" name="menu" id="initiatives" class="helper-trigger !hidden" />
+        <div class="dropdown bg-primary-600 w-full">
+            <label for="initiatives" class="btn variant-filled-primary w-full rounded-none py-4 helper-enable">
+                <span class={directionClass}>
+                    <Icon pack="mdi" name="deal-outline" class={size} />
+                    <span>
+                        {t('nav.initiatives')}
+                    </span>
+                </span>
+            </label>
+            <div class={parentDirectionClass + " bg-primary-600 w-full" + " helper-show" }>
+                {initiativesList && initiativesList.filter(initiative => getLangFromId(initiative) == lang).map(initiative => (
+                    <a href={"/" + initiative.slug.split('/')[0] + "/initiatives/" + initiative.slug.split('/')[1]} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + initiative.slug.split('/')[0]}>
+                        <span class="flex flex-row justify-start items-center text-md">
+                            <Icon pack={initiative.data.pack || "teenyicons"} name={initiative.data.icon || "anchor-solid"} class={size + " mr-2"} />
+                            { initiative.data?.shortTitle ?
+                            <span>
+                                {initiative.data.shortTitle}
+                            </span>
+                            :
+                            <span>
+                                {initiative.data.title}
+                            </span>
+                            }
+                        </span>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
 
     {pageList && pageList.filter(page => page.data.status == "published" && !page.data.category && getLangFromId(page) == lang).map(page => (
         <a href={"/" + page.slug} class={"btn variant-filled-primary w-full rounded-none py-4 " + page.slug.split('/')[0]}>
