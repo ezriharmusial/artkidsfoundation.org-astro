@@ -1,15 +1,20 @@
 ---
 import { getCollection } from 'astro:content';
-
+import { Avatar, ProgressRadial } from '@skeletonlabs/skeleton';
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
 	const siteInitiatives = await getCollection('initiatives');
 	return siteInitiatives.map(initiative => {
 		const [lang, slug] = initiative.slug.split('/')
+		if (slug) {
+
 		return {
 			params: { lang, slug: slug || undefined },
 			props: { initiative }
+		}
+		} else {
+			return false
 		}
 	});
 }
@@ -18,6 +23,8 @@ export async function getStaticPaths() {
 const { initiative } = Astro.props;
 // 2. Query for the page directly using the request slug
 const { Content } = await initiative?.render() ;
+
+let value = 0
 
 let elements = {
 	title: {
@@ -50,11 +57,11 @@ let elements = {
 	<div class="section section-inner started-heading">
 		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  initiative.data?.image + "');"}>
 			<!-- titles -->
-			<div class="portrait:hidden h-titles card rounded-xl p-4 landscape:w-1/3 landscape:max-w-1/3 mix-blend-differnce backdrop-blur bg-white/75 dark:bg-black/70 ">
+			<div class="portrait:hidden landscape:sm:hidden landscape:md:block h-titles card rounded-xl p-4 landscape:w-1/3 landscape:max-w-1/3 mix-blend-differnce backdrop-blur bg-white/75 dark:bg-black/70 ">
 				{initiative?.data.subtitle &&
 					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{initiative?.data.subtitle}</h3>
 				}
-				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{initiative?.data.title}</h2>
+				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-xl landscape:xl:text-4xl portrait:text-2xl font-bold" >{initiative?.data.title}</h2>
 				<p>Support our Cause and donate to this Initiative.</p>
 				<a href="/en/donations" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
 			</div>
@@ -63,18 +70,90 @@ let elements = {
 
 	<section class="bg-cover bg-center w-full" style={"background-image: url('https://source.unsplash.com/random?" + ( initiative?.data.tags ? initiative.data.tags.join('%20') : "Stage%20performance") + "');"}>
 		<div class="bg-white/90 dark:bg-black/75 p-8 landscape:pt-16">
-			<div class="mx-auto flex portrait:flex-col">
+
+			<div class="mx-auto flex portrait:flex-col gap-8">
 				<div class="landscape:w-2/3 text-lg mb-8">
 					{initiative?.data.subtitle &&
-						<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{initiative?.data.subtitle}</h3>
+					<h3 class="text-red-600 unstyled drop-shadow text-md xl:text-lg font-bold" >{initiative?.data.subtitle}</h3>
 					}
 					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{initiative?.data.title}</h2>
-					<div class="prose max-w-none prose-stone landscape:w-1/2 landscape:xl:w-3/4 space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke">
-					<Content />
+					<div class="prose max-w-none prose-stone space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke">
+						<Content />
 					</div>
 				</div>
-				<div class="landscape:w-1/3 aspect-square landscape:ml-8">
-					<img src={"https://source.unsplash.com/random?" + ( initiative?.data.tags ? initiative.data.tags.join("%20") : "Stage%20performance")} class="object-cover rounded-xl" alt="Layout Image">
+
+				<div class="sidebar flex flex-col gap-4 landscape:w-1/3">
+
+					<p class="-mb-3 font-black">Initiatiefnemer</p>
+					<div class="card variant-ghost-primary card-hover overflow-hidden w-full">
+						<div class="listbox-item cursor-pointer -outline-offset-[3px] rounded-token px-4 py-2 variant-filled-primary " data-testid="listbox-item" role="option" aria-selected="true" tabindex="0">
+							<div class="h-0 w-0 overflow-hidden">
+								<input type="radio" name="people" value="[object Object]" tabindex="-1"></div>
+								<div class="listbox-label flex items-center space-x-4"><div class="listbox-label-lead  ">
+									<figure class="avatar flex aspect-square text-surface-50 font-semibold justify-center items-center overflow-hidden isolate bg-surface-400-500-token w-8  rounded-full   " data-testid="avatar"><img class="avatar-image w-full h-full object-cover" style="" src="https://i.pravatar.cc/?img=14" alt=""></figure>
+								</div>
+								<div class="listbox-label-content flex-1 ">
+									EZ ICT Solutions
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p class="-mb-3 font-black">Details</p>
+					<div class="card variant-ghost-primary card-hover overflow-hidden w-full">
+						<header class="flex justify-center items-center gap-4 mt-4">
+							<ProgressRadial stroke={120} value={1500/250000}>{1500/250000}%</ProgressRadial>
+						</header>
+						<div class="p-4 space-y-4">
+							<h6 class="h6" data-toc-ignore="">€ 1500,- ingezameld <small>van € 250.000,-</small></h6>
+						</div>
+						<hr class="opacity-50">
+						<footer class="p-4 flex flex-col justify-start items-center space-x-4">
+							<button type="button" class="btn variant-filled-primary w-full"><i class="fa-solid fa-skull"></i> <span>Doneer</span></button>
+						</footer>
+					</div>
+
+					<div class="-mb-3 flex justify-between">
+						<span class="font-black">Donaties</span>
+						<small>Alle Donatioes &raquo;</small>
+					</div>
+					<div class="card variant-ghost-primary card-hover overflow-hidden w-full">
+							<!-- Recent only -->
+							<div class="grid grid-cols-[auto_1fr] gap-2">
+								<!-- <Avatar src="blob:null/2375537f-7ead-4f00-99a3-db0dad3973c7" width="w-full max-w-12" /> -->
+								<div class="card p-4 variant-soft rounded-tl-none space-y-2">
+									<header class="flex justify-between items-center">
+										<p class="font-bold">EzzyHarmless777</p>
+										<p class="font-bold">€ 1500,-</p>
+									</header>
+									<p>Mijn bijdrage aan de Leerdam in Minecraft server. Veel Speelplezier jongens en meisjes!</p>
+										<small class="opacity-50">1 Augustus 2023</small>
+								</div>
+							</div>
+					</div>
+
+
+					<p class="-mb-3 font-black">Afbeeldingen</p>
+					<div class="aspect-square">
+						<section class="grid grid-cols-2 md:grid-cols-1 gap-2">
+							<div class="grid gap-4">
+								<div>
+									<img class="h-auto max-w-full object-cover rounded-sm" src="/uploads/initiatives/highstreet-logo.jpg" class="object-cover rounded-xl" alt="Layout Image">
+								</div>
+								<div>
+									<img class="h-auto max-w-full object-cover rounded-sm" src="/uploads/initiatives/sea-restaurant.jpg" class="object-cover rounded-xl" alt="Layout Image">
+								</div>
+							</div>
+							<div class="grid gap-4">
+								<div>
+									<img class="h-auto max-w-full object-cover rounded-sm" src="/uploads/initiatives/temple-of-the-sun-lobby.jpg" class="object-cover rounded-xl" alt="Layout Image">
+								</div>
+								<div>
+									<img class="h-auto max-w-full object-cover rounded-sm" src="/uploads/initiatives/castle.jpg" class="object-cover rounded-xl" alt="Layout Image">
+								</div>
+							</div>
+						</section>
+					</div>
 				</div>
 			</div>
 		</div>

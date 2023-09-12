@@ -35,7 +35,6 @@ const projects = defineCollection({
     })
 });
 
-
 const linkcasts = defineCollection({
     schema: z.object({
         title: z.string(),
@@ -52,6 +51,10 @@ const linkcasts = defineCollection({
 
 const initiatives = defineCollection({
     schema: z.object({
+        initiatior: reference('members').default('artkids'),
+        updated: z.date().optional(),
+        startDate: z.date().default(new Date()),
+        endDate: z.date().optional(),
         title: z.string(),
         icon: z.string().optional(),
         pack: z.string().optional(),
@@ -61,9 +64,40 @@ const initiatives = defineCollection({
         status: z.string().optional(),
         subtitle: z.string().optional(),
         shortTitle: z.string().optional(),
+        description: z.string().optional(),
         projects: z.array(reference('projects')).optional(),
         tags: z.array(z.string()).optional(),
+        patreons: z.array(reference('members')).optional(),
+        goal: z.number().optional()
     })
 });
 
-export const collections = { pages, linkcasts, projects, initiatives };
+const members = defineCollection({
+    schema: z.object({
+        name: z.string(),
+        type: z.enum(['individual', 'group', 'company', 'ngo', 'governmental institution']).default('individual'),
+        image: z.string().optional(),
+        changed: z.string().optional(),
+        imageAlt: z.string().optional(),
+        status: z.string().optional(),
+        bio: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        donatios: z.array(reference('donations')).optional(),
+        goal: z.number().optional()
+    })
+});
+
+const donations = defineCollection({
+    schema: z.object({
+        anonymous: z.boolean(),
+        amount: z.string(),
+        plee: z.string(),
+        data: z.date(),
+        recurrency: z.enum(["daily", "weekly", "monthly", "quarterly", "yearly" ]).optional(),
+        endData: z.date().optional(),
+        message: z.string().optional(),
+        patreon: z.array(reference('members')).optional(),
+    })
+});
+
+export const collections = { pages, linkcasts, projects, initiatives, members, donations }
