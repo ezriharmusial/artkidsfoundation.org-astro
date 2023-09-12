@@ -89,10 +89,10 @@ const members = defineCollection({
 
 const donations = defineCollection({
     schema: z.object({
-        anonymous: z.boolean(),
-        amount: z.string(),
-        plee: z.string(),
-        data: z.date(),
+        anonymous: z.boolean().default(false),
+        amount: z.number().default(0),
+        plee: z.boolean().default(false),
+        data: z.date().optional(),
         recurrency: z.enum(["daily", "weekly", "monthly", "quarterly", "yearly" ]).optional(),
         endData: z.date().optional(),
         message: z.string().optional(),
