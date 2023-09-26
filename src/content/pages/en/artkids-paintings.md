@@ -1,6 +1,6 @@
 ---
 index: 4469
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 icon: "art-gallery"
 pack: "map"
 title: "ArtKids Paintings"

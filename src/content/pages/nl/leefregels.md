@@ -1,6 +1,6 @@
 ---
 index: 288
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "Leefregels"
 subtitle: ""
 author: "EzzyHarmless"

@@ -1,6 +1,6 @@
 ---
 index: 53
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "Permanente Agricultuur - Samen Terug naar de Tuin van Eden."
 subtitle: ""
 author: "EzzyHarmless"

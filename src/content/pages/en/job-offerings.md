@@ -1,6 +1,6 @@
 ---
 index: 4183
-layout: ../../../layouts/BoardMembersLayout.astro
+layout: ../../../layouts/Boardmembers.astro
 icon: "suitcase"
 pack: "ph"
 title: "Job Offerings"

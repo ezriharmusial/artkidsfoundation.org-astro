@@ -1,6 +1,6 @@
 ---
 index: 61
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "Natuurlijke Betaalbare Eco-Huizen voor iedereen."
 subtitle: ""
 author: "EzzyHarmless"

@@ -1,6 +1,6 @@
 ---
 index: 4924
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 icon: "globe-solid"
 pack: "teenyicons"
 title: "Country Representatives"

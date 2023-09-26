@@ -1,6 +1,6 @@
 ---
 index: 5009
-layout: ../../../layouts/AttachmentLayout.astro
+layout: ../../../layouts/Attachment.astro
 icon: attachment-outline
 pack: teenyicons
 title: "Documenten"

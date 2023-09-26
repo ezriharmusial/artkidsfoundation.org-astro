@@ -12,9 +12,9 @@
 
 <div class="relative">
 
-	<figure class={"aspect-square dark:bg-black/50 light:bg-white/50 flex items-center justify-center overflow-hidden"}>
+	<figure class={"dark:bg-black/50 light:bg-white/50 flex justify-center max-h-[90vh]"}>
 
-<img loading="lazy" src={linkcast.data?.image} class={"bg-purple-400 w-full object-fill " + linkcast.data?.imageRatio == 'aspect-square' ? 'aspect-square'
+<img loading="lazy" src={linkcast.data?.image} class={"bg-purple-400 " + linkcast.data?.imageRatio == 'aspect-square' ? 'aspect-square'
 	: linkcast.data?.imageRatio == 'aspect-[9/16]' ? 'aspect-[9/16]'
 	: linkcast.data?.imageRatio == 'aspect-[16/9]' ? 'aspect-[16/9]'
 	: linkcast.data?.imageRatio == 'aspect-[9/21]' ? 'aspect-[9/21]'

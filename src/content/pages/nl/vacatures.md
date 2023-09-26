@@ -1,6 +1,6 @@
 ---
 index: 298
-layout: ../../../layouts/BoardMembersLayout.astro
+layout: ../../../layouts/Boardmembers.astro
 icon: "suitcase"
 pack: "ph"
 title: "Vacatures"

@@ -1,6 +1,6 @@
 ---
 index: 4257
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 icon: "code-of-conduct-16"
 pack: "octicon"
 title: "Code of Conduct"

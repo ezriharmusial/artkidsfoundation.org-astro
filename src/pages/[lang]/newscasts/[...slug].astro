@@ -29,48 +29,51 @@ const { Content } = await linkcast.render();
 ---
 
 <LinkCastLayout description={linkcast.data?.description} title={linkcast.data?.title} image={linkcast.data?.image} imageAlt={linkcast.data?.imageAlt}>
+
 	<div class="flex flex-col">
 
 		<!-- landscape:w-3/5.landscape:xl:w-3/4  -->
-		<header class="bg-black">
+		<header class="bg-black landscape:max-h-[90vh] ">
 			<LinkcastHeader linkcast={linkcast} type={getLinkcastType(linkcast.data?.url)} client:load />
 		</header>
 		<!-- Body -->
-		<div class="flex-col">
+		<div class="container mx-auto">
+			<div class="flex-col">
 
-			<main class="p-4 space-y-4 landscape:pt-8">
-				<h5 class="text-primary-500 font-semibold">{linkcast.data?.category || 'News & Announcments'}</h5>
+				<main class="p-4 space-y-4 landscape:pt-8">
+					<h5 class="text-primary-500 font-semibold">{linkcast.data?.category || 'News & Announcments'}</h5>
 
-				<h3 class="font-black text-xl">{linkcast.data?.title}</h3>
+					<h3 class="font-black text-xl">{linkcast.data?.title}</h3>
 
-				<h4 class="font-medium">
-					{linkcast.data?.subtitle &&
-						<span>{linkcast.data?.subtitle}</span>
-					}
-					<span class="marker text-xs badge badge-filled-primary">
-						{getLinkcastType(linkcast.data?.url)}
-					</span>
-				</h4>
+					<h4 class="font-medium">
+						{linkcast.data?.subtitle &&
+							<span>{linkcast.data?.subtitle}</span>
+						}
+						<span class="marker text-xs badge badge-filled-primary">
+							{getLinkcastType(linkcast.data?.url)}
+						</span>
+					</h4>
 
-				<article class=" text-lg space-y-6">
-					<Content/>
-					<!-- {linkcast?.body} -->
-				</article>
-				<div class="grid grid-rows-1 gap-4">
-					{linkcast.data?.url &&
-						<a class="btn btn-filled-primary" href={linkcast.data?.url} target="_blank" rel="noreferrer">{linkcast.data?.url}</a>
-					}
-				</div>
-			</main>
-			<hr />
-			<!-- Footer -->
-			<footer class="p-4 flex justify-start items-center space-x-4">
-				<Avatar src={linkcast.data?.authorImage || '/logo-512.png'} />
-				<div class="flex-auto flex justify-between items-center">
-					<h6 class="font-bold">By {linkcast.data?.author || 'ArtKids Parrot'}</h6>
-					<small>On {formattedDate}</small>
-				</div>
-			</footer>
+					<article class=" text-lg space-y-6">
+						<Content/>
+						<!-- {linkcast?.body} -->
+					</article>
+					<div class="grid grid-rows-1 gap-4">
+						{linkcast.data?.url &&
+							<a class="btn btn-filled-primary" href={linkcast.data?.url} target="_blank" rel="noreferrer">{linkcast.data?.url}</a>
+						}
+					</div>
+				</main>
+				<hr />
+				<!-- Footer -->
+				<footer class="p-4 flex justify-start items-center space-x-4">
+					<Avatar src={linkcast.data?.authorImage || '/logo-512.png'} />
+					<div class="flex-auto flex justify-between items-center">
+						<h6 class="font-bold">By {linkcast.data?.author || 'ArtKids Parrot'}</h6>
+						<small>On {formattedDate}</small>
+					</div>
+				</footer>
+			</div>
 		</div>
 	</div>
 

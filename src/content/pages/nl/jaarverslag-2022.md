@@ -1,6 +1,6 @@
 ---
 index: 5010
-layout: ../../../layouts/AttachmentLayout.astro
+layout: ../../../layouts/Attachment.astro
 icon: report-line
 pack: mdi
 title: "Jaarverslag 2022"

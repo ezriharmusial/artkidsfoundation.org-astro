@@ -1,6 +1,6 @@
 ---
 index: 4173
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "Ethics"
 subtitle: ""
 author: "EzzyHarmless"

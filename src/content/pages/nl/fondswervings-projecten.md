@@ -1,6 +1,6 @@
 ---
 index: 296
-layout: ../../../layouts/ProjectsLayout.astro
+layout: ../../../layouts/Project.astro
 icon: "charity-outline"
 pack: "mdi"
 title: "Fondswervings Projecten"

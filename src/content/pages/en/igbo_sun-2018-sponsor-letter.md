@@ -1,6 +1,6 @@
 ---
 index: 5097
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "IGBO_SUN 2018 Sponsor Letter"
 subtitle: ""
 author: "EzzyHarmless"

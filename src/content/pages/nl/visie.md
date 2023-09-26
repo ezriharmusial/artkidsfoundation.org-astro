@@ -1,6 +1,6 @@
 ---
 index: 300
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "Visie"
 subtitle: ""
 author: "EzzyHarmless"

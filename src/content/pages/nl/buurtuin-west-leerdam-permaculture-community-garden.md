@@ -1,6 +1,6 @@
 ---
 index: 51
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "BuurTuin-West, Leerdam"
 subtitle: ""
 author: "EzzyHarmless"

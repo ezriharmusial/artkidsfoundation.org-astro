@@ -1,6 +1,6 @@
 ---
 index: 270
-layout: ../../../layouts/BoardMembersLayout.astro
+layout: ../../../layouts/Boardmembers.astro
 icon: "group"
 pack: "iconoir"
 title: "Bestuur"

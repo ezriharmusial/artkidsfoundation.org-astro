@@ -1,6 +1,6 @@
 ---
 index: 4475
-layout: ../../../layouts/ProjectsLayout.astro
+layout: ../../../layouts/Project.astro
 icon: "charity-outline"
 pack: "mdi"
 title: "Fundraising Projects"

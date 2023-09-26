@@ -1,6 +1,6 @@
 ---
 index: 4559
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "D'ntara Creations"
 subtitle: ""
 author: "EzzyHarmless"

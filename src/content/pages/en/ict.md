@@ -1,6 +1,6 @@
 ---
 index: 4218
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "ArtKids ICT"
 icon: "internet"
 pack: "iconoir"

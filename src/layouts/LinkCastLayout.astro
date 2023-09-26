@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 
----
+const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
 
-<BaseLayout>
+---
+<BaseLayout description={description} title={title} image={image} imageAlt={imageAlt} seoTitle={seoTitle}>
             <!-- Default Slot -->
             <slot />
 </BaseLayout>

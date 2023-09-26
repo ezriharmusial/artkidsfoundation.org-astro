@@ -1,6 +1,6 @@
 ---
 index: 4765
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 icon: "solar-power"
 pack: "mdi"
 title: "Solar Africa"

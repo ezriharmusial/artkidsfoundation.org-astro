@@ -1,6 +1,6 @@
 ---
 index: 5092
-layout: ../../../layouts/PageLayout.astro
+layout: ../../../layouts/Page.astro
 title: "IGBO_SUN 2018 Registration Form"
 subtitle: ""
 author: "EzzyHarmless"
