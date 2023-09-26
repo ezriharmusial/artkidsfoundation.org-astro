@@ -120,8 +120,6 @@ Ook hebben we geïnvesteerd in Planten, Bloemen, Bomen en Struiken, Vruchtbare o
 
 Ondertekend,
 
-![](RackMultipart20230712-1-i174yh_html_113af7a3927f3cf9.jpg)
-
 Bastiaan Marinus Bijleveld
 
 Voorzitter Stichting ArtKids Foundation
