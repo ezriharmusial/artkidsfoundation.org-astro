@@ -63,8 +63,6 @@ Met trots kondigen wij hiermee onze activiteiten aan zien wij reeds uit naar de 
 
 Ondertekend,
 
-![](RackMultipart20230712-1-8pnrr7_html_113af7a3927f3cf9.jpg)
-
 Bastiaan Marinus Bijleveld
 
 Voorzitter
