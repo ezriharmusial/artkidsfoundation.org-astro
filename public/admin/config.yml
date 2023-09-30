@@ -22,18 +22,19 @@ collections:
     label: "Staff"
     label_singular: "Employee"
     folder: "src/content/staff/"
-    preview_path: "/staff/{{username}}"
+    preview_path: "/staff/{{name}}"
     summary: "{{name}} ({{title}}) [{{function}}]"
     identifier_field: name
     create: true
     fields:
       - {label: "Public", name: "public", widget: "boolean", default: true, required: false}
       - {label: "Created", name: "date", widget: "datetime"}
+      - {label: "Username", name: "username", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Functie", name: "function", widget: "select", options: ["boardmember", "advisor"], required: false}
-      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
       - {label: "Achtergrond Foto", name: "bgimage", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png , required: false}
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown"}
       - label: "Contact Information"
         name: "contact"
@@ -286,4 +287,4 @@ publish_mode: editorial_workflow
 
 site_url: https://www.artkidsfoundation.org
 display_url: https://ArtKidsFoundation.org
-logo_url: /logo-512.png
+logo_url: /admin/images/artkids-2023.png

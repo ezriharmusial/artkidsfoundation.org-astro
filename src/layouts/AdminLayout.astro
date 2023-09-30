@@ -186,6 +186,172 @@ import Fonts from '../components/head/Fonts.astro';
 				}
 			});
 			CMS.registerPreviewTemplate("projects", ProjectsPreview);
+
+			// CMS.registerPreviewStyle("/admin/theme.css");
+			var InitiativesPreview = createClass({
+				render: function() {
+					var entry = this.props.entry;
+					var image = entry.getIn(['data', 'image']);
+					var bg = this.props.getAsset(image);
+					var after = entry.getIn(['data', 'changed']);
+					var afterBg = this.props.getAsset(after);
+
+					return h('div', { className: 'hs-0'},
+						h('header', { className: 'hs-1'},
+							h('div', { className: 'hs-2'},
+								h('div', { className: 'hs-3'},
+									h('div', { className: 'hs-4'},
+										h('div', { className: 'hs-5'},
+											h('div', { className: 'hs-6'}, ""),
+										),
+										h('div', { className: 'hs-7'},
+											h('div', { className: 'hs-8'},
+												h('figure', { className: 'hs-9'},
+													h('a', { className: 'hs-10'},
+														h('h1', { className: 'hs-11'},
+															h('div', { className: 'hs-12'},
+																h('div', { className: 'hs-13'},
+																	h('div', { className: 'hs-14'},
+
+																	),
+																),
+															),
+														),
+													),
+												),
+												h('p', { className: 'hs-15'},
+													h('span', { className: 'hs-19'},entry.getIn(['data', 'title'])),
+												),
+												h('p', { className: 'hs-20'},
+												),
+											),
+										),
+										h('div', { className: 'hs-21'},
+										),
+									),
+								),
+							),
+						),
+						h('main', { className: 'prs-0'},
+							h('main', {className: 'prs-1'},
+								h('div', {className: 'prs-2'},
+									h('div', {className: 'prs-3', style: { 'background-image': 'url(\'' + image + '\')' }},
+										h('div', {className: 'prs-4 '},
+											h('h3', {className: 'prs-5'}, entry.getIn(['data', 'subtitle'])),
+											h('h2', {className: 'prs-6'}, entry.getIn(['data', 'title'])),
+											h('p', {className: 'prs-7'}, entry.getIn(['data', 'callToAction'])),
+											h('a', {className: 'prs-8'}, "Donate"),
+										),
+									),
+								),
+								h('section', {className: 'prs-9', style: { 'background-image': 'url(\'https://source.unsplash.com/random?Stage%20performance\')' }},
+									h('div', {className: 'prs-10 '},
+										h('div', {className: 'prs-11 '},
+											h('div', {className: 'prs-12 '},
+												h('h3', {className: 'prs-13'}, entry.getIn(['data', 'subtitle'])),
+												h('h2', {className: 'prs-14'}, entry.getIn(['data', 'title'])),
+												h('div', {className: 'psr-15 ps-17'},this.props.widgetFor('body')),
+											),
+											h('div', {className: 'prs-23 '},
+												h('img', {className: 'prs-24', src: afterBg.toString()} ),
+											),
+										),
+									),
+								),
+								h('div', {className: 'prs-25'},
+									h('div', {className: 'prs-26', style: { 'background-image': 'url(\'' + after + '\')' }},
+										h('div', {className: 'prs-27'},
+											h('h3', {className: 'prs-28'}, entry.getIn(['data', 'subtitle'])),
+											h('h2', {className: 'prs-29'}, entry.getIn(['data', 'title'])),
+											h('p', {className: 'prs-30'}, entry.getIn(['data', 'callToAction'])),
+											h('a', {className: 'prs-31'}, "Donate"),
+										),
+									),
+								),
+							),
+						),
+					);
+				}
+			});
+			CMS.registerPreviewTemplate("initiatives", InitiativesPreview );
+
+			CMS.registerPreviewStyle("/admin/profile-card.css");
+			var StaffPreview = createClass({
+				render: function() {
+					var entry = this.props.entry;
+					var image = entry.getIn(['data', 'image']);
+					var bg = this.props.getAsset(image);
+					var after = entry.getIn(['data', 'bgimage']);
+					var afterBg = this.props.getAsset(after);
+				    var contact = entry.getIn(['data', 'contact']);
+
+					return h('div', { className: 'hs-0'},
+						h('header', { className: 'hs-1'},
+							h('div', { className: 'hs-2'},
+								h('div', { className: 'hs-3'},
+									h('div', { className: 'hs-4'},
+										h('div', { className: 'hs-5'},
+											h('div', { className: 'hs-6'}, ""),
+										),
+										h('div', { className: 'hs-7'},
+											h('div', { className: 'hs-8'},
+												h('figure', { className: 'hs-9'},
+													h('a', { className: 'hs-10'},
+														h('h1', { className: 'hs-11'},
+															h('div', { className: 'hs-12'},
+																h('div', { className: 'hs-13'},
+																	h('div', { className: 'hs-14'},
+
+																	),
+																),
+															),
+														),
+													),
+												),
+												h('p', { className: 'hs-15'},
+													h('span', { className: 'hs-19'}, 'Profiel van ' + entry.getIn(['data', 'name'])),
+												),
+												h('p', { className: 'hs-20'},
+												),
+											),
+										),
+										h('div', { className: 'hs-21'},
+										),
+									),
+								),
+							),
+						),
+						h('div', { className: 'pcs-0'},
+							h('h3', {className: 'pcs-1'}, entry.getIn(['data', 'function'])),
+							h('div', {className: 'pcs-2'},
+								h('div', {className: 'prs-2'},
+									h('div', {className: 'pcs-3'},
+										h('img', {className: 'pcs-4', src: afterBg.toString()} ),
+										h('div', {className: 'pcs-5 '},
+											h('figure', {className: 'pcs-6'},
+												h('img', {className: 'pcs-7', src: bg.toString()} ),
+											),
+										),
+										h('div', {className: 'pcs-8'},
+											h('h4', {className: 'pcs-9'}, entry.getIn(['data', 'name'])),
+											h('p', {className: 'pcs-10'}, entry.getIn(['data', 'title'])),
+											h('p', {className: 'pcs-11'},
+												h('span',{},'e: '),
+												h('a', {className: 'pcs-12'},  entry.getIn(['data', 'contact', 'email']) || '-' ),
+												h('br', {className: 'pcs-13'}),
+												h('span',{},'t: '),
+												h('a', {className: 'pcs-14'}, entry.getIn(['data', 'contact', 'telephone']) || '-'),
+											),
+										),
+									),
+								),
+							),
+						),
+					);
+				}
+			});
+			CMS.registerPreviewTemplate("staff", StaffPreview);
+			CMS.registerPreviewTemplate("partner", StaffPreview);
 		</script>
 	</div>
 
