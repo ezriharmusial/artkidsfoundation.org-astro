@@ -198,7 +198,7 @@ collections:
     create: true
     fields:
       - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", value_field: "title", search_fields: ["titles"]}
-      - {label: "Naam", name: "patreon", widget: "string"}
+      - {label: "Naam", name: "donator", widget: "string"}
       - {label: "Bedrag", name: "amount", widget: "number"}
       - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Message", name: "message", widget: "text"}

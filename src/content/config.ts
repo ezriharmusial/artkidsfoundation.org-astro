@@ -2,13 +2,13 @@ import { defineCollection, reference, z } from 'astro:content';
 
 // Staff collection schema
 const staff = defineCollection({
-    type: 'data',
+    // type: 'data',
     schema: z.object({
         id: z.string().optional(),
-        updated: z.date(),
+        date: z.date(),
         username: z.string(),
         function: z.enum(["boardmember", "advisor"]).default("boardmember"),
-        title: z.string(),
+        title: z.string().optional(),
         phonenumber: z.string().optional(),
         email: z.string().email().optional(),
         image: z.string().optional(),
@@ -27,9 +27,9 @@ const staff = defineCollection({
 });
 
 const partners = defineCollection({
-    type: 'data',
+    // type: 'data',
     schema: z.object({
-        date: z.string().optional(),
+        date: z.date().optional(),
         name: z.string(),
         type: z.enum(['individual', 'group', 'company', 'ngo', 'governmental institution', 'school']).default('individual'),
         image: z.string().optional(),
@@ -118,10 +118,10 @@ const initiatives = defineCollection({
 });
 
 const donations = defineCollection({
-    type: 'data',
+    // type: 'data',
     schema: z.object({
-        initiative: z.array(reference('initiatives')),
-        patreon: z.string(),
+        initiative: reference('initiatives'),
+        donator: z.string(),
         amount: z.number().default(0),
         date: z.date(),
         message: z.string().optional(),
