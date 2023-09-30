@@ -1,21 +1,23 @@
 ---
-index: 5010
+excerpt: ""
+modified: 2018-09-27 15:44:31
 layout: ../../../layouts/Attachment.astro
+author: Bas Bijleveld
+date: 2018-08-10 10:26:30
+comment_count: 0
+index: 5010
+comment_status: closed
+status: published
+title: Annual Report 2022
+subtitle: Taking Ownership of our Actions in 2022
+tags: []
 icon: report-line
 pack: mdi
-title: "Annual Report 2022"
-subtitle: "Taking Ownership of our Actions in 2022"
-shorttitle: "Annual Report 2022"
-author: "EzzyHarmless"
-date: "2018-08-10 10:26:30"
-excerpt: ""
-status: "published"
-comment_status: "closed"
-modified: "2018-09-27 15:44:31"
-type: "page"
-category: "anbi"
-comment_count: 0
-tags: []
+type: page
+shorttitle: Annual Report 2022
+seo:
+  date: 2023-09-29T20:28:14.472Z
+category: anbi
 ---
 
 ## Message from the Founders
@@ -86,8 +88,10 @@ Artkids Farms produceert eten terwijl ArtKids Kitchen het eten voor schoolkinder
 
 Het jaar stond hoofdzakelijk in het teken van het ondersteunen en opzetten van onze projecten in Afrika. Daarbij is vooral tijd en werk geïnvesteerd in onze ICT afdeling en onze Agricultuur Testlab in Nederland. Onze vakkennis en ervaring vormt het fundament van ons werk en opent deuren in Afrika.
 
-| Mei 2022 | Zaai, en Plantfestival '22 |
+
+| Datum | Evenement |
 | --- | --- |
+| Mei 2022 | Zaai, en Plantfestival '22 |
 | Oktober 2022 | Africa4Africa - Rise 'N' Shine Videoclip Productie |
 | Oktober 2022 | Oogst Festival |
 | November 2022 | Africa4Africa - Unity Album 2022 Release & Promotie |
@@ -107,8 +111,10 @@ Er is geïnvesteerd in Duurzame Tuin- en Bouw- Gereedschappen voor het vormgeven
 
 Ook hebben we geïnvesteerd in Planten, Bloemen, Bomen en Struiken, Vruchtbare onderhoudsarme grond, compost methoden en gereedschappen voor het behouden van de vruchtbaarheid, gereedschappen voor het Drogen en Conserveren van Voedsel.
 
-| Artkids ICT | € 550,- |
+
+| Posten | Bedrag |
 | --- | --- |
+| Artkids ICT | € 550,- |
 | DiscoverMe Talent Hunt | € 1.800,- |
 | LastMessengerS Music Artists | € 3.000,- |
 | Africa4Africa Unity Album 2022 | € 850,- |

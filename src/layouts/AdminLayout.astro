@@ -1,8 +1,8 @@
 ---
-import '@skeletonlabs/skeleton/themes/theme-vintage.css';
-import '@styles/theme.postcss';
-import '@skeletonlabs/skeleton/styles/all.css'
-import '@styles/app.postcss';
+// import '@skeletonlabs/skeleton/themes/theme-vintage.css';
+// import '@styles/theme.postcss';
+// import '@skeletonlabs/skeleton/styles/all.css'
+// import '@styles/app.postcss';
 
 import Fonts from '../components/head/Fonts.astro';
 ---
@@ -18,148 +18,174 @@ import Fonts from '../components/head/Fonts.astro';
 	<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
-<body data-theme="crimson" class="bg-primary-100">
+<body data-theme="vintage" class="bg-primary-100 adminLayout">
 	<div style="display: contents">
 
 		<!-- Include the script that builds the page and powers Netlify CMS -->
-		<script is:inline src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+	  	<script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 		<script is:inline>
-			function getTextColor(color) {
-				let darkColor = getDarkColor(color)
-				return darkColor.replace('is-', 'has-text-')
-			}
-			function getHighlightTextColor(color) {
-				let textColor = (
-				color === 'is-light' ||
-				color === 'is-white') ? 'is-dark' : //if its light return dark
-				(color === 'is-warning') ? getDarkColor(color) : // if its warning return dark contrast
-				getLightColor(color)
-				return textColor.replace('is-', 'has-text-')
-			}
-			function getLightBackgroundColor(color) {
-				let lightColor = getLightColor(color)
-				// console.log('HIERO:', color, lightColor.replace('is-', 'has-background-'))
-				return lightColor.replace('is-', 'has-background-')
-			}
-			function getBackgroundColor(color) {
-				// console.log('HIERO:', color, lightColor.replace('is-', 'has-background-'))
-				return color.replace('is-', 'has-background-')
-			}
-			function getLightColor(color) {
-				return (!color ? 'is-light' :
-				color === 'is-light') ? 'is-light' :
-				(color === 'is-white') ? 'is-white' :
-				(color === 'is-dark') ? 'is-light' :
-				(color === "is-black") ? 'is-white' :
-				color + '-light' // else return light version
-			}
-			function getDarkColor(color) {
-				return (
-				color === 'is-light') ? 'is-dark' :
-				(color === 'is-white') ? 'is-black' :
-				(color === 'is-dark') ? 'is-dark' :
-				(color === "is-black") ? 'is-black' :
-				color + '-dark' // else return dark version
-			}
 			CMS.registerPreviewStyle("/admin/mobile.css");
-			CMS.registerPreviewStyle("/admin/adminstyles.css");
+			CMS.registerPreviewStyle("/admin/header.css");
+			CMS.registerPreviewStyle("/admin/page.css");
+			CMS.registerPreviewStyle("/admin/project.css");
+			// CMS.registerPreviewStyle("/admin/theme.css");
 			var PagesPreview = createClass({
 				render: function() {
 					var entry = this.props.entry;
 					var image = entry.getIn(['data', 'image']);
 					var bg = this.props.getAsset(image);
-					var color = entry.getIn(['data', 'color'])
-					var bold = entry.getIn(['data', 'bold'])
-					var size = entry.getIn(['data', 'size'])
-					let herostyles = ' ' +
-					bold ? 'is-bold ' : ' ' +
-					color ? color : 'is-primary ' +
-					size ? size : 'is-fullheight ' +
-					bg ? 'has-background ' : 'has-background '
-					return h('div', {
-						className: getLightBackgroundColor(color)
-					},
-					h('header', {
-						className: 'hero is-fullheight-with-navbar has-background ' + herostyles
-					},
-					h('img', {
-						className: 'hero-image',
-						src: bg.toString()
-					}),
-					h('div', {
-						className: 'hero-head'
-					},
-					h('div', {
-						className: 'navbar is-spaced ' + color
-					},
-					h('div', {
-						className: 'navbar-brand ml-3 in:fade ' + color
-					},
-					h('a', {
-						className: 'navbar-item is-hidden-mobile is-active ' + getLightBackgroundColor(color) + ' ' + getTextColor(color)
-					},
-					h('h1', {
-						className: 'title is-size-5 branding-font pl-3 ' + getTextColor(color)
-					}, 'EZ ICT'),
-					),
-					),
-					h('div', {
-						id: "navbarMenuHeroC",
-						className: 'navbar-menu'
-					},
-					h('div', {
-						className: "navbar-start is-transparent in:fly-y:-200duration:500 out:fade " + getLightBackgroundColor(color) + ' ' + getTextColor(color)
-					},
-					h('a', {
-						className: "is-size-5 navbar-item mx-1 py-5 has-text-dark " + getHighlightTextColor(color)
-					},
-					h('span', {
-						className: 'icon-text is-capitalized'
-					},
-					h('span', {
-						className: 'icon-text is-capitalized'
-					}, entry.getIn(['data', 'title'])),
-					),
-					),
-					),
-					),
-					),
-					),
-					h('div', {
-						className: 'hero-body'
-					},
-					h('div', {
-						className: 'container'
-					},
-					h('div', {
-						className: 'box notification is-transparent content ' + getLightBackgroundColor(color)
-					},
-					h('h1', {
-						className: 'title is-size-4 ' + getTextColor(color)
-					}, entry.getIn(['data', 'title'])),
-					h('h2', {
-						className: 'subtitle is-size-5 ' + getTextColor(color)
-					}, entry.getIn(['data', 'subtitle'])),
-					h('div', {
-						className: 'content ' + getTextColor(color)
-					},
-					h('p', {}, entry.getIn(['data', 'description'])),
-					),
-					),
-					),
-					),
-					),
-					h('main', {
-						className: 'section ' + getLightBackgroundColor(color)
-					},
-					h('div', {
-						className: "container raised"
-					}, this.props.widgetFor('body'))
-					),
+
+					return h('div', { className: 'hs-0' },
+						h('header', { className: 'hs-1'},
+							h('div', { className: 'hs-2'},
+								h('div', { className: 'hs-3'},
+									h('div', { className: 'hs-4'},
+										h('div', { className: 'hs-5'},
+											h('div', { className: 'hs-6'},
+											),
+										),
+										h('div', { className: 'hs-7'},
+											h('div', { className: 'hs-8'},
+												h('figure', { className: 'hs-9'},
+													h('a', { className: 'hs-10'},
+														h('h1', { className: 'hs-11'},
+															h('div', { className: 'hs-12'},
+																h('div', { className: 'hs-13'},
+																	h('div', { className: 'hs-14'},
+
+																	),
+																),
+															),
+														),
+													),
+												),
+												h('p', { className: 'hs-15'},
+													h('span', { className: 'hs-19'},entry.getIn(['data', 'title'])),
+												),
+												h('p', { className: 'hs-20'},
+												),
+											),
+										),
+										h('div', { className: 'hs-21'},
+										),
+									),
+								),
+							),
+						),
+						h('div', { className: 'ps-0'},
+							h('div', {className: 'ps-1'},
+								h('div', {className: 'ps-2'},
+									h('p', {className: 'ps-3'},
+										h('span', {className: 'ps-4 '},
+											h('span', {className: 'ps-7 '},
+												entry.getIn(['data', 'subtitle'])
+											),
+										),
+									),
+									h('img', {className: 'ps-8', src: "https://source.unsplash.com/random?african%20children"}),
+								),
+								h('div', {className: 'ps-9'},
+									h('div', {className: 'ps-10'},
+										h('h1', {className: 'ps-11 '}, entry.getIn(['data', 'title'])),
+									),
+									h('div', {className: 'ps-16 ps-17'},
+										this.props.widgetFor('body')
+									),
+								),
+							),
+						),
 					);
 				}
 			});
 			CMS.registerPreviewTemplate("pages", PagesPreview);
+
+			// CMS.registerPreviewStyle("/admin/theme.css");
+			var ProjectsPreview = createClass({
+				render: function() {
+					var entry = this.props.entry;
+					var image = entry.getIn(['data', 'image']);
+					var bg = this.props.getAsset(image);
+					var after = entry.getIn(['data', 'changed']);
+					var afterBg = this.props.getAsset(after);
+
+					return h('div', { className: 'hs-0'},
+						h('header', { className: 'hs-1'},
+							h('div', { className: 'hs-2'},
+								h('div', { className: 'hs-3'},
+									h('div', { className: 'hs-4'},
+										h('div', { className: 'hs-5'},
+											h('div', { className: 'hs-6'}, ""),
+										),
+										h('div', { className: 'hs-7'},
+											h('div', { className: 'hs-8'},
+												h('figure', { className: 'hs-9'},
+													h('a', { className: 'hs-10'},
+														h('h1', { className: 'hs-11'},
+															h('div', { className: 'hs-12'},
+																h('div', { className: 'hs-13'},
+																	h('div', { className: 'hs-14'},
+
+																	),
+																),
+															),
+														),
+													),
+												),
+												h('p', { className: 'hs-15'},
+													h('span', { className: 'hs-19'},entry.getIn(['data', 'title'])),
+												),
+												h('p', { className: 'hs-20'},
+												),
+											),
+										),
+										h('div', { className: 'hs-21'},
+										),
+									),
+								),
+							),
+						),
+						h('main', { className: 'prs-0'},
+							h('main', {className: 'prs-1'},
+								h('div', {className: 'prs-2'},
+									h('div', {className: 'prs-3', style: { 'background-image': 'url(\'' + image + '\')' }},
+										h('div', {className: 'prs-4 '},
+											h('h3', {className: 'prs-5'}, entry.getIn(['data', 'subtitle'])),
+											h('h2', {className: 'prs-6'}, entry.getIn(['data', 'title'])),
+											h('p', {className: 'prs-7'}, entry.getIn(['data', 'callToAction'])),
+											h('a', {className: 'prs-8'}, "Donate"),
+										),
+									),
+								),
+								h('section', {className: 'prs-9', style: { 'background-image': 'url(\'https://source.unsplash.com/random?Stage%20performance\')' }},
+									h('div', {className: 'prs-10 '},
+										h('div', {className: 'prs-11 '},
+											h('div', {className: 'prs-12 '},
+												h('h3', {className: 'prs-13'}, entry.getIn(['data', 'subtitle'])),
+												h('h2', {className: 'prs-14'}, entry.getIn(['data', 'title'])),
+												h('div', {className: 'psr-15 ps-17'},this.props.widgetFor('body')),
+											),
+											h('div', {className: 'prs-23 '},
+												h('img', {className: 'prs-24', src: afterBg.toString()} ),
+											),
+										),
+									),
+								),
+								h('div', {className: 'prs-25'},
+									h('div', {className: 'prs-26', style: { 'background-image': 'url(\'' + after + '\')' }},
+										h('div', {className: 'prs-27'},
+											h('h3', {className: 'prs-28'}, entry.getIn(['data', 'subtitle'])),
+											h('h2', {className: 'prs-29'}, entry.getIn(['data', 'title'])),
+											h('p', {className: 'prs-30'}, entry.getIn(['data', 'callToAction'])),
+											h('a', {className: 'prs-31'}, "Donate"),
+										),
+									),
+								),
+							),
+						),
+					);
+				}
+			});
+			CMS.registerPreviewTemplate("projects", ProjectsPreview);
 		</script>
 	</div>
 
@@ -168,256 +194,282 @@ import Fonts from '../components/head/Fonts.astro';
 	<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 	<style is:global>
-		/* Custom Menu */
-		aside a span {
-			display: inline-flex !important;
-			justify-content: center;
-			align-items: center
-		}
+/* Custom Menu */
+.adminLayout aside a span {
+	display: inline-flex !important;
+	justify-content: center;
+	align-items: center
+}
 
-		aside a span svg {
-			display: none !important;
-		}
+.adminLayout aside a span svg {
+	display: none !important;
+}
 
-		aside a span::before {
-			font-family: "Font Awesome 5 Free";
-			font-size: 1rem;
-			font-weight: bold;
-		}
+.adminLayout aside a span::before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 1rem;
+	font-weight: bold;
+}
 
-		aside a[href="#/collections/linkcasts"] span::before {
-			content: "\f1ea";
-		}
+.adminLayout aside a[href="#/collections/linkcasts"] span::before {
+	content: "\f1ea";
+}
 
-		aside a[href="#/collections/pages"] span::before {
-			content: "\f15c";
-		}
+.adminLayout aside a[href="#/collections/pages"] span::before {
+	content: "\f15c";
+}
 
-		aside a[href="#/collections/authors"] span::before {
-			content: "\f4ff";
-		}
+.adminLayout aside a[href="#/collections/staff"] span::before {
+	content: "\f2b9";
+}
 
-		aside a[href="#/collections/tracks"] span::before {
-			content: "\f001";
-		}
+.adminLayout aside a[href="#/collections/projects"] span::before {
+	content: "\f07c";
+}
 
-		aside a[href="#/collections/albums"] span::before {
-			content: "\f8d9";
-		}
+.adminLayout aside a[href="#/collections/initiatives"] span::before {
+	content: "\f2b5";
+}
 
-		aside a[href="#/collections/artists"] span::before {
-			content: "\f2b9";
-		}
+.adminLayout aside a[href="#/collections/partners"] span::before {
+	content: "\f2b9";
+}
 
-		aside a[href="#/collections/settings"] span::before {
-			content: "\f1de";
-		}
+.adminLayout aside a[href="#/collections/donations"] span::before {
+	content: "\f3d1";
+}
 
-		[class*=GridCardLink]:before{
-			content: ' ';
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0.6;
-			background-image: url('https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg');
-			background-repeat: no-repeat;
-			background-position: 50% 10%;
-			background-size: cover;
-		}
+.adminLayout aside a[href="#/collections/settings"] span::before {
+	content: "\f1de";
+}
 
-		a[class*=GridCardLink][href="#/collections/settings/entries/info"]:before{
-			background-image: url("https://img.freepik.com/premium-vector/vector-web-site-design-template-branding-digital-marketing-company-identity-brand-business-landing-page-concepts-website-mobile-development-modern-flat-illustration_88813-2058.jpg?w=2000");
-		}
+.adminLayout [class*=GridCardLink]:before{
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background-image: url('https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+	background-size: cover;
+}
 
-		a[class*=GridCardLink][href="#/collections/settings/entries/seo"]:before{
-			background-image: url("https://www.glitztechnology.com/_next/public/images/seo.2-58442dde0ae8e7df50d693b90c0a740e.png");
-		}
+.adminLayout a[class*=GridCardLink][href="#/collections/settings/entries/info"]:before{
+	background-image: url("https://img.freepik.com/premium-vector/vector-web-site-design-template-branding-digital-marketing-company-identity-brand-business-landing-page-concepts-website-mobile-development-modern-flat-illustration_88813-2058.jpg?w=2000");
+}
 
-		a[class*=GridCardLink][href="#/collections/settings/entries/social"]:before{
-			background-image: url("https://www.terawork.com/blog/wp-content/uploads/2022/10/16-reasons-why-social-media-is-important-to-your-company-616d3200e6dc6-sej-1.png");
-		}
+.adminLayout a[class*=GridCardLink][href="#/collections/settings/entries/seo"]:before{
+	background-image: url("https://www.glitztechnology.com/_next/public/images/seo.2-58442dde0ae8e7df50d693b90c0a740e.png");
+}
 
-		a[class*=GridCardLink][href="#/collections/settings/entries/settings"]:before{
-			background-image: url("https://entrepreneurhandbook.co.uk/wp-content/uploads/2019/05/Website-image.jpg.webp");
-		}
+.adminLayout a[class*=GridCardLink][href="#/collections/settings/entries/social"]:before{
+	background-image: url("https://www.terawork.com/blog/wp-content/uploads/2022/10/16-reasons-why-social-media-is-important-to-your-company-616d3200e6dc6-sej-1.png");
+}
 
-		/* Custom Card styles */
-		[class*=GridCardLink]{
-			position: relative;
-		}
+.adminLayout a[class*=GridCardLink][href="#/collections/settings/entries/settings"]:before{
+	background-image: url("https://entrepreneurhandbook.co.uk/wp-content/uploads/2019/05/Website-image.jpg.webp");
+}
 
-		[class*=CardBody]{
-			background-color: rgba(240, 240, 255, 0.419);
-			backdrop-filter: blur(4px) brightness(120%) contrast(50%);
-			z-index: 10;
-		}
+.adminLayout [class*=SidebarHeading],
+.adminLayout [class*=CollectionTopHeading-cardTopHeading]{
+	font-size: 1.5rem !important;
+}
 
-		[class*=CardBody]:after{
-			box-shadow: rgba(255, 255, 255, .2) 0px -15px 24px inset !important;
-		}
+/* Custom Card styles */
+.adminLayout [class*=GridCardLink]{
+	position: relative;
+}
 
-		[class*=CardHeading]{
-			color: black !important;
-			font-size: 1.5rem !important;
-			line-height: 1.8rem !important;
-		}
+.adminLayout [class*=CardBody]{
+	background-color: rgba(240, 240, 255, 0.419);
+	backdrop-filter: blur(4px) brightness(120%) contrast(50%);
+	z-index: 10;
+	height: 55px !important;
+}
 
-		a:hover [class*=CardImage] {
-			transform: scale(1.2);
-			background-position-y: 9%;
-		}
+.adminLayout [class*=CardBody]:after{
+	box-shadow: rgba(255, 255, 255, .2) 0px -15px 24px inset !important;
+}
 
-		[class*=CardImage]{
-			position: absolute;
-			background-color: rgba(0, 0, 255, 0.071);
-			background-position-y: 6%;
-			transform: scale(1.1);
-			height: 100% !important;
-			width: 100%;
-			top:0;
-			left:0;
-			right:0;
-			bottom:0;
-			transition: all ease-in-out 1s;
-		}
+.adminLayout [class*=CardHeading],
+.adminLayout [class*=ListCardTitle]
+{
+	color: black !important;
+	font-size: 1.1rem !important;
+	font-weight: 400 !important;
+	line-height: 1.2rem !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 
-		[class*=EditorContainer],
-		[class*=FieldLabel-fieldLabel]::after,
-		[class*=NoPreviewContainer-card-splitPane]{
-			background: transparent !important;
-		}
+.adminLayout a:hover [class*=CardImage] {
+	transform: scale(1.2);
+	background-position-y: 9%;
+}
 
-		/* Forms */
-		[class*=FieldLabel-fieldLabel] {
-			background-color: rgba(240, 240, 255, 1);
-		}
+.adminLayout [class*=CardImage]{
+	position: absolute;
+	background-color: rgba(0, 0, 255, 0.071);
+	background-position-y: 6%;
+	transform: scale(1.1);
+	height: 100% !important;
+	width: 100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	transition: all ease-in-out 1s;
+}
 
-		input[type=text]{
-			border-radius: 0px 5px 5px !important;
-		}
+.adminLayout [class*=EditorContainer],
+.adminLayout [class*=FieldLabel-fieldLabel]::after,
+.adminLayout [class*=NoPreviewContainer-card-splitPane]{
+	background: transparent !important;
+}
 
-		/* Mobile Friendly Styles */
-		@media (orientation: portrait) {
+/* Forms */
+.adminLayout [class*=FieldLabel-fieldLabel] {
+	background-color: rgba(240, 240, 255, 1);
+}
 
-			[class*=BackArrow] {
-				margin-right: 0 !important;
-			}
+.adminLayout input[type=text]{
+	border-radius: 0px 5px 5px !important;
+}
 
-			[class*=BackStatus],
-			[class*=BackCollection] {
-				background-color: #fff;
-				position: fixed !important;
-				display: none !important;
-				top: 0rem;
-				height: 2rem;
-				left: 4rem;
-				font-size: .8rem;
-				z-index: 20;
-				padding: 0.3rem  0.5rem;
-				border: 1px solid #eef;
-				width: unset !important;
-			}
+/* Mobile Friendly Styles */
+@media (orientation: portrait) {
 
-			[class*=BackStatus]{
-				margin: 0 !important;
-			}
+	.adminLayout [class*=BackArrow] {
+		margin-right: 0 !important;
+	}
 
-			[class*=BackCollection] {
-				width: 8rem !important;
-				top: 2rem !important;
-			}
+	.adminLayout [class*=BackStatus],
+	.adminLayout [class*=BackCollection] {
+		background-color: #fff;
+		position: fixed !important;
+		display: none !important;
+		top: 0rem;
+		height: 2rem;
+		left: 4rem;
+		font-size: .8rem;
+		z-index: 20;
+		padding: 0.3rem  0.5rem;
+		border: 1px solid #eef;
+		width: unset !important;
+	}
 
-			[class*=AppHeaderContent],
-			[class*=AppMainContainer] {
-				margin-right: 0 !important;
-				margin-left: 0 !important;
-				min-width: calc(100vw - 24px) !important;
-				max-width: 100vw !important;
-			}
+	.adminLayout [class*=BackStatus]{
+		margin: 0 !important;
+	}
 
-			[class*=AppHeaderContent] {
-				display: flex !important;
-				justify-content: space-between;
-			}
+	.adminLayout [class*=BackCollection] {
+		width: 8rem !important;
+		top: 2rem !important;
+	}
 
-			[class*=AppHeaderQuickNewButton] {
-				width: 100% !Important;
-			}
+	.adminLayout [class*=AppHeaderContent],
+	.adminLayout [class*=AppMainContainer] {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		min-width: calc(100vw - 24px) !important;
+		max-width: 100vw !important;
+	}
 
-			[class*=AppHeaderButton] {
-				padding-left: 4px !important;
-				padding-right: 4px !important;
-			}
+	.adminLayout [class*=AppHeaderContent] {
+		display: flex !important;
+		justify-content: space-between;
+	}
 
-			[class*=EditorContainer],
-			[class*=ToolbarContainer] {
-				min-width: initial !important;
-			}
+	.adminLayout [class*=AppHeaderQuickNewButton] {
+		width: 100% !Important;
+	}
 
-			[class*=ControlPaneContainer]{
-				padding: 1rem !important;
-			}
+	.adminLayout [class*=AppHeaderButton] {
+		padding-left: 4px !important;
+		padding-right: 4px !important;
+	}
 
-			[class*=ToolbarSubSectionFirst] {
-				display: flex !important;
-				flex-direction: row !important;
-			}
-			[class*=AppHeaderSiteLink],
-			[class*=DeleteButton],
-			[class*=PublishedToolbarButton] {
-				padding: 0 .3rem !important;
-			}
+	.adminLayout [class*=EditorContainer],
+	.adminLayout [class*=ToolbarContainer] {
+		min-width: initial !important;
+	}
 
-			[class*=DeleteButton],
-			[class*=PublishedToolbarButton],
-			[class*=ToolbarDropdown-buttonMargin] {
-				margin: 0 0.3rem !important;
-			}
+	.adminLayout [class*=ControlPaneContainer]{
+		padding: 1rem !important;
+	}
 
-			[class*=PublishedToolbarButton]::after {
-				display: none !important;
-			}
+	.adminLayout [class*=ToolbarSubSectionFirst] {
+		display: flex !important;
+		flex-direction: row !important;
+	}
 
-			[class*=ViewControls] {
-				/* position: initial; */
-			}
+	.adminLayout [class*=AppHeaderSiteLink],
+	.adminLayout [class*=DeleteButton],
+	.adminLayout [class*=PublishedToolbarButton] {
+		padding: 0 .3rem !important;
+	}
 
-			[class*=PreviewPaneContainer-ControlPaneContainer] {
-				padding: 0 !important;
-			}
+	.adminLayout [class*=DeleteButton],
+	.adminLayout [class*=PublishedToolbarButton],
+	.adminLayout [class*=ToolbarDropdown-buttonMargin] {
+		margin: 0 0.3rem !important;
+	}
 
-			[class*=ControlPaneContainer] {
-				max-width: 100vw !important;
-			}
+	.adminLayout [class*=PublishedToolbarButton]::after {
+		display: none !important;
+	}
 
-			[class*=CollectionContainer],
-			[class*=EditorControlBar] [class*=ToolbarContainer] {
-				display: flex !important;
-				flex-direction: column !important;
-			}
+	.adminLayout [class*=ViewControls] {
+		/* position: initial; */
+	}
 
-			[class*=SidebarContainer] {
-				position: initial !important;
-				width: initial !important;
-			}
+	.adminLayout [class*=PreviewPaneContainer-ControlPaneContainer] {
+		padding: 0 !important;
+	}
 
-			[class*=ToolbarSectionMain-toolbarSection] {
-				padding: 0 !important;
-			}
+	.adminLayout [class*=ControlPaneContainer] {
+		max-width: 100vw !important;
+	}
 
-			[class*=CollectionMain] {
-				padding-left: 0 !important;
-				margin-top: 20px !important;
-			}
+	.adminLayout [class*=CollectionContainer],
+	.adminLayout [class*=EditorControlBar] [class*=ToolbarContainer] {
+		display: flex !important;
+		flex-direction: column !important;
+	}
 
-			.Pane.vertical.Pane2 {
-				position: fixed !important;
-				width: 100vw !important;
-			}
-		}
+	.adminLayout [class*=SidebarContainer] {
+		position: initial !important;
+		width: initial !important;
+	}
+
+	.adminLayout [class*=ToolbarSectionMain-toolbarSection] {
+		padding: 0 !important;
+	}
+
+	.adminLayout [class*=CollectionMain] {
+		padding-left: 0 !important;
+		margin-top: 20px !important;
+	}
+
+	.adminLayout .Pane.vertical.Pane2 {
+		position: fixed !important;
+		width: 100vw !important;
+	}
+
+	.adminLayout h1,
+	.adminLayout h2,
+	.adminLayout h3,
+	.adminLayout h4,
+	.adminLayout h5,
+	.adminLayout h6 {
+		font-size: 20% !important;
+	}
+}
 	</style>
 </body>
 </html>

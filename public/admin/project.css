@@ -1,0 +1,415 @@
+.prs-0 {
+	flex: 1 1 auto;
+	box-sizing: border-box;
+}
+
+.prs-1 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-2 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-3 {
+	transition-duration: 0.1s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 32px;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 100%;
+	height: 554px;
+	aspect-ratio: 16 / 9;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-4 {
+	width: 33.3333%;
+	backdrop-filter: blur(8px);
+	padding: 16px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 12px;
+	box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(23, 23, 23, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-5 {
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(220, 38, 38);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-6 {
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(211, 121, 23);
+	margin-bottom: 16px;
+	margin: 0px 0px 16px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-7 {
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-8 {
+	border-radius: 8px;
+	margin-top: 16px;
+	background-color: rgb(234, 134, 26);
+	color: rgb(0, 0, 0);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 9px 20px;
+	white-space: nowrap;
+	text-align: center;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none solid rgb(0, 0, 0);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-9 {
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-10 {
+	padding-top: 64px;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-11 {
+	display: flex;
+	margin: 0 4rem;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-12 {
+	width: 66.6667%;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 32px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-13 {
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(220, 38, 38);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-14 {
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(211, 121, 23);
+	margin-bottom: 32px;
+	margin: 0px 0px 32px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-15 {
+	width: 50%;
+	max-width: none;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgb(68, 64, 60);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-16 {
+	color: rgb(140, 80, 16);
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 0px;
+	margin-bottom: 22.5px;
+	margin: 0px 0px 22.5px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-17 {
+	color: rgb(140, 80, 16);
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	margin: 24px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+
+.prs-23 {
+	width: 33.3333%;
+	margin-left: 32px;
+	aspect-ratio: 1 / 1;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-24 {
+	object-fit: cover;
+	border-radius: 12px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-25 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-26 {
+	transition-duration: 0.1s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	background-position: 50% 50%;
+	background-size: cover;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-27 {
+	width: 33.3333%;
+	backdrop-filter: blur(8px);
+	padding: 32px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 12px;
+	justify-content: flex-end;
+	flex-direction: column;
+	display: flex;
+	margin: auto;
+	box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(23, 23, 23, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-28 {
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(220, 38, 38);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-29 {
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(211, 121, 23);
+	margin-bottom: 16px;
+	margin: 0px 0px 16px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-30 {
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-31 {
+	border-radius: 8px;
+	margin-top: 16px;
+	background-color: rgb(234, 134, 26);
+	color: rgb(0, 0, 0);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 9px 20px;
+	white-space: nowrap;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none solid rgb(0, 0, 0);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-32 {
+	width: 33.3333%;
+	display: none;
+	backdrop-filter: blur(8px);
+	padding: 32px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	justify-content: flex-end;
+	flex-direction: column;
+	margin: auto;
+	box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(23, 23, 23, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-33 {
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(220, 38, 38);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-34 {
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(211, 121, 23);
+	margin-bottom: 16px;
+	margin: 0px 0px 16px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-35 {
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.prs-36 {
+	border-radius: 8px;
+	margin-top: 16px;
+	background-color: rgb(234, 134, 26);
+	color: rgb(0, 0, 0);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 9px 20px;
+	white-space: nowrap;
+	text-align: center;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none solid rgb(0, 0, 0);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}

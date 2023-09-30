@@ -14,8 +14,8 @@ export const ui = {
         'nav.language': 'Language',
         'nav.linkcasts': 'News',
         'nav.organization': 'Organisation',
-        'nav.projects': 'Fundraising Projects',
-        'nav.initiatives': 'Initiatives',
+        'nav.projects': 'ArtKids Projects',
+        'nav.initiatives': 'Fundraising Initiatives',
         'nav.twitter': 'Twitter',
     },
     nl: {
@@ -24,7 +24,7 @@ export const ui = {
         'nav.language': 'Taal',
         'nav.linkcasts': 'News',
         'nav.organization': 'Organisatie',
-        'nav.projects': 'Projecten',
-        'nav.initiatives': 'Initiatieven',
+        'nav.projects': 'ArtKids Projecten',
+        'nav.initiatives': 'Fondswerving',
     },
 } as const;

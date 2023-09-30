@@ -1,0 +1,240 @@
+.ps-0 {
+	margin: 0 2rem;
+	padding-top: 64px;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-1 {
+	gap: 32px;
+	display: flex;
+	margin-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-2 {
+	align-self: flex-start;
+	top: 16px;
+	position: sticky;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-3 {
+	font-size: 36px;
+	line-height: 40px;
+	display: none;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(239, 68, 68);
+	margin-bottom: 32px;
+	margin: 0px 0px 32px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-4 {
+	justify-content: flex-start;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-5 {
+	min-width: 16px;
+	width: 2.5rem;
+	height: 40px;
+	margin-right: 8px;
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-6 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-7 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-8 {
+	aspect-ratio: auto;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-9 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-10 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-11 {
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	color: rgb(211, 121, 23);
+	margin-bottom: 32px;
+	margin: 0px 0px 32px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-12 {
+	justify-content: flex-start;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-13 {
+	min-width: 16px;
+	width: 2.5rem;
+	height: 40px;
+	margin-right: 8px;
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-14 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-15 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-16 {
+	max-width: none;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgb(68, 64, 60);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-17 {
+	color: rgb(140, 80, 16);
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 0px;
+	margin-bottom: 22.5px;
+	margin: 0px 0px 22.5px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-17 p,
+.ps-17 li,
+.ps-17 td,
+.ps-17 th {
+	font-family: "Satoshi-Regular", sans-serif !important;
+}
+
+.ps-17 table {
+	width: 100% !important;
+}
+
+.ps-17 table th{
+	text-align: left;
+}
+
+h3.prs-5,
+h3.prs-28,
+.ps-17 h2,
+.ps-17 h3,
+.ps-17 h4 {
+	font-family: "Satoshi-Black", sans-serif !important;
+}
+
+.ps-18 {
+	color: rgb(140, 80, 16);
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	margin: 24px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.ps-19 {
+	color: rgb(140, 80, 16);
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	margin: 24px 0px 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}

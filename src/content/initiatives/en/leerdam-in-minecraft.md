@@ -1,4 +1,5 @@
 ---
+initiator: ez-ict-solutions
 title: Leerdam in MineCraft
 subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
 icon: cube
@@ -24,6 +25,6 @@ Artkids zal deze kinderen actief monitoren en adviezen uitbrengen over hun talen
 ## Kosten
 Scaling to encompass 4000 children requires funding of 50.000 euro per year for a minimum, period of 5 years.
 
-A total ammount of 250.000 euro includes only operation costs to serve 4000 children for Free.
+A total amount of 250.000 euro includes only operation costs to serve 4000 children for Free.
 
 No promotional coats or event costs are calculated. We are looking towards the Social domain amd local bussinesses to actively invest in the future of their own children and the future of the city.

@@ -1,0 +1,265 @@
+body {
+	margin: 0 !important;
+}
+
+.hs-0 {
+	overflow-x: hidden;
+	flex-direction: column;
+	flex: 1 1 0%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.hs-1 {
+	flex: 0 0 auto;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-2 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-3 {
+	position: sticky;
+	backdrop-filter: blur(8px);
+	padding: 16px;
+	background-color: rgb(251, 231, 209);
+	flex-direction: column;
+	width: 100%;
+	display: flex;
+	z-index: 10;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-4 {
+	gap: 16px;
+	align-items: center;
+	grid-template-columns: auto 1fr auto;
+	display: grid;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-5 {
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 auto;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-6 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-7 {
+	flex: 1 1 auto;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-8 {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-9 {
+	opacity: 1;
+	transition-duration: 0.5s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 0px;
+	transform: matrix(1, 0, 0, 1, -4, 0);
+	width: 3rem;
+	height: 48px;
+	margin-left: -4px;
+	margin: 0px 0px 0px -4px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-10 {
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
+	text-decoration-line: none;
+	font-style: italic;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+	align-items: center;
+	flex-shrink: 1;
+	width: 100%;
+	height: 48px;
+	display: flex;
+	color: rgb(115, 66, 13);
+	text-decoration: none solid rgb(115, 66, 13);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-11 {
+	color: rgb(255, 255, 255);
+	text-shadow: rgb(255, 255, 255) 1px 1px 2px, rgb(255, 255, 255) -1px -1px 2px, rgb(255, 255, 255) 1px -1px 2px, rgb(255, 255, 255) -1px 1px 2px, rgb(255, 255, 255) 1px 1px 2px;
+	transition-duration: 0.5s;
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	line-height: 28px;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: left;
+	gap: 4px;
+	align-items: center;
+	display: flex;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-12 {
+	width: 50px;
+	height: 100px;
+	margin-right: 4px;
+	overflow: hidden;
+	visibility: hidden;
+	transform: matrix(-0.5, 0.866025, -0.866025, -0.5, 0, 0);
+	cursor: pointer;
+	filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 10px 8px) drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 3px);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-13 {
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	transform: matrix(0.5, -0.866025, 0.866025, 0.5, 0, 0);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-14 {
+	width: 100%;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-image: url('https://artkidsfoundation.org/logo-512.png');
+	visibility: visible;
+	transform: matrix(0.5, -0.866025, 0.866025, 0.5, 0, 0);
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-15 {
+	font-family: 'Oh Okey', Satoshi-BlackItalic, sans-serif;
+	font-weight: 400;
+	transition-duration: 0.5s;
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 25px 25px);
+	color: rgb(239, 68, 68);
+	line-height: 28px;
+	text-align: center;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-16 {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-17 {
+	min-width: 16px;
+	width: 2rem;
+	height: 32px;
+	margin-right: 4px;
+	display: block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-18 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-19 {
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-20 {
+	opacity: 0;
+	margin: 0px;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}
+
+.hs-21 {
+	align-items: center;
+	flex: 0 0 auto;
+	display: flex;
+	box-sizing: border-box;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(229, 231, 235);
+}

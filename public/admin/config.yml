@@ -18,57 +18,78 @@ i18n:
   # The locale to be used for fields validation and as a baseline for the entry.
   default_locale: en
 collections:
-  - name: "authors"
-    label: "Authors"
-    label_singular: "Author"
-    folder: "src/content/users/"
-    preview_path: "/profiles/{{username}}"
+  - name: "staff"
+    label: "Staff"
+    label_singular: "Employee"
+    folder: "src/content/staff/"
+    preview_path: "/staff/{{username}}"
+    summary: "{{name}} ({{title}}) [{{function}}]"
+    identifier_field: name
     create: true
     fields:
-      - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
-      - {label: sex, name: sex, widget: 'select', options: ['male', 'female']}
-      - {label: "Gebruikersnaam", name: "username", widget: "string"}
-      - {label: "Voornaam", name: "name", widget: "string"}
-      - {label: "Achternaam", name: "surname", widget: "string"}
-      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
-      - {label: "Shortbio", name: "body", widget: "markdown"}
-      - {label: "(SEO) Korte Pagina Samenvatting", name: "description", required: false }
-      - {label: "Twitter Handle", name: twitter, required: false}
-      - {label: "Instagram Handle", name: instagram, required: false}
-      - {label: "Tiktok Handle", name: tiktok, required: false}
-      - {label: "Bandcamp Address", name: bandcamp, required: false}
-      - {label: "Facebook Address", name: facebook, required: false}
-      - {label: "Youtube Channel Address", name: youtube, required: false}
-      - {label: "Audiomack Channel", name: audiomack, required: false}
+      - {label: "Public", name: "public", widget: "boolean", default: true, required: false}
+      - {label: "Created", name: "date", widget: "datetime"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Functie", name: "function", widget: "select", options: ["boardmember", "advisor"], required: false}
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Achtergrond Foto", name: "bgimage", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png , required: false}
+      - {label: "Bio", name: "body", widget: "markdown"}
+      - label: "Contact Information"
+        name: "contact"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Telefoon", name: telephone, required: false}
+          - {label: "Email", name: email, required: false}
+          - {label: "Website", name: website, required: false}
+      - label: "Social Media Links"
+        name: "social"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Intagram Handle", name: instagram, required: false}
+          - {label: "Twitter Handle", name: twitter, required: false}
+          - {label: "Facebook Url", name: facebook, required: false}
+          - {label: "Youtube Url", name: youtube, required: false}
+          - {label: "LinkedIn Url", name: linkedin, required: false}
 
   - name: "pages"
     label: "Paginas"
     label_singular: "Pagina"
     folder: "src/content/pages/"
     preview_path: "{{title}}"
+    i18n: true
     create: true
     fields:
-      - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
-      - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, required: false}
+      - {label: "Inhoud", name: "body", widget: "markdown"}
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Foto Beschrijving", name: "imageAlt", required: false }
+          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false }
+          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false }
+          - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
+          - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
+      - {label: "Icon", name: "icon", widget: "string", required: false}
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
       - {label: "Menu volgorde", name: "index", widget: "number"}
-      - {label: "Pagina Kop Grootte", name: "size", widget: "select", options: [ "is-small", "is-medium", "is-large", "is-halfheight", "is-fullheight" ], required: true, default: "is-fullheight"}
-      - {label: "Pagina Titel", name: "title", widget: "string"}
-      - {label: "Pagina SubTitle", name: "subtitle", widget: "string"}
-      - {label: "Pagina Kleur", name: "color", widget: "select", options: [ "is-primary", "is-success", "is-info", "is-link", "is-danger", "is-warning", "is-light", "is-dark"], default: "primary"}
-      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
-      - {label: "Foto Bescrijfing (SEO)", name: "imageAlt", required: false }
-      - {label: "Pagina Text", name: "body", widget: "markdown"}
-      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
-      - {label: "Korte Pagina Samenvatting (SEO)", name: "description", required: false }
 
-  - label: "Social News"
+  - label: "News"
     name: "linkcasts"
     folder: src/content/linkcasts
     preview_path: "/newscasts/{{title}}"
-    sortable_fields: ['date', 'title', 'author', 'url']
+    sortable_fields: ["date", "title", "author", "url"]
     create: true
     fields:
-      - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Describing Subtitle", name: "subtitle", widget: "string", required: false}
@@ -83,6 +104,105 @@ collections:
       - {label: "SEO: Squared Image used in facebook open graph", name: ogSquareImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/og-squared", public_folder: "/uploads/linkcasts/og-squared"}
       - {label: "SEO: Description when image loads", name: featuredImageAlt,  required: false}
 
+  - label: "ArtKids Projects"
+    name: "projects"
+    i18n: true
+    folder: src/content/projects
+    preview_path: "/projects/{{title}}"
+    sortable_fields: ["date", "title", "author", "url"]
+    create: true
+    fields:
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png }
+      - {label: "Inhoud", name: "body", widget: "markdown"}
+      - {label: "Changed Image", name: "changed", widget: "image", required: false, media_folder: "/public/uploads/projects", public_folder: "/uploads/projects"}
+      - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false}
+      - {label: "Foto Beschrijving (SEO)", name: "imageAlt", required: false }
+      - {label: "SEO Title", name: "seoTitle", widget: "string", required: false}
+      - {label: "Call to Action (SEO)", name: "callToAction", required: false }
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
+      - {label: "Korte Samenvatting (SEO)", name: "description", required: false }
+      - {label: "Icon", name: "icon", widget: "string", required: false}
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
+
+  - name: "partners"
+    label: "Partners"
+    label_singular: "Partner"
+    folder: "src/content/partners/"
+    preview_path: "/partners/{{name}}"
+    summary: "{{name}} [{{type}}]"
+    editor:
+      preview: false
+    identifier_field: name
+    create: true
+    fields:
+      - {label: "Datum", name: "date", widget: "datetime", required: true, hidden: true}
+      - {label: "Type", name: "type", widget: "select", options: ["individual", "group", "company", "ngo", "governmental institution", "school"], default: "individual"}
+      - {label: "Naam", name: "name", widget: "string"}
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Shortbio", name: "body", widget: "markdown"}
+      - label: "Contact Info"
+        name: "contact"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Contactpersoon", name: contactpersoon, required: false}
+          - {label: "Telefoon", name: telephone, required: false}
+          - {label: "Email", name: email, required: false}
+          - {label: "Website", name: website, required: false}
+
+
+  - label: "Fundraising Initiatives"
+    name: "initiatives"
+    i18n: true
+    folder: src/content/initiatives
+    preview_path: "/initiatives/{{title}}"
+    sortable_fields: ["date", "title", "author", "url"]
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png }
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"]}
+      - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"]}
+      - {label: "Inhoud", name: "body", widget: "markdown"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
+      - {label: "Start Date", name: "startDate", widget: "datetime"}
+      - {label: "End Date", name: "endDate", widget: "datetime"}
+      - {label: "Goal", name: "goal", widget: "number"}
+      - {label: "Foto Beschrijving (SEO)", name: "imageAlt", required: false }
+      - {label: "Changed Image", name: "changed", widget: "image", required: false, media_folder: "/public/uploads/projects", public_folder: "/uploads/projects"}
+      - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false}
+      - {label: "SEO Title", name: "seoTitle", widget: "string", required: false}
+      - {label: "Call to Action (SEO)", name: "callToAction", required: false }
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
+      - {label: "Korte Samenvatting (SEO)", name: "description", required: false }
+      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
+      - {label: "Icon", name: "icon", widget: "string", required: false}
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+
+  - name: "donations"
+    label: "Donations"
+    label_singular: "Donation"
+    folder: "src/content/donations/"
+    preview_path: "/{{initiative}}/donations/#{{username}}"
+    slug: "{{year}}{{month}}{{day}}{{minute}}{{hour}}{{second}}-{{slug}}"
+    summary: "{{initiative}} - {{patreon}} = €{{amount}},-"
+    sortable_fields: ["date", "amount", "patreon", "initiative"]
+    identifier_field: date
+    editor:
+      preview: false
+    create: true
+    fields:
+      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", value_field: "title", search_fields: ["titles"]}
+      - {label: "Naam", name: "patreon", widget: "string"}
+      - {label: "Bedrag", name: "amount", widget: "number"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Message", name: "message", widget: "text"}
+
   # - name: "blog"
   #   label: "Posts"
   #   label_singular: "Post"
@@ -90,7 +210,7 @@ collections:
   #   preview_path: "{{title}}"
   #   create: true
   #   fields:
-  #     - {label: 'Auteur', name: author, widget: 'relation', collection: 'authors', value_field: 'username', search_fields: ['name', 'surnam', 'username' ], multiple: false}
+  #     - {label: "Auteur", name: author, widget: "relation", collection: "authors", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
   #     - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
   #     - {label: "Menu volgorde", name: "index", widget: "number"}
   #     - {label: "Pagina Kop Grootte", name: "size", widget: "select", options: [ "is-small", "is-medium", "is-large", "is-halfheight", "is-fullheight" ], required: true, default: "is-fullheight"}
@@ -122,7 +242,7 @@ collections:
         name: "settings"
         file: "src/content/settings/_settings.yml"
         fields:
-          - {label: "Default Theme", name: theme, widget: 'select', options: ['dark', 'light'], default: 'dark'}
+          - {label: "Default Theme", name: theme, widget: "select", options: ["dark", "light"], default: "dark"}
 
       - label: "Social Links"
         name: "social"

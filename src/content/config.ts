@@ -1,5 +1,50 @@
 import { defineCollection, reference, z } from 'astro:content';
 
+// Staff collection schema
+const staff = defineCollection({
+    type: 'data',
+    schema: z.object({
+        id: z.string().optional(),
+        updated: z.date(),
+        username: z.string(),
+        function: z.enum(["boardmember", "advisor"]).default("boardmember"),
+        title: z.string(),
+        phonenumber: z.string().optional(),
+        email: z.string().email().optional(),
+        image: z.string().optional(),
+        bgImage: z.string().optional(),
+        description: z.string().optional(),
+        social: z
+        .object({
+            facebook: z.string().url().optional(),
+            linkedin: z.string().url().optional(),
+            youtube: z.string().url().optional(),
+            twitter: z.string().optional(),
+            instagram: z.string().optional(),
+        })
+        .optional(),
+    }),
+});
+
+const partners = defineCollection({
+    type: 'data',
+    schema: z.object({
+        date: z.string().optional(),
+        name: z.string(),
+        type: z.enum(['individual', 'group', 'company', 'ngo', 'governmental institution', 'school']).default('individual'),
+        image: z.string().optional(),
+        bio: z.string().optional(),
+        contact: z
+        .object({
+            contactpersoon: z.string().optional(),
+            phonenumber: z.string().optional(),
+            email: z.string().email().optional(),
+            website: z.string().url().optional(),
+        })
+        .optional(),
+    })
+});
+
 const pages = defineCollection({
     schema: z.object({
         color: z.string().optional(),
@@ -51,7 +96,7 @@ const linkcasts = defineCollection({
 
 const initiatives = defineCollection({
     schema: z.object({
-        initiatior: reference('members').default('artkids'),
+        initiator: reference('partners'),
         updated: z.date().optional(),
         startDate: z.date().default(new Date()),
         endDate: z.date().optional(),
@@ -72,32 +117,15 @@ const initiatives = defineCollection({
     })
 });
 
-const members = defineCollection({
-    schema: z.object({
-        name: z.string(),
-        type: z.enum(['individual', 'group', 'company', 'ngo', 'governmental institution']).default('individual'),
-        image: z.string().optional(),
-        changed: z.string().optional(),
-        imageAlt: z.string().optional(),
-        status: z.string().optional(),
-        bio: z.string().optional(),
-        tags: z.array(z.string()).optional(),
-        donatios: z.array(reference('donations')).optional(),
-        goal: z.number().optional()
-    })
-});
-
 const donations = defineCollection({
+    type: 'data',
     schema: z.object({
-        anonymous: z.boolean().default(false),
+        initiative: z.array(reference('initiatives')),
+        patreon: z.string(),
         amount: z.number().default(0),
-        plee: z.boolean().default(false),
-        data: z.date().optional(),
-        recurrency: z.enum(["daily", "weekly", "monthly", "quarterly", "yearly" ]).optional(),
-        endData: z.date().optional(),
+        date: z.date(),
         message: z.string().optional(),
-        patreon: z.array(reference('members')).optional(),
     })
 });
 
-export const collections = { pages, linkcasts, projects, initiatives, members, donations }
+export const collections = { staff, pages, linkcasts, projects, initiatives, partners, donations }
