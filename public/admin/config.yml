@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 # Local testing
-local_backend: true
+# local_backend: true
 i18n:
   # Required and can be one of multiple_folders, multiple_files or single_file
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
