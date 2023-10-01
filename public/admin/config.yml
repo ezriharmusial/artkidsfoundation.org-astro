@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: ezriharmusial/artkidsfoundation.org-astro
   branch: main
 # Local testing
 local_backend: true
@@ -63,10 +62,11 @@ collections:
     i18n: true
     create: true
     fields:
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
+      - {label: "Pubilcatie Datum", name: "date", widget: "datetime", i18n: duplicate}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate}
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, required: false}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, required: false, i81n: duplicate}
       - {label: "Inhoud", name: "body", widget: "markdown"}
       - label: "SEO"
         name: "seo"
@@ -76,10 +76,9 @@ collections:
           - {label: "Foto Beschrijving", name: "imageAlt", required: false }
           - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false }
           - {label: "Pagina Beschrijving", name: "description", widget: text, required: false }
-          - {label: "Pubilcatie Datum", name: "date", widget: "datetime"}
           - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
-      - {label: "Icon", name: "icon", widget: "string", required: false}
-      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+      - {label: "Icon", name: "icon", widget: "string", required: false, i81n: duplicate}
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false, i81n: duplicate}
       - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
       - {label: "Menu volgorde", name: "index", widget: "number"}
 

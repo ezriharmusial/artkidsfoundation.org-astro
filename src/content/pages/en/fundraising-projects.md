@@ -1,5 +1,4 @@
 ---
-excerpt: ""
 modified: 2018-03-07 18:26:34
 layout: ../../../layouts/Project.astro
 author: EzzyHarmless

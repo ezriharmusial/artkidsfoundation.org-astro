@@ -1,5 +1,4 @@
 ---
-excerpt: ""
 modified: 2018-09-27 15:44:31
 layout: ../../../layouts/Attachment.astro
 author: Bas Bijleveld

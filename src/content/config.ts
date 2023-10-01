@@ -47,7 +47,7 @@ const partners = defineCollection({
 
 const pages = defineCollection({
     schema: z.object({
-        color: z.string().optional(),
+        language: z.enum(['en', 'nl']).default('en'),
         callToAction: z.string().optional(),
         category: z.string().optional(),
         description: z.string().optional(),
