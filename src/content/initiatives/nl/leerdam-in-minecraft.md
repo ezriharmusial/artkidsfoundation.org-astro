@@ -1,12 +1,16 @@
 ---
-initiator: ez-ict-solutions
+author: EzzyHarmless
+initiator:
+  - EZ ICT Solutions
+projects:
+  - ArtKids WisGames
 title: Leerdam in MineCraft
 subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
+image: /uploads/initiatives/highstreetsmp.jpg
+tags:
+  - minecraft
 icon: cube
 pack: mdi
-image: /uploads/initiatives/highstreetsmp.jpg
-projects: ['nl/artkids-wisgames']
-tags: ['minecraft']
 ---
 
 ## Motivatie

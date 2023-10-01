@@ -1,11 +1,13 @@
 ---
+author: EzzyHarmless
 title: Regenerative Agriculture
 subtitle: Farming for the future
+image: /uploads/projects/agric.jpg
+changed: /uploads/projects/agric-2.jpg
+date: 2023-10-01T17:27:14.513Z
 shortTitle: Agriculture
 icon: seedling
 pack: la
-image: /uploads/projects/agric.jpg
-changed: /uploads/projects/agric-2.jpg
 ---
 Undoubtedly, good food is the most essential when it concerns life and healthy-living. To live our lives, we require the nutrients contained in the foods we eat. The food we eat can either save us, weaken us or kill us.
 

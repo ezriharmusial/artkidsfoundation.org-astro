@@ -90,7 +90,7 @@ collections:
     name: "linkcasts"
     folder: src/content/linkcasts
     preview_path: "/newscasts/{{title}}"
-    sortable_fields: ["date", "title", "author", "url"]
+    sortable_fields: ["date", "title", "author"]
     create: true
     fields:
       - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
@@ -102,35 +102,45 @@ collections:
       - {label: "Featured: Image Ratio", name: imageRatio, widget: "select", multiple: false, options: ["aspect-square", "aspect-[16/9]", "aspect-[9/16]", "aspect-[21/9]", "aspect-[4/3]", "aspect-[3/4]"], default: "aspect-square", required: false}
       - {label: "Linkcast URL", name: "url", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "SEO: Excerpt 155 Characters", name: metadescription,  required: false}
-      - {label: "SEO: Image used in twitter", name: twitterImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/twitter", public_folder: "/uploads/linkcasts/twitter"}
-      - {label: "SEO: Image used in facebook open graph", name: ogImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/og", public_folder: "/uploads/linkcasts/og"}
-      - {label: "SEO: Squared Image used in facebook open graph", name: ogSquareImage,  widget: "image", required: false, media_folder: "/public/uploads/linkcasts/og-squared", public_folder: "/uploads/linkcasts/og-squared"}
-      - {label: "SEO: Description when image loads", name: featuredImageAlt,  required: false}
+      - label: "Search Engine Optimization"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Foto Beschrijving", name: "imageAlt", required: false }
+          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false }
+          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false }
 
   - label: "ArtKids Projects"
     name: "projects"
     i18n: true
     folder: src/content/projects
     preview_path: "/projects/{{title}}"
-    sortable_fields: ["date", "title", "author", "url"]
+    sortable_fields: ["date", "title", "author"]
     create: true
     fields:
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png }
-      - {label: "Inhoud", name: "body", widget: "markdown"}
-      - {label: "Changed Image", name: "changed", widget: "image", required: false, media_folder: "/public/uploads/projects", public_folder: "/uploads/projects"}
-      - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false}
-      - {label: "Foto Beschrijving (SEO)", name: "imageAlt", required: false }
-      - {label: "SEO Title", name: "seoTitle", widget: "string", required: false}
-      - {label: "Call to Action (SEO)", name: "callToAction", required: false }
-      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
-      - {label: "Korte Samenvatting (SEO)", name: "description", required: false }
-      - {label: "Icon", name: "icon", widget: "string", required: false}
-      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
+      - {label: "Title", name: "title", widget: "string", i18n: true}
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, i18n: duplicate  }
+      - {label: "Inhoud", name: "body", widget: "markdown", i18n: true}
+      - {label: "Changed Image", name: "changed", widget: "image", required: false, media_folder: "/public/uploads/projects", public_folder: "/uploads/projects", i18n: duplicate }
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false, i18n: true}
+      - {label: "Publish Date", name: "date", widget: "datetime", i18n: true}
+      - label: "Search Engine Optimization"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        i18n: true
+        fields:
+          - {label: "Foto Beschrijving", name: "imageAlt", required: false, i18n: true }
+          - {label: "Changed Beschrijving", name: "changedAlt", required: false, i18n: true }
+          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false, i18n: true }
+          - {label: "Call to Action", name: "callToAction", required: false }
+          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false, i18n: true }
       - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
+      - {label: "Icon", name: "icon", widget: "string", required: false, i18n: duplicate }
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false, i18n: duplicate }
 
   - name: "partners"
     label: "Partners"
@@ -164,47 +174,57 @@ collections:
     i18n: true
     folder: src/content/initiatives
     preview_path: "/initiatives/{{title}}"
-    sortable_fields: ["date", "title", "author", "url"]
+    sortable_fields: ["date", "title", "author"]
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png }
-      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"]}
-      - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"]}
-      - {label: "Inhoud", name: "body", widget: "markdown"}
-      - {label: "Updated", name: "updated", widget: "datetime"}
-      - {label: "Start Date", name: "startDate", widget: "datetime"}
-      - {label: "End Date", name: "endDate", widget: "datetime"}
-      - {label: "Goal", name: "goal", widget: "number"}
-      - {label: "Foto Beschrijving (SEO)", name: "imageAlt", required: false }
-      - {label: "Changed Image", name: "changed", widget: "image", required: false, media_folder: "/public/uploads/projects", public_folder: "/uploads/projects"}
-      - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false}
-      - {label: "SEO Title", name: "seoTitle", widget: "string", required: false}
-      - {label: "Call to Action (SEO)", name: "callToAction", required: false }
-      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
-      - {label: "Korte Samenvatting (SEO)", name: "description", required: false }
-      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
-      - {label: "Icon", name: "icon", widget: "string", required: false}
-      - {label: "Icon Pack", name: "pack", widget: "string", required: false}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
+      - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false, i18n: true}
+      - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"], i18n: duplicate }
+      - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["title"], value_field: "title", display_fields: ["title"], i18n: duplicate }
+      - {label: "Title", name: "title", widget: "string", i18n: true }
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true }
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/initiatives", public_folder: "/uploads/initiatives", default: /logo-512.png, i18n: duplicate }
+      - {label: "Start Date", name: "startDate", widget: "datetime", i18n: duplicate}
+      - {label: "End Date", name: "endDate", widget: "datetime", i18n: duplicate}
+      - {label: "Goal", name: "goal", widget: "number", i18n: true }
+      - {label: "Inhoud", name: "body", widget: "markdown", i18n: true }
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"], required: false, i18n: true}
+      - label: Images
+        name: images
+        widget: list
+        i18n: true
+        field: { label: Image, name: image, widget: image, i18n: duplicate, media_foler: "/public/uploads/initiatives", public_folder: "/uploads/initiatives"}
+      - {label: "Publish Date", name: "date", widget: "datetime", i18n: true }
+      - label: "Search Engine Optimization"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        i18n: true
+        fields:
+          - {label: "Foto Beschrijving", name: "imageAlt", required: false, i18n: true }
+          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false, i18n: true }
+          - {label: "Call to Action", name: "callToAction", required: false }
+          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false, i18n: true }
+      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false, i18n: true }
+      - {label: "Icon", name: "icon", widget: "string", required: false, i18n: duplicate }
+      - {label: "Icon Pack", name: "pack", widget: "string", required: false, i18n: duplicate }
 
   - name: "donations"
     label: "Donations"
     label_singular: "Donation"
     folder: "src/content/donations/"
-    preview_path: "/{{initiative}}/donations/#{{username}}"
-    slug: "{{year}}{{month}}{{day}}{{minute}}{{hour}}{{second}}-{{slug}}"
-    summary: "{{initiative}} - {{patreon}} = €{{amount}},-"
-    sortable_fields: ["date", "amount", "patreon", "initiative"]
+    preview_path: "/{{initiative}}/donations/#{{donator}}"
+    summary: "{{initiative}} - {{donator}} = €{{amount}},-"
+    sortable_fields: ["date", "amount", "donator", "initiative"]
     identifier_field: date
     editor:
       preview: false
     create: true
     fields:
+      - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", value_field: "title", search_fields: ["titles"]}
       - {label: "Naam", name: "donator", widget: "string"}
       - {label: "Bedrag", name: "amount", widget: "number"}
-      - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Message", name: "message", widget: "text"}
 
   # - name: "blog"
