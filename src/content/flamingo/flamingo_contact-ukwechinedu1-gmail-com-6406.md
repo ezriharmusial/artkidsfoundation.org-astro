@@ -4,7 +4,8 @@ title: "Ukwechinedu1@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2019-06-23 21:34:33"
-excerpt: ""
+seo:
+  description: ""
 content: "Ukwechinedu1@gmail.com
 Ukwe Chinedu"
 status: "published"

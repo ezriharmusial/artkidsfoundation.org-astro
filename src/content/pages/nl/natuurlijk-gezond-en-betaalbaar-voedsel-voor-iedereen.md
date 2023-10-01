@@ -6,11 +6,6 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2015-08-03 15:06:54"
 status: "archived"
-comment_status: "open"
-modified: "2015-08-29 20:55:53"
-parent: 53
-type: "page"
-comment_count: 0
 tags: []
 ---
 

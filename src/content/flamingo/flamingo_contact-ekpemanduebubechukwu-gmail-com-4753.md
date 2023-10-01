@@ -4,7 +4,8 @@ title: "ekpemanduebubechukwu@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2018-08-02 11:40:59"
-excerpt: ""
+seo:
+  description: ""
 content: "ekpemanduebubechukwu@gmail.com
 Ekpemandu Ebubechukwu Promise"
 status: "published"

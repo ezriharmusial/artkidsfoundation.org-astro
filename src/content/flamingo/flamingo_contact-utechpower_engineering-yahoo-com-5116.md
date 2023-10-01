@@ -4,7 +4,8 @@ title: "utechpower_engineering@yahoo.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2018-10-27 20:13:08"
-excerpt: ""
+seo:
+  description: ""
 content: "utechpower_engineering@yahoo.com
 U-tech power solution services Nig ltd"
 status: "published"

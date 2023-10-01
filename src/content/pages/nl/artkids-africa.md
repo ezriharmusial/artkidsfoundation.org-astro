@@ -6,12 +6,9 @@ subtitle: ""
 icon: "globe-africa-solid"
 author: "EzzyHarmless"
 date: "2018-02-26 19:27:53"
-excerpt: "Als we denken aan 'Onderontwikkeling', schiet Afrika direct in onze gedachten. Voor jaren nu, heeft ArtKids foundation, door samenwerking, velen geholpen in Afrika zonder zelf in Afrika aanwezig te zijn. Sinds 2015 is ArtKids Foundation/International zijn adequaat gerepresenteerd in Afrika."
+seo:
+  description: "Als we denken aan 'Onderontwikkeling', schiet Afrika direct in onze gedachten. Voor jaren nu, heeft ArtKids foundation, door samenwerking, velen geholpen in Afrika zonder zelf in Afrika aanwezig te zijn. Sinds 2015 is ArtKids Foundation/International zijn adequaat gerepresenteerd in Afrika."
 status: "published"
-comment_status: "closed"
-modified: "2018-09-24 23:14:07"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

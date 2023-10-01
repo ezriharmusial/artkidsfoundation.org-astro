@@ -4,7 +4,8 @@ title: "nmeriyah@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2019-06-25 12:56:15"
-excerpt: ""
+seo:
+  description: ""
 content: "nmeriyah@gmail.com
 Anyanwuedoziem Chinedu"
 status: "published"

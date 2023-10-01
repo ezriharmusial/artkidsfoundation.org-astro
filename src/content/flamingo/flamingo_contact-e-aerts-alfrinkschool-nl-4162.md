@@ -4,7 +4,8 @@ title: "e.aerts@alfrinkschool.nl"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2017-03-09 17:08:20"
-excerpt: ""
+seo:
+  description: ""
 content: "e.aerts@alfrinkschool.nl
 Eline"
 status: "published"

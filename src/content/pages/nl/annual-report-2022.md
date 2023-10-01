@@ -5,15 +5,11 @@ icon: report-line
 pack: mdi
 title: "Jaarverslag 2022"
 subtitle: "Verantwoording voor onze Acties in 2022"
-shorttitle: "Jaarverslag 2022"
+shortTitle: "Jaarverslag 2022"
 author: "EzzyHarmless"
 date: "2018-08-10 10:26:30"
 status: "published"
-comment_status: "closed"
-modified: "2018-09-27 15:44:31"
-type: "page"
 category: "anbi"
-comment_count: 0
 tags: []
 ---
 

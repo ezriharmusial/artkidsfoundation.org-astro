@@ -6,11 +6,6 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2019-11-17 19:44:11"
 status: "archived"
-comment_status: "closed"
-modified: "2019-11-17 19:44:46"
-parent: 296
-type: "page"
-comment_count: 0
 tags: []
 ---
 

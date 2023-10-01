@@ -9,10 +9,6 @@ shortTitle: "Fondswerving"
 author: "EzzyHarmless"
 date: "2016-06-16 18:04:26"
 status: "published"
-comment_status: "closed"
-modified: "2018-03-07 18:25:58"
-type: "page"
-comment_count: 0
 category: "anbi"
 tags: []
 ---

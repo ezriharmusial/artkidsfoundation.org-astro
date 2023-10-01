@@ -7,12 +7,9 @@ title: "ArtKids Int. Corp."
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-24 01:28:55"
-excerpt: "Met behulp van Artkids International worden financiële middelen gegenereerd via verschillende bedrijfstransacties in samenwerking met gevestigde bedrijfsentiteiten (Handelsfirma’s) om ArtKids Foundation effectief te steunen op basis van een “Win-Win” principe."
+seo:
+  description: "Met behulp van Artkids International worden financiële middelen gegenereerd via verschillende bedrijfstransacties in samenwerking met gevestigde bedrijfsentiteiten (Handelsfirma’s) om ArtKids Foundation effectief te steunen op basis van een “Win-Win” principe."
 status: "published"
-comment_status: "closed"
-modified: "2023-04-19 20:09:08"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

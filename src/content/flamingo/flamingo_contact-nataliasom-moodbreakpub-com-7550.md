@@ -4,7 +4,8 @@ title: "nataliaSom@moodbreakpub.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2023-05-09 16:03:02"
-excerpt: ""
+seo:
+  description: ""
 content: "nataliaSom@moodbreakpub.com
 NataliaSom"
 status: "published"

@@ -4,7 +4,8 @@ title: "urbn_work@outlook.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2018-10-28 13:40:18"
-excerpt: ""
+seo:
+  description: ""
 content: "urbn_work@outlook.com
 Cedric Porter"
 status: "published"

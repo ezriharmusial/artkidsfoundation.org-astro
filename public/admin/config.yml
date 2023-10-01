@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 # Local testing
-# local_backend: true
+local_backend: true
 i18n:
   # Required and can be one of multiple_folders, multiple_files or single_file
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
@@ -63,24 +63,28 @@ collections:
     create: true
     fields:
       - {label: "Pubilcatie Datum", name: "date", widget: "datetime", i18n: duplicate}
+      - {label: "Status", name: "status", widget: "select", options: ['published', 'archived'], required: false}
       - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate}
+      - {label: "Category", name: "category", widget: "select", options: ["about artkids", "organization", "anbi", "funding"], required: false}
       - {label: "Titel", name: "title", widget: "string"}
       - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, required: false, i81n: duplicate}
+      - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", required: false, i81n: duplicate}
       - {label: "Inhoud", name: "body", widget: "markdown"}
-      - label: "SEO"
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["artkids"], required: false}
+      - label: "Search Engine Optimization"
         name: "seo"
         widget: "object"
         collapsed: true
+        i18n: true
         fields:
           - {label: "Foto Beschrijving", name: "imageAlt", required: false }
           - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false }
           - {label: "Pagina Beschrijving", name: "description", widget: text, required: false }
-          - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}
-      - {label: "Icon", name: "icon", widget: "string", required: false, i81n: duplicate}
-      - {label: "Icon Pack", name: "pack", widget: "string", required: false, i81n: duplicate}
+      - {label: "Icon", name: "icon", widget: "string", default: "report-line", required: false, i81n: duplicate}
+      - {label: "Icon Pack", name: "pack", widget: "string", default: "mdi", required: false, i81n: duplicate}
       - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
-      - {label: "Menu volgorde", name: "index", widget: "number"}
+      - {label: "Menu volgorde", name: "index", widget: "number", required: false}
+      - {label: "Layout", name: "layout", widget: "select", options: ['../../../layouts/Page.astro', '../../../layouts/Attachment.astro', '../../../layouts/Contact.astro'], default: "../../../layouts/page.astro", required: false}
 
   - label: "News"
     name: "linkcasts"

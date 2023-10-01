@@ -4,7 +4,8 @@ title: "ezriharmusial@gmail.com"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2019-11-17 17:43:03"
-excerpt: ""
+seo:
+  description: ""
 content: "ezriharmusial@gmail.com
 admin"
 status: "published"

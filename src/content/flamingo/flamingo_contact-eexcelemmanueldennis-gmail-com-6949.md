@@ -4,7 +4,8 @@ title: "eexcelemmanueldennis@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2019-11-05 11:45:56"
-excerpt: ""
+seo:
+  description: ""
 content: "eexcelemmanueldennis@gmail.com
 Excel Emmanuel Dennis"
 status: "published"

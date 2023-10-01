@@ -8,12 +8,9 @@ shortTitle: "Representatives"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-24 00:34:30"
-excerpt: "It is now possible for Individuals and/or Companies to represent ArtKids Foundation and ArtKids International in your own country. By so doing, you would become a partner in progress with ArtKids.Are you interested and do you have the time?"
+seo:
+  description: "It is now possible for Individuals and/or Companies to represent ArtKids Foundation and ArtKids International in your own country. By so doing, you would become a partner in progress with ArtKids.Are you interested and do you have the time?"
 status: "published"
-comment_status: "closed"
-modified: "2018-09-24 22:19:36"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

@@ -3,7 +3,8 @@ id: 350
 title: "Draw2Paint Project"
 author: "EzzyHarmless"
 date: "2016-06-24 20:40:42"
-excerpt: ""
+seo:
+  description: ""
 status: "published"
 comment_status: "closed"
 modified: "2016-07-17 22:34:31"

@@ -3,7 +3,8 @@ id: 407
 title: "Help ons werven"
 author: "EzzyHarmless"
 date: "2016-10-13 17:02:07"
-excerpt: ""
+seo:
+  description: ""
 status: "published"
 comment_status: "closed"
 modified: "2016-10-13 17:02:07"

@@ -4,7 +4,8 @@ title: "pstnnekaibeto@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2019-03-12 13:54:00"
-excerpt: ""
+seo:
+  description: ""
 content: "pstnnekaibeto@gmail.com
 Pastor Nneka Ibeto"
 status: "published"

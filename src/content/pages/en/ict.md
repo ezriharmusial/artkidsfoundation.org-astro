@@ -8,10 +8,6 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2017-12-16 13:39:19"
 status: "archived"
-comment_status: "open"
-modified: "2018-09-22 22:53:17"
-type: "page"
-comment_count: 0
 tags: []
 ---
 

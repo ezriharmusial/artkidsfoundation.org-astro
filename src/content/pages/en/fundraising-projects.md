@@ -1,21 +1,15 @@
 ---
-modified: 2018-03-07 18:26:34
+index: 4475
 layout: ../../../layouts/Project.astro
 author: EzzyHarmless
 date: 2018-02-04 19:15:03
-comment_count: 0
-seo:
-  date: 2023-10-01T12:41:11.315Z
 icon: charity-outline
 shortTitle: Fundraising
-index: 4475
-comment_status: closed
 status: published
 title: Fundraising Projects
 subtitle: ""
 tags: []
 pack: mdi
-type: page
 category: anbi
 ---
 

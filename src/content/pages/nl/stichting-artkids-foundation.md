@@ -5,12 +5,9 @@ title: "Stichting ArtKids Foundation"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-24 01:26:46"
-excerpt: "ArtKids Foundation is een Technologisch- en kennis georienteerde organisatie. Wij focussen ons op ontwikkeling van plattelands ontwikkeling middels Technologische interventie, Kennis Overdracht, Infrastructuur ontwikkeling alsmede de Empowerment van Vrouwen en Jeugd."
+seo:
+  description: "ArtKids Foundation is een Technologisch- en kennis georienteerde organisatie. Wij focussen ons op ontwikkeling van plattelands ontwikkeling middels Technologische interventie, Kennis Overdracht, Infrastructuur ontwikkeling alsmede de Empowerment van Vrouwen en Jeugd."
 status: "published"
-comment_status: "closed"
-modified: "2018-09-24 21:49:53"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

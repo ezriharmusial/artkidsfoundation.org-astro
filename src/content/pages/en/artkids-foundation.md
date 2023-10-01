@@ -5,12 +5,9 @@ title: "ArtKids Foundation"
 subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-24 00:21:12"
-excerpt: "ArtKids Foundation is a Technology and knowledge oriented organization. We focus on Rural Development through Technological interventions, Knowledge Transfer, Infrastructural developments as well as Women and Youth Empowerment."
+seo:
+  description: "ArtKids Foundation is a Technology and knowledge oriented organization. We focus on Rural Development through Technological interventions, Knowledge Transfer, Infrastructural developments as well as Women and Youth Empowerment."
 status: "published"
-comment_status: "closed"
-modified: "2018-09-24 21:49:38"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

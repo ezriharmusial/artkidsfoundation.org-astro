@@ -3,7 +3,8 @@ id: 352
 title: "Creativity Centre Stadhuis Nieuwegein"
 author: "EzzyHarmless"
 date: "2016-06-24 20:43:43"
-excerpt: ""
+seo:
+  description: ""
 status: "published"
 comment_status: "closed"
 modified: "2016-10-13 14:14:23"

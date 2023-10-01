@@ -8,12 +8,9 @@ subtitle: ""
 author: "EzzyHarmless"
 image: ""
 date: "2016-06-16 18:05:41"
-excerpt: "Vacature Subsidie Medewerker."
+seo:
+  description: "Vacature Subsidie Medewerker."
 status: "published"
-comment_status: "closed"
-modified: "2018-09-29 02:53:08"
-type: "page"
-comment_count: 0
 category: "organization"
 tags: []
 ---

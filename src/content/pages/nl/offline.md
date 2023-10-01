@@ -5,10 +5,6 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2018-09-29 01:00:32"
 status: "archived"
-comment_status: "closed"
-modified: "2018-09-29 01:00:32"
-type: "page"
-comment_count: 0
 tags: []
 ---
 

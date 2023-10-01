@@ -6,10 +6,6 @@ subtitle: ""
 author: "EzzyHarmless"
 date: "2017-10-01 18:29:56"
 status: "published"
-comment_status: "closed"
-modified: "2018-03-07 17:39:20"
-type: "page"
-comment_count: 0
 category: "about artkids"
 tags: []
 ---

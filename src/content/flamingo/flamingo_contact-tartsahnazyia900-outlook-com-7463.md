@@ -4,7 +4,8 @@ title: "tartsahnazyia900@outlook.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2023-04-24 21:06:52"
-excerpt: ""
+seo:
+  description: ""
 content: "tartsahnazyia900@outlook.com
 ThomasGainY"
 status: "published"

@@ -4,7 +4,8 @@ title: "kovison@gmail.com"
 subtitle: ""
 author: "ArtKids Parrot"
 date: "2018-10-11 12:53:58"
-excerpt: ""
+seo:
+  description: ""
 content: "kovison@gmail.com
 Rainbow Colours Rhythms"
 status: "published"
