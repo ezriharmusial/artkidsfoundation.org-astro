@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 # Local testing
-# local_backend: true
+local_backend: true
 i18n:
   # Required and can be one of multiple_folders, multiple_files or single_file
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
@@ -66,25 +66,25 @@ collections:
       - {label: "Status", name: "status", widget: "select", options: ['published', 'archived'], required: false}
       - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate}
       - {label: "Category", name: "category", widget: "select", options: ["about artkids", "organization", "anbi", "funding"], required: false}
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "SubTitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Titel", name: "title", widget: "string", i18n: true}
+      - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true}
       - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", required: false, i81n: duplicate}
-      - {label: "Inhoud", name: "body", widget: "markdown"}
-      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["artkids"], required: false}
+      - {label: "Inhoud", name: "body", widget: "markdown", i18n: true}
+      - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["artkids"], required: false, i18n: true}
       - label: "Search Engine Optimization"
         name: "seo"
         widget: "object"
         collapsed: true
         i18n: true
         fields:
-          - {label: "Foto Beschrijving", name: "imageAlt", required: false }
-          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false }
-          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false }
+          - {label: "Foto Beschrijving", name: "imageAlt", required: false, i18n: true }
+          - {label: "Title gebruikt voor Delen", name: "seoTitle", required: false, i18n: true }
+          - {label: "Pagina Beschrijving", name: "description", widget: text, required: false, i18n: true }
       - {label: "Icon", name: "icon", widget: "string", default: "report-line", required: false, i81n: duplicate}
       - {label: "Icon Pack", name: "pack", widget: "string", default: "mdi", required: false, i81n: duplicate}
-      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false}
-      - {label: "Menu volgorde", name: "index", widget: "number", required: false}
-      - {label: "Layout", name: "layout", widget: "select", options: ['../../../layouts/Page.astro', '../../../layouts/Attachment.astro', '../../../layouts/Contact.astro'], default: "../../../layouts/page.astro", required: false}
+      - {label: "Menu Title", name: "shortTitle", widget: "string", required: false, i18n: true}
+      - {label: "Menu volgorde", name: "index", widget: "number", required: false, i18n: true}
+      - {label: "Layout", name: "layout", widget: "select", options: [{label: 'Page Layout', value: '../../../layouts/Page.astro'}, {label: 'Attachment Layout', value: '../../../layouts/Attachment.astro'}, {label: 'Contact Layout', value: '../../../layouts/Contact.astro'}], default: "../../../layouts/page.astro", required: false, i18n: duplicate}
 
   - label: "News"
     name: "linkcasts"
