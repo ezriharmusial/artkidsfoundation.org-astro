@@ -177,7 +177,8 @@ collections:
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
+      - { label: 'UUID', name: 'uuid', widget: uuid, i18n: duplicate }
+      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", display_fields: ["title"], value_field: "uuid", search_fields: ["title"]}: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
       - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false, i18n: true}
       - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"], i18n: duplicate }
       - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["title"], value_field: "title", display_fields: ["title"], i18n: duplicate }
@@ -222,7 +223,7 @@ collections:
     create: true
     fields:
       - {label: "Datum", name: "date", widget: "datetime"}
-      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", value_field: "title", search_fields: ["titles"]}
+      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", display_fields: ["title"], value_field: "uuid", search_fields: ["title"]}
       - {label: "Naam", name: "donator", widget: "string"}
       - {label: "Bedrag", name: "amount", widget: "number"}
       - {label: "Message", name: "message", widget: "text"}

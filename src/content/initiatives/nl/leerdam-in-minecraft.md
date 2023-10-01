@@ -1,4 +1,5 @@
 ---
+uuid: j6FCiDkd9jcU137-29S0C
 author: EzzyHarmless
 initiator:
   - EZ ICT Solutions
@@ -9,6 +10,7 @@ subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
 image: /uploads/initiatives/highstreetsmp.jpg
 tags:
   - minecraft
+date: 2023-10-01T18:58:51.846Z
 icon: cube
 pack: mdi
 ---
