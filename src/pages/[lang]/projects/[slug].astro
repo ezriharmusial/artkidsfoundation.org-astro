@@ -48,33 +48,39 @@ let elements = {
 <BaseLayout icon={project.data?.icon} pack={project.data?.pack} description={project.data?.description} title={project.data?.title} image={project.data?.image} imageAlt={project.data?.imageAlt}>
 	<!-- Section Started Heading -->
 	<div class="section section-inner started-heading">
-		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  project.data?.image + "');"}>
+		<div class="aspect-video bg-cover bg-center w-full max-h-[85vh] transition-all duration-100 bg-black/80" style={"background-image: url('" +  project.data?.image + "');"}>
 			<!-- titles -->
-			<div class="portrait:hidden h-titles card rounded-xl p-4 landscape:w-1/3 landscape:max-w-1/3 mix-blend-differnce backdrop-blur bg-white/75 dark:bg-black/70 ">
-				{project?.data.subtitle &&
-					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
-				}
-				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
-				<p>Support our Cause and donate to this Project.</p>
-				<a href="/en/donations" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
+			<div class="container mx-auto h-full">
+				<div class="flex justify-start items-center p-8 h-full">
+					<div class="portrait:hidden h-titles card rounded-xl p-4 landscape:w-1/3 landscape:max-w-1/3 mix-blend-differnce backdrop-blur bg-white/75 dark:bg-black/70 ">
+						{project?.data.subtitle &&
+							<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+						}
+						<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
+						<p>Deploy this Project in your Country? <br /> Become an ArtKids Representative Partner.</p>
+						<a href="/en/artkids-representative" class="btn rounded-lg variant-filled-primary mt-4">Partner with us</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Stage%20performance');">
 		<div class="bg-white/90 dark:bg-black/75 p-8 landscape:pt-16">
-			<div class="mx-auto flex portrait:flex-col">
-				<div class="landscape:w-2/3 text-lg mb-8">
-					{project?.data.subtitle &&
-						<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
-					}
-					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{project?.data.title}</h2>
-					<div class="prose max-w-none prose-stone landscape:w-1/2 landscape:xl:w-3/4 space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke">
-					<Content />
+			<div class="container mx-auto">
+				<div class="flex portrait:flex-col">
+					<div class="landscape:w-2/3 text-lg mb-8">
+						{project?.data.subtitle &&
+							<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{project?.data.subtitle}</h3>
+						}
+						<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{project?.data.title}</h2>
+						<div class="prose max-w-none prose-stone landscape:w-1/2 landscape:xl:w-3/4 space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke">
+						<Content />
+						</div>
 					</div>
-				</div>
-				<div class="landscape:w-1/3 aspect-square landscape:ml-8">
-					<img src="https://source.unsplash.com/random?african%20popstar" class="object-cover rounded-xl" alt="Layout Image">
+					<div class="landscape:w-1/3 aspect-square landscape:ml-8">
+						<img src="https://source.unsplash.com/random?african%20popstar" class="object-cover rounded-xl" alt="Layout Image">
+					</div>
 				</div>
 			</div>
 		</div>

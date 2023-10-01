@@ -1,21 +1,23 @@
 ---
-index: 4475
-layout: ../../../layouts/Project.astro
-icon: "charity-outline"
-pack: "mdi"
-title: "Fundraising Projects"
-subtitle: ""
-shortTitle: "Fundraising"
-author: "EzzyHarmless"
-date: "2018-02-04 19:15:03"
 excerpt: ""
-status: "published"
-comment_status: "closed"
-modified: "2018-03-07 18:26:34"
-type: "page"
+modified: 2018-03-07 18:26:34
+layout: ../../../layouts/Project.astro
+author: EzzyHarmless
+date: 2018-02-04 19:15:03
 comment_count: 0
-category: "anbi"
+seo:
+  date: 2023-10-01T12:41:11.315Z
+icon: charity-outline
+shortTitle: Fundraising
+index: 4475
+comment_status: closed
+status: published
+title: Fundraising Projects
+subtitle: ""
 tags: []
+pack: mdi
+type: page
+category: anbi
 ---
 
 ## Past & Current Projects
@@ -34,6 +36,6 @@ ArtKids Foundation has successfully designed and implemented various poverty all
 *   Flying Professionals
 *   Company4Company-
 
-While we are trying our very best, funding remains a challenge to implement most of these solution-oriented initiatives.
+Are you interested to setup Rural Development Projects in Your country? Please select your Project of interest and Apply to become an ArtKids Representative in your Country.
 
-Donate and become a part of Artkids projects for Rural Development. You would be constantly video-updated as we implement the project of your choice
+Do you want to donate to our many Fundraising Initatives? ArtKids welcomes your support! Donate and become a part of Artkids projects for Rural Development. You will be constantly video-updated as we implement the project of your choice
