@@ -118,7 +118,7 @@ const initiatives = defineCollection({
     type: 'content',
     schema: z.object({
         initiator: z.array(reference('partners')),
-        projects: z.array(reference('projects')).optional(),
+        projects: z.array(z.string()).optional(),
         date: z.date().optional(),
         title: z.string(),
         image: z.string().optional(),
@@ -145,8 +145,10 @@ const initiatives = defineCollection({
 const donations = defineCollection({
     // type: 'data',
     schema: z.object({
-        initiative: reference('initiatives'),
-        donator: z.string(),
+        // initiative: reference('initiatives'),
+        uuid: z.string(),
+        initiative: z.string(),
+        donator: z.string().default('Anoniem'),
         amount: z.number().default(0),
         date: z.date(),
         message: z.string().optional(),

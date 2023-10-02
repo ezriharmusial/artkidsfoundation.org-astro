@@ -21,7 +21,7 @@ collections:
     label: "Staff"
     label_singular: "Employee"
     folder: "src/content/staff/"
-    preview_path: "/staff/{{name}}"
+    preview_path: "/en/staff/{{slug}}"
     summary: "{{name}} ({{title}}) [{{function}}]"
     identifier_field: name
     create: true
@@ -58,7 +58,7 @@ collections:
     label: "Paginas"
     label_singular: "Pagina"
     folder: "src/content/pages/"
-    preview_path: "{{title}}"
+    preview_path: "/en/{{slug}}"
     i18n: true
     create: true
     fields:
@@ -89,7 +89,7 @@ collections:
   - label: "News"
     name: "linkcasts"
     folder: src/content/linkcasts
-    preview_path: "/newscasts/{{title}}"
+    preview_path: "/en/newscasts/{{slug}}"
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
@@ -115,7 +115,7 @@ collections:
     name: "projects"
     i18n: true
     folder: src/content/projects
-    preview_path: "/projects/{{title}}"
+    preview_path: "/en/projects/{{slug}}"
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
@@ -146,7 +146,7 @@ collections:
     label: "Partners"
     label_singular: "Partner"
     folder: "src/content/partners/"
-    preview_path: "/partners/{{name}}"
+    preview_path: "/en/partners/{{name}}"
     summary: "{{name}} [{{type}}]"
     editor:
       preview: false
@@ -168,12 +168,11 @@ collections:
           - {label: "Email", name: email, required: false}
           - {label: "Website", name: website, required: false}
 
-
   - label: "Fundraising Initiatives"
     name: "initiatives"
     i18n: true
     folder: src/content/initiatives
-    preview_path: "/initiatives/{{title}}"
+    preview_path: "/en/initiatives/{{title}}"
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
@@ -213,7 +212,7 @@ collections:
     label: "Donations"
     label_singular: "Donation"
     folder: "src/content/donations/"
-    preview_path: "/{{initiative}}/donations/#{{uuid}}"
+    preview_path: "/en/{{initiative}}/donations/#{{uuid}}"
     summary: "{{initiative}} - {{donator}} = €{{amount}},-  ({{date}})"
     sortable_fields: ["date", "amount", "donator", "initiative"]
     identifier_field: uuid
@@ -221,9 +220,9 @@ collections:
       preview: false
     create: true
     fields:
-      - {label: 'UUID', name: 'uuid', widget: uuid, i18n: duplicate }
+      - {label: 'UUID', name: 'uuid', widget: uuid }
       - {label: "Datum", name: "date", widget: "datetime"}
-      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", display_fields: ["title", "initiator"], value_field: "{{slug}}", search_fields: ["title", "subtitle"]}
+      - {label: "Initiatief", name: "initiative", widget: "relation", collection: "initiatives", display_fields: ["title", "initiator"], value_field: "{{slug}}", search_fields: ["title", "subtitle"], i18n: duplicate}
       - {label: "Donateur", name: "donator", widget: "string"}
       - {label: "Bedrag", name: "amount", widget: "number"}
       - {label: "Bericht", name: "message", widget: "text"}
@@ -298,8 +297,8 @@ search: true
 slug:
   encoding: "ascii"
   clean_accents: true
-  sanitize_replacement: ""
-show_preview_links: false
+  sanitize_replacement: "-"
+show_preview_links: true
 publish_mode: editorial_workflow
 
 # media_library:

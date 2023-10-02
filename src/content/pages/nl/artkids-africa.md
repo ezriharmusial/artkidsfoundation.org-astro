@@ -3,6 +3,7 @@ index: 4595
 layout: ../../../layouts/Page.astro
 title: "ArtKids Afrika"
 subtitle: ""
+pack: "teenyicons"
 icon: "globe-africa-solid"
 author: ezzyharmless
 date: "2018-02-26 19:27:53"
