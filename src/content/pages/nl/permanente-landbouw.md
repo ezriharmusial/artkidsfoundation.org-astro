@@ -3,7 +3,7 @@ index: 7232
 layout: ../../../layouts/Page.astro
 title: "Permanente Landbouw"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2023-04-19 20:22:14"
 status: "archived"
 tags: []

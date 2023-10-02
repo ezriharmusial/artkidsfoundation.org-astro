@@ -2,7 +2,7 @@
 index: 7397
 title: "LETTER TO SPONSORS ~ IGBO_SUN ENERGY"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-23 00:23:50"
 seo:
   description: ""

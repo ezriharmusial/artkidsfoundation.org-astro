@@ -5,7 +5,7 @@ icon: "globe-solid"
 pack: "teenyicons"
 title: "Vertegenwoordigers"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-24 01:37:33"
 seo:
   description: "Vertegenwoordig ArtKids in uw Land. Het is nu mogelijk voor Individuelen en/of Bedrijven om ArtKids Foundation en ArtKids International in uw land te representeren. Dit doende maakt u een partner in de vooruitgang van ArtKids. Bent u geïnteresseerd en heeft u de tijd?"

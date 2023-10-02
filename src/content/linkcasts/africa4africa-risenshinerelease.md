@@ -1,5 +1,5 @@
 ---
-author: Bas Bijleveld
+author: basbijleveld
 date: 2022-11-11T22:29:00.000Z
 title: Africa4Africa - Rise 'n' Shine Youtube release
 subtitle: 11th day of the 11th month of 2022

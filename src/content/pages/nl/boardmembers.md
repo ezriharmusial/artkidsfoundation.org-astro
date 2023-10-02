@@ -5,7 +5,7 @@ icon: "group"
 pack: "iconoir"
 title: "Bestuur"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 13:57:13"
 seo:
   description: "Stichting ArtKids Foundation is gefundeerd op een team van 3 zeer toegewijde individuen, die de ontwikkeling en verlichting van Afrika in gedachten hebben. Wij zijn het bestuur van stichting ArtKids. Naast het kern-team, werkt Stichting ArtKids Foundation met de lokale gemeenschap in de respectievelijke project locaties-- zo ook in Africa."

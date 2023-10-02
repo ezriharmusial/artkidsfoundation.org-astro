@@ -5,7 +5,7 @@ icon: "art-gallery"
 pack: "map"
 title: "ArtKids Schilderijen"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 18:02:36"
 status: "archived"
 tags: []

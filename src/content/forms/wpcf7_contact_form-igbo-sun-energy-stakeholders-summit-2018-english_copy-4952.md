@@ -2,7 +2,7 @@
 index: 4952
 title: "Igbo Sun Energy Stakeholders Summit 2018 (Nederlands)"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-24 01:59:02"
 seo:
   description: ""

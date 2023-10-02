@@ -2,7 +2,7 @@
 index: 5034
 title: "Offline"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-29 01:00:32"
 status: "archived"
 tags: []

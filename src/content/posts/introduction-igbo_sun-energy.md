@@ -2,7 +2,7 @@
 index: 7393
 title: "INTRODUCTION ~ IGBO_SUN ENERGY"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-22 23:24:56"
 seo:
   description: ""

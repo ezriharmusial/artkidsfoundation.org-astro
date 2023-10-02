@@ -2,7 +2,7 @@
 index: 18
 title: "Permacultuur Doe-dagen"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-07-07 11:35:25"
 seo:
   description: "Op de doordeweekse dagen wordt er gewoon gewerkt aan diverse permacultuur projecten. Tijdens het werk is de Bar en het Terras gewoon geopend en is een ieder welkom om binnen te wandelen en een drankje te bestellen."

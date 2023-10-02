@@ -3,7 +3,7 @@ index: 4173
 layout: ../../../layouts/Page.astro
 title: "Ethics"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2017-10-01 18:29:56"
 status: "published"
 category: "about artkids"

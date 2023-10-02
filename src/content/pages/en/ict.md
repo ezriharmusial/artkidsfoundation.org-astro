@@ -5,7 +5,7 @@ title: "ArtKids ICT"
 icon: "internet"
 pack: "iconoir"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2017-12-16 13:39:19"
 status: "archived"
 tags: []

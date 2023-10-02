@@ -5,7 +5,7 @@ icon: "suitcase"
 pack: "ph"
 title: "Job Offerings"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2017-10-01 18:48:06"
 status: "published"
 category: "organization"

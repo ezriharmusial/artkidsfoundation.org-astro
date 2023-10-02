@@ -5,7 +5,7 @@ icon: "talk-bubbles-outline-badged"
 pack: "clarity"
 title: "Contact"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-23 16:16:02"
 status: "published"
 tags: []

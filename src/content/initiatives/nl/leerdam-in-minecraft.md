@@ -1,10 +1,10 @@
 ---
 uuid: j6FCiDkd9jcU137-29S0C
-author: EzzyHarmless
+author: ezzyharmless
 initiator:
-  - EZ ICT Solutions
+  - ez-ict-solutions
 projects:
-  - ArtKids WisGames
+  - artkids-wisgames
 title: Leerdam in MineCraft
 subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
 image: /uploads/initiatives/highstreetsmp.jpg

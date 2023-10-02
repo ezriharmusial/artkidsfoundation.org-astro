@@ -1,5 +1,5 @@
 ---
-author: EzzyHarmless
+author: ezzyharmless
 title: Regenerative Agriculture
 subtitle: Farming for the future
 image: /uploads/projects/agric.jpg

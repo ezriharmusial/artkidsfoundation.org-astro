@@ -3,7 +3,7 @@ index: 7011
 layout: ../../../layouts/Page.astro
 title: "Hartelijk dank"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2019-11-17 19:44:11"
 status: "archived"
 tags: []

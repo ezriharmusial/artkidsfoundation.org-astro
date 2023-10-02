@@ -2,7 +2,7 @@
 index: 23
 title: "Kinder Activiteiten"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-07-07 12:47:04"
 seo:
   description: ""

@@ -2,7 +2,7 @@
 index: 20
 title: "Shabbat Lezingen"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-07-07 12:01:35"
 seo:
   description: ""

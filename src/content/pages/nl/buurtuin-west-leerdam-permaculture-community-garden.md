@@ -3,7 +3,7 @@ index: 51
 layout: ../../../layouts/Page.astro
 title: "BuurTuin-West, Leerdam"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 14:57:42"
 status: "archived"
 tags: []

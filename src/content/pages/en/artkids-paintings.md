@@ -5,7 +5,7 @@ icon: "art-gallery"
 pack: "map"
 title: "ArtKids Paintings"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-02-04 16:59:20"
 status: "archived"
 tags: []

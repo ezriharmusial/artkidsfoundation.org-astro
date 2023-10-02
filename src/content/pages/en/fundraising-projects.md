@@ -1,7 +1,7 @@
 ---
 index: 4475
 layout: ../../../layouts/Project.astro
-author: EzzyHarmless
+author: ezzyharmless
 date: 2018-02-04 19:15:03
 icon: charity-outline
 shortTitle: Fundraising

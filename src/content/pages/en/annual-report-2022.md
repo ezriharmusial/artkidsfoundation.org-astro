@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Attachment.astro
-author: Bas Bijleveld
+author: basbijleveld
 date: 2018-08-10 10:26:30
 index: 5010
 status: published

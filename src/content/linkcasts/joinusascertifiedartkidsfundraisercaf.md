@@ -1,5 +1,5 @@
 ---
-author: EzzyHarmless
+author: ezzyharmless
 date: 2022-11-13T17:09:09.161Z
 title: Join us as Certified ArtKids Fundraiser (CAF)
 category: Sponsering & Advertisement

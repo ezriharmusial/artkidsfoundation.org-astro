@@ -5,7 +5,7 @@ icon: event
 pack: carbon
 title: "Evenementen"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-08-10 10:26:30"
 status: "published"
 category: "anbi"

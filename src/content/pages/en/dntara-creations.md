@@ -3,7 +3,7 @@ index: 4557
 layout: ../../../layouts/Page.astro
 title: "D'ntara Creations"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-02-26 18:35:14"
 status: "archived"
 tags: []

@@ -3,7 +3,7 @@ index: 282
 layout: ../../../layouts/Page.astro
 title: "Draw2Paint"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 17:59:37"
 status: "archived"
 tags: []

@@ -2,7 +2,7 @@
 index: 7406
 title: "PROGRAM ~ IGBO SUN ENERGY (IKE ANWU'ORA-IGBO)"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-23 00:54:54"
 seo:
   description: ""

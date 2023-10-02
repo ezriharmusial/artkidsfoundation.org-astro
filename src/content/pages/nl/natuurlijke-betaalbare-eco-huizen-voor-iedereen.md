@@ -3,7 +3,7 @@ index: 61
 layout: ../../../layouts/Page.astro
 title: "Natuurlijke Betaalbare Eco-Huizen voor iedereen."
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 15:11:38"
 status: "archived"
 comment_status: "open"

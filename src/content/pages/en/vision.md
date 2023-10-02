@@ -5,7 +5,7 @@ icon: "pyramid"
 pack: "icon-park-outline"
 title: "Vision"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-01-06 16:32:45"
 status: "published"
 category: "about artkids"

@@ -3,7 +3,7 @@ index: 58
 layout: ../../../layouts/Page.astro
 title: "Voedsel uit de buurt en eigen tuin = Genoeg voedsel voor Iedereen!"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 15:10:15"
 status: "archived"
 tags: []

@@ -5,7 +5,7 @@ icon: "solar-power"
 pack: "mdi"
 title: "Solar Africa"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-08-14 11:14:41"
 status: "archived"
 tags: []

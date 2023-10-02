@@ -4,7 +4,7 @@ layout: ../../../layouts/Page.astro
 title: "ArtKids Africa"
 subtitle: ""
 icon: "globe-africa-solid"
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-02-26 19:21:53"
 seo:
     description: "When we think of 'Underdevelopment', Africa quickly comes to mind. For years, ArtKids foundation has, through collaborations, assisted many in Africa without being resident in Africa. Since 2015 ArtKids Foundation/International are adequately represented in Africa."

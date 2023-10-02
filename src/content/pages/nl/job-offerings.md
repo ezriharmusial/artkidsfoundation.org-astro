@@ -5,7 +5,7 @@ icon: "suitcase"
 pack: "ph"
 title: "Vacatures"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 image: ""
 date: "2016-06-16 18:05:41"
 seo:

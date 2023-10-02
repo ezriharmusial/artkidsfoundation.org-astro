@@ -2,7 +2,7 @@
 index: 7401
 title: "NOVEMBER 10th ~ IGBO SUN ENERGY"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-23 00:39:56"
 seo:
   description: ""

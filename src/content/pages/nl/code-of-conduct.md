@@ -5,7 +5,7 @@ icon: "code-of-conduct-16"
 pack: "octicon"
 title: "Werkwijze"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 18:06:41"
 status: "published"
 category: "about artkids"

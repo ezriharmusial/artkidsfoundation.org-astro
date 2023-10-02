@@ -2,7 +2,7 @@
 index: 63
 title: "Creeer de stad Samen, want wij ZIJN de Stad"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 15:13:44"
 status: "archived"
 tags: []

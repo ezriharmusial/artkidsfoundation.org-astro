@@ -2,7 +2,7 @@
 index: 399
 title: "ezriharmusial@gmail.com"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2019-11-17 17:43:03"
 seo:
   description: ""

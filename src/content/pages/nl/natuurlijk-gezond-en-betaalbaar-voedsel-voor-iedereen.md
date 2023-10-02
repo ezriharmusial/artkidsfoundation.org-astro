@@ -3,7 +3,7 @@ index: 56
 layout: ../../../layouts/Page.astro
 title: "Natuurlijk, Gezond en Betaalbaar voedsel voor iedereen."
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 15:06:54"
 status: "archived"
 tags: []

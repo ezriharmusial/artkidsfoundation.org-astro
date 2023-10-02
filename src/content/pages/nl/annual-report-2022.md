@@ -6,7 +6,7 @@ pack: mdi
 title: "Jaarverslag 2022"
 subtitle: "Verantwoording voor onze Acties in 2022"
 shortTitle: "Jaarverslag 2022"
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-08-10 10:26:30"
 status: "published"
 category: "anbi"

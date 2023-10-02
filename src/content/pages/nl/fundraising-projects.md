@@ -6,7 +6,7 @@ pack: "mdi"
 title: "Fondswervings Projecten"
 subtitle: ""
 shortTitle: "Fondswerving"
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 18:04:26"
 status: "published"
 category: "anbi"

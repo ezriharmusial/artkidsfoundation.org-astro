@@ -2,7 +2,7 @@
 index: 21
 title: "Jongeren Inloop"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-07-07 12:32:59"
 seo:
   description: ""

@@ -5,7 +5,7 @@ icon: attachment-outline
 pack: teenyicons
 title: "Documents"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-08-10 10:26:30"
 status: "published"
 category: "anbi"

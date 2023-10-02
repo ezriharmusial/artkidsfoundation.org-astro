@@ -2,7 +2,7 @@
 index: 4772
 title: "ArtKids Solar contact form (english)"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-08-14 11:38:04"
 seo:
   description: ""

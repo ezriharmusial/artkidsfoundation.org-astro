@@ -3,7 +3,7 @@ index: 53
 layout: ../../../layouts/Page.astro
 title: "Permanente Agricultuur - Samen Terug naar de Tuin van Eden."
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-08-03 15:05:41"
 status: "archived"
 tags: []

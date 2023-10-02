@@ -3,7 +3,7 @@ index: 5032
 layout: ../../../layouts/Page.astro
 title: "Offline"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-29 00:56:04"
 status: "archived"
 tags: []

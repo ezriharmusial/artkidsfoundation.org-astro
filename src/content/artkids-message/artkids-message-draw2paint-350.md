@@ -1,7 +1,7 @@
 ---
 id: 350
 title: "Draw2Paint Project"
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-24 20:40:42"
 seo:
   description: ""

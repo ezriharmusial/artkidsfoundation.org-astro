@@ -3,7 +3,7 @@ index: 5
 layout: ../../../layouts/Page.astro
 title: "Welkom op ArtKids Farms"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2015-07-06 13:03:55"
 status: "archived"
 tags: []

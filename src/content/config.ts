@@ -46,6 +46,7 @@ const partners = defineCollection({
 });
 
 const pages = defineCollection({
+    type: 'content',
     schema: z.object({
         status: z.enum(["published", "archived"]).optional(),
         author: reference('staff'),
@@ -70,6 +71,7 @@ const pages = defineCollection({
 });
 
 const projects = defineCollection({
+    type: 'content',
     schema: z.object({
         status: z.enum(["published", "archived"]).optional(),
         title: z.string(),
@@ -93,6 +95,7 @@ const projects = defineCollection({
 });
 
 const linkcasts = defineCollection({
+    type: 'content',
     schema: z.object({
         title: z.string(),
         subtitle: z.string().optional(),
@@ -112,8 +115,9 @@ const linkcasts = defineCollection({
 });
 
 const initiatives = defineCollection({
+    type: 'content',
     schema: z.object({
-        initiator: reference('partners'),
+        initiator: z.array(reference('partners')),
         projects: z.array(reference('projects')).optional(),
         date: z.date().optional(),
         title: z.string(),

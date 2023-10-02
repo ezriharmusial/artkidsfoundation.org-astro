@@ -64,7 +64,7 @@ collections:
     fields:
       - {label: "Pubilcatie Datum", name: "date", widget: "datetime", i18n: duplicate}
       - {label: "Status", name: "status", widget: "select", options: ['published', 'archived'], required: false}
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "{{slug}}", display_fields: ["name", "title"], search_fields: ["name", "username", title ], multiple: false, i18n: duplicate}
       - {label: "Category", name: "category", widget: "select", options: ["about artkids", "organization", "anbi", "funding"], required: false}
       - {label: "Titel", name: "title", widget: "string", i18n: true}
       - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true}
@@ -93,7 +93,7 @@ collections:
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false}
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "{{slug}}", display_fields: ["name", "title"], search_fields: ["name", "username", title ], multiple: false, i18n: duplicate}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Describing Subtitle", name: "subtitle", widget: "string", required: false}
@@ -119,7 +119,7 @@ collections:
     sortable_fields: ["date", "title", "author"]
     create: true
     fields:
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "{{slug}}", display_fields: ["name", "title"], search_fields: ["name", "username", "title" ], multiple: false, i18n: duplicate}
       - {label: "Title", name: "title", widget: "string", i18n: true}
       - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true}
       - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-512.png, i18n: duplicate  }
@@ -178,10 +178,10 @@ collections:
     create: true
     fields:
       - { label: 'UUID', name: 'uuid', widget: uuid, i18n: duplicate }
-      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "username", search_fields: ["name", "surnam", "username" ], multiple: false, i18n: duplicate }
+      - {label: "Auteur", name: author, widget: "relation", collection: "staff", value_field: "{{slug}}", display_fields: ["name","title"], search_fields: ["name", "username", "title" ], multiple: false, i18n: duplicate }
       - {label: "Status", name: "status", widget: "select", options: ["published", "archived"], required: false, i18n: true}
-      - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name"], i18n: duplicate }
-      - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["title"], value_field: "title", display_fields: ["title"], i18n: duplicate }
+      - {label: "Initiator", name: "initiator", widget: "relation", collection: "partners", default: "ArtKids", multiple: true, search_fields: ["name"], value_field: "{{slug}}", display_fields: ["name", "type"], i18n: duplicate }
+      - {label: "Umbrella Projects", name: "projects", widget: "relation", collection: "projects", default: "ArtKids", multiple: true, search_fields: ["title"], value_field: "{{slug}}", display_fields: ["title"], i18n: duplicate }
       - {label: "Title", name: "title", widget: "string", i18n: true }
       - {label: "SubTitle", name: "subtitle", widget: "string", required: false, i18n: true }
       - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/initiatives", public_folder: "/uploads/initiatives", default: /logo-512.png, i18n: duplicate }

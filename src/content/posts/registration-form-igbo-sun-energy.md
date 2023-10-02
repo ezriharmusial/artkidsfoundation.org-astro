@@ -2,7 +2,7 @@
 index: 7410
 title: "REGISTRATION FORM ~ IGBO SUN ENERGY"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-23 01:16:27"
 seo:
   description: ""

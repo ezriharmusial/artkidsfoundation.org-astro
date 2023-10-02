@@ -3,7 +3,7 @@ index: 300
 layout: ../../../layouts/Page.astro
 title: "Visie"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 18:06:14"
 status: "published"
 category: "about artkids"

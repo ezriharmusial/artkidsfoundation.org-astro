@@ -3,7 +3,7 @@ index: 5092
 layout: ../../../layouts/Page.astro
 title: "IGBO_SUN 2018 Registration Form"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-10-18 19:07:48"
 status: "archived"
 tags: []

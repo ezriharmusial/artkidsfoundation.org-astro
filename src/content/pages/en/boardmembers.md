@@ -5,7 +5,7 @@ icon: "group"
 pack: "iconoir"
 title: "Boardmembers"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2017-09-30 16:10:37"
 status: "published"
 category: "organization"

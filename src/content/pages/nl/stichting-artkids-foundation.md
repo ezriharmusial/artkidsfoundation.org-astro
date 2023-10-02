@@ -3,7 +3,7 @@ index: 4933
 layout: ../../../layouts/Page.astro
 title: "Stichting ArtKids Foundation"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-24 01:26:46"
 seo:
   description: "ArtKids Foundation is een Technologisch- en kennis georienteerde organisatie. Wij focussen ons op ontwikkeling van plattelands ontwikkeling middels Technologische interventie, Kennis Overdracht, Infrastructuur ontwikkeling alsmede de Empowerment van Vrouwen en Jeugd."

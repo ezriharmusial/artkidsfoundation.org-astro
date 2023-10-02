@@ -2,7 +2,7 @@
 index: 400
 title: "ArtKids contact formulier (Nederlands)"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-10-12 18:49:59"
 seo:
   description: ""

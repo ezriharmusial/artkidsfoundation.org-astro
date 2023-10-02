@@ -2,7 +2,7 @@
 index: 413
 title: "ArtKids aanmeld formulier"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-10-13 17:10:33"
 seo:
   description: ""

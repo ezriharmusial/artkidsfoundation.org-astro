@@ -5,7 +5,7 @@ icon: "account-tie"
 pack: "mdi"
 title: "ArtKids Int. Corp."
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-24 00:25:51"
 seo:
   description: "Through Artkids International, fund is generated via various business transactions in collaboration with established corporate entities (Companies) on a win-win principle to effectively support the funding of ArtKids Foundation."

@@ -2,7 +2,7 @@
 index: 5020
 title: "IGBO_SUN ENERGY $TAKEHOLDERS SUMMIT 2018"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-11-10 10:00:05"
 seo:
   description: " ArtKids International hereby invite Solar Energy Experts, Researchers, Manufacturers and African Solar Energy Consumers to the 1st IGBO_SUN ENERGY $TAKEHOLDERS SUMMIT 2018 to be held on the 10th of November 2018 @UmuEke Villa Hall UmuEke in Nkwerre, Imo, Igboland~West Africa."

@@ -3,7 +3,7 @@ index: 5097
 layout: ../../../layouts/Page.astro
 title: "IGBO_SUN 2018 Sponsor Letter"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-10-19 22:07:06"
 status: "archived"
 tags: []

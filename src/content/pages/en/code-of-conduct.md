@@ -5,7 +5,7 @@ icon: "code-of-conduct-16"
 pack: "octicon"
 title: "Code of Conduct"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2017-12-16 18:53:58"
 status: "published"
 category: "about artkids"

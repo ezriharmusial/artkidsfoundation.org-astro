@@ -3,7 +3,7 @@ index: 4916
 layout: ../../../layouts/Page.astro
 title: "ArtKids Foundation"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2018-09-24 00:21:12"
 seo:
   description: "ArtKids Foundation is a Technology and knowledge oriented organization. We focus on Rural Development through Technological interventions, Knowledge Transfer, Infrastructural developments as well as Women and Youth Empowerment."

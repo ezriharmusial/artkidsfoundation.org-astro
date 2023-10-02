@@ -3,7 +3,7 @@ index: 288
 layout: ../../../layouts/Page.astro
 title: "Leefregels"
 subtitle: ""
-author: "EzzyHarmless"
+author: ezzyharmless
 date: "2016-06-16 18:00:33"
 status: "published"
 category: "about artkids"
