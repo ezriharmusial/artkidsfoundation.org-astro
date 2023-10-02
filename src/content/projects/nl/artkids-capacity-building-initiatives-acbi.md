@@ -1,11 +1,13 @@
 ---
+author: ezzyharmless
 title: "ArtKids CapaciteitsBouw Initiatieven (ACBi) "
 subtitle: Developing our natural gifts
-shortTitle: ACBi
-icon: "machine-learning-model"
-pack: "carbon"
 image: /uploads/projects/capacity.jpg
 changed: /uploads/projects/capacity-2.jpg
+date: 2023-10-02T14:12:07.831Z
+shortTitle: ACBi
+icon: machine-learning-model
+pack: carbon
 ---
 ### Inleiding
 
