@@ -3,6 +3,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '~consts';
 
 export interface Props {
 	title: string;
+	subTitle: string;
 	seoTitle?: string;
 	description: string;
 	image?: string;
@@ -10,7 +11,7 @@ export interface Props {
 	fbappid?: string;
 }
 
-const { title, seoTitle, description, image, imageAlt, fbappid } = Astro.props
+const { title, subTitle, seoTitle, description, image, imageAlt, fbappid } = Astro.props
 
 // Catch Image Url Inconsistencies
 function imageUrl(image) {
@@ -35,13 +36,13 @@ const canonicalURL = Astro.url.origin + Astro.url.pathname;
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<title>{SITE_TITLE + title || "Welkom to ArtKidsFoundation.org"}</title>
+<title>{SITE_TITLE + (seoTitle || title) || "Welkom to ArtKidsFoundation.org"}</title>
 <meta name="robots" content="index,follow">
 <meta name="description" content={description || SITE_DESCRIPTION}>
 <!-- Facebook OpenGraph -->
 <meta property="fb:app_id" content={fbappid}/>
-<meta property="og:title" content={title || "Welkom to ArtKidsFoundation.org"}>
-<meta property="og:description" content={description || SITE_DESCRIPTION}>
+<meta property="og:title" content={(seoTitle || title) || "Welkom to ArtKidsFoundation.org"}>
+<meta property="og:description" content={description || subTitle || SITE_DESCRIPTION}>
 <meta property="og:url" content={canonicalURL}>
 <meta property="og:type" content="website">
 <meta property="og:image" content={imageUrl(image)}>
@@ -50,8 +51,8 @@ const canonicalURL = Astro.url.origin + Astro.url.pathname;
 <link rel="canonical" href={canonicalURL}>
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content={title || "Welkom to ArtKidsFoundation.org"}>
-<meta property="twitter:description" content={description || "Welkom to ArtKidsFoundation.org"}>
+<meta property="twitter:title" content={seoTitle || title || "Welkom to ArtKidsFoundation.org"}>
+<meta property="twitter:description" content={description || subTitle || "Welkom to ArtKidsFoundation.org"}>
 <meta property="twitter:image" content={imageUrl(image)}>
 
 <!-- Manifest Files -->
