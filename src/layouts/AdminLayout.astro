@@ -17,13 +17,16 @@ import Fonts from '../components/head/Fonts.astro';
 	<!-- Note the "type" and "rel" attribute values, which are required. -->
 	<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^2.0.0/dist/main.css" />
+	<!-- <link rel="stylesheet" href="/admin/mobile.css" /> -->
 </head>
 <body data-theme="vintage" class="bg-primary-100 adminLayout">
 	<div style="display: contents">
 
 		<!-- Include the script that builds the page and powers Netlify CMS -->
-		<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-	  	<!-- <script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script> -->
+		<!-- <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script> -->
+	  	<script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+		<!-- <script is:inline src="https://unpkg.com/@staticcms/app@^2.0.0/dist/static-cms-app.js"></script> -->
 		<script is:inline>
 
 			// https://github.com/ai/nanoid
@@ -54,7 +57,6 @@ import Fonts from '../components/head/Fonts.astro';
 			})
 			CMS.registerWidget('uuid', UuidWidget)
 
-			CMS.registerPreviewStyle("/admin/mobile.css");
 			CMS.registerPreviewStyle("/admin/header.css");
 			CMS.registerPreviewStyle("/admin/page.css");
 			CMS.registerPreviewStyle("/admin/project.css");
@@ -304,7 +306,6 @@ import Fonts from '../components/head/Fonts.astro';
 					var bg = this.props.getAsset(image);
 					var after = entry.getIn(['data', 'bgimage']);
 					var afterBg = this.props.getAsset(after);
-				    var contact = entry.getIn(['data', 'contact']);
 
 					return h('div', { className: 'hs-0'},
 						h('header', { className: 'hs-1'},
