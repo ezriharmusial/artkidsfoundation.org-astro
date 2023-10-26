@@ -16,10 +16,16 @@ The cause of the  unending challenges faced by women in Africa can be traced to 
 ArtKids ICT4WOMEN Development, Empowerment and Involvement project aims to practically alleviate women's suffering and poverty by bridging the aforementioned techno-economic gaps.
 
 ArtKids achieves this by directly engaging, sensitising, training and funding African women in business as well as other creative women
+
+[![Watch the video](https://img.youtube.com/vi/qcMTy6ie3z4/default.jpg)](https://youtu.be/qcMTy6ie3z4)
+
 ### MEN'S DOMINANCE OF TECHNOLOGIES
 Granted, we are living in Patriarchal system where men are provided with more technological opportunities than the women; qua societal organisation, leadership, accountability and technological advancement.
 
 Information and Communication Technology (ICT) should not be considered a man-only tool and solution.
+
+[![Watch the video](https://img.youtube.com/vi/IJ2avZjjmd4/default.jpg)](https://youtu.be/IJ2avZjjmd4)
+
 ### ARTKIDS® COMPUTER KNOWLEDGE-TRANSFER FOR WOMEN EMPOWERMENT:
 Regretfully, Computer Technology illiteracy among African women is on the high. It's not that Africa women are not capable of learning and mastering the logics in technologies; no, it is because of the lack of consistent ICT sensitisation, training and funding that most African women are ill-informed as to the benefits and capabilities of ICT; as a result, most African women lost interest in learning and using ICT gadgets, Computers and other technologies to better their lives. Digital Ignorance.
 
