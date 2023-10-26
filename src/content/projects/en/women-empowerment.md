@@ -31,6 +31,9 @@ Regretfully, Computer Technology illiteracy among African women is on the high. 
 
 Partner with Artkids Int'l Holland to positively change African Women's Technological orientation from retrogression to progression 2023/2024
 
+![Women in ICT](https://techbuild.africa/wp-content/uploads/2023/03/5e8cb00702bf6334c4ec8176_man-people-woman-laptop-3894378-min_33_1_70.jpg)
+
+
 The ICT department of ArtKids Int'l Holland (ArtKids_ICT) has initiated ICT knowledge-transfer to African women 2023/2024.
 ARTKIDS ICT4WOMEN PROJECTS AND TRAININGS:
 * Setup ICT4WOMEN Training Centre
