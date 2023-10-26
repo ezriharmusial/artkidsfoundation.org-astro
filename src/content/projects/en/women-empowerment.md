@@ -17,22 +17,23 @@ ArtKids ICT4WOMEN Development, Empowerment and Involvement project aims to pract
 
 ArtKids achieves this by directly engaging, sensitising, training and funding African women in business as well as other creative women
 
-[![Watch the video](https://img.youtube.com/vi/qcMTy6ie3z4/default.jpg)](https://youtu.be/qcMTy6ie3z4)
+
+![Women in ICT](https://techbuild.africa/wp-content/uploads/2023/03/5e8cb00702bf6334c4ec8176_man-people-woman-laptop-3894378-min_33_1_70.jpg)
 
 ### MEN'S DOMINANCE OF TECHNOLOGIES
 Granted, we are living in Patriarchal system where men are provided with more technological opportunities than the women; qua societal organisation, leadership, accountability and technological advancement.
 
 Information and Communication Technology (ICT) should not be considered a man-only tool and solution.
 
-[![Watch the video](https://img.youtube.com/vi/IJ2avZjjmd4/default.jpg)](https://youtu.be/IJ2avZjjmd4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qcMTy6ie3z4?si=KRD5F6tuFui7UV5N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ### ARTKIDS® COMPUTER KNOWLEDGE-TRANSFER FOR WOMEN EMPOWERMENT:
 Regretfully, Computer Technology illiteracy among African women is on the high. It's not that Africa women are not capable of learning and mastering the logics in technologies; no, it is because of the lack of consistent ICT sensitisation, training and funding that most African women are ill-informed as to the benefits and capabilities of ICT; as a result, most African women lost interest in learning and using ICT gadgets, Computers and other technologies to better their lives. Digital Ignorance.
 
 Partner with Artkids Int'l Holland to positively change African Women's Technological orientation from retrogression to progression 2023/2024
 
-![Women in ICT](https://techbuild.africa/wp-content/uploads/2023/03/5e8cb00702bf6334c4ec8176_man-people-woman-laptop-3894378-min_33_1_70.jpg)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ2avZjjmd4?si=NlHh7cAEYK3QBuYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The ICT department of ArtKids Int'l Holland (ArtKids_ICT) has initiated ICT knowledge-transfer to African women 2023/2024.
 ARTKIDS ICT4WOMEN PROJECTS AND TRAININGS:
