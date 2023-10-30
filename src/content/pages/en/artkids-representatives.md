@@ -1,6 +1,6 @@
 ---
 index: 4924
-layout: ../../../layouts/Page.astro
+layout: ../../../layouts/RepPage.astro
 icon: "globe-solid"
 pack: "teenyicons"
 title: "ArtKids Representatives"
