@@ -3,13 +3,12 @@ index: 4924
 layout: ../../../layouts/Page.astro
 icon: "globe-solid"
 pack: "teenyicons"
-title: "Country Representatives"
-shortTitle: "Representatives"
+title: "ArtKids Representatives"
+shortTitle: "Represent us in your Country or city"
 subtitle: ""
 author: ezzyharmless
 date: "2018-09-24 00:34:30"
-seo:
-  description: "It is now possible for Individuals and/or Companies to represent ArtKids Foundation and ArtKids International in your own country. By so doing, you would become a partner in progress with ArtKids.Are you interested and do you have the time?"
+description: "It is now possible for Individuals and/or Companies to represent ArtKids Foundation and ArtKids International in your own country. By so doing, you would become a partner in progress with ArtKids.Are you interested and do you have the time?"
 status: "published"
 category: "organization"
 tags: []

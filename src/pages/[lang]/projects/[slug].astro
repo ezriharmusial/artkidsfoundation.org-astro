@@ -18,6 +18,8 @@ export async function getStaticPaths() {
 const { project } = Astro.props;
 // 2. Query for the page directly using the request slug
 const { Content } = await project?.render() ;
+const { lang } = Astro.params;
+
 
 let elements = {
 	title: {
@@ -58,7 +60,7 @@ let elements = {
 						}
 						<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-4xl portrait:text-2xl font-bold" >{project?.data.title}</h2>
 						<p>Deploy this Project in your Country? <br /> Become an ArtKids Representative Partner.</p>
-						<a href="/en/artkids-representative" class="btn rounded-lg variant-filled-primary mt-4">Partner with us</a>
+						<a href={"/" + lang + "/artkids-representatives"} class="btn rounded-lg variant-filled-primary mt-4">Partner with us</a>
 					</div>
 				</div>
 			</div>
