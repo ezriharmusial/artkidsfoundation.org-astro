@@ -1,5 +1,5 @@
 ---
-// import { Image } from '@astrojs/image/components';
+import { Image } from "astro:assets";
 import BrandFlag from '~components/ui/BrandFlag.astro';
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Linkcasts from "@components/linkcasts/Linkcasts.astro"
@@ -40,6 +40,43 @@ export async function getStaticPaths() {
 					<img src="https://source.unsplash.com/random?school%20children" class="aspect-auto portrait:aspect-square rounded-xl" alt="Layout Image">
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="bg-blue-200">
+		<div class="bg-yellow-400">
+			<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
+				<h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">ArtKids WisGames zoekt MineCraft Talenten</h1>
+				<div class="flex">
+					<div class="m-8">
+						<Image
+							src="https://mc-heads.net/body/HighStreetLDAM"
+							class="mx-auto rounded-lg"
+							height={450}
+							width={150}
+							alt="HighStreetLDAM welcomes you"
+						/>
+					</div>
+					<div class="landscape:w-3/4">
+						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+							"Leerdam in Minecraft" project connects schoolgoing and non-schoolgoing children, through edutainment with help of the most Populair Computersgame in the world Minecraft. ArtKids uses this platform to stimulate Creativity amongst the Youngest Children, protect the innocent, and help them Realize their Dreams.
+						</p>
+						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+							ArtKids is Developing their Free and Open online Platform to Gather, socialize, Share and Create their Dreamworld together. Please watch our Promo presentation or visit the Project website or initative page.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-wrap justify-center">
+					<a href="https://highstreet.fun" target="_blank" title="Visit HighStreet Website" type="button" class="btn variant-filled-secondary px-8 py-3 m-2 text-lg font-semibold">Visit Highstreet.fun</a>
+					<a href={lang == 'en' ? '/en/projects/artkds-wisgames' : '/nl/projects/artkids-wisgames'} title="" type="button" class="btn variant-filled-tertiary px-8 py-3 m-2 text-lg">Represent us</a>
+					<a href={lang == 'en' ? '/en/initiatives/leerdam-in-minecraft' : '/nl/initiatives/leerdam-in-minecraft'} title="" type="button" class="btn variant-ringed-tertiary px-8 py-3 m-2 text-lg">Donate</a>
+				</div>
+			</div>
+		</div>
+		<div class="aspect-video overflow-hidden w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500">
+			<iframe loading="lazy" class="aspect-video w-full"
+				src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0cfQIgH8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+			</iframe>
 		</div>
 	</section>
 
