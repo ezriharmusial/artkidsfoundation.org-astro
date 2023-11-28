@@ -36,7 +36,7 @@ Verder worden onze creativiteitscentrums voor derden beschikbaar gesteld voor ve
 
 * * *
 
-## Vergoedingsmodel <small class="has-text-calm is-size-4">wat schuift het?</small>
+## Vergoedingsmodel <small class="has-text-calm is-size-4">voor niets gaat de zon op...</small>
 
 Meer informatie volgt... Wil je meer weten neem dan [contact](/nl/contact/) met ons op
 

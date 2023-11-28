@@ -24,7 +24,7 @@ ArtKids Foundation restores hope and trust in Future of our Youths trough recogn
 
 ## Mission
 
-Door de ontwikkeling van talenten van jongeren (DiscoverMe/LastMessengerS) en onze Women Empowerment Projecten, heeft ArtKids Foundation geholpen om veel jongeren van de straat te halen. Zich realiserend dat niet elke jongere de mogelijkheid heeft om handel te drijven of uitgebreid te studeren, nam ArtKids zijn toevlucht tot de ontwikkeling van talenten van jongeren en empowerment van vrouwen en is erin geslaagd muzikale talenten, filmmakers, cabaretiers en technici onder Afrikaanse jongeren sterker te maken.
+Het bekrachtigen en stimuleren van creativiteit en spontaniteit bij kinderen, jongeren en jongvolwassenen. Op een natuurlijke en effectieve wijze helpen in het oplossen van honger bij schoolkinderen. Bewustwording creëren en ontwikkelen over onze individuele en collectieve verantwoordelijkheid om te leven in eeuwige balans met de natuur en het klimaat.
 
 ### Vision
 
