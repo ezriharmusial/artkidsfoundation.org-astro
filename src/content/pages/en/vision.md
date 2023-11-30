@@ -12,14 +12,36 @@ category: "about artkids"
 tags: []
 ---
 
-## Mission Statement <small class="has-text-calm is-size-4">Goal & Direction</small>
+## Mission Statement <small class="has-text-calm is-size-4">Purpose, Goal & Direction</small>
 
-The visible inequality which has unfortunately triggered unnecessary hardship as a result of world poverty among Africans in particular and the so-called third world in general is a reason for the establishment of ArtKids Foundation and ArtKids International in 2013\. Since their establishment, both organizations have helped many Africans through Technologies, ICT, Knowledge Transfer, Internet Empowerment; as well as Business development supports. May we use this opportunity to thank our various donors and direct/indirect supporters, most of all our Spiritual Pillar-Ya'huwah~Ala (Chi'Ukwu).
+Empowering and stimulating creativity and spontaneity in children, young people and young adults. Helping to solve hunger in schoolchildren in a natural and effective way. Creating and developing awareness about our individual and collective responsibility to live in eternal balance with nature and the climate.
+
+### Vision
+
+Here at ArtKids Foundation, we see a future where African youth en masse embrace their talents as a means to support themselves and their families. It is therefore our vision to discover, stimulate and promote the talents of our young people.
+
+### Who we are and what we work for
+
+Artkids Foundation is a Dutch-registered, internationally operating non-profit organization or NGO, with a special focus on discovering and developing talents. The Artkids Foundation is active in Igboland in South-East Nigeria, where young talent is everywhere on the streets. This region is also known as Igboland, or the land of the Igbos
+
+ May we use this opportunity to thank our various donors and direct/indirect supporters, most of all our Spiritual Pillar-Ya'huwah~Ala (Chi'Ukwu).
 
 ## Objectives <small class="has-text-calm is-size-4">Rebuilding & Restoration</small>
 
-ArtKids Foundation has developed a working concept, by which from the formulated basic principles the following objectives are actively pursued:
-To acknowledge and stimulate creativity and spontaneity of children and youth, and work to develop talents. To help Youth with extraordinary talents who at the same time posses great self motivation, to transform their talent into their profession. By means of creative expression of children and youth, stimulate the involvement and relationship with their parent(s) and their social environment therewith empower their position in society. Utilize the creativity of children and youth to establish a balanced, undisturbed social and emotional development of children and youth. To bring about a mutual inspiring interaction of children and youth and their parent(s) and social environment, professional expressive artists, businesses, civil society organizations and society in the broadest sense of the word. The objective is to us creativity as a mean to build inter connectivity.
+ArtKids Foundation has developed a concept in which the following goals are pursued based on the formulated basic vision:
+1. To empower and stimulate creativity and spontaneity in children, youth and young adults around the world by working on talent development in the broadest sense of the word, including the painful self-sufficient requirements to enable structural talent development.
+Helping to solve hunger in school children naturally and effectively, named the youngest in most African primary schools.
+2. Create and develop awareness about our individual and collective responsibility to live in eternal balance with nature and the climate. Project-based highlighting of specific local situations of imbalances, teaching and applying structural cultural problems that bring new generations to life in this balance.
+3. Taking all further actions that are related to the foregoing in the broadest sense or that may be furthered by it.
+
+The foundation tries to discover its purpose by, among other things:
+
+- Providing social, cultural and educational platforms and projects (both physical and digital) that bring together our target groups and consumers of their creative products, to stimulate self-development and make (the prospect of) economic self-sufficiency part of our platforms.
+Through agriculture and vegetable gardening, ArtKids wants to work with sufficient food producers to feed school children in Igboland West Africa. ArtKids Farm's farm products are used to prepare meals for the youngest school-aged children in the ArtKids Food On Table kitchens. This helps them to identify and explore the knowledge perceived to them.
+- A minimal burden on nature, culture and climate is achieved by working locally as much as possible and stimulating awareness of self-reliance from the grassroots up. A substantial part of the work and communication is done remotely digitally, which means there is minimal traffic for a lot of travel traffic. Recycling, purchasing and renting locally as much as possible, encouraging close proximity and working from home are other examples of how we achieve that goal.
+- Generating funds to make the goal possible (worldwide).
+- Collaboration with partner organizations, specialists, consultants and especially volunteers and training a mentality of self-reliance.
+- Division of tasks delegation through collaboration with local and regional organizations and projects in different countries.
 
 ## Basic Vision <small class="has-text-calm is-size-4">Child & Creativity</small>
 

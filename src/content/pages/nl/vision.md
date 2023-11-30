@@ -10,13 +10,37 @@ category: "about artkids"
 tags: []
 ---
 
-## Mission Statement <small class="has-text-calm is-size-4">Doel & Directie</small>
+## Mission Statement <small class="has-text-calm is-size-4">Bestaansrecht, Doel & Directie</small>
 
-De duidelijk zichtbare ongelijkheid in de wereld, die onfortuinlijk onnodige ontberingen als gevolg van wereld armoede onder Afrikanen in het bijzonder en in de zo-genoemde 3e wereld landen in het algemeen, zijn één van de bestaansredenen van StichtingArtKids Foundation en ArtKids International in 2013\. Sinds hun oprichting, hebben beide organisaties vele Afrikanen geholpen door middel van Technologieen, ICT, Kennisoverdracht, Internet Empowerment; als mede Business ontwikkelings support. Mogen we van de gelegenheid gebruik maken om onze verschillende donateurs en directe/indirecte ondersteuners te bedanken, waarvan de grootste dank uit gaat naar onze Spirituele Pilaar-Ya'huwah~Ala (Chi'Ukwu).
+Het bekrachtigen en stimuleren van creativiteit en spontaniteit bij kinderen, jongeren en jongvolwassenen. Op een natuurlijke en effectieve wijze helpen in het oplossen van honger bij schoolkinderen. Bewustwording creëren en ontwikkelen over onze individuele en collectieve verantwoordelijkheid om te leven in eeuwige balans met de natuur en het klimaat.
+
+### Visie
+
+Hier bij ArtKids Foundation zien we een toekomst waarin Afrikaanse jongeren massaal hun talenten omarmen als een middel om zichzelf en hun gezin te onderhouden. Het is dan ook onze visie om de talenten van onze jongeren te ontdekken, te stimuleren en te promoten.
+
+### Wie wij zijn en waar wij voor werken
+
+Artkids Foundation is een in Nederland geregistreerde, internationaal opererende non-profit organisatie of NGO, met speciale focus op het ontdekken en ontwikkelen van talenten. Stichting Artkids is actief in Igboland in Zuid-Oost Nigeria, waar jong talent overal aanwezig is op straten. Deze regio staat ook wel bekend als Igboland, of het land van de Igbo’s.
+
+Mogen wij van deze gelegenheid gebruik maken om onze diverse donateurs en directe/indirecte donateurs, vooral onze Spirituele Pijler, te bedanken-Ya'huwah~Ala (Chi'Ukwu).
+
 
 ## Doelstellingen <small class="has-text-calm is-size-4">Opbouw & Herstel</small>
 
-ArtKids Foundation heeft een concept ontwikkeld, waarbij vanuit de geformuleerde basisvisie de volgende doelen worden nagestreefd: Het bekrachtigen en stimuleren van creativiteit en spontaniteit bij kinderen en jongeren en daarmee werken aan de talentontwikkeling. Jongeren met uitzonderlijk talent die tevens over een grote motivatie beschikken, helpen om van hun talent hun beroep te kunnen maken. Middels de creatieve uitingen van de kinderen en jongeren de betrokkenheid en band met hun ouders en hun sociale omgeving stimuleren en daarmee hun positie in de maatschappij versterken. De creativiteit van kinderen en jongeren aanwenden ter bevordering van een evenwichtige, stoornisloze sociale en emotionele ontwikkeling van kinderen en jongeren. Het tot stand brengen van een wederzijds inspirerende interactie van kinderen en jongeren met hun ouders en sociale omgeving, professionele beeldend kunstenaars, het bedrijfsleven, maatschappelijke organisaties en de maatschappij in brede zin. Het doel is om creativiteit als middel te gebruiken om verbinding te maken.
+ArtKids Foundation heeft een concept ontwikkeld, waarbij vanuit de geformuleerde basisvisie de volgende doelen worden nagestreefd:
+1. Het bekrachtigen en stimuleren van creativiteit en spontaniteit bij kinderen, jongeren en jongvolwassenen over de hele wereld door te werken aan talentontwikkeling in de breedste zin van het woord, inclusief de bijbehorende zelfvoorzienende benodigdheden om structurele talentontwikkeling mogelijk te maken.
+Op een natuurlijke en effectieve wijze helpen in het oplossen van honger bij schoolkinderen, met name de jongste in de meeste Afrikaanse basisscholen.
+2. Bewustwording creëren en ontwikkelen over onze individuele en collectieve verantwoordelijkheid om te leven in eeuwige balans met de natuur en het klimaat. Het projectmatig uitlichten van specifieke lokale situaties van inbalansen, het onderwijzen en toepassen van structurele culturele praktijken die nieuwe generaties wel doet leven in deze balans.
+3. Het verrichten van alle verdere handelingen, die met het vorenstaande in de ruimste zin verband houden of daartoe bevorderlijk kunnen zijn.
+
+De stichting tracht haar doel onder meer te verwezenlijken door:
+
+- Het bieden van sociaal-, culturele- en educatieve platformen en projecten (zowel fysiek als digitaal) die onze doelgroepen en consumenten van hun creatieve producten bij elkaar brengt, om zelfontwikkeling te stimuleren en (de vooruitzicht op) economische zelfvoorzienendheid onderdeel te maken van onze platforms.
+Door landbouw en moestuinieren wilt ArtKids samen met de gemeenschappen genoeg eten produceren om schoolgaande kinderen in Igboland West-Afrika te voeden. Van de ArtKids Farm’s boerderijproducten worden in the ArtKids Food On Table keukens maaltijden gemaakt voor de jongste schoolgaande kinderen. Dit helpt hen om zich te concentreren en focussen op de kennis die aan hen wordt overgedragen.
+- Een minimale belasting van natuur, cultuur en klimaat wordt bewerkstelligd door zo veel mogelijk lokaal te werken en het bewustzijn van zelfredzaamheid te stimuleren vanaf de basis. Een substantieel deel van de werkzaamheden en communicatie worden digitaal op afstand verricht waardoor er minimale noodzaak is voor veel reisverkeer. Recycling, zo veel mogelijk lokaal inkopen en huren, stimuleren van dichtbij en vanuit huis werken zijn andere voorbeelden waarmee wij dat doel bereiken.
+- Het genereren van fondsen om het doel (wereldwijd) mogelijk te maken.
+- Samenwerking met partnerorganisaties, specialisten, consultants en vooral vrijwilligers en het trainen van een mentaliteit van zelfredzaamheid.
+- Taakverdeling delegering door samenwerking met lokale en regionale organisaties en initiatieven in verschillende landen.
 
 ## Basisvisie <small class="has-text-calm is-size-4">Kind & Creativiteit</small>
 
