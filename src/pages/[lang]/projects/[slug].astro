@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 // 1. Get the slug from the incoming server request
 const { project } = Astro.props;
 // 2. Query for the page directly using the request slug
-const { Content } = await project?.render() ;
+const { Content } = await project?.render() || "";
 const { lang } = Astro.params;
 
 
