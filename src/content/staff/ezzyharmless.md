@@ -6,7 +6,7 @@ public: true
 date: 2023-04-15T14:16:16.815Z
 username: EzzyHarmless
 name: Ezri D. Harmusial
-title: Treasurer & Director of International Business
+title: Secretary & Director of International Business
 function: boardmember
 bgimage: /images/contacts/Biblequotes-Facebook-Shared-Image-Rastered-343x180.jpg
 social:
