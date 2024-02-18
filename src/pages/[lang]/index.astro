@@ -37,7 +37,7 @@ export async function getStaticPaths() {
 					<a href={lang == 'en' ? '/en/fundraising-projects/' : '/nl/fondswervings-projecten/'} class="btn variant-filled-primary">Collaborate Now</a>
 				</div>
 				<div class="landscape:w-1/3">
-					<img src="/images/anbi.jpg" class="aspect-auto portrait:aspect-square rounded-xl" alt="Layout Image">
+					<img src="/images/anbi.jpg" class="aspect-video rounded-xl" alt="Layout Image">
 					<!-- <img src="https://source.unsplash.com/random?school%20children" class="aspect-auto portrait:aspect-square rounded-xl" alt="Layout Image"> -->
 				</div>
 			</div>
@@ -48,13 +48,11 @@ export async function getStaticPaths() {
 		<div class="bg-yellow-400">
 			<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
 				<h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">LastMessengerS.tv Becomes ArtKids Tv</h1>
-				<div class="flex portrait:flex-col gap-8 mt-8">
-					<a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="card card-hover overflow-hidden mx-auto rounded-lg outline-white outline-4 portrait:w-5/6 landscape:w-1/3">
-						<div class="aspect-video">
-							<img src="/images/lastmessengers-becomes-artkidstv.jpg" class="aspect-auto" alt="Layout Image">
-						</div>
+				<div class="flex landscape:sm:flex-col portrait:flex-col gap-8 mt-8">
+					<a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="mx-auto w-1/3 portrait:w-5/6 landscape:sm:w-full aspect-video">
+							<img src="/images/lastmessengers-becomes-artkidstv.jpg" class="card-hover overflow-hidden rounded-lg" alt="Layout Image">
 					</a>
-					<div class="landscape:w-2/3">
+					<div class="w-full landscape:sm:w-2/3 mx-auto">
 						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
 							As the whole world changes, so also ArtKids Must Follow. Our LastMessengerS.TV artist platform has shared her last messages and will soon merge with ArtKids again to walk again under the Same flag. Very soon we will launch ArtKds TV, the central Hub for all ArtKids Productions in Music, Movies, Documentaries, Performance, Gaming & other forms of Edu-tainment.
 						</p>
@@ -70,8 +68,6 @@ export async function getStaticPaths() {
 		</div>
 
 	</section>
-
-
 
 	<!-- <section class="bg-blue-200">
 		<div class="bg-yellow-400">

@@ -4,8 +4,7 @@ const { logoOnly } = Astro.props
 
 <a class="marker flex flex-shrink h-full w-full italic font-sans items-center !no-underline drop-shadow hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4" href="/">
     <h1 class="unstyled flex items-center gap-1 transition-colors duration-500 text-left font-light text-2xl leading-7 hover:text-yellow-400 dark:focus:text-gray-100">
-        <div class="drop-shadow-lg hexagon hexagon-small"><div class="hexagon-in1"><div class="hexagon-in2">
-            </div></div></div>
+        <img src="/logo-512.png" class="aspect-square rounded-full w-14 portrait:w-12" alt="Layout Image">
         {!logoOnly &&
         <span>
             <span class="block text-red-500">Artkids</span><span class=" text-yellow-400">Foundation</span><span class="text-green-500">.org</span>
@@ -13,21 +12,3 @@ const { logoOnly } = Astro.props
         }
     </h1>
 </a>
-
-<style>
-img  {
-    color: white;
-    border: 3px solid black;
-    border-radius: 100%;
-}
-
-h1 {
-    color: white;
-    text-shadow:
-        1px 1px 2px #fff,
-        -1px -1px 2px #fff,
-        1px -1px 2px #fff,
-        -1px 1px 2px #fff,
-        1px 1px 2px #fff;
-}
-</style>

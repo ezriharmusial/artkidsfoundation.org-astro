@@ -4,9 +4,7 @@
             <div class="marker h-full w-full italic font-sans items-center !no-underline drop-shadow-xl hover:text-yellow-400 dark:focus:text-gray-100 px-2 py-4">
                 <h1 class="unstyled flex items-center gap-1 transition-colors duration-500 text-left font-extrabold text-7xl hover:text-yellow-400 dark:focus:text-gray-100">
 
-                    <div class="hexagon hexagon-large"><div class="hexagon-in1"><div class="hexagon-in2">
-                    </div></div></div>
-
+                    <img src="/logo-512.png" class="aspect-square rounded-full w-24 portrait:w-20" alt="Layout Image">
                     <span class="text-outline-white-3">
                         <span class="block text-red-500">Artkids</span><span class=" text-yellow-400">Foundation</span><span class="text-green-500">.org</span>
                     </span>
@@ -69,51 +67,4 @@
         background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(0*100%/4)
     }
 
-.hexagon {
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transform: rotate(120deg);
-       -moz-transform: rotate(120deg);
-        -ms-transform: rotate(120deg);
-         -o-transform: rotate(120deg);
-            transform: rotate(120deg);
-    cursor: pointer;
-    }
-.hexagon-in1 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
-.hexagon-in2 {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-image: url('/logo-512.png');
-    visibility: visible;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
-
-
-.hexagon-large {
-    width: 150px;
-    height: 300px;
-    margin-right: 2rem;
-}
-
-.hexagon-small {
-    width: 50px;
-    height: 100px;
-    margin-right: .25rem;
-}
 </style>
