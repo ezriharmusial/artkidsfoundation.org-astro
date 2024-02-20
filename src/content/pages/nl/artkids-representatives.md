@@ -4,7 +4,7 @@ layout: ../../../layouts/RepPage.astro
 icon: "globe-solid"
 pack: "teenyicons"
 title: "ArtKids Vertegenwoordigers"
-shorttitle: "Vertegenwoordig ons in jouw Land en Stad"
+shorttitle: "Vertegenwoordigs"
 subtitle: "Vertegenwoordig ons in jouw Land en Stad"
 author: ezzyharmless
 date: "2018-09-24 01:37:33"
