@@ -1,53 +1,55 @@
 ---
-  let lang = 'en';
+import { getLangFromUrl } from "~content/i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
   const locale = {}
   locale['en'] = {
-      "telephone": "Telephone",
-      "bankaccount": "IBAN / Bank nr.",
-      "tax": "Chamber of Commerce nr. "
+    "telephone": "Telephone",
+    "bankaccount": "IBAN / Bank nr.",
+    "tax": "Chamber of Commerce nr."
   }
   locale['nl'] = {
     "telephone": "Telefoon",
-      "bankaccount": "IBAN Rekening",
-      "tax": "KVK Nummer"
+    "bankaccount": "IBAN Rekening",
+    "tax": "ANBI / RSIN Nummer"
   }
 ---
 
-<nav class="landscape:md:flex justify-center mx-auto text-sm">
+<nav class="flex landscape:md:flex-row portrait:flex-col justify-center mx-auto text-sm">
   <div class="flex flex-col text-center p-4">
-    <div>
-      <p class="font-bold text-md text-primary-500">{ locale[lang].telephone } (HOLLAND)
+      <p class="text-sm ">{ locale[lang].telephone } (HOLLAND)
       </p>
-      <p class="font-black text-lg"><a
+      <p class="text-md"><a
 					class="text-secondary"
 					href="tel:+31(0)6 285 86 335" title="Call Ezri Harmusial">+31(0)6 285 86 335</a>
       </p>
-    </div>
   </div>
   <div class="flex flex-col text-center p-4">
-    <div>
-      <p class="font-bold text-md text-primary-500">{ locale[lang].telephone } (AFRICA)
+      <p class="text-sm ">{ locale[lang].telephone } (AFRICA)
       </p>
-      <p class="font-black text-lg"><a href="tel:+234 916 060 2716"
-					class="has-text-secondary"
+      <p class="text-md"><a href="tel:+234 916 060 2716"
+					class="text-primary-500 no-underline"
 					title="Call ArtKids Africa">+234 916 060 2716</a>
       </p>
-    </div>
   </div>
   <div class="flex flex-col text-center p-4">
-    <div>
-      <p class="font-bold text-md text-primary-500">{ locale[lang].bankaccount }
+      <p class="text-sm ">{ locale[lang].telephone } (USA)
       </p>
-      <p class="font-black text-lg ">NL 92 INGB 000 663 90 81
+      <p class="text-md"><a href="tel:+1 208 312-3994"
+					class="text-primary-500 no-underline"
+					title="Call ArtKids USA">+1 208 312-3994</a>
       </p>
-    </div>
+  </div>
+   <div class="flex flex-col text-center p-4">
+      <p class="text-sm ">{ locale[lang].bankaccount }
+      </p>
+      <p class="text-primary-500 text-md">NL 92 INGB 000 663 90 81
+      </p>
   </div>
   <div class="flex flex-col text-center p-4">
-    <div>
-      <p class="font-bold text-md text-primary-500">{ locale[lang].tax }
+      <p class="text-sm ">{ locale[lang].tax }
       </p>
-      <p class=" font-bold text-lg">55762441
+      <p class="text-primary-500 text-md">851850492
       </p>
-    </div>
   </div>
 </nav>

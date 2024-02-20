@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content'
 import { getLangFromUrl, useTranslations, getLangFromId } from '~content/i18n/utils';
 import { Icon } from 'astro-icon'
 import LanguagePicker from '~components/ui/LanguagePicker.astro';
+import BrandFlag from '~components/ui/BrandFlag.astro';
 
 const pageList = await getCollection('pages');
 const projectList = await getCollection('projects');
@@ -18,12 +19,7 @@ const t = useTranslations(lang);
 
 <div class={parentDirectionClass + " bg-primary-600 w-full"}>
     <div class={"flex flex-row h-20 justify-evenly items-center bg-primary-600 w-full"}>
-        <a class="drop-shadow-lg hexagon hexagon-small" href="/" title="Back home">
-            <div class="hexagon-in1">
-                <div class="hexagon-in2"></div>
-            </div>
-        </a>
-
+        <BrandFlag logoOnly={true} ></BrandFlag>
         <LanguagePicker />
     </div>
 

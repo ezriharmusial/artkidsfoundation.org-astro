@@ -1,53 +1,111 @@
 ---
   import { Icon } from 'astro-icon'
-
+  import FooterNavList from '~components/ux/FooterNavList.astro';
   import CompanyInfo from './contact/CompanyInfo.astro';
   const today = new Date();
+
+  const { lang } = Astro.params
 ---
-
-<footer class="text-center">
-  <div class="px-auto py-6">
-    <h3 class="title marker text-2xl text-primary-500">Follow us on:</h3>
-    <div class="flex gap-4 justify-center text-center text-xs font-bold my-6">
-      <a id="facebook" href="https://www.facebook.com/LastMessengerS" target="_blank" rel="nofollow noopener noreferrer" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="fa" name="facebook-official" />
-      </a>
-
-      <a id="twitter" href="https://twitter.com/LastMessengerZ" target="_blank" rel="nofollow noopener noreferrer" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="fa" name="twitter" />
-      </a>
-
-      <a id="youtube" href="https://www.youtube.com/channel/UC_nLmP5HYQZ0UlndjADCSdA" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="fa" name="youtube" />
-      </a>
-
-      <a id="bandcamp" href="https://lastmessengers.bandcamp.com/" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="simple-icons" name="bandcamp" />
-      </a>
-
-      <!-- <a id="linkedin" href="#!" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="fa" name="linkedin-square" />
-      </a> -->
-
-      <a id="github" href="https://github.com/ezri-harmusial/LastMessengerS" type="button" class="btn btn-icon variant-ringed-primary ring-2 w-12 h-12 p-3">
-        <Icon pack="fa" name="github" />
-      </a>
-    </div>
-  </div>
-  <div class="text-center p-4">
-    <CompanyInfo />
-    &copy; {today.getFullYear()}  Copyright:
-      <a class="brand marker flex justify-center items-center italic text-lg font-shadow font-bold" href="https://ez-ictsolution.io" title="visit the ez-ictsolution.io Website?">
-        <div class="h-8 w-8 mr-2">
-          <img loading="lazy" width={48} aspectRatio={1/1} src="/images/logo-72x72.png" alt="Stichting ArtKids Foundation: Funding Happiness" />
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div>
+          <a class="brand marker flex justify-start items-center italic text-lg font-shadow font-bold no-underline" href="https://artkidsfoundation.org" title="Back to ArtKids Homepage">
+            <div class="h-8 w-8 mr-1">
+              <img loading="lazy" width={48} aspectRatio={1/1} src="/images/logo-72x72.png" alt="Stichting ArtKids Foundation: Funding Happiness" />
+            </div>
+            <div>
+              <span class="artkids text-red-500 no-underline">ArtKids</span><span class="foundation text-yellow-400 font-shadow no-underline">Foundation</span>
+            </div>
+          </a>
         </div>
-        <span class="artkids text-red-500 ">ArtKids</span><span class="foundation text-yellow-400 font-shadow">Foundation</span><span class="text-green-500">.org</span>
-      </a>
+
+        <!-- <h3 class="title marker text-2xl text-primary-500">Follow us on:</h3> -->
+
+        <p class="mt-4 max-w-xs text-gray-500">
+          {lang == "en" ? "Follow ArtKids Foundation on social media" : "Volg ArtKids Foundation op social media"}
+        </p>
+
+        <ul class="mt-8 flex gap-6">
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+              id="facebook" href="https://www.facebook.com/ArtKidsTv1" target="_blank" rel="nofollow noopener noreferrer" type="button">
+                <Icon pack="fa" name="facebook-official" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75" id="instagram" href="https://www.instagram.com/artkidstv1" target="_blank" rel="nofollow noopener noreferrer" type="button">
+                <Icon pack="fa" name="instagram" />
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75" id="twitter" href="https://twitter.com/ArtKidsTv1" target="_blank" rel="nofollow noopener noreferrer" type="button">
+                <Icon pack="fa" name="twitter" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75 " id="youtube" href="https://www.youtube.com/@artkidstv1" type="button">
+              <Icon pack="fa" name="youtube" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75" id="bandcamp" href="https://artkidstv1.bandcamp.com/" type="button">
+              <Icon pack="simple-icons" name="bandcamp" />
+            </a>
+
+<!--           <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75" id="linkedin" href="#!" type="button"">
+              <Icon pack="fa" name="linkedin-square" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75" id="github" href="https://github.com/ezri-harmusial/LastMessengerS" type="button">
+              <Icon pack="fa" name="github" />
+            </a>
+          </li>
+           -->
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+        <FooterNavList />
+      </div>
+    </div>
+
+    <CompanyInfo />
+
+    <section class="container mx-auto">
+      <div class="text-center p-4">
+        &copy; {today.getFullYear()}  Copyright Stichting ArtKids Foundation
+      </div>
+    </section>
   </div>
 </footer>
-
-<style lang="css">
-    [astro-icon] {
-      min-width: 1rem;
-    }
-</style>

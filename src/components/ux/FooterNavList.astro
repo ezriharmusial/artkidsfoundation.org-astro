@@ -1,0 +1,142 @@
+---
+import { getCollection } from 'astro:content'
+import { getLangFromUrl, useTranslations, getLangFromId } from '~content/i18n/utils';
+import { Icon } from 'astro-icon'
+
+const pageList = await getCollection('pages');
+const projectList = await getCollection('projects');
+const initiativesList = await getCollection('initiatives');
+const {direction = "horizontal", size = "h-6 w-6 p-1"} = Astro.props
+const directionClass = direction == "vertical" ? "flex flex-col items-center text-center" : "flex items-center"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+---
+
+<div>
+    <p class={directionClass}>
+        <Icon pack="codicon" name="organization" class={size} />
+        <span>
+            {t('nav.about')}
+        </span>
+    </p>
+
+    <ul class="mt-6 space-y-4 text-sm">
+        {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
+        <li>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+                <span class="flex flex-row justify-start items-center">
+                    <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
+                    { page.data?.shortTitle ?
+                        <span>
+                            {page.data.shortTitle}
+                        </span>
+                        :
+                        <span>
+                            {page.data.title}
+                        </span>
+                    }
+                </span>
+            </a>
+        </li>
+        ))}
+    </ul>
+</div>
+
+<div>
+    <p class={directionClass}>
+        <Icon pack="octicon" name="organization-16" class={size} />
+        <span>
+            {t('nav.organization')}
+        </span>
+    </p>
+
+    <ul class="mt-6 space-y-4 text-sm">
+        {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organization").map(page => (
+        <li>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+                <span class="flex flex-row justify-start items-center">
+                    <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + ""} />
+                    { page.data?.shortTitle ?
+                        <span>
+                            {page.data.shortTitle}
+                        </span>
+                        :
+                        <span>
+                            {page.data.title}
+                        </span>
+                    }
+                </span>
+            </a>
+        </li>
+        ))}
+    </ul>
+</div>
+
+<div>
+    <p class={directionClass}>
+        <Icon pack="fluent" name="building-retail-money-20-regular" class={size} />
+        <span>
+            {t('nav.anbi')}
+        </span>
+    </p>
+
+    <ul class="mt-6 space-y-4 text-sm">
+        {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "anbi").map(page => (
+        <li>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+                <span class="flex flex-row justify-start items-center">
+                    <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + ""} />
+                    { page.data?.shortTitle ?
+                        <span>
+                            {page.data.shortTitle}
+                        </span>
+                        :
+                        <span>
+                            {page.data.title}
+                        </span>
+                    }
+                </span>
+            </a>
+        </li>
+        ))}
+    </ul>
+</div>
+
+<!-- <div>
+    <p class={directionClass}>
+        <Icon pack="bytesize" name="portfolio" class={size} />
+        <span>
+            {t('nav.projects')}
+        </span>
+    </p>
+
+    <ul class="mt-6 space-y-4 text-sm">
+        {projectList && projectList.filter(project => getLangFromId(project) == lang).map(project => (
+        <li>
+            <a href={"/" + project.slug.split('/')[0] + "/projects/" + project.slug.split('/')[1]} class={"text-gray-700 transition hover:opacity-75 " + project.slug.split('/')[0]}>
+                <span class="flex flex-row justify-start items-center">
+                    <Icon pack={project.data.pack || "teenyicons"} name={project.data.icon || "anchor-solid"} class={size + ""} />
+                    { project.data?.shortTitle ?
+                        <span>
+                            {project.data.shortTitle}
+                        </span>
+                        :
+                        <span>
+                            {project.data.title}
+                        </span>
+                    }
+                </span>
+            </a>
+        </li>
+        ))}
+    </ul>
+</div> -->
+
+<style lang="scss" is:global>
+    html.nl a.en,
+    html.en a.nl {
+        display: none;
+    }
+</style>
