@@ -1,0 +1,17 @@
+---
+import BaseLayout from '~layouts/BaseLayout.astro';
+import Contact from '~layouts/Contact.astro';
+
+export async function getStaticPaths() {
+	return [
+	{ params: { lang: 'en' } },
+	{ params: { lang: 'nl' } },
+	];
+}
+
+const {lang } = Astro.params
+---
+
+<BaseLayout title={lang == "en" ? "ArtKids Contact Page" : "ArtKids Contact Pagina"} description={lang == "en" ? "Contact ArtKids trough one of our staffmembers" : "Neem contact op met een van onze medewerkers" }>
+    <Contact />
+</BaseLayout>
