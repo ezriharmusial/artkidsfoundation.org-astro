@@ -22,10 +22,10 @@ const t = useTranslations(lang);
         </span>
     </p>
 
-    <ul class="mt-6 space-y-4 text-sm">
+    <ul class="mt-6 space-y-2 text-sm">
         {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "about artkids").map(page => (
         <li>
-            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 no-underline " + page.slug.split('/')[0]}>
                 <span class="flex flex-row justify-start items-center">
                     <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size} />
                     { page.data?.shortTitle ?
@@ -52,10 +52,10 @@ const t = useTranslations(lang);
         </span>
     </p>
 
-    <ul class="mt-6 space-y-4 text-sm">
+    <ul class="mt-6 space-y-2 text-sm">
         {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "organization").map(page => (
         <li>
-            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 no-underline " + page.slug.split('/')[0]}>
                 <span class="flex flex-row justify-start items-center">
                     <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + ""} />
                     { page.data?.shortTitle ?
@@ -82,10 +82,10 @@ const t = useTranslations(lang);
         </span>
     </p>
 
-    <ul class="mt-6 space-y-4 text-sm">
+    <ul class="mt-6 space-y-2 text-sm">
         {pageList && pageList.filter(page => page.data?.status == 'published' && !page.data?.parent && getLangFromId(page) == lang && page.data?.category == "anbi").map(page => (
         <li>
-            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 " + page.slug.split('/')[0]}>
+            <a href={"/" + page.slug} class={"text-gray-700 transition hover:opacity-75 no-underline " + page.slug.split('/')[0]}>
                 <span class="flex flex-row justify-start items-center">
                     <Icon pack={page.data.pack || "teenyicons"} name={page.data.icon || "anchor-solid"} class={size + ""} />
                     { page.data?.shortTitle ?
@@ -112,10 +112,10 @@ const t = useTranslations(lang);
         </span>
     </p>
 
-    <ul class="mt-6 space-y-4 text-sm">
+    <ul class="mt-6 space-y-2 text-sm">
         {projectList && projectList.filter(project => getLangFromId(project) == lang).map(project => (
         <li>
-            <a href={"/" + project.slug.split('/')[0] + "/projects/" + project.slug.split('/')[1]} class={"text-gray-700 transition hover:opacity-75 " + project.slug.split('/')[0]}>
+            <a href={"/" + project.slug.split('/')[0] + "/projects/" + project.slug.split('/')[1]} class={"text-gray-700 transition hover:opacity-75 no-underline " + project.slug.split('/')[0]}>
                 <span class="flex flex-row justify-start items-center">
                     <Icon pack={project.data.pack || "teenyicons"} name={project.data.icon || "anchor-solid"} class={size + ""} />
                     { project.data?.shortTitle ?
