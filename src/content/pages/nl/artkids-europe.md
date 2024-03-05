@@ -18,4 +18,4 @@ Kinderen zijn kinderen over de hele wereld. ArtKids zorgt voor alle kinderen. Hi
 
 Van Amusement tot excursies, van entertainment tot edutainment, ArtKids verzekerd het geluk van het kind.
 
-Let uw school samenwerken met ArtKids in het behoudt van het geluk van het kind.
+Laat uw school samenwerken met ArtKids in het behoudt van het geluk van het kind.
