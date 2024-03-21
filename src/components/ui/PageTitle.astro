@@ -9,7 +9,7 @@ const { title, icon, pack } = (Astro.props)
         <BrandFlag logoOnly={true} ></BrandFlag>
     </figure>
 
-    <p class="marker transition-colors duration-500 landscape:text-center lg:text-xl xl:text-2xl portrait:text-xl drop-shadow-2xl text-red-artkids hover:text-red-400 dark:focus:text-gray-100 flex landscape:max-w-[80vw] portrait:max-w-[60vw] truncate">
+    <p class="marker transition-colors duration-500 landscape:text-center lg:text-xl xl:text-2xl portrait:text-xl drop-shadow-2xl text-red-artkids hover:text-red-400 dark:focus:text-gray-100 flex justify-center items-center landscape:max-w-[80vw] portrait:max-w-[60vw] truncate">
         <Icon pack={pack || "teenyicons"} name={icon || "anchor-solid"} class={"h-8 w-8 lg:h-10 lg:w-10 portrait:h-8 portrait:w-8 mr-1"} />
         {title}
     </p>
