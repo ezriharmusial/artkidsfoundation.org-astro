@@ -26,7 +26,7 @@ function imageUrl(image) {
 	return true;
 }
 
-const canonicalURL = Astro.url.origin + Astro.url.pathname;
+const canonicalURL = "https://artkidsfoundation.org" + Astro.url.pathname;
 
 ---
 <link rel="preload" as="image" href={imageUrl(image)}>
