@@ -39,12 +39,12 @@ const canonicalURL = "https://artkidsfoundation.org" + Astro.url.pathname;
 <meta name="HandheldFriendly" content="true">
 <meta name="author" content="ArtKids Foundation" />
 <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
-<title>{SITE_TITLE + (seoTitle || title) || "Welkom to ArtKidsFoundation.org"}</title>
+<title>{SITE_TITLE + (seoTitle || title) || "Welcome to ArtKidsFoundation.org"}</title>
 <meta name="robots" content="index,follow">
 <meta name="description" content={description || SITE_DESCRIPTION}>
 <!-- Facebook OpenGraph -->
 <meta property="fb:app_id" content={fbappid}/>
-<meta property="og:title" content={(seoTitle || title) || "Welkom to ArtKidsFoundation.org"}>
+<meta property="og:title" content={(seoTitle || title) || "Welcome to ArtKidsFoundation.org"}>
 <meta property="og:description" content={description || subTitle || SITE_DESCRIPTION}>
 <meta property="og:url" content={canonicalURL}>
 <meta property="og:type" content="website">
@@ -54,8 +54,9 @@ const canonicalURL = "https://artkidsfoundation.org" + Astro.url.pathname;
 <link rel="canonical" href={canonicalURL}>
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content={seoTitle || title || "Welkom to ArtKidsFoundation.org"}>
-<meta property="twitter:description" content={description || subTitle || "Welkom to ArtKidsFoundation.org"}>
+<meta property="twitter:site" content="@ArtKidsTv1">
+<meta property="twitter:title" content={seoTitle || title || "Welcome to ArtKidsFoundation.org"}>
+<meta property="twitter:description" content={description || subTitle || "Welcome to ArtKidsFoundation.org"}>
 <meta property="twitter:image" content={imageUrl(image)}>
 
 <!-- Manifest Files -->
