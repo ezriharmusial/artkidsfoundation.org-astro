@@ -2,7 +2,7 @@
 index: 6413
 title: "nmeriyah@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2019-06-25 12:56:15"
 seo:
   description: ""

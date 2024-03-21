@@ -2,7 +2,7 @@
 index: 4162
 title: "e.aerts@alfrinkschool.nl"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2017-03-09 17:08:20"
 seo:
   description: ""

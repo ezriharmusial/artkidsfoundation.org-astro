@@ -2,7 +2,7 @@
 index: 6410
 title: "princechigbo5555@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2019-06-24 18:16:08"
 seo:
   description: ""

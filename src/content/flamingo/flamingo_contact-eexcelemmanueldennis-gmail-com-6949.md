@@ -2,7 +2,7 @@
 index: 6949
 title: "eexcelemmanueldennis@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2019-11-05 11:45:56"
 seo:
   description: ""

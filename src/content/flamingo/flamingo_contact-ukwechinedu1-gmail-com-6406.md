@@ -2,7 +2,7 @@
 index: 6406
 title: "Ukwechinedu1@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2019-06-23 21:34:33"
 seo:
   description: ""

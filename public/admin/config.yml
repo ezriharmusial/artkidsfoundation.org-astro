@@ -31,8 +31,8 @@ collections:
       - {label: "Username", name: "username", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Functie", name: "function", widget: "select", options: ["boardmember", "advisor"], required: false}
-      - {label: "Achtergrond Foto", name: "bgimage", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png , required: false}
-      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Achtergrond Foto", name: "bgimage", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /logo-192x192.png , required: false}
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/staff", public_folder: "/uploads/pages", default: /logo-192x192.png }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Bio", name: "body", widget: "markdown"}
       - label: "Contact Information"
@@ -156,7 +156,7 @@ collections:
       - {label: "Datum", name: "date", widget: "datetime", required: true, hidden: true}
       - {label: "Type", name: "type", widget: "select", options: ["individual", "group", "company", "ngo", "governmental institution", "school"], default: "individual"}
       - {label: "Naam", name: "name", widget: "string"}
-      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+      - {label: "Profielfoto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-192x192.png }
       - {label: "Shortbio", name: "body", widget: "markdown"}
       - label: "Contact Info"
         name: "contact"
@@ -241,7 +241,7 @@ collections:
   #     - {label: "Pagina Titel", name: "title", widget: "string"}
   #     - {label: "Pagina SubTitle", name: "subtitle", widget: "string"}
   #     - {label: "Pagina Kleur", name: "color", widget: "select", options: [ "is-primary", "is-success", "is-info", "is-link", "is-danger", "is-warning", "is-light", "is-dark"], default: "primary"}
-  #     - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /images/manifest/pwa-192x192.png }
+  #     - {label: "Foto", name: "image", widget: "image", media_folder: "/public/uploads/pages", public_folder: "/uploads/pages", default: /logo-192x192.png }
   #     - {label: "Foto Bescrijfing (SEO)", name: "imageAlt", required: false }
   #     - {label: "Pagina Text", name: "body", widget: "markdown"}
   #     - {label: "Tags (SEO)", name: "tags", widget: "list", default: ["news"], required: false}

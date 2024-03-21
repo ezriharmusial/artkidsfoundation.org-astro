@@ -2,7 +2,7 @@
 index: 5137
 title: "aarinzebernard@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2018-11-01 09:55:54"
 seo:
   description: ""

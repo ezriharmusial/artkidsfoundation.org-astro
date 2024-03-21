@@ -2,7 +2,7 @@
 index: 5087
 title: "madisondtn49williams@aol.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2018-10-16 18:28:05"
 seo:
   description: ""

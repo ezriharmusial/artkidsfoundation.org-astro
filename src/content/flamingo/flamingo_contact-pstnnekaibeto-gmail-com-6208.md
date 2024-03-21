@@ -2,7 +2,7 @@
 index: 6208
 title: "pstnnekaibeto@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2019-03-12 13:54:00"
 seo:
   description: ""

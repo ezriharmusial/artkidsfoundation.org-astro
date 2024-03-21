@@ -2,7 +2,7 @@
 index: 5083
 title: "kovison@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2018-10-11 12:53:58"
 seo:
   description: ""

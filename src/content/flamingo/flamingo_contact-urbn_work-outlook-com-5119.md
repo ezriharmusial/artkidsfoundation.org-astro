@@ -2,7 +2,7 @@
 index: 5119
 title: "urbn_work@outlook.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2018-10-28 13:40:18"
 seo:
   description: ""

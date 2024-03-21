@@ -2,7 +2,7 @@
 index: 4159
 title: "19655@ma-web.nl"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2016-12-06 10:26:05"
 seo:
   description: ""

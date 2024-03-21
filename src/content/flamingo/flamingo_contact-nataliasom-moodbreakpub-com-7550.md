@@ -2,7 +2,7 @@
 index: 7550
 title: "nataliaSom@moodbreakpub.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2023-05-09 16:03:02"
 seo:
   description: ""

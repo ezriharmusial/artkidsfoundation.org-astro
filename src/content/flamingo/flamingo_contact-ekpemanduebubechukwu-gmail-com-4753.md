@@ -2,7 +2,7 @@
 index: 4753
 title: "ekpemanduebubechukwu@gmail.com"
 subtitle: ""
-author: "ArtKids Parrot"
+author: "ArtKids"
 date: "2018-08-02 11:40:59"
 seo:
   description: ""
