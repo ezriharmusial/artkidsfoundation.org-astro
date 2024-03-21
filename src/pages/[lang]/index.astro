@@ -8,132 +8,132 @@ import { getLangFromUrl, useTranslations } from '~content/i18n/utils';
 const lang = getLangFromUrl(Astro.url)
 
 export async function getStaticPaths() {
-	return [
-	{ params: { lang: 'en' } },
-	{ params: { lang: 'nl' } },
-	];
+    return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+    ];
 }
 
 ---
 
 <BaseLayout icon="house-line-bold" pack="ph" title="Cultivating Happiness on Earth" image="/images/manifest/apple-touch-startup-image-2048x1496.png" description="From Amusement to excursions, entertainment to edutainment, ArtKids ensures kids” happiness.">
-	<section class="image w-full landscape:aspect-auto portrait:aspect-auto">
-		<Image class="portrait:hidden" src="/images/manifest/apple-touch-startup-image-2048x1496.png" alt="ArtKids Logo" width={2048} height={1496} />
-		<Image class="landscape:hidden" src="/images/manifest/apple-touch-startup-image-1536x2008.png" alt="ArtKids Logo" width={1536} height={2008} />
-	</section>
-	<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?african%20children');">
-		<div class="bg-black/60 text-white landscape:md:p-28 p-4 landscape:pt-24">
-			<div class="container mx-auto flex portrait:flex-col portrait:content-around gap-16 items-center">
-				<div class="landscape:w-2/3 space-y-6 py-16 text-center">
-					<p class="marker text-2xl font-medium text-orange-500">Welcome to</p>
-					<div class="flex justify-center">
-						<BrandFlag />
-					</div>
-					<p class="unstyled">
-						Kids are kids all over the world. ArtKids cares for all kids. Here in Europe, the needs of the Kids differ from those in Africa. Whether rich or poor, every kid needs entertainment. For this reason, ArtKids works hand in hand with Schools when carrying out activities designed to entertain or further educate European Kids.
-					</p>
+    <section class="image w-full landscape:aspect-auto portrait:aspect-auto">
+        <Image class="portrait:hidden" src="/images/manifest/apple-touch-startup-image-2048x1496.png" alt="ArtKids Logo" width={2048} height={1496} />
+        <Image class="landscape:hidden" src="/default.jpg" alt="ArtKids Logo" width={1536} height={2008} />
+    </section>
+    <section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?african%20children');">
+        <div class="bg-black/60 text-white landscape:md:p-28 p-4 landscape:pt-24">
+            <div class="container mx-auto flex portrait:flex-col portrait:content-around gap-16 items-center">
+                <div class="landscape:w-2/3 space-y-6 py-16 text-center">
+                    <p class="marker text-2xl font-medium text-orange-500">Welcome to</p>
+                    <div class="flex justify-center">
+                        <BrandFlag />
+                    </div>
+                    <p class="unstyled">
+                        Kids are kids all over the world. ArtKids cares for all kids. Here in Europe, the needs of the Kids differ from those in Africa. Whether rich or poor, every kid needs entertainment. For this reason, ArtKids works hand in hand with Schools when carrying out activities designed to entertain or further educate European Kids.
+                    </p>
 
-					<p>
-						From Amusement to excursions, entertainment to edutainment, ArtKids ensures kids” happiness.
-					</p>
+                    <p>
+                        From Amusement to excursions, entertainment to edutainment, ArtKids ensures kids” happiness.
+                    </p>
 
-					<p>
-						Let your school collaborate with ArtKids to keep the kids ever happy.
-					</p>
+                    <p>
+                        Let your school collaborate with ArtKids to keep the kids ever happy.
+                    </p>
 
-					<a href={lang == 'en' ? '/en/fundraising-projects/' : '/nl/fondswervings-projecten/'} class="btn variant-filled-primary">Collaborate Now</a>
-				</div>
-				<div class="landscape:w-1/3">
-					<img src="/images/anbi.jpg" class="aspect-video rounded-xl" alt="Layout Image">
-					<!-- <img src="https://source.unsplash.com/random?school%20children" class="aspect-auto portrait:aspect-square rounded-xl" alt="Layout Image"> -->
-				</div>
-			</div>
-		</div>
-	</section>
+                    <a href={lang == 'en' ? '/en/fundraising-projects/' : '/nl/fondswervings-projecten/'} class="btn variant-filled-primary">Collaborate Now</a>
+                </div>
+                <div class="landscape:w-1/3">
+                    <img src="/images/anbi.jpg" class="aspect-video rounded-xl" alt="Layout Image">
+                    <!-- <img src="https://source.unsplash.com/random?school%20children" class="aspect-auto portrait:aspect-square rounded-xl" alt="Layout Image"> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="bg-blue-200">
-		<div class="bg-yellow-400">
-			<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
-				<h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">LastMessengerS.tv Becomes ArtKids Tv</h1>
-				<div class="flex landscape:sm:flex-col portrait:flex-col gap-8 mt-8">
-					<a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="mx-auto w-1/3 portrait:w-5/6 landscape:sm:w-full aspect-video">
-							<img src="/images/lastmessengers-becomes-artkidstv.jpg" class="card-hover overflow-hidden rounded-lg" alt="Layout Image">
-					</a>
-					<div class="w-full landscape:sm:w-2/3 mx-auto">
-						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
-							As the whole world changes, so also ArtKids Must Follow. Our LastMessengerS.TV artist platform has shared her last messages and will soon merge with ArtKids again to walk again under the Same flag. Very soon we will launch ArtKds TV, the central Hub for all ArtKids Productions in Music, Movies, Documentaries, Performance, Gaming & other forms of Edu-tainment.
-						</p>
-						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
-							Keep following us to stay up to date with the latest news. For now, visit our ArtKids Artists at their temporary home of LastMessengerS.Tv by clicking on the button below! We are Grateful!
-						</p>
-					</div>
-				</div>
-				<div class="flex flex-wrap justify-center">
-					<a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="btn variant-filled-secondary px-8 py-3 m-2 text-lg font-semibold">Visit LastMessengerS</a>
-				</div>
-			</div>
-		</div>
+    <section class="bg-blue-200">
+        <div class="bg-yellow-400">
+            <div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
+                <h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">LastMessengerS.tv Becomes ArtKids Tv</h1>
+                <div class="flex landscape:sm:flex-col portrait:flex-col gap-8 mt-8">
+                    <a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="mx-auto w-1/3 portrait:w-5/6 landscape:sm:w-full aspect-video">
+                            <img src="/images/lastmessengers-becomes-artkidstv.jpg" class="card-hover overflow-hidden rounded-lg" alt="Layout Image">
+                    </a>
+                    <div class="w-full landscape:sm:w-2/3 mx-auto">
+                        <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+                            As the whole world changes, so also ArtKids Must Follow. Our LastMessengerS.TV artist platform has shared her last messages and will soon merge with ArtKids again to walk again under the Same flag. Very soon we will launch ArtKds TV, the central Hub for all ArtKids Productions in Music, Movies, Documentaries, Performance, Gaming & other forms of Edu-tainment.
+                        </p>
+                        <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+                            Keep following us to stay up to date with the latest news. For now, visit our ArtKids Artists at their temporary home of LastMessengerS.Tv by clicking on the button below! We are Grateful!
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers.Tv Website" type="button" class="btn variant-filled-secondary px-8 py-3 m-2 text-lg font-semibold">Visit LastMessengerS</a>
+                </div>
+            </div>
+        </div>
 
-	</section>
+    </section>
 
-	<!-- <section class="bg-blue-200">
-		<div class="bg-yellow-400">
-			<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
-				<h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">ArtKids WisGames zoekt MineCraft Talenten</h1>
-				<div class="flex">
-					<div class="m-8">
-						<Image
-							src="https://mc-heads.net/body/HighStreetLDAM"
-							class="mx-auto rounded-lg"
-							height={450}
-							width={150}
-							alt="HighStreetLDAM welcomes you"
-						/>
-					</div>
-					<div class="landscape:w-3/4">
-						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
-							"Leerdam in Minecraft" project connects schoolgoing and non-schoolgoing children, through edutainment with help of the most Populair Computersgame in the world Minecraft. ArtKids uses this platform to stimulate Creativity amongst the Youngest Children, protect the innocent, and help them Realize their Dreams.
-						</p>
-						<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
-							ArtKids is Developing their Free and Open online Platform to Gather, socialize, Share and Create their Dreamworld together. Please watch our Promo presentation or visit the Project website or initative page.
-						</p>
-					</div>
-				</div>
-				<div class="flex flex-wrap justify-center">
-					<a href="https://highstreet.fun" target="_blank" title="Visit HighStreet Website" type="button" class="btn variant-filled-secondary px-8 py-3 m-2 text-lg font-semibold">Visit Highstreet.fun</a>
-					<a href={lang == 'en' ? '/en/projects/artkds-wisgames' : '/nl/projects/artkids-wisgames'} title="" type="button" class="btn variant-filled-tertiary px-8 py-3 m-2 text-lg">Represent us</a>
-					<a href={lang == 'en' ? '/en/initiatives/leerdam-in-minecraft' : '/nl/initiatives/leerdam-in-minecraft'} title="" type="button" class="btn variant-ringed-tertiary px-8 py-3 m-2 text-lg">Donate</a>
-				</div>
-			</div>
-		</div>
-		<div class="aspect-video overflow-hidden w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500">
-			<iframe loading="lazy" class="aspect-video w-full"
-				src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0cfQIgH8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-			</iframe>
-		</div>
-	</section> -->
+    <!-- <section class="bg-blue-200">
+        <div class="bg-yellow-400">
+            <div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32">
+                <h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-black">ArtKids WisGames zoekt MineCraft Talenten</h1>
+                <div class="flex">
+                    <div class="m-8">
+                        <Image
+                            src="https://mc-heads.net/body/HighStreetLDAM"
+                            class="mx-auto rounded-lg"
+                            height={450}
+                            width={150}
+                            alt="HighStreetLDAM welcomes you"
+                        />
+                    </div>
+                    <div class="landscape:w-3/4">
+                        <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+                            "Leerdam in Minecraft" project connects schoolgoing and non-schoolgoing children, through edutainment with help of the most Populair Computersgame in the world Minecraft. ArtKids uses this platform to stimulate Creativity amongst the Youngest Children, protect the innocent, and help them Realize their Dreams.
+                        </p>
+                        <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900">
+                            ArtKids is Developing their Free and Open online Platform to Gather, socialize, Share and Create their Dreamworld together. Please watch our Promo presentation or visit the Project website or initative page.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <a href="https://highstreet.fun" target="_blank" title="Visit HighStreet Website" type="button" class="btn variant-filled-secondary px-8 py-3 m-2 text-lg font-semibold">Visit Highstreet.fun</a>
+                    <a href={lang == 'en' ? '/en/projects/artkds-wisgames' : '/nl/projects/artkids-wisgames'} title="" type="button" class="btn variant-filled-tertiary px-8 py-3 m-2 text-lg">Represent us</a>
+                    <a href={lang == 'en' ? '/en/initiatives/leerdam-in-minecraft' : '/nl/initiatives/leerdam-in-minecraft'} title="" type="button" class="btn variant-ringed-tertiary px-8 py-3 m-2 text-lg">Donate</a>
+                </div>
+            </div>
+        </div>
+        <div class="aspect-video overflow-hidden w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500">
+            <iframe loading="lazy" class="aspect-video w-full"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0cfQIgH8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+    </section> -->
 
-	<section>
-		<div class="bg-amber-600">
-			<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
-				<h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-gray-50">ArtKids LastMessengers Africa Project</h1>
-				<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-50">
-					Artkids LastMessengerS Music (Artkids-LMS) is discovering and producing upcoming talents, connecting Musical Talents, Movie-makers, Managers, Promoters, Marketers, ICT and Media professionals together so as to reach the world with vital messages using youthful Talents as drivers and creating self-sustaining occupations for the youths.
-				</p>
-				<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-50">
-					LastMessengerS is part of Artikds #DiscoverMe Project. Please visit the Project Page or the LastMessengerS Website for more Information.
-				</p>
-				<div class="flex flex-wrap justify-center">
-					<a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers Website" type="button" class="btn variant-filled-primary px-8 py-3 m-2 text-lg font-semibold">LastMessengers.TV</a>
-					<a href={lang == 'en' ? '/en/projects/discoverme-talenthunt' : '/nl/projecten/discoverme-talentenjacht'} title="" type="button" class="btn variant-ringed-warning px-8 py-3 m-2 text-lg">#DiscoverMe Project</a>
-				</div>
-			</div>
-		</div>
-		<div class="aspect-video overflow-hidden w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500">
-		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WnrevZZhmXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</div>
-	</section>
+    <section>
+        <div class="bg-amber-600">
+            <div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
+                <h1 class="text-5xl marker font-bold sm:text-6xl xl:max-w-3xl text-gray-50">ArtKids LastMessengers Africa Project</h1>
+                <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-50">
+                    Artkids LastMessengerS Music (Artkids-LMS) is discovering and producing upcoming talents, connecting Musical Talents, Movie-makers, Managers, Promoters, Marketers, ICT and Media professionals together so as to reach the world with vital messages using youthful Talents as drivers and creating self-sustaining occupations for the youths.
+                </p>
+                <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-50">
+                    LastMessengerS is part of Artikds #DiscoverMe Project. Please visit the Project Page or the LastMessengerS Website for more Information.
+                </p>
+                <div class="flex flex-wrap justify-center">
+                    <a href="https://lastmessengers.tv" target="_blank" title="Visit LastMessengers Website" type="button" class="btn variant-filled-primary px-8 py-3 m-2 text-lg font-semibold">LastMessengers.TV</a>
+                    <a href={lang == 'en' ? '/en/projects/discoverme-talenthunt' : '/nl/projecten/discoverme-talentenjacht'} title="" type="button" class="btn variant-ringed-warning px-8 py-3 m-2 text-lg">#DiscoverMe Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="aspect-video overflow-hidden w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WnrevZZhmXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
 
-	<Linkcasts />
+    <Linkcasts />
 
 </BaseLayout>
