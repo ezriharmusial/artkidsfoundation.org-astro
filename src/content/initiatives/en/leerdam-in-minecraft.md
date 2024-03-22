@@ -11,7 +11,7 @@ subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
 image: /uploads/initiatives/highstreetsmp.jpg
 startDate: 2023-10-01T16:46:27.478Z
 endDate: 2023-10-01T16:46:27.532Z
-goal: 250
+goal: 250000
 tags:
   - minecraft
 images:

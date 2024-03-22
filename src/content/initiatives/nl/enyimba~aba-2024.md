@@ -9,7 +9,7 @@ title: DiscoverMe Enyimba~Aba 2024
 image: /uploads/initiatives/enyimba-aba.jpg
 startDate: 2024-03-21T21:11:39.491Z
 endDate: 2024-03-21T21:11:39.491Z
-goal: 249999
+goal: 500000
 tags:
   - talenthunt
 images:
@@ -25,7 +25,7 @@ DiscoverMe is more of showcases of talents (this time, musical talents=singers a
 DiscoverMe tends to bring performing-talented-people together and create a smelting-pot of talents that serve the interest of us all while being made popular and wealthy as a result of the genuine yields from your talent(s).
 
 DiscoverMe is a project of ArtKids Africa (0110)
-ArtKids Europe (ANBI), ArtKids Int'l (ANBI) and 
+ArtKids Europe (ANBI), ArtKids Int'l (ANBI) and
 ArtKids USA.
 
 You now have the genuine opportunity to be discovered via DiscoverMe '24.
@@ -38,7 +38,7 @@ Register with administrative fee of only ₦1000 and get booked for performance 
 
 Contact:@2349016193699 for your registration and enquiries.
 
-All participants are encouraged to truly be themselves (like children are). 
+All participants are encouraged to truly be themselves (like children are).
 Chi anyi di iche-iche~ agwa'anyi dikwa iche-iche.
 
 No dressing codes for performers; however, a performer could be disqualified if he or she obviously appears with corrupt mind.

@@ -128,6 +128,7 @@ const initiatives = defineCollection({
         endDate: z.date().optional(),
         status: z.enum(["published", "archived"]).optional(),
         tags: z.array(z.string()).optional(),
+        images: z.array(z.string()).optional(),
         seo:
         z.object({
             description: z.string().optional(),
