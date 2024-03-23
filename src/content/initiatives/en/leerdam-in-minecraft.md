@@ -11,7 +11,7 @@ subtitle: Een Betere Toekomst voor alle kinderen van Leerdam
 image: /uploads/initiatives/highstreetsmp.jpg
 startDate: 2023-10-01T16:46:27.478Z
 endDate: 2023-10-01T16:46:27.532Z
-goal: 250000
+goal: 50000
 tags:
   - minecraft
 images:
@@ -38,8 +38,8 @@ Wij gebruiken Minecraft om de Kinderen een doel te geven. Niet alleen gebruiken 
 Artkids zal deze kinderen actief monitoren en adviezen uitbrengen over hun talenten en mogelijke kansen op basis van hun werk en gedrag in minecraft.
 
 ## Kosten
-Scaling to encompass 4000 children requires funding of 50.000 euro per year for a minimum, period of 5 years.
+Scaling to encompass 4000 children requires funding of 10.000 euro per year for a minimum, period of 5 years.
 
-A total amount of 250.000 euro includes only operation costs to serve 4000 children for Free.
+A total amount of 50.000 euro includes only operation costs to serve 4000 children for Free.
 
 No promotional coats or event costs are calculated. We are looking towards the Social domain amd local bussinesses to actively invest in the future of their own children and the future of the city.

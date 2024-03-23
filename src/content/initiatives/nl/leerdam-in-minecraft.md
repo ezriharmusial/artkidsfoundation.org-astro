@@ -31,8 +31,8 @@ Artkids zal deze kinderen actief monitoren en adviezen uitbrengen over hun talen
 ## Kosten
 Het spelen van MineCraft is niet gratis. Om een server te draaien heb je server hardware nodig, stroom, snel internet en iemand die de server onderhoud. Omdat Leerdam net als elke andere stad stijgende armoede kent, vragen wij geld om deze kosten te dekken voor hun.
 
-Om de voorzieningen te kunnen schalen naar 4000 kinderen, hebben we een sponsorbedrag nodig van €50.000,- euro per voor een minimum periode van 5 jaar.
+Om de voorzieningen te kunnen schalen naar 4000 kinderen, hebben we een sponsorbedrag nodig van €10.000,- euro per voor een minimum periode van 5 jaar.
 
-Om de kinderen van Leerdam de tijd te geven om hun eigen stad na te bouwen in MineCraft hebben we een total bedrag van 250.000 euro nodig om uitsluitend de operationionele kosten te dekken voor het gratis bedienen van 4000 kinderen voor een periode van 5 jaar.
+Om de kinderen van Leerdam de tijd te geven om hun eigen stad na te bouwen in MineCraft hebben we een total bedrag van 50.000 euro nodig om uitsluitend de operationionele kosten te dekken voor het gratis bedienen van 4000 kinderen voor een periode van 5 jaar.
 
 Andere kosten zijn niet inbegrepen. We kijken naar het Sociale domein van Leerdam en lokale ondernemer om actief te investeren in de toekomst van hun eigen kinderen en de toekomst van de stad.
