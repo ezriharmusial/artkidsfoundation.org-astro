@@ -212,7 +212,7 @@ const t = useTranslations(lang);
                 {initiativesList && initiativesList.filter(initiative => getLangFromId(initiative) == lang).map(initiative => (
                     <a href={"/" + initiative.slug.split('/')[0] + "/initiatives/" + initiative.slug.split('/')[1]} class={"btn variant-filled-secondary w-full rounded-none justify-start pl-2 " + initiative.slug.split('/')[0]}>
                         <span class="flex flex-row justify-start items-center text-md">
-                            <Icon pack={initiative.data.pack || "teenyicons"} name={initiative.data.icon || "anchor-solid"} class={size + " mr-2"} />
+                            <Icon pack={initiative.data?.pack || "teenyicons"} name={initiative.data.icon || "anchor-solid"} class={size + " mr-2"} />
                             { initiative.data?.shortTitle ?
                             <span>
                                 {initiative.data.shortTitle}

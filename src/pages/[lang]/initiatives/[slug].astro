@@ -26,16 +26,15 @@ const { Content } = await initiative?.render() ;
 console.log('<<<< INITIATIVES >>>>:',initiative)
 
 const partners = await getCollection('partners')
-const projects = await getCollection('projects')
+console.log('<<<< PARTNERS >>>>:', partners)
+const project = await getEntryBySlug('projects', initiative.slug.split('/')[0] + '/' + initiative.data?.projects[0])
+console.log('<<<< PROJECT >>>>:', project)
 const donaties = await getCollection('donations').then(donaties => donaties?.filter(d => d.data.initiative === initiative.slug.split('/')[1] ))
 let totaalbedrag = 0
 
 donaties.length && donaties?.forEach(d => {
 	totaalbedrag = d.data.amount + totaalbedrag
 })
-
-console.log('<<<< donaties >>>>:', totaalbedrag)
-let value = 0
 
 let elements = {
 	title: {
@@ -63,7 +62,7 @@ let elements = {
 //console.log('Page entry', slug, page)
 
 ---
-<BaseLayout icon={initiative.data?.icon} pack={initiative.data?.pack} description={initiative.data?.description} title={initiative.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
+<BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.description} title={initiative.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
 	<!-- Section Started Heading -->
 	<div class="section section-inner started-heading">
 		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  initiative.data?.image + "');"}>
@@ -73,7 +72,9 @@ let elements = {
 					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{initiative?.data.subtitle}</h3>
 				}
 				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-xl landscape:xl:text-4xl portrait:text-2xl font-bold" >{initiative?.data.title}</h2>
-				<p>Support our Cause and donate to this Initiative.</p>
+				<p>{initiative?.slug.split('/')[1] === 'enyimbaaba-2024' ? 'Register as Talent or ' : '' } Support our Cause and donate to this Initiative.</p>
+				{initiative?.slug.split('/')[1] === 'enyimbaaba-2024' ?
+				<a href="#register" class="btn rounded-lg variant-outline-primary mt-4">Participant Registration</a> : ''}
 				<a href="/en/donations" class="btn rounded-lg variant-filled-primary mt-4">Donate</a>
 			</div>
 		</div>
@@ -88,9 +89,121 @@ let elements = {
 					<h3 class="text-red-600 unstyled drop-shadow text-md xl:text-lg font-bold" >{initiative?.data.subtitle}</h3>
 					}
 					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{initiative?.data.title}</h2>
-					<div class="prose max-w-none prose-stone space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke">
+					<div class="prose max-w-none prose-stone space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke mb-16">
 						<Content />
 					</div>
+
+					{initiative?.slug.split('/')[1] === 'enyimbaaba-2024' ?
+					<h2 id="register" class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >Participant Registration Form</h2>
+
+					<form netlify data-netlify=true"" data-netlify-honeypot="bot-field" name="contact-form" method="POST" class="card variant-outline-primary bg-white p-8 max-w-md mx-auto">
+						<h4 class="mb-5">Personal Details</h4>
+						<div class="grid md:grid-cols-2 md:gap-6">
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+								<label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+							</div>
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+								<label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Surname</label>
+							</div>
+						</div>
+
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_nationality" id="floating_nationality" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_nationality" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nationality</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_place_of_birth" id="floating_place_of_birth" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_place_of_birth" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Place of birth</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_country_state_hometown_of_origin" id="floating_country_state_hometown_of_origin" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_country_state_hometown_of_origin" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Country/State/Town of Origin</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="date" name="floating_date_of_birth" id="floating_date_of_birth" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_date_of_birth" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Date of birth</label>
+						</div>
+
+						<h4 class="mt-10 mb-5">Adress & Contact Details</h4>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_residential_address" id="floating_residential_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_residential_address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Residential address</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="url" name="floating_website" id="floating_website" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_website" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Website</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="url" name="floating_video_clip" id="floating_video_clip" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_video_clip" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Video clip link (or audio link)</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<textarea rows="4" name="floating_video_clip" id="floating_video_clip" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_video_clip" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Social Media handles/links (list all)</label>
+						</div>
+
+						<h4 class="mt-10 mb-5">Artist information</h4>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_artist_name" id="floating_artist_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_artist_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Artistic Name</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_genres" id="floating_genres" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_genres" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Active Music Genres</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_record_label" id="floating_record_label" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_record_label" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name of Record Label</label>
+						</div>
+						<div class="relative z-0 w-full mt-5 mb-5 group">
+							<input type="checkbox" name="floating_under_contract" id="floating_under_contract" class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_under_contract" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">I am under Contract</label>
+						</div>
+						<div class="relative z-0 w-full mt-5 mb-5 group">
+							<input type="checkbox" name="floating_production_studio" id="floating_production_studio" class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_production_studio" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">I use another Production Studio</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_production_studio" id="floating_production_studio" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_production_studio" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name of Producer</label>
+						</div>
+
+						<h4 class="mt-10">Manager Details</h4>
+						<div class="grid md:grid-cols-2 md:gap-6">
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="text" name="floating_first_name_manager" id="floating_first_name_manager" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+								<label for="floating_first_name_manager" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Managers name</label>
+							</div>
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="text" name="floating_last_name_manager" id="floating_last_name_manager" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+								<label for="floating_last_name_manager" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Managers Surname</label>
+							</div>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone_manager" id="floating_phone_manager" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_phone_manager" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Managers Phone number (123-456-7890)</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="email" name="floating_email_manager" id="floating_email_manager" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_email_manager" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Managers Email address</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="floating_bank_details" id="floating_bank_details" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_bank_details" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Managers Bank Details</label>
+						</div>
+						<button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+					</form>
+					: ''}
 				</div>
 
 				<div class="sidebar flex flex-col gap-4 landscape:w-1/3">
