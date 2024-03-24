@@ -4,9 +4,11 @@ status: published
 initiator:
   - zehkezehk
 projects:
-  - discoverme-talenthunt
-title: Enyimba~Aba Talenthunt 2024
-subtitle: Uncovering the Hidden Gems from the Street
+  - discoverme-talent-hunt
+title: Enyimba~Aba Talent Hunt 2024
+icon: "modern-mic"
+pack: "entypo"
+subtitle: Uncovering the Hidden Gems from the Streets of Aba
 image: /uploads/initiatives/enyimba-aba.jpg
 startDate: 2024-03-21T21:11:39.491Z
 endDate: 2024-03-21T21:11:39.491Z
