@@ -4,7 +4,7 @@ status: published
 initiator:
   - zehkezehk
 projects:
-  - discoverme-talent-hunt
+  - discoverme
 title: Enyimba~Aba Talent Hunt 2024
 icon: "modern-mic"
 pack: "entypo"

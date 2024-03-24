@@ -4,7 +4,7 @@ status: published
 initiator:
   - zehkezehk
 projects:
-  - discoverme-talent-hunt
+  - discoverme
 title: Enyimba~Aba Talent Hunt 2024
 subtitle: Uncovering the Hidden Gems from the Streets of Aba
 icon: "modern-mic"

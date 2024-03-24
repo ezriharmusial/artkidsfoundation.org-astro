@@ -1,6 +1,6 @@
 ---
 color: light
-title: "DiscoverME (Talent Hunt)"
+title: "DiscoverME"
 subtitle: identify, showcase, sponsor and promote upcoming artists
 shortTitle: "DiscoverMe"
 icon: "modern-mic"
