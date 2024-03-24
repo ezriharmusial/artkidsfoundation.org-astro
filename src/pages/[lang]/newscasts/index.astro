@@ -1,15 +1,8 @@
 ---
-import Linkcasts from "@components/linkcasts/Linkcasts.astro"
-import LinkCastLayout from "@layouts/LinkCastLayout.astro"
-
-export async function getStaticPaths() {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'nl' } },
-  ];
-}
+    import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+    import LinkCastLayout from "@layouts/LinkCastLayout.astro"
 ---
 
-<LinkCastLayout title="Newscasts" description="Your latest news and links concerning Everything Artkids Foundation">
+<LinkCastLayout title="LastMessengerS.tv - Newscasts" description="Your latest news and links concerning Everything LastMessengers">
     <Linkcasts />
 </LinkCastLayout>

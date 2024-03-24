@@ -1,18 +1,17 @@
 ---
 import { getCollection, getEntryBySlug } from 'astro:content';
+import Artists from '~components/artists/Artists.astro';
 import {Avatar} from "@skeletonlabs/skeleton"
 
 import { getLinkcastType } from "@lib/embeds"
+
 import LinkcastHeader from "./LinkcastHeader.astro";
 
 async function getLinkcasts() {
 	return await getCollection('linkcasts')
 }
 
-export let length = -1
-export let start = 0
-
-const { lang } = Astro.params;
+const { featured = true, length = -1, start = 0 } = Astro.props
 
 let linkcasts = await getLinkcasts()
 
@@ -27,22 +26,204 @@ linkcasts = linkcasts.sort((a, b) => {
 	return 0
 })
 
-const { slug } = await Astro.params
-const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
+let featuredLinkcast = {}
+let displayedLinkcasts = {}
+
+if (featured) {
+	featuredLinkcast = linkcasts.slice(0,1)[0]
+	displayedLinkcasts = linkcasts.slice(1, length)
+}
+const { Content } = await featuredLinkcast.render()
+// console.log(featuredLinkcast)
+// const { slug } = await Astro.params
+// const linkcast = await getEntryBySlug('linkcasts', slug)
 ---
+<section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Video%20Production');">
+	<div class="bg-black/50 text-left text-white container mx-auto p-8">
+		<h2 class="unstyled my-6 title marker text-3xl">Latest News</h2>
+		<h3 class="unstyled text-5xl font-medium my-8">Starting our LastMessengers Videoclip Recordings</h3>
+		<div class="container mx-auto flex portrait:flex-col items-center gap-8">
+			<div class="landscape:w-3/5">
+				<p class="unstyled text-2xl mb-12">
+					A reunion-kind-of-production-meeting that is scheduled to hold on the 26th of May 2023; at Gina Hotel; No. 52 Uwalaka Street (behind ShopRite) in Umuahia. <br />
 
-<div class="container mx-auto min-h-screen landscape:xl:p-28 p-2 landscape:pt-24">
+					As a result of this joyous development, we now have 5 LastMessengerS® $tars whose Video-clips are to be short from next week~~  <br />
 
-	<h2 class="marker text-primary-600 mb-8">Latest news</h2>
-	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-1 landscape:md:grid-cols-2 landscape:lg:grid-cols-2 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:xs:grid-cols-1 portrait:sm:grid-cols-2  portrait:md:grid-cols-2 portrait:lg:grid-cols-3 portrait:xl-grid-cols-4 gap-8">
+					These LastMessengerS® $TARZ are: <br />
 
-		{linkcasts.map((linkcast) => (
-			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/en/newscasts/" + linkcast.slug }>
+					Artists and Songs <br />
+
+					* Maya Skyler- Falling 4U <br />
+
+					* Skillful Kennis (SK) - Anya'Anwu <br />
+
+					* Wizron - Ego <br />
+
+					* Chuzzykeys - Cradle <br />
+
+					* ZehkEzehk - LoveTonic (Raw) <br />
+
+					Congratulations and success to Chuzzykeys. <br />
+
+					Happy LastMessengerS® <br />
+
+					Happy ArtKids® <br />
+
+					On behalf of the board of directors of ArtKids® Foundation Holland and ArtKids® Africa. <br />
+
+					Signed: <br />
+					ZehkEzehk <br />
+					MD: ArtKids Africa
+
+				</p>
+			</div>
+			<div class="landscape:w-2/5 portrait:-order-1">
+				<div class="grid grid-cols-2 gap-4 mt-8">
+
+					<div style="background-image: url('/images/animated-bg/respect-your-mother.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-800 bg-blend-multiply bg-center bg-repeat bg-contain">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Chuzzy-Keys-3.png" alt="Profile Picture of Chuzzykeys" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Chuzzykeys
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Kieran-oris Karl Chizuterem
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/chuzzykeys">
+						</a>
+					</div>
+
+					<div style="background-image: url('/images/animated-bg/vinyl.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-400 bg-blend-exclusion bg-center bg-cover">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Maya-Skyler-1.png" alt="Profile Picture of Maya Skyler" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Maya Skyler
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Onuoha Ezinne Okpara
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/maya-skyler">
+						</a>
+					</div>
+
+					<div style="background-image: url('/images/animated-bg/sun-lines.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-yellow-400 bg-blend-lighten bg-left bg-contain">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Skillful-Kennis-SK-4.png" alt="Profile Picture of Skillful Kennis SK" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Skillful Kennis SK
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Ogburie Chibuike Kennis
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/skillful-kennis-sk">
+						</a>
+					</div>
+
+					<div style="background-image: url('/images/animated-bg/dot-cromwell.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-800 null bg-center bg-cover bg-no-repeat">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Wizron-1.png" alt="Profile Picture of Wizron" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Wizron
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Onyenwe Chukwuebuka
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/wizron">
+						</a>
+					</div>
+
+					<div style="background-image: url('/images/animated-bg/sun-and-moon.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-purple-800 bg-blend-lighten bg-bottom bg-cover">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Zehk-Ezehk-5.png" alt="Profile Picture of ZehkEzehk" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								ZehkEzehk
+							</h2>
+
+							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Ezekwesiri Enyinnaya Obioha
+							</h3>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/zehkezehk">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="bg-gradient-to-br from-slate-700 to-slate-900 min-h-screen">
+
+	<div class="container mx-auto p-8">
+		<h2 class="unstyled my-6 title marker text-3xl">Previous Newscasts</h2>
+
+	{featured &&
+		<div class="card landscape:flex landscape:flex-row glass-surface landscape:mb-6">
+			<header class="bg-black max-h-screen overflow-hidden overflow-y-auto flex flex-col justify-center ">
+				<LinkcastHeader linkcast={featuredLinkcast}/>
+			</header>
+			<!-- Body -->
+			<div class="flex flex-col landscape:w-2/3">
+
+				<main class="p-4 space-y-4">
+					<h5 class="text-primary-500 font-semibold">{featuredLinkcast.data?.category || 'News & Announcments'}</h5>
+
+					<h3 class="font-black text-xl">{featuredLinkcast.data?.title}</h3>
+
+					<h4 class="font-medium">{featuredLinkcast.data?.subtitle || ""}<span class="marker text-xs badge badge-filled-surface light:text-black/75 dark:text-white/75">{featuredLinkcast.data?.type}</span></h4>
+
+					<article class="unstyled text-2xl prose dark:prose-invert
+						prose-h1:font-bold prose-h1:text-xl
+						prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
+						prose-headings:underline max-h-72 overflow-hidden">
+						<Content />
+					</article>
+					<div class="grid grid-rows-1 gap-4">
+						<!-- {featuredLinkcast.data?.url && <a class="btn btn-filled-primary" href={featuredLinkcast.data?.url} target="_blank" rel="noreferrer">{featuredLinkcast.data?.url}</a> } -->
+						<a href={"/newscasts/" + featuredLinkcast.slug + "#header"} class="btn btn-filled-secondary">Read more...</a>
+					</div>
+				</main>
+				<hr />
+				<!-- Footer -->
+				<footer class="p-4 flex justify-start items-center space-x-4">
+					<Avatar src={featuredLinkcast.data?.authorImage || '/images/red-black-purple-gold-with-sun.svg'} />
+					<div class="flex-auto flex justify-between items-center">
+						<h6 class="font-bold">By {featuredLinkcast.data?.author || 'LMS Parrot'}</h6>
+						<small>On {new Date(featuredLinkcast.data?.date).toLocaleDateString()}</small>
+					</div>
+				</footer>
+			</div>
+		</div>
+	}
+
+	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-4 landscape:md:grid-cols-2 landscape:lg:grid-cols-3 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:sm:grid-cols-2  portrait:md:grid-cols-2 gap-8">
+
+		{displayedLinkcasts.map((linkcast) => (
+			<a class="card card-hover variant-glass-primary flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/newscasts/" + linkcast.slug }>
 				<header>
 					<LinkcastHeader linkcast={linkcast} />
 				</header>
 				<section class="card-header space-y-4">
-					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-primary">{getLinkcastType(linkcast.data.url)}</span></h5>
+					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-surface light:text-black/75 dark:text-white/75">{getLinkcastType(linkcast.data.url)}</span></h5>
 
 					<h3 class="font-black leading-3 text-xl line-clamp-2">{linkcast.data.title} <br /></h3>
 
@@ -53,17 +234,17 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 
 					</h4>
 
-					<p class="overflow-hidden">
-						<span class="line-clamp-5">{linkcast.body}</span> <br />
+					<p class="unstyled text-2xl overflow-hidden">
+						<span class="line-clamp-4">{linkcast.body}</span> <br />
+						<b>Read more...</b>
 					</p>
-					<span class="btn rounded-lg variant-filled-primary w-full mx-auto mb-4">Read more...</span>
 				</section>
 				<footer class="mt-auto">
 					<hr />
 					<div  class="p-4 flex justify-start items-center space-x-4">
-						<Avatar src={linkcast.data.authorImage || '/logo-512.png'} />
-						<div class="flex-auto flex-col justify-between items-center">
-							<h6 class="font-bold">By {linkcast.data.author || 'ArtKids'}</h6>
+						<Avatar src={'/images/red-black-purple-gold-with-sun.svg'} />
+						<div class="flex-auto flex justify-between items-center">
+							<h6 class="font-bold">By {linkcast.data.author || 'LMS Parrot'}</h6>
 							<small>On {new Date(linkcast.data.date).toLocaleDateString()}</small>
 						</div>
 					</div>
@@ -71,8 +252,9 @@ const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
 			</a>
 			))}
 
-			{(length < linkcasts.length) &&
+			{(length != -1 && length < linkcasts.length) &&
 				<a href="/newscasts" class="btn btn-filled-primary w-full">View all NewsCasts...</a>
 			}
 		</div>
 	</div>
+</div>
