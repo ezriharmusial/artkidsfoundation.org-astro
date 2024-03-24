@@ -57,7 +57,7 @@ let elements = {
 // TODO: Implement General Document Image after Read more
 // TODO: Implement in other pages
 ---
-<BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.description} title={project?.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
+<BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.seo.imageAlt} seoTitle={"ArtKids - " + project?.data?.title + " - " + initiative.data?.title} title={project?.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
 	<!-- Section Started Heading -->
 	<div class="section section-inner started-heading">
 		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  initiative.data?.image + "');"}>

@@ -2,7 +2,7 @@
 import Icon from "astro-icon";
 import BrandFlag from "./BrandFlag.astro";
 
-const { title, icon, pack } = (Astro.props)
+const { title, shortTitle, icon, pack } = (Astro.props)
 ---
 <div class="flex justify-between items-center">
     <figure class="landscape:opacity-0 image -translate-x-1 h-12 transition-all duration-500 m-0 p-0 w-12 -ml-1">
@@ -11,7 +11,7 @@ const { title, icon, pack } = (Astro.props)
 
     <p class="marker transition-colors duration-500 landscape:text-center lg:text-xl xl:text-2xl portrait:text-xl drop-shadow-2xl text-red-artkids hover:text-red-400 dark:focus:text-gray-100 flex justify-center portrait:justify-start items-center landscape:max-w-[80vw] portrait:max-w-[60vw] truncate">
         <Icon pack={pack || "teenyicons"} name={icon || "anchor-solid"} class={"h-8 w-8 lg:h-10 lg:w-10 portrait:h-8 portrait:w-8 mr-1"} />
-        {title}
+        <span class="landscape:hidden">{shortTitle || title}</span> <span class="portrait:hidden">{title}</span>
     </p>
 
     <p class="opacity-0">User</p>
