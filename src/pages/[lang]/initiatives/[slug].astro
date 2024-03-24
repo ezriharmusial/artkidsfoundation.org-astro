@@ -55,7 +55,7 @@ let elements = {
 }
 // TODO: Functionalize translation
 // TODO: Implement General Document Image after Read more
-// TODO: Implement in other pages
+// TODO: Implement in other above + seo style on other pages
 ---
 <BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.seo?.imageAlt || project.data?.description} seoTitle={"ArtKids - " + project?.data?.title + " - " + initiative.data?.title} title={project?.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
 	<!-- Section Started Heading -->
@@ -66,7 +66,7 @@ let elements = {
 				{initiative?.data.subtitle &&
 					<h3 class="text-red-600 unstyled drop-shadow text-lg font-bold" >{initiative?.data.subtitle}</h3>
 				}
-				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-xl landscape:xl:text-4xl portrait:text-2xl font-bold" >{initiative?.data.title}</h2>
+				<h2 class="marker text-primary-600 mb-4 unstyled drop-shadow landscape:text-xl landscape:xl:text-4xl portrait:text-2xl font-bold" >{project?.data?.title + " - " + initiative.data?.title}</h2>
 				<p>{initiative?.slug.split('/')[1] === 'enyimbaaba-2024' ? 'Register as Talent or ' : '' } Support our Cause and donate to this Initiative.</p>
 				{initiative?.slug.split('/')[1] === 'enyimbaaba-2024' ?
 				<a href="#register" class="btn rounded-lg variant-outline-primary mt-4">Participant Registration</a> : ''}
@@ -81,9 +81,9 @@ let elements = {
 			<div class="mx-auto flex portrait:flex-col gap-8">
 				<div class="landscape:w-2/3 text-lg mb-8">
 					{initiative?.data.subtitle &&
-					<h3 class="text-red-600 unstyled drop-shadow text-md xl:text-lg font-bold" >{initiative?.data.subtitle}</h3>
+					<h3 class="landscape:md:hidden text-red-600 unstyled drop-shadow text-md xl:text-lg font-bold" >{initiative?.data.subtitle}</h3>
 					}
-					<h2 class="marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{initiative?.data.title}</h2>
+					<h2 class="landscape:md:hidden marker text-primary-600 mb-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >{project?.data?.title + " - " + initiative.data?.title}</h2>
 					<input id="read-more" type="checkbox" class="peer/read hidden" />
 					<div class="overflow-hidden transition transition-height duration-300 landscape:h-[25vh] portrait:h-24 peer-checked/read:h-auto prose max-w-none prose-stone space-y-6 prose-table:table-auto prose-p:text-lg prose-p:text-primary-800-100-token prose-headings:text-primary-800-100-toke mb-4">
 						<Content />

@@ -5,7 +5,7 @@ initiator:
   - zehkezehk
 projects:
   - discoverme
-title: Enyimba~Aba Talent Hunt 2024
+title: Enyimba~Aba 2024
 subtitle: Uncovering the Hidden Gems from the Streets of Aba
 icon: "modern-mic"
 pack: "entypo"
@@ -18,6 +18,11 @@ tags:
 images:
   - /uploads/initiatives/aba-town-hall.png
 date: 2024-03-21T21:11:39.492Z
+seo:
+  imageAlt: DiscoverMe is a Talent-Hunt Event through which highly talented but
+    disadvantaged youths/adults will get the opportunity to perform for Aba's
+    public (Enyimba people) and truly prove that, indeed; "charity begins at
+    home".
 ---
 DiscoverMe Enyimba~Aba 2024 event will be held at the spacious Etche Rd Stadium in Aba (Enyimba City) on the 21st of April 2024. Quite talent-exposing.
 
