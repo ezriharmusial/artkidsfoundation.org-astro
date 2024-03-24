@@ -30,7 +30,7 @@ export interface Props {
 
 const { theme, mode } = siteSettings
 const { fbappid } = seoSettings
-const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
+const { title, icon, pack, seoTitle, shortTitle, description, image, imageAlt } = (Astro.props?.data || Astro.props)
 ---
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ const { title, icon, pack, seoTitle, description, image, imageAlt } = (Astro.pro
             <AppBar background="z-10 portrait:fixed landscape:sticky top-0 left-0 right-0 w-full bg-primary-100 backdrop-blur">
                 <svelte:fragment slot="lead">
                 </svelte:fragment>
-                <PageTitle title={title} pack={pack} icon={icon} />
+                <PageTitle title={title} pack={pack} icon={icon} shortTitle={shortTitle} />
                 <svelte:fragment slot="trail">
                     <!-- User Avatar Placeholder -->
                 </svelte:fragment>

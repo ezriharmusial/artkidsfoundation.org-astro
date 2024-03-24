@@ -57,7 +57,7 @@ let elements = {
 // TODO: Implement General Document Image after Read more
 // TODO: Implement in other above + seo style on other pages
 ---
-<BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.seo?.imageAlt || project.data?.description} seoTitle={"ArtKids - " + project?.data?.title + " - " + initiative.data?.title} title={project?.data?.title} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
+<BaseLayout icon={initiative.data?.icon ? initiative.data?.icon : project?.data?.icon} pack={initiative.data?.pack ? initiative.data?.pack : project?.data?.pack} description={initiative.data?.seo?.imageAlt || project.data?.description} seoTitle={"ArtKids - " + project?.data?.title + " - " + initiative.data?.title} title={project?.data?.title} shortTitle={initiative.data?.shortTitle ? initiative.data?.shortTitle : project?.data?.shortTitle} image={initiative.data?.image} imageAlt={initiative.data?.imageAlt}>
 	<!-- Section Started Heading -->
 	<div class="section section-inner started-heading">
 		<div class="aspect-video bg-cover bg-center w-full h-full transition-all duration-100 flex justify-start items-end p-8 bg-black/80" style={"background-image: url('" +  initiative.data?.image + "');"}>
