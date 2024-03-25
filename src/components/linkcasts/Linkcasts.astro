@@ -39,7 +39,7 @@ const { Content } = await featuredLinkcast.render()
 // const linkcast = await getEntryBySlug('linkcasts', slug)
 ---
 <section class="bg-cover bg-center w-full" style="background-image: url('https://source.unsplash.com/random?Video%20Production');">
-	<div class="bg-black/50 text-left text-white container mx-auto p-8">
+	<div class="bg-purple-800/50 text-left text-white w-full mx-auto p-8">
 		<h2 class="unstyled my-6 title marker text-3xl">Latest News</h2>
 		<h3 class="unstyled text-5xl font-medium my-8">Starting our LastMessengers Videoclip Recordings</h3>
 		<div class="container mx-auto flex portrait:flex-col items-center gap-8">
@@ -80,88 +80,105 @@ const { Content } = await featuredLinkcast.render()
 			<div class="landscape:w-2/5 portrait:-order-1">
 				<div class="grid grid-cols-2 gap-4 mt-8">
 
-					<div style="background-image: url('/images/animated-bg/respect-your-mother.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-800 bg-blend-multiply bg-center bg-repeat bg-contain">
+					<div class="card card-hover relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl bg-yellow-300 bg-blend-multiply bg-center bg-repeat bg-contain">
 						<div class="max-w-xs mt-5 ml-auto right-0">
-							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Chuzzy-Keys-3.png" alt="Profile Picture of Chuzzykeys" width="320">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/chuzzy-keys.png" alt="Profile Picture of Chuzzykeys" width="320">
 						</div>
-						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
-							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
 								Chuzzykeys
-							</h2>
+							</h3>
 
-							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
 								A.K.A: Kieran-oris Karl Chizuterem
-							</h3>
+							</h4>
 						</div>
-						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/chuzzykeys">
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/en/artkidstv1">
 						</a>
 					</div>
 
-					<div style="background-image: url('/images/animated-bg/vinyl.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-400 bg-blend-exclusion bg-center bg-cover">
+					<div class="card card-hover relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl bg-yellow-300 bg-blend-exclusion bg-center bg-cover">
 						<div class="max-w-xs mt-5 ml-auto right-0">
-							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Maya-Skyler-1.png" alt="Profile Picture of Maya Skyler" width="320">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Maya-Skyler.png" alt="Profile Picture of Maya Skyler" width="320">
 						</div>
-						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
-							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent  hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
 								Maya Skyler
-							</h2>
+							</h3>
 
-							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
 								A.K.A: Onuoha Ezinne Okpara
-							</h3>
+							</h4>
 						</div>
-						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/maya-skyler">
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/en/artkidstv1/">
 						</a>
 					</div>
 
-					<div style="background-image: url('/images/animated-bg/sun-lines.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-yellow-400 bg-blend-lighten bg-left bg-contain">
+					<div class="card card-hover relative overflow-hidde transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-yellow-300 bg-blend-lighten bg-left bg-contain">
 						<div class="max-w-xs mt-5 ml-auto right-0">
-							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Skillful-Kennis-SK-4.png" alt="Profile Picture of Skillful Kennis SK" width="320">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Skillful-Kennis-SK.png" alt="Profile Picture of Skillful Kennis SK" width="320">
 						</div>
-						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
-							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
 								Skillful Kennis SK
-							</h2>
-
-							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
-								A.K.A: Ogburie Chibuike Kennis
 							</h3>
+
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Ogburie Chibuike Kennis
+							</h4>
 						</div>
-						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/skillful-kennis-sk">
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/en/artkidstv1">
 						</a>
 					</div>
 
-					<div style="background-image: url('/images/animated-bg/dot-cromwell.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-sky-800 null bg-center bg-cover bg-no-repeat">
+					<div class="card card-hover relative overflow-hidden bg-yellow-300 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl null bg-center bg-cover bg-no-repeat">
 						<div class="max-w-xs mt-5 ml-auto right-0">
-							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Wizron-1.png" alt="Profile Picture of Wizron" width="320">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Wizron.png" alt="Profile Picture of Wizron" width="320">
 						</div>
-						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
-							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
 								Wizron
-							</h2>
-
-							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
-								A.K.A: Onyenwe Chukwuebuka
 							</h3>
+
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Onyenwe Chukwuebuka
+							</h4>
 						</div>
 						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/wizron">
 						</a>
 					</div>
 
-					<div style="background-image: url('/images/animated-bg/sun-and-moon.gif');" class="card card-hover relative overflow-hidden bg-slate-900/20 transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl !bg-purple-800 bg-blend-lighten bg-bottom bg-cover">
+					<div class="card bg-yellow-300 card-hover relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl bg-blend-lighten bg-bottom bg-cover">
 						<div class="max-w-xs mt-5 ml-auto right-0">
-							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Zehk-Ezehk-5.png" alt="Profile Picture of ZehkEzehk" width="320">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/uploads/artists/Zehk-Ezehk.png" alt="Profile Picture of ZehkEzehk" width="320">
 						</div>
-						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-black/20 hover:bg-transparent flex flex-col justify-end font-shadow">
-							<h2 class="title marker text-yellow-400 uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
 								ZehkEzehk
-							</h2>
-
-							<h3 class="subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
-								A.K.A: Ezekwesiri Enyinnaya Obioha
 							</h3>
+
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								A.K.A: Ezekwesiri Enyinnaya Obioha
+							</h4>
 						</div>
-						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/artists/zehkezehk">
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/en/artkidstv1">
+						</a>
+					</div>
+
+					<div class="card bg-yellow-300 card-hover relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl bg-blend-lighten bg-bottom bg-cover">
+						<div class="max-w-xs mt-5 ml-auto right-0">
+							<img class="aspect-square" loading="lazy" aspectratio="1" src="/images/red-black-purple-gold-with-sun.svg" alt="Profile Picture of ZehkEzehk" width="320">
+						</div>
+						<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full h-full overflow-hidden bg-fixed bg-gradient-to-t from-yellow-300/75 to-transparent hover:bg-transparent flex flex-col justify-end font-shadow">
+							<h3 class="italic text-white uppercase portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow">
+								Meet all Artists
+							</h3>
+
+							<h4 class="text-pink-600 subtitle uppercase portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+								Visit ArtKidsTv1 Page
+							</h4>
+						</div>
+						<a class="z-20 absolute top-0 left-0 w-full h-full" href="/en/artkidstv1">
 						</a>
 					</div>
 				</div>
@@ -171,13 +188,13 @@ const { Content } = await featuredLinkcast.render()
 </section>
 
 
-<div class="bg-gradient-to-br from-slate-700 to-slate-900 min-h-screen">
+<div class="min-h-screen">
 
 	<div class="container mx-auto p-8">
 		<h2 class="unstyled my-6 title marker text-3xl">Previous Newscasts</h2>
 
 	{featured &&
-		<div class="card landscape:flex landscape:flex-row glass-surface landscape:mb-6">
+		<div class="card landscape:flex landscape:flex-row landscape:mb-6">
 			<header class="bg-black max-h-screen overflow-hidden overflow-y-auto flex flex-col justify-center ">
 				<LinkcastHeader linkcast={featuredLinkcast}/>
 			</header>
