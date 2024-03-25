@@ -1,5 +1,5 @@
 ---
-image: /uploads/artists/Da-Reggae-Priest-6.png
+image: /uploads/artists/Da-Reggae-Priest.png
 active: true
 title: Da Reggae Priest
 twitter: reggae_priest

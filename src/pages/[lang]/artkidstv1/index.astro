@@ -1,0 +1,63 @@
+---
+// import { Image } from 'astro:assets';
+import { getLangFromUrl } from '~content/i18n/utils';
+
+import BrandFlag from '~components/ui/BrandFlag.astro';
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+import Artists from "@components/artists/Artists.astro";
+
+const lang = getLangFromUrl(Astro.url)
+
+export async function getStaticPaths() {
+    return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+    ];
+}
+
+
+---
+
+<BaseLayout title="ArtKidsTv1 - Artist Management Platform" image="/images/manifest/apple-touch-startup-image-2048x1496.png" description="Truth Based Music Management. Connecting Truthspreading Artists, with lucrative tools and fair management.">
+	<section class="bg-cover bg-center w-full bg-blend-lighten bg-opacity-50" style="background-image: url('/uploads/pages/artkidstv1.jpg');">
+		<div class="bg-yellow-300/80 md:p-28 p-6 pt-24 text-left text-dark">
+			<div class="container mx-8 flex portrait:flex-col gap-8 items-center">
+				<!-- <div class="landscape:w-1/3 portrait:w-full portrait:order-1">
+					<img src="https://source.unsplash.com/random?music%20performance" class="h-72 w-3/4 object-cover rounded-xl" alt="Layout Image">
+				</div> -->
+				<div class="landscape:w-2/3">
+					<h1 class="text-5xl font-bold italic uppercase text-pink-600 drop-shadow-md my-8">Welcome to ArtKidsTv1, Meet our Artists</h1>
+					<p class="unstyled text-3xl mb-12">Welcome dear Listener! Allow us to Introduce our highly Valued Stars.  ArtKidsTv1 restores one of the ancient entertainment values~TRUTH, by packaging messages as enjoyable songs targeting the curious ears of the general public. </p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="bg-purple-900 py-8">
+		<Artists />
+	</section>
+	<section>
+		<!-- Background image -->
+		<div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');height: 350px;">
+			<div class="bg-yellow-300/90 absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
+				<div class="flex justify-center items-center h-full">
+					<div class="text-center text-dark px-6 md:px-12">
+						<h1 class="text-5xl font-bold mt-0 mb-6 uppercase italic text-pink-600 drop-shadow-md">Want to Join</h1>
+						<h3 class="text-3xl font-bold mb-8 text-white-600 drop-shadow-md">ArtKidsTv1 Managed Artist Platform?</h3>
+						<a href="/en/contact-us" type="button"
+							class="btn variant-outline-primary inline-block px-6 py-2.5 border-2 border-black text-black font-bold leading-tight uppercase rounded hover:bg-white hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+							data-mdb-ripple="true" data-mdb-ripple-color="light">
+							Reach out
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Background image -->
+	</section>
+
+	<!-- <Linkcasts start={1} length={9} /> -->
+
+
+</BaseLayout>

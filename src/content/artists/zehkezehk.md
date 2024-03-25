@@ -1,5 +1,5 @@
 ---
-image: /uploads/artists/Zehk-Ezehk-5.png
+image: /uploads/artists/Zehk-Ezehk.png
 active: true
 title: ZehkEzehk
 twitter: ZehkEzehk0

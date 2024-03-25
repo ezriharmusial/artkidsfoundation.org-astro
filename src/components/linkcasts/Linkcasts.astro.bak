@@ -1,0 +1,78 @@
+---
+import { getCollection, getEntryBySlug } from 'astro:content';
+import {Avatar} from "@skeletonlabs/skeleton"
+
+import { getLinkcastType } from "@lib/embeds"
+import LinkcastHeader from "./LinkcastHeader.astro";
+
+async function getLinkcasts() {
+	return await getCollection('linkcasts')
+}
+
+export let length = -1
+export let start = 0
+
+const { lang } = Astro.params;
+
+let linkcasts = await getLinkcasts()
+
+linkcasts = linkcasts.sort((a, b) => {
+	let aOrder = a.data.date
+	let bOrder = b.data.date
+
+	if ( bOrder < aOrder )
+	return -1
+	if ( aOrder < bOrder )
+	return 1
+	return 0
+})
+
+const { slug } = await Astro.params
+const linkcast = await getEntryBySlug('linkcasts', slug) || linkcasts[0]
+---
+
+<div class="container mx-auto min-h-screen landscape:xl:p-28 p-2 landscape:pt-24">
+
+	<h2 class="marker text-primary-600 mb-8">Latest news</h2>
+	<div class="landscape:grid portrait:sm:grid landscape:grid-cols-1 landscape:md:grid-cols-2 landscape:lg:grid-cols-2 landscape:xl:grid-cols-3 landscape:grid-flow-dense portrait:xs:grid-cols-1 portrait:sm:grid-cols-2  portrait:md:grid-cols-2 portrait:lg:grid-cols-3 portrait:xl-grid-cols-4 gap-8">
+
+		{linkcasts.map((linkcast) => (
+			<a class="card card-hover flex flex-col sm:max-w-lg portrait:mb-6 justify-start rounded-xl overflow-hidden" href={"/en/newscasts/" + linkcast.slug }>
+				<header>
+					<LinkcastHeader linkcast={linkcast} />
+				</header>
+				<section class="card-header space-y-4">
+					<h5 class="text-primary-500 font-semibold">{linkcast.data.category || 'News & Announcments'}<span class="marker text-xs badge badge-filled-primary">{getLinkcastType(linkcast.data.url)}</span></h5>
+
+					<h3 class="font-black leading-3 text-xl line-clamp-2">{linkcast.data.title} <br /></h3>
+
+					<h4 class="font-medium text-xl">
+						{linkcast.data.subtitle &&
+							<span>{linkcast.data.subtitle}</span>
+						}
+
+					</h4>
+
+					<p class="overflow-hidden mb-4">
+						<span class="line-clamp-5">{linkcast.body}</span>
+					</p>
+					<span class="btn rounded-lg variant-filled-primary w-full mx-auto">Read more...</span>
+				</section>
+				<footer class="mt-4">
+					<hr />
+					<div  class="p-4 flex justify-start items-center space-x-4">
+						<Avatar src={linkcast.data.authorImage || '/logo-512.png'} />
+						<div class="flex-auto flex-col justify-between items-center">
+							<h6 class="font-bold">By {linkcast.data.author || 'ArtKids'}</h6>
+							<small>On {new Date(linkcast.data.date).toLocaleDateString()}</small>
+						</div>
+					</div>
+				</footer>
+			</a>
+			))}
+
+			{(length < linkcasts.length) &&
+				<a href="/newscasts" class="btn btn-filled-primary w-full">View all NewsCasts...</a>
+			}
+		</div>
+	</div>

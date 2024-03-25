@@ -1,0 +1,32 @@
+---
+// import { Image } from "astro:assets";
+import { getCollection } from 'astro:content';
+
+const artists = await getCollection('artists');
+
+---
+
+  	<h2 class="unstyled title marker text-white text-5xl m-8">ArtKidsTv1 Artists</h2>
+	<div class="grid landscape:grid-flow-row landscape:md:grid-cols-2 landscape:lg:grid-cols-3 landscape:xl:grid-cols-4 portrait:xs:grid-cols-1 portrait:sm:grid-cols-2 portrait:md:grid-cols-3 gap-8 justify-center my-8 landscape:mx-8">
+		{artists.map((artist) => (
+		<span>
+			{ artist.data.active &&
+		<div class={"card card-hover aspect-square  bg-yellow-300 hover:bg-yellow-200 relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-110 rounded-xl " }>
+			<img class="w-full h-full" loading="lazy" width={320} aspectRatio={1/1} src={artist.data.image} alt={"Profile Picture of " + artist.data.title} transition:name={"image-" + artist.slug} />
+			<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full overflow-hidden flex flex-col justify-end font-shadow bg-gradient-to-t from-yellow-300 to-transparent h-3/5">
+				<h2 class="text-white uppercase italic portrait:text-3xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl drop-shadow-lg" >
+					{artist.data.title}
+				</h2>
+
+				<h3 class="text-pink-600 subtitle uppercase dropshadow-md portrait:text-xl landscape:xs:text-sm landscape:sm:text-md landscape:md:text-lg landscape:lg:text-xl landscape:xl:text-2xl">
+					{artist.data.name != 'unknown' && "A.K.A: " + artist.data.name}
+				</h3>
+			</div>
+			{artist.slug &&
+			<a class="z-20 absolute top-0 left-0 w-full h-full" href={"/en/artkidstv1/artists/" + artist.slug}>
+			</a>}
+		</div>
+		}
+		</span>
+		))}
+	</div>

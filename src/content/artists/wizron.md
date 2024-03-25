@@ -1,5 +1,5 @@
 ---
-image: /uploads/artists/Wizron-1.png
+image: /uploads/artists/Wizron.png
 active: true
 title: Wizron
 instagram: wizronge

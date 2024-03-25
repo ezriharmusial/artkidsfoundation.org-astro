@@ -1,5 +1,5 @@
 ---
-image: /uploads/artists/Maya-Skyler-1.png
+image: /uploads/artists/Maya-Skyler.png
 title: Maya Skyler
 twitter: SkylerMaya
 instagram: mayaskyler06

@@ -1,5 +1,5 @@
 ---
-image: /uploads/artists/Whitney-Zinny-5.png
+image: /uploads/artists/Whitney-Zinny.png
 active: true
 title: WhitneyZinny
 name: Orji Lois Ezinne

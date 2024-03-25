@@ -2,7 +2,7 @@
 voices:
   - alto
   - tenor
-image: /uploads/artists/chuzzy-keys-3.png
+image: /uploads/artists/chuzzy-keys.png
 active: true
 title: Chuzzykeys
 facebook: Chuzzykeysbeatz
