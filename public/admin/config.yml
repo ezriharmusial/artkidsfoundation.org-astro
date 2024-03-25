@@ -227,6 +227,216 @@ collections:
       - {label: "Bedrag", name: "amount", widget: "number"}
       - {label: "Bericht", name: "message", widget: "text"}
 
+  - name: "artists"
+    label: ArtKids Artists
+    label_singular: "Artist"
+    folder: "src/content/artists"
+    preview_path: "/en/artkidstv1/artists/{{title}}"
+    create: true
+    fields:
+      - name: nav_label
+        label: 'Navigation name'
+        required: false
+      - {name: 'image', label: 'Profile Picture', widget: 'image', required: false, media_folder: '/public/uploads/artists', public_folder: '/uploads/artists' }
+      - name: active
+        label: 'Under Active Contract'
+        widget: boolean
+        default: true
+      - name: title
+        label: 'Records and performs under the Artist Name'
+      - name: meaning
+        label: 'His/her Artist Name means'
+        required: false
+      - name: name
+        label: 'Real Name'
+        default: Unknown
+      - name: sex
+        label: 'Sex of the Artist. Plural if its a group.'
+        widget: 'select'
+        options: ['male', 'female', 'plural']
+      - name: 'languages'
+        label: 'Artist makes music in (Languages)'
+        singular: 'Language'
+        widget: 'list'
+        default: 'English'
+        required: false
+      - name: 'genres'
+        label: 'Artist makes music in (Genres)'
+        widget: 'list'
+        default: 'Afrobeat'
+        required: false
+      - name: discography
+        label: 'Tracks'
+        widget: 'relation'
+        collection: 'tracks'
+        value_field: 'title'
+        search_fields: ['title', 'artist', 'featuring_artist', 'producer', 'lyrics' ]
+        required: false
+        multiple: false
+      - name: 'profession'
+        label: 'Musical Profession'
+        widget: select
+        options: ['performing artist', 'featuring artist', 'music producer', 'writer']
+        multiple: true
+        default: 'performing artist'
+        required: false
+      - name: 'vocal_type'
+        label: 'Vocal Type'
+        singular: 'Musical Skill'
+        widget: 'select'
+        multiple: true
+        options: ['soprano', 'alto', 'tenor', 'bass', treble]
+        required: false
+      - name: 'vocal_skills'
+        label: 'Vocal Skills'
+        widget: 'select'
+        options: ['singing', 'rapping', 'beatboxing', 'spoken word', 'motivational speaker']
+        multiple: true
+        required: false
+        default: 'singing'
+      - name: 'instruments'
+        label: 'Instruments'
+        singular: 'Instrument'
+        widget: 'list'
+        default: 'voice'
+        required: false
+      - name: performance_setup
+        label: 'Performance setup'
+        widget: 'select'
+        options: ['instrumental tracks', 'a band', 'an orchestra', 'a dj']
+        multiple: true
+        default: 'instrumental tracks'
+        required: false
+      - name: body
+        label: history
+        widget: markdown
+        required: false
+      - name: twitter
+        label: "Twitter Handle"
+        required: false
+      - name: instagram
+        label: "Instagram Handle"
+        required: false
+      - name: tiktok
+        label: "Tiktok Handle"
+        required: false
+      - name: vskit
+        label: "VSKit Handle"
+        required: false
+      - name: facebook
+        label: "Facebook Address"
+        required: false
+      - name: youtube
+        label: "Youtube Address Channel"
+        required: false
+      - name: audiomack
+        label: "Audiomack Channel"
+        required: false
+      - name: experience
+        label: 'His/her audience can expect (experience)'
+        required: false
+      - name: vision
+        label: 'His/her vision is to...'
+        required: false
+      - name: mission
+        label: 'His/her mission is to...'
+        required: false
+      - name: reason
+        label: 'Artist makes music...'
+        required: false
+      - name: wishes
+        label: 'and wishes everyone...'
+        required: false
+      - name: motivation
+        label: 'What motivatiets him/her to create his/her music is...'
+        required: false
+      - name: inspiration
+        label: 'and finds inspiriation...'
+        required: false
+      - name: youth_influences
+        label: 'Growing up his/her main musical influences came from...'
+        required: false
+      - name: influential_artists
+        label: 'and popular artists like...'
+        required: false
+      - name: purpose
+        label: 'The purpose of his/her work is to...'
+        required: false
+      - name: solution
+        label: 'and is convinced his/her music affects societal isseus...'
+        required: false
+      - name: success
+        label: 'Artist defines success as...'
+        required: false
+      - name: actions
+        label: 'He/she develops his/her skills by...'
+        required: false
+      - name: metadescription
+        label: 'SEO: Description 155 Characters'
+        required: false
+      - {name: twitterImage, label: 'SEO: Image used in twitter', widget: 'image', required: false, media_folder: '/public/uploads/artists/twitter', public_folder: '/uploads/artists/twitter'}
+      - {name: featuredImage, label: 'SEO: Image used in blog/posts', widget: 'image', required: false, media_folder: '/public/uploads/artists/featured', public_folder: '/uploads/artists/featured'}
+      - {name: ogImage, label: 'SEO: Image used in facebook open graph', widget: 'image', required: false, media_folder: '/public/uploads/artists/og', public_folder: '/uploads/artists/og'}
+      - {name: ogSquareImage, label: 'SEO: Squared Image used in facebook open graph', widget: 'image', required: false, media_folder: '/public/uploads/artists/og-squared', public_folder: '/uploads/artists/og-squared'}
+      - name: featuredImageAlt
+        label: 'SEO: Description when image loads'
+        required: false
+
+  - name: tracks
+    label: Music Tracks
+    label_singular: Track
+    folder: src/content/tracks
+    preview_path: /en/artkidstv1/{{artist}}/{{title}}
+    sortable_fields:
+      - order
+      - title
+    create: true
+    fields:
+      - {"name": "nav_label", "label": "SITE: URL Slug", "required": false }
+      - {"name": "media_file", "label": "Audio File location", "widget": "file", "media_folder": "public/uploads/media", "public_folder": "/uploads/media" }
+      - {"name": "image", "label": "Track Coverimage", "widget": "image", "required": false, "media_folder": "public/uploads/coverimages", "public_folder": "/uploads/coverimages" }
+      - {"name": "imageAlt", "label": "SEO: Description when image loads", "required": false}
+      - {"name": "title", "label": "Track Title" }
+      - {"name": "artist", "label": "Track Artist", "widget": "relation", "collection": "artists", "value_field": "title", "search_fields": ["title", "name"]}
+      - {"name": "featuring", "label": "Featuring Artists", "widget": "relation", "collection": "artists", "value_field": "title", "search_fields": ["title", "name"], "multiple": true, "required": false }
+      - {"name": "producer", "label": "Producer", "widget": "relation", "collection": "artists", "value_field": "title", "search_fields": ["title", "name"], "multiple": true, "required": false }
+      - {"name": "release_album", "label": "Release Album", "widget": "relation", "collection": "albums", "value_field": "title", "search_fields": ["title", "description"], "multiple": true, "required": false }
+      - {"name": "order", "label": "Track Number", "widget": "number", "value": "int", "min": 1, "required": true }
+      - {"name": "release_year", "label": "Release Year", "widget": "date", "format": "yyyy", "required": false }
+      - {"name": "genres", "label": "Music Genres", "widget": "list", "default": "Afrobeat" }
+      - {"name": "quote", "required": false }
+      - {"name": "body", "label": "Lyrics", "required": false, "widget": "markdown" }
+      - {"name": "aditional_credits", "widget": "markdown", "required": false }
+      - {"name": "theme", "widget": "select", "options": ["dark", "light"], "default": "dark", "label": "VFX: Dark or Light Theme", "required": false }
+      - {"name": "alignImage", "widget": "select", "options": ["left", "center", "right"], "label": "VFX: Align Artist Image VS Text", "required": false }
+      - {"name": "bgColor", "label": "VFX: Tailwind Background Class", "required": false }
+      - {"name": "color", "label": "VFX: Tailwind Text Color Class", "required": false }
+      - {"name": "bg", "label": "VFX: Giphy Image name", "required": false }
+      - {"name": "bgBlend", "label": "VFX: Tailwind Background Blend Class", "widget": "select", "options": ["bg-blend-normal", "bg-blend-multiply", "bg-blend-screen", "bg-blend-overlay", "bg-blend-darken", "bg-blend-lighten", "bg-blend-color-dodge", "bg-blend-color-burn", "bg-blend-hard-light", "bg-blend-soft-light", "bg-blend-difference", "bg-blend-exclusion", "bg-blend-hue", "bg-blend-saturation", "bg-blend-color", "bg-blend-luminosity"], "required": false }
+      - {"name": "bgSize", "widget": "select", "options": ["bg-cover", "bg-contain", "bg-auto"], "label": "VFX: Background Size", "required": false }
+      - {"name": "bgPosition", "widget": "select", "options": ["bg-bottom", "bg-center", "bg-left", "bg-left-bottom", "bg-left-top", "bg-right", "bg-right-bottom", "bg-right-top", "bg-top"], "label": "VFX: Align background image", "required": false }
+      - {"name": "description", "label": "SEO: Description 155 Characters", "required": false }
+      - {"name": "twitterImage", "label": "SEO: Image used in twitter", "widget": "image", "required": false, "media_folder": "public/uploads/coverimages/twitter", "public_folder": "/uploads/coverimages/twitter" }
+
+  - name: albums
+    label: Unity Albums
+    label_singular: Album
+    folder: src/content/albums
+    preview_path: "/en/artkidstv1/albums/{{slug}"
+    create: true
+    fields:
+      - {"name": "nav_label", "required": false }
+      - {"name": "image", "label": "Album Cover", "widget": "image", "required": false, "media_folder": "public/uploads/albumcovers", "public_folder": "/uploads/albumcovers" }
+      - {"name": "imageAlt", "label": "SEO: Description when image loads", "required": false}
+      - {"name": "title", "label": "Album Title" }
+      - {"name": "release_year", "label": "Release Year", "format": "yyyy", "widget": "date", "required": false }
+      - {"name": "tracklist", "label": "Album Tracklist", "widget": "relation", "collection": "media", "value_field": "title", "search_fields": ["title", "artist", "featuring_artist", "producer", "lyrics"], "multiple": true }
+      - {"name": "genres", "label": "Music Genres", "widget": "list", "default": "Afrobeat" }
+      - {"name": "credits", "required": false }
+      - {"name": "body", "label": "Album Info", "widge": "markdown", "required": false }
+      - {"name": "description", "label": "SEO: Description 155 Characters", "required": false }
+
+
   # - name: "blog"
   #   label: "Posts"
   #   label_singular: "Post"
