@@ -97,31 +97,23 @@ let elements = {
 
 					<h2 id="register" class="marker text-primary-600 my-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >Participant Registration Form</h2>
 					<form netlify enctype="multipart/form-data"  data-netlify="true" data-netlify-honeypot="field-of-expertise" name="enyimba-aba-2024" method="POST" class="card variant-outline-primary bg-white p-8 mx-auto gap-8">
-						<div class="flex flex-start portrait:flex-col gap-2 items-center">
-							<img id='preview_img' class="h-32 w-32 object-cover mx-auto aspect-square rounded-full bg-yellow-300" src="/images/red-black-purple-gold-with-sun.svg" alt="Current profile photo" />
+						<div class="flex justify-center portrait:flex-col gap-2 mb-5 items-center">
+							<div class={"card card-hover portrait:w-full landscape:w-full landscape:xl:w-96 aspect-square  bg-yellow-300 hover:bg-yellow-200 relative overflow-hidden rounded-md " }>
+								<img id='preview_img' class="w-full object-cover mx-auto aspect-square" src="/images/red-black-purple-gold-with-sun.svg" alt="Current profile photo" />
+								<div class="absolute top-50 right-0 bottom-0 left-0 p-5 w-full overflow-hidden flex flex-col justify-end font-shadow bg-gradient-to-t from-yellow-300 to-transparent h-3/5">
+									<h4 id="artistic_name" class="text-white italic  uppercase font-bold portrait:text-lg landscape:xs:text-sm landscape:sm:text-sm landscape:md:text-md landscape:lg:text-lg landscape:xl:text-xl drop-shadow-sm" >
+										Artistic Name
+									</h4>
+									<h5 class="text-pink-600 italic font-bold uppercase dropshadow-md portrait:text-md landscape:xs:text-xs landscape:sm:text-xs landscape:md:text-sm landscape:lg:text-md landscape:xl:text-lg">
+										aka <span id="name">Name</span> <span id="surname">Surname</span>
+									</h5>
+								</div>
+							</div>
 							<div class="relative z-0 w-full mb-5 group">
 								<input type="file" name="floating_promo_picture" id="floating_promo_picture" class="block pt-7 px-0 w-full text-sm text-gray-900 bg-transparent border-0 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" accept="image/png, image/jpeg"/>
 								<label for="floating_promo_picture" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-5 top-5 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Upload Your Best Picture</label>
 							</div>
 						</div>
-						<script is:inline>
-							const input = document.getElementById('floating_promo_picture');
-
-							input?.addEventListener('change', (event) => {
-								var input = event.target;
-								var file = input.files[0];
-								var type = file.type;
-
-								var output = document.getElementById('preview_img');
-
-
-								output.src = URL.createObjectURL(event.target.files[0]);
-								output.onload = function() {
-									URL.revokeObjectURL(output.src) // free memory
-								}
-							});
-						</script>
-
 						<div class="grid md:grid-cols-2 md:gap-6">
 							<div class="relative z-0 w-full mb-5 group">
 								<input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -178,6 +170,46 @@ let elements = {
 							<p><sup>*) fields marked with asterisk are required</sup></p>
 						</div>
 					</form>
+					<script is:inline>
+						const profilePictureInput = document.getElementById('floating_promo_picture');
+						const nameInput = document.getElementById('floating_first_name');
+						const surnameInput = document.getElementById('floating_last_name');
+						const artisticNameInput = document.getElementById('floating_artist_name');
+
+						// Change name on input change
+						nameInput?.addEventListener('change', (event) => {
+							var name = document.getElementById('name');
+							name.innerHTML = event.target.value;
+						})
+
+						// Change surname on input change
+						surnameInput?.addEventListener('change', (event) => {
+							var surname = document.getElementById('surname');
+							surname.innerHTML = event.target.value;
+						})
+
+						// Change surname on input change
+						artisticNameInput?.addEventListener('change', (event) => {
+							var artisticName = document.getElementById('artistic_name');
+							artisticName.innerHTML = event.target.value;
+						})
+
+						// Change profile picture on change
+						profilePictureInput?.addEventListener('change', (event) => {
+							var input = event.target;
+							var file = input.files[0];
+							var type = file.type;
+
+							var output = document.getElementById('preview_img');
+
+
+							output.src = URL.createObjectURL(event.target.files[0]);
+							output.onload = function() {
+								URL.revokeObjectURL(output.src) // free memory
+							}
+						});
+					</script>
+
 					: ''}
 				</div>
 

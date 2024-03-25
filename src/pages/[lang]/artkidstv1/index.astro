@@ -1,11 +1,9 @@
 ---
-// import { Image } from 'astro:assets';
 import { getLangFromUrl } from '~content/i18n/utils';
 
-import BrandFlag from '~components/ui/BrandFlag.astro';
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Linkcasts from "@components/linkcasts/Linkcasts.astro"
 import Artists from "@components/artists/Artists.astro";
+import Linkcasts from '~components/linkcasts/Linkcasts.astro';
 
 const lang = getLangFromUrl(Astro.url)
 
@@ -15,7 +13,6 @@ export async function getStaticPaths() {
     { params: { lang: 'nl' } },
     ];
 }
-
 
 ---
 
@@ -50,6 +47,11 @@ export async function getStaticPaths() {
 							data-mdb-ripple="true" data-mdb-ripple-color="light">
 							Reach out
 						</a>
+						<a href="/en/initiatives/enyimbaaba-2024" type="button"
+							class="btn variant-outline-primary inline-block px-6 py-2.5 border-2 border-black text-black font-bold leading-tight uppercase rounded hover:bg-white hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+							data-mdb-ripple="true" data-mdb-ripple-color="light">
+							Join us Live in Aba City (Nigeria)
+						</a>
 					</div>
 				</div>
 			</div>
@@ -57,7 +59,7 @@ export async function getStaticPaths() {
 		<!-- Background image -->
 	</section>
 
-	<!-- <Linkcasts start={1} length={9} /> -->
+	<Linkcasts start={1} length={9} />
 
 
 </BaseLayout>

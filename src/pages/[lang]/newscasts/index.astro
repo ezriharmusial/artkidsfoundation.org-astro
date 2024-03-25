@@ -1,8 +1,18 @@
 ---
-    import Linkcasts from "@components/linkcasts/Linkcasts.astro"
-    import LinkCastLayout from "@layouts/LinkCastLayout.astro"
+import { getLangFromUrl } from '~content/i18n/utils';
+import Linkcasts from "@components/linkcasts/Linkcasts.astro"
+import LinkCastLayout from "@layouts/LinkCastLayout.astro"
+
+const lang = getLangFromUrl(Astro.url)
+
+export async function getStaticPaths() {
+    return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'nl' } },
+    ];
+}
 ---
 
-<LinkCastLayout~ title="LastMessengerS.tv - Newscasts" description="Your latest news and links concerning Everything LastMessengers">
+<LinkCastLayout title="ArtKids Foundation - Newscasts" description="Your latest news and links concerning Everything ArtKids">
     <Linkcasts />
-</LinkCastLayout~
+</LinkCastLayout>
