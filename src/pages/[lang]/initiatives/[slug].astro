@@ -96,15 +96,31 @@ let elements = {
 					<Image class="mx-auto my-8" src="/uploads/initiatives/enyimba-aba-2024-talent-hunt.jpg" alt="Enyimba~Aba 2024 Talent Hunt" width={707} height={1000} />
 
 					<h2 id="register" class="marker text-primary-600 my-8 unstyled drop-shadow landscape:text-4xl portrait:text-3xl font-bold" >Participant Registration Form</h2>
-					<form netlify data-netlify="true" data-netlify-honeypot="field-of-expertise" name="enyimba-aba-2024" method="POST" class="card variant-outline-primary bg-white p-8 mx-auto gap-8">
-	                    <div class="w-full p-3 my-4 bg-red-100 rounded flex items-center">
-							<div tabindex="0" aria-label="storage icon" role="img" class="focus:outline-none w-8 h-8 border rounded-full border-red-200 flex items-center flex-shrink-0 justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
-							</div>
-							<div class="pl-3 w-full flex items-center justify-between">
-								<p tabindex="0" class="focus:outline-none text-sm leading-none text-red-700">Dear participant, please be informed that a non-refundable administrative fee of ₦1000 is required. Payable before participation. Thanks</p>
+					<form netlify enctype="multipart/form-data"  data-netlify="true" data-netlify-honeypot="field-of-expertise" name="enyimba-aba-2024" method="POST" class="card variant-outline-primary bg-white p-8 mx-auto gap-8">
+						<div class="flex flex-start portrait:flex-col gap-2 items-center">
+							<img id='preview_img' class="h-32 w-32 object-cover mx-auto aspect-square rounded-full bg-yellow-300" src="/images/red-black-purple-gold-with-sun.svg" alt="Current profile photo" />
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="file" name="floating_promo_picture" id="floating_promo_picture" class="block pt-7 px-0 w-full text-sm text-gray-900 bg-transparent border-0 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" accept="image/png, image/jpeg"/>
+								<label for="floating_promo_picture" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-5 top-5 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Upload Your Best Picture</label>
 							</div>
 						</div>
+						<script is:inline>
+							const input = document.getElementById('floating_promo_picture');
+
+							input?.addEventListener('change', (event) => {
+								var input = event.target;
+								var file = input.files[0];
+								var type = file.type;
+
+								var output = document.getElementById('preview_img');
+
+
+								output.src = URL.createObjectURL(event.target.files[0]);
+								output.onload = function() {
+									URL.revokeObjectURL(output.src) // free memory
+								}
+							});
+						</script>
 
 						<div class="grid md:grid-cols-2 md:gap-6">
 							<div class="relative z-0 w-full mb-5 group">
@@ -139,9 +155,27 @@ let elements = {
 							<label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address<sup>*</sup></label>
 						</div>
 
-						<div class="flex justify-between items-center">
-						<button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-						<sup>*) fields marked with asterisk are required</sup>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="url" name="floating_videoclip_url" id="floating_videoclip_url" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+							<label for="floating_videoclip_url" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Best Videoclip / Audio Link<sup></sup></label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<textarea rows="4" name="floating_social_media_links" id="floating_social_media_links" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+							<label for="floating_social_media_links" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Social Media links (multiple allowed)</label>
+						</div>
+
+	                    <div class="w-full p-3 my-4 bg-red-100 rounded flex items-center">
+							<div tabindex="0" aria-label="storage icon" role="img" class="focus:outline-none w-8 h-8 border rounded-full border-red-200 flex items-center flex-shrink-0 justify-center">
+								<svg xmlns="http://www.w3.org/2000/svg" class="p-1 text-green-600" fill="currentColor" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+							</div>
+							<div class="pl-3 w-full flex items-center justify-between">
+								<p tabindex="0" class="focus:outline-none text-sm leading-none text-red-700">Dear participant, please be informed that a non-refundable administrative fee of ₦1000 is required. Payable before participation. Thanks</p>
+							</div>
+						</div>
+
+						<div class="flex justify-between items-center portrait:flex-col-reverse">
+							<button type="submit" class="btn variant-filled-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5">Submit</button>
+							<p><sup>*) fields marked with asterisk are required</sup></p>
 						</div>
 					</form>
 					: ''}
